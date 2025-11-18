@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains Unity Render Pipeline specific files.

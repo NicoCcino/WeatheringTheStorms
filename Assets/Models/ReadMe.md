@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains 3d models files (.fbx is the mandatory format)
