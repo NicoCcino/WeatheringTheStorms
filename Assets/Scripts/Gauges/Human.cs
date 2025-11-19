@@ -5,7 +5,7 @@ using UnityEngine;
 public class Human : Singleton<Human>
 {
     [SerializeField] private HumanParameter humanParameter; // Reference to the Parameter ScriptableObject
-    public int value;
+    public float value;
     private ModifierManager modifierManager;
 
     public void Start()

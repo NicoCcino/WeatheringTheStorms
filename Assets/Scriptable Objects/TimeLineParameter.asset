@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TimeLineParameter
   m_EditorClassIdentifier: Assembly-CSharp::TimeLineParameter
   PlayTickFreq: 1
-  fastTickFreq: 2
-  veryFastTickFreq: 4
-  tickDuration: 1
+  FastTickFreq: 2
+  VeryFastTickFreq: 4
+  TickDuration: 1

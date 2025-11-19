@@ -17,9 +17,9 @@ public class ModifierManager
         modifiers.Add(modifier);
     }
 
-    public int ComputeModifierValue()
+    public float ComputeModifierValue()
     {
-        int modifierValue = 0;
+        float modifierValue = 0;
         foreach (var modifier in modifiers)
         {
             modifierValue += modifier.AddedValue;

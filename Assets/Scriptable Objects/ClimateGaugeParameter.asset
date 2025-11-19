@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ClimateGaugeParameter
   m_EditorClassIdentifier: Assembly-CSharp::GaugeParameter
   StartValue: 0
-  StartSpeed: 1
+  BaseModifier:
+    AddedValue: 1
   Min: 0
   Max: 100

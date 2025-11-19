@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e023a11a5b7542c09e95bab79f9ead8, type: 3}
   m_Name: HumanParameter
   m_EditorClassIdentifier: Assembly-CSharp::HumanParameter
-  StartValue: 0
+  StartValue: 100
   BaseModifier:
-    AddedValue: 0
+    AddedValue: -10
