@@ -1,0 +1,1 @@
+This folder and its subfolders must contains all external ressources / features imported as a whole in the projet. Most unity packages downloaded from the store have their own sensitive hierarchy. 
