@@ -13,7 +13,6 @@ public class DateCondition : ICondition
 
     public bool IsFulfilled()
     {
-        //    return Timeline.Instance.&& Timeline.CurrentTick <=maxTick;
-        return false;
+        return Timeline.Instance.CurrentTick >= MinTick && Timeline.Instance.CurrentTick <= MaxTick;
     }
 }
