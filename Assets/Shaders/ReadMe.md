@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains Shader files (.hlsl for shaders and .shadergraph for shader graphs and subgraphs)

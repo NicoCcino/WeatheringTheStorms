@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains image files (.png is the preferred format)
