@@ -27,7 +27,7 @@ public class Timeline : ASingleton<Timeline>
     {
         if (timeLineParameter == null)
         {
-            //Debug.LogError("Parameter ScriptableObject is not assigned in Timeline!");
+            Debug.LogError("Parameter ScriptableObject is not assigned in Timeline!");
             return;
         }
 
@@ -48,7 +48,7 @@ public class Timeline : ASingleton<Timeline>
             currentTick++;
             OnTick?.Invoke(currentTick);
             currentDate = currentDate.AddMonths((int)tickDuration);
-            Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
+            // Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
         }
     }
 
