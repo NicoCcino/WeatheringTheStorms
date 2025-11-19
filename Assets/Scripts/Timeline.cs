@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
-using WiDiD.Extension;
 
-public class Timeline : ASingleton<Timeline>
+public class Timeline : Singleton<Timeline>
 {
     [Header("Timeline Management")]
     [SerializeField] private TimeLineParameter timeLineParameter; // Reference to the Parameter ScriptableObject
