@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains texture files (.png). Texture files are defined as images used as input maps into 2D or 3D shaders

@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains 2D sprites files (.png). 2D sprites are all the images used for 2D world visual purposes (UI excluded)

@@ -1,0 +1,1 @@
+This folder and its subfolders must only contains UI Shapes files (.png). UI Shapes are defined as images used specifically for UIs and must be white so it can be overwritten in Unity's UI components.
