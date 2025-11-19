@@ -6,7 +6,7 @@ public class Timeline : Singleton<Timeline>
     [Header("Timeline Management")]
     [SerializeField] private TimeLineParameter timeLineParameter; // Reference to the Parameter ScriptableObject
 
-    public int currentTick = 0; // Current tick of the timeline
+    public int CurrentTick = 0; // Current tick of the timeline
 
     private float tickFreq; // Frequency of ticks in hertz
 
@@ -44,8 +44,8 @@ public class Timeline : Singleton<Timeline>
         if (timeSinceLastTick >= tickInterval)
         {
             timeSinceLastTick -= tickInterval;
-            currentTick++;
-            OnTick?.Invoke(currentTick);
+            CurrentTick++;
+            OnTick?.Invoke(CurrentTick);
             currentDate = currentDate.AddMonths((int)tickDuration);
             // Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
         }

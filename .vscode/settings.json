@@ -90,5 +90,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "WeatheringTheStorms.sln"
+    "dotnet.defaultSolution": "WeatheringTheStorms.slnx"
 }

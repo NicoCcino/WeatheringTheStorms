@@ -13,8 +13,8 @@ public class EventManager : Singleton<EventManager>
     }
     private void OnTickCallback(int currentTick)
     {
+        //TODO : Implement the random event selection;
+
         throw new NotImplementedException();
     }
-
-
 }
