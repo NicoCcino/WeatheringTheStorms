@@ -7,7 +7,7 @@ public class Timeline : ASingleton<Timeline>
     [Header("Timeline Management")]
     [SerializeField] private TimeLineParameter timeLineParameter; // Reference to the Parameter ScriptableObject
 
-    private int currentTick = 0; // Current tick of the timeline
+    public int currentTick = 0; // Current tick of the timeline
 
     private float tickFreq; // Frequency of ticks in hertz
 
@@ -27,7 +27,7 @@ public class Timeline : ASingleton<Timeline>
     {
         if (timeLineParameter == null)
         {
-            Debug.LogError("Parameter ScriptableObject is not assigned in Timeline!");
+            //Debug.LogError("Parameter ScriptableObject is not assigned in Timeline!");
             return;
         }
 
