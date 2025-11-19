@@ -14,7 +14,7 @@ public class EventManager : Singleton<EventManager>
     private int noEventTickCounter = 0;
     private void OnEnable()
     {
-        AvailableEvents = EventManagerParameter.AllEvents;
+        AvailableEvents = new List<Event>(EventManagerParameter.AllEvents);
         Timeline.Instance.OnTick += OnTickCallback;
     }
     private void OnDisable()
@@ -33,8 +33,7 @@ public class EventManager : Singleton<EventManager>
 
         //We select a random event in all availables events 
         Event ev = PickRandomValidEvent();
-        //We remove the selected event from the available events (so it cant occur twice in a game)
-        AvailableEvents.Remove(ev);
+        if (ev == null) return;
         //Then we're ready to trigger all following logics linked to the event
         TriggerEvent(ev);
     }
@@ -42,6 +41,11 @@ public class EventManager : Singleton<EventManager>
     private Event PickRandomValidEvent()
     {
         Event[] validEvents = AvailableEvents.Where(e => e.IsValid).ToArray();
+        if (validEvents.Length == 0)
+        {
+            Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
+            return null;
+        }
 
         int random = UnityEngine.Random.Range(0, validEvents.Length);
         return validEvents[random];
@@ -56,7 +60,10 @@ public class EventManager : Singleton<EventManager>
 
     public void TriggerEvent(Event ev)
     {
+        //We remove the selected event from the available events (so it cant occur twice in a game)
+        AvailableEvents.Remove(ev);
         noEventTickCounter = 0;
+        Debug.Log($"Event {ev.EventData.Label} Triggered");
         OnEventTriggered?.Invoke(ev);
     }
 }

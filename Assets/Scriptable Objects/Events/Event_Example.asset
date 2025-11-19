@@ -17,8 +17,29 @@ MonoBehaviour:
     <Description>k__BackingField: This event can be used for first tests of the game.
     <Choices>k__BackingField:
     - Label: Example choice 1
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 50
+        SocietalModifier:
+          AddedValue: -40
+        TrustModifier:
+          AddedValue: 0
     - Label: Example choice 2
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: 0
+        TrustModifier:
+          AddedValue: 0
     - Label: Example choice 3
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: 0
+        TrustModifier:
+          AddedValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 100000
