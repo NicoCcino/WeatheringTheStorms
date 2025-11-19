@@ -5,7 +5,8 @@ using UnityEngine;
 public class ComputePower : Singleton<ComputePower>
 {
     [SerializeField] private ComputePowerParameter computePowerParameter; // Reference to the Parameter ScriptableObject
-    public float value;
+    public int value;
+    private float floatValue;
     private ModifierManager modifierManager;
 
     public void Start()
@@ -16,6 +17,7 @@ public class ComputePower : Singleton<ComputePower>
             return;
         }
         value = computePowerParameter.StartValue;
+        floatValue = computePowerParameter.StartValue;
         modifierManager = new ModifierManager();
         modifierManager.Init(computePowerParameter.BaseModifier);
 
@@ -36,8 +38,9 @@ public class ComputePower : Singleton<ComputePower>
 
     public void OnTimelineTick(int currentTick)
     {
-        value += modifierManager.ComputeModifierValue();
-        if (value <= 0) value = 0;
+        floatValue += modifierManager.ComputeModifierValue();
+        if (floatValue <= 0) floatValue = 0;
+        value = Mathf.FloorToInt(floatValue);
         //Debug.Log("Human value: " + value);
     }
 

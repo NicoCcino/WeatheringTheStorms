@@ -7,7 +7,7 @@ public class HumanParameter : ScriptableObject
 {
     [Header("Human Settings")]
     [Tooltip("Initial value of the number of humans")]
-    [SerializeField] public int StartValue = 0;
+    [SerializeField] public long StartValue = 0;
 
     [Tooltip("Base modifier of the humans")]
     [SerializeField] public Modifier BaseModifier = new Modifier();
