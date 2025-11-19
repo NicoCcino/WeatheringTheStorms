@@ -23,6 +23,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
   - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
   - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
+  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
+  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
+  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:
