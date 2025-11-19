@@ -35,10 +35,10 @@ public class GaugeManager : Singleton<GaugeManager>
         TrustGauge.OnTimelineTick(currentTick);
     }
 
-    // public void ApplyModifierBank(ModifierBank modifierBank)
-    // {
-    //     ClimateGauge.ApplyModifier(ClimateModifier);
-    //     SocietalGauge.ApplyModifier(SocietalModifier);
-    //     TrustGauge.ApplyModifier(TrustModifier);
-    // }
+    public void ApplyModifierBank(ModifierBank modifierBank)
+    {
+        ClimateGauge.AddModifier(modifierBank.ClimateModifier);
+        SocietalGauge.AddModifier(modifierBank.SocietalModifier);
+        TrustGauge.AddModifier(modifierBank.TrustModifier);
+    }
 }

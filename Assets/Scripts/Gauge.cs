@@ -6,8 +6,7 @@ public class Gauge
 {
     [SerializeField] private GaugeParameter gaugeParameter; // Reference to the Parameter ScriptableObject
     public int value;
-    private float Speed;
-    //private ModifierManager modifierManager;
+    private ModifierManager modifierManager;
 
     public void Init()
     {
@@ -17,22 +16,20 @@ public class Gauge
             return;
         }
         value = gaugeParameter.StartValue;
-        Speed = gaugeParameter.StartSpeed;
+        modifierManager = new ModifierManager();
+        modifierManager.Init(gaugeParameter.BaseModifier);
     }
 
     public void OnTimelineTick(int currentTick)
     {
-        value += (int)(Speed);
+        value += modifierManager.ComputeModifierValue();
         if (value < gaugeParameter.Min) value = gaugeParameter.Min;
         if (value > gaugeParameter.Max) value = gaugeParameter.Max;
         //Debug.Log("Gauge value: " + value);
-        // compute modifier effects
     }
 
-    // public void ApplyModifier(Modifier modifier)
-    // {
-    //     value += (int)(modifier.Value);
-    //     if (value < min) value = min;
-    //     if (value > max) value = max;
-    // }
+    public void AddModifier(Modifier modifier)
+    {
+        modifierManager.AddModifier(modifier);
+    }
 }

@@ -9,8 +9,8 @@ public class GaugeParameter : ScriptableObject
     [Tooltip("Initial value of the gauge")]
     [SerializeField] public int StartValue = 0;
 
-    [Tooltip("Speed of the gauge")]
-    [SerializeField] public float StartSpeed = 1f;
+    [Tooltip("Base modifier of the gauge")]
+    [SerializeField] public Modifier BaseModifier = new Modifier();
 
     [Tooltip("Min value of the gauge")]
     [SerializeField] public int Min = 0;
