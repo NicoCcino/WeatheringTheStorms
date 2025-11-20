@@ -155,18 +155,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1386932746440579885, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_text
-      value: A - Example choice incredible yes yes very good. I love text blablablablabla
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386932746440579885, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_fontSize
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386932746440579885, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 32
-      objectReference: {fileID: 0}
     - target: {fileID: 1856438862421408520, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -200,24 +188,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533086966323005054, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2533086966323005054, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2533086966323005054, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533086966323005054, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818422930886757207, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      propertyPath: m_MinWidth
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3709846264581718946, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_Pivot.x
@@ -466,10 +442,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 407010298085230822, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1475455707}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
 --- !u!224 &6851115 stripped
 RectTransform:
@@ -1391,6 +1364,7 @@ GameObject:
   - component: {fileID: 1194403853}
   - component: {fileID: 1194403855}
   - component: {fileID: 1194403854}
+  - component: {fileID: 1194403856}
   m_Layer: 5
   m_Name: Panel_Event
   m_TagString: Untagged
@@ -1458,6 +1432,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194403852}
   m_CullTransparentMesh: 1
+--- !u!114 &1194403856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194403852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f132821e9ba6042adaa9e58e7fa72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textDescription: {fileID: 0}
+  textHeader: {fileID: 0}
 --- !u!1 &1199814651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,24 +1970,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1475455705 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 407010298085230822, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
-  m_PrefabInstance: {fileID: 6851114}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1475455707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475455705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23962f38ba30ea647bbd622a71d2ad25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  textLabel: {fileID: 0}
 --- !u!1 &1560565061
 GameObject:
   m_ObjectHideFlags: 0
