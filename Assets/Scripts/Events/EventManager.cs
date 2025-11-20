@@ -63,6 +63,7 @@ public class EventManager : Singleton<EventManager>
         if (validEvents.Length == 0)
         {
             Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
+            LogFileManager.Instance.LogUserAction("Warning", "There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
             return null;
         }
 
@@ -85,5 +86,6 @@ public class EventManager : Singleton<EventManager>
         noEventTickCounter = 0;
         Debug.Log($"Event {ev.EventData.Label} Triggered");
         OnEventTriggered?.Invoke(ev);
+        LogFileManager.Instance.LogUserAction("Event", ev.EventData.Label);
     }
 }

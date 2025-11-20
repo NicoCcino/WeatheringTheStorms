@@ -27,6 +27,7 @@ public class Upgrade
         // apply modifier bank to the gauges
         GaugeManager.Instance.ApplyModifierBank(UpgradeData.ModifierBank);
         //Debug.Log("Upgrade unlocked: " + UpgradeData.Label);
+        LogFileManager.Instance.LogUserAction("Upgrade", UpgradeData.Label);
         // Spend compute power
         ComputePower.Instance.SpendComputePower(UpgradeData.Cost);
     }
