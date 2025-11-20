@@ -577,7 +577,14 @@
                     side: 'right'
                 },
                 hovermode: 'x unified',
-                margin: { t: 20, r: 80, b: 50, l: 80 }
+                margin: { t: 20, r: 80, b: 80, l: 80 },
+                legend: {
+                    orientation: 'h',
+                    x: 0.5,
+                    xanchor: 'center',
+                    y: -0.2,
+                    yanchor: 'top'
+                }
             };
 
             Plotly.newPlot('chart2', traces2, layout2, { responsive: true });
