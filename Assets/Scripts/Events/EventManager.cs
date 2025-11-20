@@ -12,7 +12,7 @@ public class EventManager : Singleton<EventManager>
     private List<Event> AvailableEvents { get; set; } = new List<Event>();
     public Action<Event> OnEventTriggered;
     private int noEventTickCounter = 0;
-
+    private Event CurrentEvent = null;
     private void Start()
     {
         if (EventManagerParameter != null)
@@ -86,6 +86,16 @@ public class EventManager : Singleton<EventManager>
         noEventTickCounter = 0;
         Debug.Log($"Event {ev.EventData.Label} Triggered");
         OnEventTriggered?.Invoke(ev);
+        Timeline.Instance.SetPauseSpeed();
+        CurrentEvent = ev;
+        ev.OnSolved += OnCurrentEventSolved;
         LogFileManager.Instance.LogUserAction("Event", ev.EventData.Label);
+    }
+    private void OnCurrentEventSolved(Choice choice)
+    {
+        if (CurrentEvent == null) return;
+
+        Timeline.Instance.SetPlaySpeed();
+        CurrentEvent.OnSolved -= OnCurrentEventSolved;
     }
 }

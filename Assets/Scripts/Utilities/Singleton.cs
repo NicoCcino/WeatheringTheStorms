@@ -1,6 +1,7 @@
 using UnityEngine;
 
 
+[DefaultExecutionOrder(-500)]
 public class Singleton<T> : MonoBehaviour
 where T : Component
 {
