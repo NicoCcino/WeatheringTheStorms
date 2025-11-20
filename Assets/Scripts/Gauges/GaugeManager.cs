@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class GaugeManager : Singleton<GaugeManager>
 {
-    [SerializeField] private Gauge ClimateGauge;
-    [SerializeField] private Gauge SocietalGauge;
-    [SerializeField] private Gauge TrustGauge;
+    [SerializeField] public Gauge ClimateGauge;
+    [SerializeField] public Gauge SocietalGauge;
+    [SerializeField] public Gauge TrustGauge;
 
     private void Start()
     {

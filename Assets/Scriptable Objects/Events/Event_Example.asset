@@ -24,6 +24,8 @@ MonoBehaviour:
           AddedValue: -40
         TrustModifier:
           AddedValue: 0
+        HumanModifier:
+          AddedValue: 0
     - Label: Example choice 2
       ModifierBank:
         ClimateModifier:
@@ -31,6 +33,8 @@ MonoBehaviour:
         SocietalModifier:
           AddedValue: 0
         TrustModifier:
+          AddedValue: 0
+        HumanModifier:
           AddedValue: 0
     - Label: Example choice 3
       ModifierBank:
@@ -40,6 +44,12 @@ MonoBehaviour:
           AddedValue: 0
         TrustModifier:
           AddedValue: 0
+        HumanModifier:
+          AddedValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 100000
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0

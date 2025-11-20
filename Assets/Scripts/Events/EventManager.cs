@@ -51,7 +51,20 @@ public class EventManager : Singleton<EventManager>
 
     private Event PickRandomValidEvent()
     {
+        // Create a list of valid event we will filter
         Event[] validEvents = AvailableEvents.Where(e => e.IsValid).ToArray();
+        
+
+        // We select a random category and filter the list of valid events to only include events of this category
+        EventData.EventCategory category = (EventData.EventCategory)UnityEngine.Random.Range(0, 3);
+        validEvents = validEvents.Where(e => e.EventData.GaugeCondition.Category == category).ToArray();
+
+        // We filter the remaining events to match the curent date condition
+        validEvents = validEvents.Where(e => e.EventData.DateCondition.IsFulfilled()).ToArray();
+
+        // We filter the remaining events to match the current gauge conditions
+        validEvents = validEvents.Where(e => e.EventData.GaugeCondition.IsFulfilled()).ToArray();
+
         if (validEvents.Length == 0)
         {
             Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
@@ -61,6 +74,7 @@ public class EventManager : Singleton<EventManager>
         int random = UnityEngine.Random.Range(0, validEvents.Length);
         return validEvents[random];
     }
+    
     private bool ShouldAnyEventOccur()
     {
         float randomValue = UnityEngine.Random.Range(0f, 1f);
