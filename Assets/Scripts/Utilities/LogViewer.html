@@ -176,8 +176,35 @@
             height: 400px;
         }
         
+        #chart2 {
+            height: 350px;
+        }
+        
+        #chart2b {
+            height: 200px;
+        }
+        
         #chart3 {
             height: 250px;
+        }
+        
+        .chart-pair {
+            margin-bottom: 30px;
+        }
+        
+        .chart-pair .chart-container {
+            margin-bottom: 0;
+        }
+        
+        .chart-pair .chart-container:first-child {
+            border-radius: 10px 10px 0 0;
+            padding-bottom: 5px;
+        }
+        
+        .chart-pair .chart-container:last-child {
+            border-radius: 0 0 10px 10px;
+            padding-top: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .error-message {
@@ -235,12 +262,15 @@
                 <div id="chart1" class="chart"></div>
             </div>
 
-            <div class="chart-container" id="chart2Container" style="display: none;">
-                <div class="chart-title">Game Metrics Over Time</div>
-                <p style="text-align: center; color: #6c757d; font-size: 0.9em; margin-bottom: 10px;">
-                    Note: Gauges use different line styles (solid/dashed/dotted) to distinguish overlapping values
-                </p>
-                <div id="chart2" class="chart"></div>
+            <div class="chart-pair" id="chart2Pair" style="display: none;">
+                <div class="chart-container" id="chart2Container">
+                    <div class="chart-title">Game Metrics Over Time</div>
+                    <div id="chart2" class="chart"></div>
+                </div>
+                
+                <div class="chart-container" id="chart2bContainer">
+                    <div id="chart2b" class="chart"></div>
+                </div>
             </div>
 
             <div class="chart-container" id="chart3Container" style="display: none;">
@@ -473,7 +503,7 @@
 
             document.getElementById('controlsSection').style.display = 'block';
             document.getElementById('chart1Container').style.display = 'block';
-            document.getElementById('chart2Container').style.display = 'block';
+            document.getElementById('chart2Pair').style.display = 'block';
             document.getElementById('chart3Container').style.display = 'block';
 
             const xAxis = useDate ? currentData.map(row => row.Date) : currentData.map(row => parseInt(row.Tick));
@@ -529,6 +559,34 @@
             console.log('Trust sample:', trustValues.slice(0, 10));
             console.log('Compute sample:', computeValues.slice(0, 10));
             
+            // Calculate derivatives (smoothed with moving average for clarity)
+            function calculateSmoothedDerivative(values, windowSize = 5) {
+                const derivatives = [];
+                for (let i = 1; i < values.length; i++) {
+                    derivatives.push(values[i] - values[i - 1]);
+                }
+                
+                // Apply moving average smoothing
+                const smoothed = [];
+                for (let i = 0; i < derivatives.length; i++) {
+                    const start = Math.max(0, i - Math.floor(windowSize / 2));
+                    const end = Math.min(derivatives.length, i + Math.ceil(windowSize / 2));
+                    const window = derivatives.slice(start, end);
+                    const avg = window.reduce((a, b) => a + b, 0) / window.length;
+                    smoothed.push(avg);
+                }
+                
+                // Prepend 0 for first value (no derivative at start)
+                return [0, ...smoothed];
+            }
+            
+            // Calculate derivatives and scale them to be visible (multiply by 10 for better visualization)
+            const climateDerivative = calculateSmoothedDerivative(climateValues).map(v => v * 10);
+            const societalDerivative = calculateSmoothedDerivative(societalValues).map(v => v * 10);
+            const trustDerivative = calculateSmoothedDerivative(trustValues).map(v => v * 10);
+            const computeDerivative = calculateSmoothedDerivative(computeValues).map(v => v * 0.0001); // Different scale for compute
+            
+            // Chart 2: Main values
             const traces2 = [
                 {
                     x: xAxis,
@@ -544,7 +602,7 @@
                     type: 'scatter',
                     mode: 'lines',
                     name: 'Societal Gauge',
-                    line: { color: '#007bff', width: 3, dash: 'dash' }
+                    line: { color: '#007bff', width: 3 }
                 },
                 {
                     x: xAxis,
@@ -552,7 +610,7 @@
                     type: 'scatter',
                     mode: 'lines',
                     name: 'Trust Gauge',
-                    line: { color: '#ffc107', width: 3, dash: 'dot' }
+                    line: { color: '#ffc107', width: 3 }
                 },
                 {
                     x: xAxis,
@@ -564,30 +622,88 @@
                     yaxis: 'y2'
                 }
             ];
+            
+            // Chart 2b: Trends/Derivatives
+            const traces2b = [
+                {
+                    x: xAxis,
+                    y: climateDerivative,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Climate Trend',
+                    line: { color: '#28a745', width: 2, dash: 'dot' }
+                },
+                {
+                    x: xAxis,
+                    y: societalDerivative,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Societal Trend',
+                    line: { color: '#007bff', width: 2, dash: 'dot' }
+                },
+                {
+                    x: xAxis,
+                    y: trustDerivative,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Trust Trend',
+                    line: { color: '#ffc107', width: 2, dash: 'dot' }
+                }
+            ];
 
             const layout2 = {
                 xaxis: { 
-                    title: xAxisTitle,
-                    range: xAxisRange
+                    title: '',
+                    range: xAxisRange,
+                    showticklabels: true
                 },
-                yaxis: { title: 'Gauge Values' },
+                yaxis: { 
+                    title: 'Gauge Values',
+                    side: 'left'
+                },
                 yaxis2: {
                     title: 'Compute Power',
                     overlaying: 'y',
                     side: 'right'
                 },
                 hovermode: 'x unified',
-                margin: { t: 20, r: 80, b: 80, l: 80 },
+                margin: { t: 10, r: 80, b: 40, l: 80 },
+                showlegend: true,
                 legend: {
                     orientation: 'h',
                     x: 0.5,
                     xanchor: 'center',
-                    y: -0.2,
+                    y: -0.15,
+                    yanchor: 'top'
+                }
+            };
+
+            const layout2b = {
+                xaxis: { 
+                    title: xAxisTitle,
+                    range: xAxisRange
+                },
+                yaxis: { 
+                    title: 'Gauge Trends (×10)',
+                    side: 'left',
+                    zeroline: true,
+                    zerolinecolor: '#999',
+                    zerolinewidth: 2
+                },
+                hovermode: 'x unified',
+                margin: { t: 5, r: 20, b: 50, l: 80 },
+                showlegend: true,
+                legend: {
+                    orientation: 'h',
+                    x: 0.5,
+                    xanchor: 'center',
+                    y: -0.35,
                     yanchor: 'top'
                 }
             };
 
             Plotly.newPlot('chart2', traces2, layout2, { responsive: true });
+            Plotly.newPlot('chart2b', traces2b, layout2b, { responsive: true });
 
             // Chart 3: Event Timeline
             console.log('All EventType values (first 20):', currentData.slice(0, 20).map(r => ({
@@ -663,7 +779,7 @@
         }
 
         function setupSynchronizedZoom() {
-            const charts = ['chart1', 'chart2', 'chart3'];
+            const charts = ['chart1', 'chart2', 'chart2b', 'chart3'];
             
             charts.forEach(chartId => {
                 const chartEl = document.getElementById(chartId);
