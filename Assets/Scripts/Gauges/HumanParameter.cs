@@ -13,5 +13,5 @@ public class HumanParameter : ScriptableObject
     [SerializeField] public Modifier BaseModifier = new Modifier();
 
     [Tooltip("Gauge impact per human")]
-    [SerializeField] public float GaugeImpactPerHuman = -2e-11f; // Calculated to make the gauge reach 0 in 5 minutes on Play speed (25 game years)
+    [SerializeField] public float GaugeImpactPerHuman = -2e-11f; // Calculated to make the gauge reach 0 in less than 5 minutes on Play speed (less than 25 game years)
 }
