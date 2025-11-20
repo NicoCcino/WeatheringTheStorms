@@ -478,6 +478,17 @@
 
             const xAxis = useDate ? currentData.map(row => row.Date) : currentData.map(row => parseInt(row.Tick));
             const xAxisTitle = useDate ? 'Date' : 'Tick';
+            
+            // Calculate x-axis range to ensure all charts are aligned
+            let xAxisRange = null;
+            if (useDate) {
+                // For dates, use the first and last date
+                xAxisRange = [currentData[0].Date, currentData[currentData.length - 1].Date];
+            } else {
+                // For ticks, use min and max tick values
+                const ticks = currentData.map(row => parseInt(row.Tick));
+                xAxisRange = [Math.min(...ticks), Math.max(...ticks)];
+            }
 
             // Chart 1: Human Population
             const humanTrace = {
@@ -490,7 +501,10 @@
             };
 
             const layout1 = {
-                xaxis: { title: xAxisTitle },
+                xaxis: { 
+                    title: xAxisTitle,
+                    range: xAxisRange
+                },
                 yaxis: { title: 'Population' },
                 hovermode: 'x unified',
                 margin: { t: 20, r: 20, b: 50, l: 80 }
@@ -552,7 +566,10 @@
             ];
 
             const layout2 = {
-                xaxis: { title: xAxisTitle },
+                xaxis: { 
+                    title: xAxisTitle,
+                    range: xAxisRange
+                },
                 yaxis: { title: 'Gauge Values' },
                 yaxis2: {
                     title: 'Compute Power',
@@ -618,7 +635,10 @@
             const traces3 = Object.values(eventTraces);
 
             const layout3 = {
-                xaxis: { title: xAxisTitle },
+                xaxis: { 
+                    title: xAxisTitle,
+                    range: xAxisRange
+                },
                 yaxis: { 
                     title: 'Events',
                     showticklabels: false,
