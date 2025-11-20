@@ -13,5 +13,6 @@ public class Upgrade : ScriptableObject
         IsUnlocked = true;
         // apply modifier bank to the gauges
         GaugeManager.Instance.ApplyModifierBank(UpgradeData.ModifierBank);
+        Debug.Log("Upgrade unlocked: " + UpgradeData.Label);
     }
 }
