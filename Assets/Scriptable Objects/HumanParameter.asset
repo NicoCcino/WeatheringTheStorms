@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e023a11a5b7542c09e95bab79f9ead8, type: 3}
   m_Name: HumanParameter
   m_EditorClassIdentifier: Assembly-CSharp::HumanParameter
-  StartValue: 8160000000
+  StartValue: 8.16e+9
   BaseModifier:
     AddedValue: 6800000
+  GaugeImpactPerHuman: -2e-11

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Human : Singleton<Human>
 {
     [SerializeField] private HumanParameter humanParameter; // Reference to the Parameter ScriptableObject
-    public float value;
+    public long HumanCount;
+    private float floatValue;
     private ModifierManager modifierManager;
 
     public void Start()
@@ -15,7 +16,8 @@ public class Human : Singleton<Human>
             Debug.LogError("Parameter ScriptableObject is not assigned in human!");
             return;
         }
-        value = humanParameter.StartValue;
+        HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
+        floatValue = humanParameter.StartValue;
         modifierManager = new ModifierManager();
         modifierManager.Init(humanParameter.BaseModifier);
 
@@ -36,9 +38,17 @@ public class Human : Singleton<Human>
 
     public void OnTimelineTick(int currentTick)
     {
-        value += modifierManager.ComputeModifierValue();
-        if (value <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
+        floatValue += modifierManager.ComputeModifierValue();
+        if (floatValue <= 0) floatValue = 0;
+        HumanCount = (long)Mathf.Floor(floatValue);
+        if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
         //Debug.Log("Human value: " + value);
+    }
+
+    public float GetHumanImpactOnGauges()
+    {
+        // TODO : I made it linear for now, but we could make it exponential later
+        return HumanCount * humanParameter.GaugeImpactPerHuman;
     }
 
     public void AddModifier(Modifier modifier)

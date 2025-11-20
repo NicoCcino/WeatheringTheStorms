@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f1760f387ad40838c1e7388e599da8, type: 3}
   m_Name: TrustGaugeParameter
   m_EditorClassIdentifier: Assembly-CSharp::GaugeParameter
-  StartValue: 100
-  BaseModifier:
-    AddedValue: -1
+  StartValue: 50
   Min: 0
   Max: 100

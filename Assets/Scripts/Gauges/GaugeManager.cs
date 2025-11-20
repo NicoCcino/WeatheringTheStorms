@@ -30,9 +30,10 @@ public class GaugeManager : Singleton<GaugeManager>
 
     private void OnTimelineTick(int currentTick)
     {
-        ClimateGauge.OnTimelineTick(currentTick);
-        SocietalGauge.OnTimelineTick(currentTick);
-        TrustGauge.OnTimelineTick(currentTick);
+        float humanImpact = Human.Instance.GetHumanImpactOnGauges();
+        ClimateGauge.OnTimelineTick(currentTick, humanImpact);
+        SocietalGauge.OnTimelineTick(currentTick, humanImpact);
+        TrustGauge.OnTimelineTick(currentTick, humanImpact);
     }
 
     public void ApplyModifierBank(ModifierBank modifierBank)

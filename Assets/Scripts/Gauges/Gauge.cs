@@ -17,12 +17,12 @@ public class Gauge
         }
         value = gaugeParameter.StartValue;
         modifierManager = new ModifierManager();
-        modifierManager.Init(gaugeParameter.BaseModifier);
     }
 
-    public void OnTimelineTick(int currentTick)
+    public void OnTimelineTick(int currentTick, float humanImpact)
     {
-        value += modifierManager.ComputeModifierValue();
+        value += modifierManager.ComputeModifierValue() + humanImpact;
+        if (value <= 0) value = 0;
         if (value < gaugeParameter.Min) value = gaugeParameter.Min;
         if (value > gaugeParameter.Max) value = gaugeParameter.Max;
         //Debug.Log("Gauge value: " + value);
