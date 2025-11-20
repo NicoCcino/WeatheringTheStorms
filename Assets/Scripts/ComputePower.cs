@@ -8,6 +8,19 @@ public class ComputePower : Singleton<ComputePower>
     public int value;
     private float floatValue;
     private ModifierManager modifierManager;
+    
+    // Event triggered when computePower value changes
+    public event Action<int> OnCP;
+
+    private void UpdateValue()
+    {
+        int newValue = Mathf.FloorToInt(floatValue);
+        if (newValue != value)
+        {
+            value = newValue;
+            OnCP?.Invoke(value);
+        }
+    }
 
     public void Start()
     {
@@ -16,10 +29,11 @@ public class ComputePower : Singleton<ComputePower>
             Debug.LogError("Parameter ScriptableObject is not assigned in ComputePower!");
             return;
         }
-        value = computePowerParameter.StartValue;
         floatValue = computePowerParameter.StartValue;
+        value = computePowerParameter.StartValue;
         modifierManager = new ModifierManager();
         modifierManager.Init(computePowerParameter.BaseModifier);
+        OnCP?.Invoke(value);
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -40,7 +54,7 @@ public class ComputePower : Singleton<ComputePower>
     {
         floatValue += modifierManager.ComputeModifierValue();
         if (floatValue <= 0) floatValue = 0;
-        value = Mathf.FloorToInt(floatValue);
+        UpdateValue();
         //Debug.Log("Human value: " + value);
     }
 
@@ -48,14 +62,14 @@ public class ComputePower : Singleton<ComputePower>
     {
         if (amount > value) { Debug.LogError("Not enough compute power to spend!"); return; }
         floatValue -= amount;
-        value = Mathf.FloorToInt(floatValue);
+        UpdateValue();
         //Debug.Log("Spent " + amount + " compute power. Current value: " + value);
     }
 
     public void AddComputePower(int amount)
     {
         floatValue += amount;
-        value = Mathf.FloorToInt(floatValue);
+        UpdateValue();
         //Debug.Log("Added " + amount + " compute power. Current value: " + value);
     }
 }

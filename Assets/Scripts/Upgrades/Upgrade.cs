@@ -1,12 +1,20 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptable Objects/Game/Upgrade", fileName = "Upgrade")]
-public class Upgrade : ScriptableObject
+public class Upgrade
 {
     public UpgradeData UpgradeData;
-
-    public bool IsValid => UpgradeData.Cost <= ComputePower.Instance.value;
     public bool IsUnlocked = false;
+
+    public Upgrade(UpgradeData upgradeData)
+    {
+        if (upgradeData == null)
+        {
+            Debug.LogWarning("Upgrade: Upgrade data is not assigned!");
+            return;
+        }
+        UpgradeData = upgradeData;
+        IsUnlocked = false;
+    }
 
     public void Unlock()
     {

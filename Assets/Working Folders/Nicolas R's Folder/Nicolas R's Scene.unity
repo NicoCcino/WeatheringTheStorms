@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIUpgradeParameter
   button: {fileID: 901676505}
-  upgrade: {fileID: 11400000, guid: 479011b85801147e2983fd36091bd321, type: 2}
+  upgradeData: {fileID: 11400000, guid: 479011b85801147e2983fd36091bd321, type: 2}
 --- !u!1 &1122010312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIUpgradeParameter
   button: {fileID: 1277158410}
-  upgrade: {fileID: 11400000, guid: 7636bbe07e8f5495a9c83c144c91cc3b, type: 2}
+  upgradeData: {fileID: 11400000, guid: 622e0f7c8257b49589cf0bcc8ac000c7, type: 2}
 --- !u!1 &1761943013
 GameObject:
   m_ObjectHideFlags: 0
