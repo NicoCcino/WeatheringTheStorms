@@ -13,18 +13,16 @@ MonoBehaviour:
   m_Name: EventManagerParameter
   m_EditorClassIdentifier: Assembly-CSharp::EventManagerParameter
   AllEvents:
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
+  - {fileID: 11400000, guid: 889748da95bda4950a52c1de1e845354, type: 2}
+  - {fileID: 11400000, guid: aca8d23ee61c64cdc883a4ca4acbaa27, type: 2}
+  - {fileID: 11400000, guid: 4751188a634814ef9bfd79782046f99f, type: 2}
+  - {fileID: 11400000, guid: c55f73bda313b4f04aab4a4f21cb3aa2, type: 2}
+  - {fileID: 11400000, guid: c666cc49611e8455ea719981e34c306b, type: 2}
+  - {fileID: 11400000, guid: 7523bd97929864ff791f5e97ba65dac1, type: 2}
+  - {fileID: 11400000, guid: 1bec4579f0dc74c22a629b20d7889e85, type: 2}
+  - {fileID: 11400000, guid: b9c14a2b28caf4acb8f5eb1b9e743945, type: 2}
+  - {fileID: 11400000, guid: 46143878b631f4880af0ce932bdfe743, type: 2}
+  - {fileID: 11400000, guid: f2dec5199580d42878c576a1e34e584d, type: 2}
   - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
