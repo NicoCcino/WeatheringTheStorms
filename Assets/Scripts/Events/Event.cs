@@ -4,6 +4,4 @@ using UnityEngine;
 public class Event : ScriptableObject
 {
     public EventData EventData;
-
-    public bool IsValid => EventData.DateCondition.IsFulfilled();
 }

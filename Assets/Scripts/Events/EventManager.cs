@@ -12,7 +12,7 @@ public class EventManager : Singleton<EventManager>
     private List<Event> AvailableEvents { get; set; } = new List<Event>();
     public Action<Event> OnEventTriggered;
     private int noEventTickCounter = 0;
-    
+
     private void Start()
     {
         if (EventManagerParameter != null)
@@ -52,12 +52,7 @@ public class EventManager : Singleton<EventManager>
     private Event PickRandomValidEvent()
     {
         // Create a list of valid event we will filter
-        Event[] validEvents = AvailableEvents.Where(e => e.IsValid).ToArray();
-        
-
-        // We select a random category and filter the list of valid events to only include events of this category
-        EventData.EventCategory category = (EventData.EventCategory)UnityEngine.Random.Range(0, 3);
-        validEvents = validEvents.Where(e => e.EventData.GaugeCondition.Category == category).ToArray();
+        Event[] validEvents = AvailableEvents.ToArray();
 
         // We filter the remaining events to match the curent date condition
         validEvents = validEvents.Where(e => e.EventData.DateCondition.IsFulfilled()).ToArray();
@@ -74,7 +69,7 @@ public class EventManager : Singleton<EventManager>
         int random = UnityEngine.Random.Range(0, validEvents.Length);
         return validEvents[random];
     }
-    
+
     private bool ShouldAnyEventOccur()
     {
         float randomValue = UnityEngine.Random.Range(0f, 1f);
