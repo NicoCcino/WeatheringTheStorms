@@ -9,5 +9,7 @@ public class Event : ScriptableObject
     public void Solve(Choice choice)
     {
         OnSolved?.Invoke(choice);
+
+        GaugeManager.Instance.ApplyModifierBank(choice.ModifierBank);
     }
 }

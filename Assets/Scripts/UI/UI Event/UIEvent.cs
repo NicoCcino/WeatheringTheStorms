@@ -16,6 +16,7 @@ public class UIEvent : MonoBehaviour
     public Event DisplayedEvent = null;
     public void DisplayEvent(Event ev)
     {
+        canvasGroupCustom.Fade(true);
         textDescription.text = ev.EventData.Description;
         textHeader.text = ev.EventData.Label;
         uiChoicesManager.SpawnChoices(ev.EventData.Choices, this);
