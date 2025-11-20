@@ -12,7 +12,7 @@ public class Timeline : Singleton<Timeline>
 
     private float tickDuration; // Game date equivalence of a tick in months
 
-    private DateTime currentDate; // Current date of the timeline
+    public DateTime currentDate; // Current date of the timeline
 
     private float timeSinceLastTick = 0f;
     private float tickInterval => tickFreq > 0f ? 1f / tickFreq : float.MaxValue; // Time between ticks in seconds

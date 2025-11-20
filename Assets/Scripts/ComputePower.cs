@@ -47,6 +47,15 @@ public class ComputePower : Singleton<ComputePower>
     public void SpendComputePower(int amount)
     {
         if (amount > value) { Debug.LogError("Not enough compute power to spend!"); return; }
-        value -= amount;
+        floatValue -= amount;
+        value = Mathf.FloorToInt(floatValue);
+        //Debug.Log("Spent " + amount + " compute power. Current value: " + value);
+    }
+
+    public void AddComputePower(int amount)
+    {
+        floatValue += amount;
+        value = Mathf.FloorToInt(floatValue);
+        //Debug.Log("Added " + amount + " compute power. Current value: " + value);
     }
 }

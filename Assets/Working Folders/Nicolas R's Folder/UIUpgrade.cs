@@ -42,7 +42,7 @@ public class UIUpgradeParameter : MonoBehaviour
             return;
         }
         
-        Debug.Log("UIUpgrade: OnClick: " + upgrade.UpgradeData.Label);
+        //Debug.Log("UIUpgrade: OnClick: " + upgrade.UpgradeData.Label);
         if (upgrade.IsValid == false)
         {
             Debug.LogWarning("UIUpgrade: Upgrade is not valid!");
