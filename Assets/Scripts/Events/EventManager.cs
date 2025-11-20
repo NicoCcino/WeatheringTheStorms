@@ -12,14 +12,25 @@ public class EventManager : Singleton<EventManager>
     private List<Event> AvailableEvents { get; set; } = new List<Event>();
     public Action<Event> OnEventTriggered;
     private int noEventTickCounter = 0;
-    private void OnEnable()
+    
+    private void Start()
     {
-        AvailableEvents = new List<Event>(EventManagerParameter.AllEvents);
-        Timeline.Instance.OnTick += OnTickCallback;
+        if (EventManagerParameter != null)
+        {
+            AvailableEvents = new List<Event>(EventManagerParameter.AllEvents);
+        }
+        // Subscribe to the OnTick event from Timeline
+        if (Timeline.Instance != null)
+        {
+            Timeline.Instance.OnTick += OnTickCallback;
+        }
     }
     private void OnDisable()
     {
-        Timeline.Instance.OnTick -= OnTickCallback;
+        if (Timeline.Instance != null)
+        {
+            Timeline.Instance.OnTick -= OnTickCallback;
+        }
     }
     private void OnTickCallback(int currentTick)
     {
