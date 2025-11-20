@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class Gauge
 {
-    [SerializeField] private GaugeParameter gaugeParameter; // Reference to the Parameter ScriptableObject
+    [SerializeField] public GaugeParameter gaugeParameter; // Reference to the Parameter ScriptableObject
     public float value;
     private ModifierManager modifierManager;
 

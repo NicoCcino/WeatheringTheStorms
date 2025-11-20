@@ -34,6 +34,14 @@ public class GaugeManager : Singleton<GaugeManager>
         ClimateGauge.OnTimelineTick(currentTick, humanImpact);
         SocietalGauge.OnTimelineTick(currentTick, humanImpact);
         TrustGauge.OnTimelineTick(currentTick, humanImpact);
+
+        // Check if we win
+        if (ClimateGauge.value >= ClimateGauge.gaugeParameter.Max &&
+            SocietalGauge.value >= SocietalGauge.gaugeParameter.Max &&
+            TrustGauge.value >= TrustGauge.gaugeParameter.Max)
+        {
+            Debug.Log("All gauges have reached their maximum values!\nYou win motherfucker!");
+        }
     }
 
     public void ApplyModifierBank(ModifierBank modifierBank)
