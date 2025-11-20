@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Text;
 using UnityEngine;
@@ -89,9 +90,9 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine("# Initial Parameters:");
             logWriter.WriteLine($"# TickDuration (months): {timeLineParameter.TickDuration}");
             logWriter.WriteLine($"# StartDate: {timeLineParameter.StartDate:yyyy-MM-dd}");
-            logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue}");
-            logWriter.WriteLine($"# Human_BaseModifier_AddedValue: {humanParameter.BaseModifier.AddedValue}");
-            logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {humanParameter.GaugeImpactPerHuman}");
+            logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_BaseModifier_AddedValue: {humanParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {humanParameter.GaugeImpactPerHuman.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine("#");
         }
         catch (Exception e)
@@ -129,7 +130,8 @@ public class LogFileManager : Singleton<LogFileManager>
             int computePower = ComputePower.Instance.value;
 
             // Write tick data (without event data for normal ticks)
-            logWriter.WriteLine($"{currentTick},{date},{climateValue:F4},{societalValue:F4},{trustValue:F4},{humanCount},{computePower},,");
+            // Use InvariantCulture to ensure decimal separator is always a period (not comma)
+            logWriter.WriteLine($"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,");
 
             lastLoggedTick = currentTick;
         }
@@ -169,7 +171,8 @@ public class LogFileManager : Singleton<LogFileManager>
             string escapedDescription = EscapeCSVField(eventDescription);
 
             // Write event data
-            logWriter.WriteLine($"{currentTick},{date},{climateValue:F4},{societalValue:F4},{trustValue:F4},{humanCount},{computePower},{eventType},{escapedDescription}");
+            // Use InvariantCulture to ensure decimal separator is always a period (not comma)
+            logWriter.WriteLine($"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},{eventType},{escapedDescription}");
 
             Debug.Log($"Logged user action: [{eventType}] {eventDescription}");
         }
