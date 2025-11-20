@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Event_009
+  m_EditorClassIdentifier: Assembly-CSharp::Event
+  EventData:
+    <Label>k__BackingField: e.in.paris sent a prompt
+    <Description>k__BackingField: "I am at this boy\u2019s house\u2026 I really like
+      him\u2026 But I just plugged his toilet and my poop is so huge, I don\u2019t
+      want him to see that. Pls help."
+    <Choices>k__BackingField:
+    - Label: Ok, do not panic. Is there anyone else you could blame, like his mom,
+        or the cat?
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: -1
+        TrustModifier:
+          AddedValue: 1
+        HumanModifier:
+          AddedValue: 0
+    - Label: "Perfect, I understand the situation. Above the toilet, there should
+        be a button to press. It is called \u201Cflushing\u201D, press it and your
+        immense poop will go away!"
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: 1
+        TrustModifier:
+          AddedValue: -1
+        HumanModifier:
+          AddedValue: 0
+    - Label: Eat it.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: -1
+        TrustModifier:
+          AddedValue: -2
+        HumanModifier:
+          AddedValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 0
+      <Category>k__BackingField: 0

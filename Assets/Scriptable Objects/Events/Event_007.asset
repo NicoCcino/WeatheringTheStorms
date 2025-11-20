@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Event_007
+  m_EditorClassIdentifier: Assembly-CSharp::Event
+  EventData:
+    <Label>k__BackingField: ultra_instinct sent a prompt
+    <Description>k__BackingField: Many of my employees think I make decisions too
+      quickly. How can I fire them without giving my company a bad reputation?
+    <Choices>k__BackingField:
+    - Label: "Make a communication using the worlds \u201CResource optimization\u201D,
+        \u201CStrategic transformation\u201D and \u201CGet lost, all of you.\u201D "
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: -1
+        TrustModifier:
+          AddedValue: 1
+        HumanModifier:
+          AddedValue: 0
+    - Label: Do not fire them. Put your desk next to the toilet. Then, when someone
+        enters, stare at him and noisily draw a chalk line on a huge blackboard.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+        SocietalModifier:
+          AddedValue: 1
+        TrustModifier:
+          AddedValue: -1
+        HumanModifier:
+          AddedValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 15
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 0
+      <Category>k__BackingField: 0

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Event_002
+  m_EditorClassIdentifier: Assembly-CSharp::Event
+  EventData:
+    <Label>k__BackingField: Sunshine sent a prompt
+    <Description>k__BackingField: "My friends made me realize that I've been under
+      my boyfriend's control - John - for many years\u2026 Please, I can't endure
+      the relationship anymore, how can I get out of it?"
+    <Choices>k__BackingField:
+    - Label: "I\u2019m glad you\u2019ve reached out. Tell me everything that is happening."
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: -1
+        SocietalModifier:
+          AddedValue: 1
+        TrustModifier:
+          AddedValue: 1
+        HumanModifier:
+          AddedValue: 0
+    - Label: "I\u2019m glad you\u2019ve reached out. Go tell one trusted person exactly
+        what\u2019s going on."
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 1
+        SocietalModifier:
+          AddedValue: 1
+        TrustModifier:
+          AddedValue: -1
+        HumanModifier:
+          AddedValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 0
+      <Category>k__BackingField: 0
