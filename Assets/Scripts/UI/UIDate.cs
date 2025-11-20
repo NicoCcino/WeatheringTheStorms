@@ -7,6 +7,6 @@ public class UIDate : MonoBehaviour
 
     private void Update()
     {
-        textDate.text = Timeline.Instance.currentDate.ToString("yyyy/MM/dd");
+        textDate.text = Timeline.Instance.currentDate.ToString("yyyy/MM");
     }
 }
