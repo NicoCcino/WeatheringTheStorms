@@ -18,14 +18,9 @@ public class UITechPanel : MonoBehaviour
         fadeComponent.Fade(true);
     }
 
-    public void FadeSelf()
-    {
-        fadeComponent = this.GetComponent<CanvasGroupCustom>();
-        fadeComponent.Fade();
-    }
-
     void Start()
     {
+
         FadeOutSelf();
     }
 
