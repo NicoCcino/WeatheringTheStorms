@@ -35,9 +35,9 @@ public class GaugeManager : Singleton<GaugeManager>
 
     private void OnHumanCountChanged(uint currentTick, float humanImpact)
     {
-        ClimateGauge.OnTimelineTick(humanImpact);
-        SocietalGauge.OnTimelineTick(humanImpact);
-        TrustGauge.OnTimelineTick(humanImpact);
+        ClimateGauge.OnHumanCountChanged(humanImpact);
+        SocietalGauge.OnHumanCountChanged(humanImpact);
+        TrustGauge.OnHumanCountChanged(humanImpact);
 
         // Check if we win
         if (ClimateGauge.value >= ClimateGauge.gaugeParameter.Max &&

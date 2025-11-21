@@ -8,6 +8,8 @@ public class Gauge
     public float value;
     private ModifierManager modifierManager;
 
+    public float iterationValue;
+
     public void Init()
     {
         if (gaugeParameter == null)
@@ -19,9 +21,10 @@ public class Gauge
         modifierManager = new ModifierManager();
     }
 
-    public void OnTimelineTick(float humanImpact)
+    public void OnHumanCountChanged(float humanImpact)
     {
-        value += modifierManager.ComputeModifierValue() + humanImpact;
+        iterationValue = humanImpact + modifierManager.ComputeModifierValue();
+        value += iterationValue;
         if (value <= 0) value = 0;
         if (value < gaugeParameter.Min) value = gaugeParameter.Min;
         if (value > gaugeParameter.Max) value = gaugeParameter.Max;
