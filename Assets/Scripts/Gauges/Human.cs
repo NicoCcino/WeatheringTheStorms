@@ -24,7 +24,6 @@ public class Human : Singleton<Human>
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
         floatValue = humanParameter.StartValue;
         modifierManager = new ModifierManager();
-        modifierManager.Init(humanParameter.BaseModifier);
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -43,7 +42,8 @@ public class Human : Singleton<Human>
 
     public void OnTimelineTick(uint currentTick)
     {
-        floatValue += modifierManager.ComputeModifierValue();
+        // Population growth is calculated monthly
+        floatValue += floatValue * (humanParameter.PopulationGrowthPerYear/12f);
         if (floatValue <= 0) floatValue = 0;
         HumanCount = (long)Mathf.Floor(floatValue);
         if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");

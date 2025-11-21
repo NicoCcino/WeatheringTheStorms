@@ -24,7 +24,7 @@ public class LogFileManager : Singleton<LogFileManager>
         WriteInitialParameters();
         WriteCSVHeader();
 
-        // Subscribe to Timeline's OnTick event
+        // Subscribe to gauge change events
         if (Timeline.Instance != null)
         {
             GaugeManager.Instance.OnGaugeChanged += OnGaugeChanged;
@@ -37,13 +37,12 @@ public class LogFileManager : Singleton<LogFileManager>
 
     private void OnDisable()
     {
-        // Unsubscribe from OnTick event
+        // Unsubscribe from event
         if (Timeline.Instance != null)
         {
             GaugeManager.Instance.OnGaugeChanged -= OnGaugeChanged;
         }
 
-        // Close the log file
         CloseLogFile();
     }
 
@@ -51,21 +50,19 @@ public class LogFileManager : Singleton<LogFileManager>
     {
         try
         {
-            // Create log folder if it doesn't exist
             string logFolderPath = Path.Combine(Application.dataPath, "..", LOG_FOLDER);
             if (!Directory.Exists(logFolderPath))
             {
                 Directory.CreateDirectory(logFolderPath);
             }
 
-            // Create unique filename based on current date and time
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-            string fileName = $"GameLog_{timestamp}.csv";
-            logFilePath = Path.Combine(logFolderPath, fileName);
+            logFilePath = Path.Combine(logFolderPath, $"GameLog_{timestamp}.csv");
 
-            // Create the file and keep it open for writing
-            logWriter = new StreamWriter(logFilePath, false, Encoding.UTF8);
-            logWriter.AutoFlush = true; // Ensure data is written immediately
+            logWriter = new StreamWriter(logFilePath, false, Encoding.UTF8)
+            {
+                AutoFlush = true
+            };
 
             Debug.Log($"Log file created at: {logFilePath}");
         }
@@ -93,7 +90,7 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine($"# TickDuration (months): {timeLineParameter.TickDuration}");
             logWriter.WriteLine($"# StartDate: {timeLineParameter.StartDate:yyyy-MM-dd}");
             logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_BaseModifier_AddedValue: {humanParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_PopulationGrowthPerYear: {humanParameter.PopulationGrowthPerYear.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {humanParameter.GaugeImpactPerHuman.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine("#");
         }
@@ -129,22 +126,26 @@ public class LogFileManager : Singleton<LogFileManager>
                 logWriter.WriteLine(cachedTickLine);
             }
 
-            // Get current game state and cache it
-            string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
-            float climateValue = GaugeManager.Instance.ClimateGauge.value;
-            float societalValue = GaugeManager.Instance.SocietalGauge.value;
-            float trustValue = GaugeManager.Instance.TrustGauge.value;
-            long humanCount = Human.Instance.HumanCount;
-            int computePower = ComputePower.Instance.value;
-
             // Cache the current tick data (without event data initially)
-            // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-            cachedTickLine = $"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+            cachedTickLine = BuildTickLine(currentTick);
         }
         catch (Exception e)
         {
             Debug.LogError($"Failed to log tick data: {e.Message}");
         }
+    }
+
+    private string BuildTickLine(uint tick)
+    {
+        string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
+        float climateValue = GaugeManager.Instance.ClimateGauge.value;
+        float societalValue = GaugeManager.Instance.SocietalGauge.value;
+        float trustValue = GaugeManager.Instance.TrustGauge.value;
+        long humanCount = Human.Instance.HumanCount;
+        int computePower = ComputePower.Instance.value;
+
+        // Use InvariantCulture to ensure decimal separator is always a period (not comma)
+        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
     }
 
     /// <summary>
@@ -167,26 +168,16 @@ public class LogFileManager : Singleton<LogFileManager>
             // If no cached line exists yet, create one for the current tick
             if (cachedTickLine == null)
             {
-                uint currentTick = Timeline.Instance.CurrentTick;
-                string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
-                float climateValue = GaugeManager.Instance.ClimateGauge.value;
-                float societalValue = GaugeManager.Instance.SocietalGauge.value;
-                float trustValue = GaugeManager.Instance.TrustGauge.value;
-                long humanCount = Human.Instance.HumanCount;
-                int computePower = ComputePower.Instance.value;
-
-                cachedTickLine = $"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+                cachedTickLine = BuildTickLine(Timeline.Instance.CurrentTick);
             }
 
             // Escape description if it contains commas or quotes
             string escapedDescription = EscapeCSVField(eventDescription);
 
             // Update the cached line by replacing the empty event fields with actual data
-            // Remove the last two commas (empty event fields) and add the event data
             if (cachedTickLine.EndsWith(",,"))
             {
-                cachedTickLine = cachedTickLine.Substring(0, cachedTickLine.Length - 2);
-                cachedTickLine += $",{eventType},{escapedDescription}";
+                cachedTickLine = cachedTickLine.Substring(0, cachedTickLine.Length - 2) + $",{eventType},{escapedDescription}";
             }
 
             Debug.Log($"Logged user action: [{eventType}] {eventDescription}");
