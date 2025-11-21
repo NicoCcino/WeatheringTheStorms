@@ -50,7 +50,7 @@ public class ComputePower : Singleton<ComputePower>
         }
     }
 
-    public void OnTimelineTick(int currentTick)
+    public void OnTimelineTick(uint currentTick)
     {
         floatValue += modifierManager.ComputeModifierValue();
         if (floatValue <= 0) floatValue = 0;

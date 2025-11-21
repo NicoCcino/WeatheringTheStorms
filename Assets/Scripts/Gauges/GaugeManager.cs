@@ -7,6 +7,11 @@ public class GaugeManager : Singleton<GaugeManager>
     [SerializeField] public Gauge SocietalGauge;
     [SerializeField] public Gauge TrustGauge;
 
+    /// <summary>
+    /// Event triggered when the human count changes
+    /// </summary>
+    public Action<uint> OnGaugeChanged;
+
     private void Start()
     {
         ClimateGauge.Init();
@@ -16,7 +21,7 @@ public class GaugeManager : Singleton<GaugeManager>
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
         {
-            Timeline.Instance.OnTick += OnTimelineTick;
+            Human.Instance.OnHumanCountChanged += OnHumanCountChanged;
         }
     }
 
@@ -24,16 +29,15 @@ public class GaugeManager : Singleton<GaugeManager>
     {
         if (Timeline.Instance != null)
         {
-            Timeline.Instance.OnTick -= OnTimelineTick;
+            Human.Instance.OnHumanCountChanged -= OnHumanCountChanged;
         }
     }
 
-    private void OnTimelineTick(int currentTick)
+    private void OnHumanCountChanged(uint currentTick, float humanImpact)
     {
-        float humanImpact = Human.Instance.GetHumanImpactOnGauges();
-        ClimateGauge.OnTimelineTick(currentTick, humanImpact);
-        SocietalGauge.OnTimelineTick(currentTick, humanImpact);
-        TrustGauge.OnTimelineTick(currentTick, humanImpact);
+        ClimateGauge.OnTimelineTick(humanImpact);
+        SocietalGauge.OnTimelineTick(humanImpact);
+        TrustGauge.OnTimelineTick(humanImpact);
 
         // Check if we win
         if (ClimateGauge.value >= ClimateGauge.gaugeParameter.Max &&
@@ -42,6 +46,7 @@ public class GaugeManager : Singleton<GaugeManager>
         {
             Debug.Log("All gauges have reached their maximum values!\nYou win motherfucker!");
         }
+        OnGaugeChanged?.Invoke(currentTick);
     }
 
     public void ApplyModifierBank(ModifierBank modifierBank)

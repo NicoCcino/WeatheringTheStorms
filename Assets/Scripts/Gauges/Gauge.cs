@@ -19,7 +19,7 @@ public class Gauge
         modifierManager = new ModifierManager();
     }
 
-    public void OnTimelineTick(int currentTick, float humanImpact)
+    public void OnTimelineTick(float humanImpact)
     {
         value += modifierManager.ComputeModifierValue() + humanImpact;
         if (value <= 0) value = 0;

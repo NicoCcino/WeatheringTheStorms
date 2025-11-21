@@ -9,6 +9,11 @@ public class Human : Singleton<Human>
     private float floatValue;
     private ModifierManager modifierManager;
 
+    /// <summary>
+    /// Event triggered when the human count changes
+    /// </summary>
+    public Action<uint, float> OnHumanCountChanged;
+
     public void Start()
     {
         if (humanParameter == null)
@@ -36,16 +41,18 @@ public class Human : Singleton<Human>
         }
     }
 
-    public void OnTimelineTick(int currentTick)
+    public void OnTimelineTick(uint currentTick)
     {
         floatValue += modifierManager.ComputeModifierValue();
         if (floatValue <= 0) floatValue = 0;
         HumanCount = (long)Mathf.Floor(floatValue);
         if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
+        float humanImpact = GetHumanImpactOnGauges();
         //Debug.Log("Human value: " + value);
+        OnHumanCountChanged?.Invoke(currentTick, humanImpact);
     }
 
-    public float GetHumanImpactOnGauges()
+    private float GetHumanImpactOnGauges()
     {
         // TODO : I made it linear for now, but we could make it exponential later
         return HumanCount * humanParameter.GaugeImpactPerHuman;

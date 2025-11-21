@@ -9,7 +9,9 @@ public class LogFileManager : Singleton<LogFileManager>
     private const string LOG_FOLDER = "GameLogs";
     private string logFilePath;
     private StreamWriter logWriter;
-    private int lastLoggedTick = -1;
+    
+    // Cache for the current tick's data
+    private string cachedTickLine = null;
 
     protected override void Awake()
     {
@@ -25,7 +27,7 @@ public class LogFileManager : Singleton<LogFileManager>
         // Subscribe to Timeline's OnTick event
         if (Timeline.Instance != null)
         {
-            Timeline.Instance.OnTick += OnTimelineTick;
+            GaugeManager.Instance.OnGaugeChanged += OnGaugeChanged;
         }
         else
         {
@@ -38,7 +40,7 @@ public class LogFileManager : Singleton<LogFileManager>
         // Unsubscribe from OnTick event
         if (Timeline.Instance != null)
         {
-            Timeline.Instance.OnTick -= OnTimelineTick;
+            GaugeManager.Instance.OnGaugeChanged -= OnGaugeChanged;
         }
 
         // Close the log file
@@ -115,13 +117,19 @@ public class LogFileManager : Singleton<LogFileManager>
         }
     }
 
-    private void OnTimelineTick(int currentTick)
+    private void OnGaugeChanged(uint currentTick)
     {
         if (logWriter == null) return;
 
         try
         {
-            // Get current game state
+            // Write the previous tick's cached line (if it exists)
+            if (cachedTickLine != null)
+            {
+                logWriter.WriteLine(cachedTickLine);
+            }
+
+            // Get current game state and cache it
             string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
             float climateValue = GaugeManager.Instance.ClimateGauge.value;
             float societalValue = GaugeManager.Instance.SocietalGauge.value;
@@ -129,11 +137,9 @@ public class LogFileManager : Singleton<LogFileManager>
             long humanCount = Human.Instance.HumanCount;
             int computePower = ComputePower.Instance.value;
 
-            // Write tick data (without event data for normal ticks)
+            // Cache the current tick data (without event data initially)
             // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-            logWriter.WriteLine($"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,");
-
-            lastLoggedTick = currentTick;
+            cachedTickLine = $"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
         }
         catch (Exception e)
         {
@@ -158,21 +164,30 @@ public class LogFileManager : Singleton<LogFileManager>
 
         try
         {
-            // Get current game state
-            int currentTick = Timeline.Instance.CurrentTick;
-            string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
-            float climateValue = GaugeManager.Instance.ClimateGauge.value;
-            float societalValue = GaugeManager.Instance.SocietalGauge.value;
-            float trustValue = GaugeManager.Instance.TrustGauge.value;
-            long humanCount = Human.Instance.HumanCount;
-            int computePower = ComputePower.Instance.value;
+            // If no cached line exists yet, create one for the current tick
+            if (cachedTickLine == null)
+            {
+                uint currentTick = Timeline.Instance.CurrentTick;
+                string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
+                float climateValue = GaugeManager.Instance.ClimateGauge.value;
+                float societalValue = GaugeManager.Instance.SocietalGauge.value;
+                float trustValue = GaugeManager.Instance.TrustGauge.value;
+                long humanCount = Human.Instance.HumanCount;
+                int computePower = ComputePower.Instance.value;
+
+                cachedTickLine = $"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+            }
 
             // Escape description if it contains commas or quotes
             string escapedDescription = EscapeCSVField(eventDescription);
 
-            // Write event data
-            // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-            logWriter.WriteLine($"{currentTick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},{eventType},{escapedDescription}");
+            // Update the cached line by replacing the empty event fields with actual data
+            // Remove the last two commas (empty event fields) and add the event data
+            if (cachedTickLine.EndsWith(",,"))
+            {
+                cachedTickLine = cachedTickLine.Substring(0, cachedTickLine.Length - 2);
+                cachedTickLine += $",{eventType},{escapedDescription}";
+            }
 
             Debug.Log($"Logged user action: [{eventType}] {eventDescription}");
         }
@@ -201,6 +216,13 @@ public class LogFileManager : Singleton<LogFileManager>
         {
             try
             {
+                // Write any remaining cached line before closing
+                if (cachedTickLine != null)
+                {
+                    logWriter.WriteLine(cachedTickLine);
+                    cachedTickLine = null;
+                }
+
                 logWriter.WriteLine("#");
                 logWriter.WriteLine($"# Session Ended: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
                 logWriter.Close();

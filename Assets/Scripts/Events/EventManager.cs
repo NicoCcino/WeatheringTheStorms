@@ -32,7 +32,7 @@ public class EventManager : Singleton<EventManager>
             Timeline.Instance.OnTick -= OnTickCallback;
         }
     }
-    private void OnTickCallback(int currentTick)
+    private void OnTickCallback(uint currentTick)
     {
         //We roll the dices to see if we should trigger an event on this tick
         bool shouldAnEventOccur = ShouldAnyEventOccur();

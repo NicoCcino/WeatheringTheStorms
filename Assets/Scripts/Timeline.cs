@@ -6,7 +6,7 @@ public class Timeline : Singleton<Timeline>
     [Header("Timeline Management")]
     [SerializeField] private TimeLineParameter timeLineParameter; // Reference to the Parameter ScriptableObject
 
-    public int CurrentTick = 0; // Current tick of the timeline
+    public uint CurrentTick = 0; // Current tick of the timeline
 
     private float tickFreq; // Frequency of ticks in hertz
 
@@ -20,7 +20,7 @@ public class Timeline : Singleton<Timeline>
     /// <summary>
     /// Event triggered at the specified tick frequency
     /// </summary>
-    public Action<int> OnTick;
+    public Action<uint> OnTick;
 
     protected void Start()
     {
