@@ -22,6 +22,6 @@ public class TimeLineParameter : ScriptableObject
     //[Tooltip("Start date of the game")]
     //[SerializeField] public DateTime startDate = new DateTime(1956, 1, 1); // In 1956, two years after the death of Turing, John McCarthy, a professor at Dartmouth College, organized a summer workshop to clarify and develop ideas about thinking machines — choosing the name “artificial intelligence” for the project.
 
-    public DateTime StartDate => new DateTime(1956, 1, 1); // In 1956, two years after the death of Turing, John McCarthy, a professor at Dartmouth College, organized a summer workshop to clarify and develop ideas about thinking machines — choosing the name “artificial intelligence” for the project.
+    public DateTime StartDate => new DateTime(2022, 11, 1); // In 1956, two years after the death of Turing, John McCarthy, a professor at Dartmouth College, organized a summer workshop to clarify and develop ideas about thinking machines — choosing the name “artificial intelligence” for the project.
 }
 

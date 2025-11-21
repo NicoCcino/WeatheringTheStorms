@@ -6,13 +6,16 @@ public class Human : Singleton<Human>
 {
     [SerializeField] private HumanParameter humanParameter; // Reference to the Parameter ScriptableObject
     public long HumanCount;
-    private float floatValue;
-    private ModifierManager modifierManager;
 
+    private float floatHumanValue;
+    private ModifierManager modifierManager;
     /// <summary>
     /// Event triggered when the human count changes
     /// </summary>
     public Action<uint, float> OnHumanCountChanged;
+
+    [field: SerializeField] public float HumanImpact { get; private set; }
+    public long PopulationDelta;
 
     public void Start()
     {
@@ -22,7 +25,7 @@ public class Human : Singleton<Human>
             return;
         }
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
-        floatValue = humanParameter.StartValue;
+        floatHumanValue = humanParameter.StartValue;
         modifierManager = new ModifierManager();
 
         // Subscribe to the OnTick event from Timeline
@@ -43,24 +46,28 @@ public class Human : Singleton<Human>
     public void OnTimelineTick(uint currentTick)
     {
         // Population growth is calculated monthly
-        floatValue += floatValue * (humanParameter.PopulationGrowthPerYear / 12f);
-        if (floatValue <= 0) floatValue = 0;
-        HumanCount = (long)Mathf.Floor(floatValue);
+
+        float v = floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f) + modifierManager.ComputeModifierValue();
+        floatHumanValue += v;
+        PopulationDelta = (long)Mathf.Floor(v);
+
+        if (floatHumanValue <= 0) floatHumanValue = 0;
+        HumanCount = (long)Mathf.Floor(floatHumanValue);
         if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
-        float humanImpact = GetHumanImpactOnGauges();
+        HumanImpact = GetHumanImpactOnGauges();
         //Debug.Log("Human value: " + value);
-        OnHumanCountChanged?.Invoke(currentTick, humanImpact);
+        OnHumanCountChanged?.Invoke(currentTick, HumanImpact);
     }
 
-    private float GetHumanImpactOnGauges()
+    public float GetHumanImpactOnGauges()
     {
-
-        return HumanCount * humanParameter.PopulationGrowthPerYear;
+        float ratio = HumanCount / humanParameter.TuningValue;
+        return -(float)Math.Pow(ratio, humanParameter.HumanPopulationImpactPower) * humanParameter.HumanPopulationImpactScale;
     }
 
     public void AddModifier(Modifier modifier)
     {
         modifierManager.AddModifier(modifier);
-        floatValue += modifier.OneShotValue;
+        floatHumanValue += modifier.OneShotValue;
     }
 }
