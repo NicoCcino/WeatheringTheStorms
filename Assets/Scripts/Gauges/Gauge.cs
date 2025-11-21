@@ -6,7 +6,7 @@ public class Gauge
 {
     [SerializeField] public GaugeParameter gaugeParameter; // Reference to the Parameter ScriptableObject
     public float value;
-    private ModifierManager modifierManager;
+    public ModifierManager modifierManager;
 
     public float iterationValue;
 
@@ -36,4 +36,10 @@ public class Gauge
         modifierManager.AddModifier(modifier);
         value += modifier.OneShotValue;
     }
+
+    public float GetModifiersTotal()
+    {
+        return modifierManager.ComputeModifierValue();
+    }
+
 }
