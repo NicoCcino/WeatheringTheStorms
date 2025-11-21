@@ -12,21 +12,23 @@ public class UIGauge : MonoBehaviour
     }
     public void UpdateModifier(float value)
     {
+        string text = value.ToString("0.#");
         if (value > 0)
         {
+
             modifierText.color = Color.green;   // positif
-            modifierText.text = "+" + value;
+            modifierText.text = "+" + text;
         }
         else if (value < 0)
         {
             modifierText.color = Color.red;     // négatif 
-            modifierText.text = value.ToString();
+            modifierText.text = text;
         }
 
         else
         {
             modifierText.color = Color.white;   // neutre
-            modifierText.text = "+" + value;
+            modifierText.text = "+" + text;
         }
 
     }

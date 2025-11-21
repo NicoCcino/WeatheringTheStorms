@@ -13,6 +13,5 @@ public class UIGaugeManager : MonoBehaviour
 
                 uiGaugeClimate.UpdateModifier(GaugeManager.Instance.ClimateGauge.modifierManager.ComputeModifierValue());
                 uiGaugeSocietal.UpdateModifier(GaugeManager.Instance.SocietalGauge.modifierManager.ComputeModifierValue());
-
         }
 }
