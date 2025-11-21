@@ -31,5 +31,6 @@ public class Gauge
     public void AddModifier(Modifier modifier)
     {
         modifierManager.AddModifier(modifier);
+        value += modifier.OneShotValue;
     }
 }

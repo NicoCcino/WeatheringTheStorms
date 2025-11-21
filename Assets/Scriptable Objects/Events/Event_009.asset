@@ -23,34 +23,46 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: "Perfect, I understand the situation. Above the toilet, there should
         be a button to press. It is called \u201Cflushing\u201D, press it and your
         immense poop will go away!"
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: Eat it.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: -2
+          AddedValue: -0.02
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 100000

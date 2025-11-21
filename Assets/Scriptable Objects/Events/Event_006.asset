@@ -21,24 +21,32 @@ MonoBehaviour:
         Try screaming like a weightlifter, it helps.
       ModifierBank:
         ClimateModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: Yo, when she gets here, engulf all the oysters and Red Bull like a fisherman
         on crack. That should immediately take away her appetite bro.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 10000

@@ -20,24 +20,32 @@ MonoBehaviour:
     - Label: You can start building another one then?
       ModifierBank:
         ClimateModifier:
-          AddedValue: 2
+          AddedValue: 0.02
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: Say goodbye to your family and set sail for the middle of the Pacific.
         Check left and right to make sure no one is watching and swallow the screw.
       ModifierBank:
         ClimateModifier:
-          AddedValue: -2
+          AddedValue: -0.02
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 15
       <MaxTick>k__BackingField: 10000

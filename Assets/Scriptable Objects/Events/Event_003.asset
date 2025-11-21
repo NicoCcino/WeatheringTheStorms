@@ -22,33 +22,45 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
           AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: I beg you, earth needs you to settle in the countryside and become a
         farmer as LONG as humanly possible.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
+          OneShotValue: 0
         TrustModifier:
           AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: I cannot decide for you.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 10000

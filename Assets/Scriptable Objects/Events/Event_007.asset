@@ -22,23 +22,31 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: Do not fire them. Put your desk next to the toilet. Then, when someone
         enters, stare at him and noisily draw a chalk line on a huge blackboard.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 15
       <MaxTick>k__BackingField: 100000

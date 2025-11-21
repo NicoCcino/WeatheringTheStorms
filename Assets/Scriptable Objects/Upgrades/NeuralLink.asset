@@ -19,9 +19,13 @@ MonoBehaviour:
   <ModifierBank>k__BackingField:
     ClimateModifier:
       AddedValue: 0
+      OneShotValue: 0
     SocietalModifier:
-      AddedValue: 1
+      AddedValue: 0.1
+      OneShotValue: 0
     TrustModifier:
-      AddedValue: -1
+      AddedValue: -0.05
+      OneShotValue: 0
     HumanModifier:
       AddedValue: 0
+      OneShotValue: 0

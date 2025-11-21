@@ -22,22 +22,30 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     - Label: You can easily cheat by not telling your partner.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 1
+          AddedValue: 0.01
+          OneShotValue: 0
         TrustModifier:
-          AddedValue: -1
+          AddedValue: -0.01
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 10000

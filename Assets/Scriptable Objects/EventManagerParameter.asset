@@ -23,7 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b9c14a2b28caf4acb8f5eb1b9e743945, type: 2}
   - {fileID: 11400000, guid: 46143878b631f4880af0ce932bdfe743, type: 2}
   - {fileID: 11400000, guid: f2dec5199580d42878c576a1e34e584d, type: 2}
-  - {fileID: 11400000, guid: db5a3fa2201c9d541a32ac5211a14541, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:

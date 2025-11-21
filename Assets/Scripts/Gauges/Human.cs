@@ -61,5 +61,6 @@ public class Human : Singleton<Human>
     public void AddModifier(Modifier modifier)
     {
         modifierManager.AddModifier(modifier);
+        floatValue += modifier.OneShotValue;
     }
 }

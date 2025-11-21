@@ -4,4 +4,5 @@ using UnityEngine;
 public class Modifier
 {
     public float AddedValue;
+    public float OneShotValue;
 }
