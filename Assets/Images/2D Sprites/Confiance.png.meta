@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ffa18638cc692214ba9b8771d1f854ba
+guid: 4f407f70f73ae4543a885e31bc058207
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1336809692955082325
-    second: Background_2_0
+      213: -5657498957918259452
+    second: Confiance_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background_2_0
+      name: Confiance_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 640
-        height: 640
+        x: 38
+        y: 54
+        width: 658
+        height: 663
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55ef2e0455d4d8210800000000000000
-      internalID: 1336809692955082325
+      spriteID: 407b3282ca68c71b0800000000000000
+      internalID: -5657498957918259452
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background_2_0: 1336809692955082325
+      Confiance_0: -5657498957918259452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
