@@ -12,6 +12,12 @@ public class HumanParameter : ScriptableObject
     [Tooltip("population growth % per year")]
     [SerializeField] public float PopulationGrowthPerYear = 0.01f;
 
-    [Tooltip("Gauge impact per human")]
-    [SerializeField] public float GaugeImpactPerHuman = -2e-11f; // Calculated to make the gauge reach 0 in less than 5 minutes on Play speed (less than 25 game years)
+    [Tooltip("The higher the value, the steeper the exponetial curve is on human effect on gauges")]
+    public float HumanPopulationImpactPower;
+
+    [Tooltip("Factor of scale of the human population impact, the bigger the greater the impact")]
+    public float HumanPopulationImpactScale;
+
+    [Tooltip("If HumanCount > this value, the impact exponential starts to be > 1 , if HumanCount< this value, the impact exponential starts to be <1")]
+    public float TuningValue;
 }

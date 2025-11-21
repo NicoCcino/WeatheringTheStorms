@@ -9,7 +9,7 @@ public class LogFileManager : Singleton<LogFileManager>
     private const string LOG_FOLDER = "GameLogs";
     private string logFilePath;
     private StreamWriter logWriter;
-    
+
     // Cache for the current tick's data
     private string cachedTickLine = null;
 
@@ -91,7 +91,7 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine($"# StartDate: {timeLineParameter.StartDate:yyyy-MM-dd}");
             logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_PopulationGrowthPerYear: {humanParameter.PopulationGrowthPerYear.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {humanParameter.GaugeImpactPerHuman.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {Human.Instance.HumanCount.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine("#");
         }
         catch (Exception e)
