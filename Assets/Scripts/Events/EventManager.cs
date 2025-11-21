@@ -10,6 +10,7 @@ public class EventManager : Singleton<EventManager>
 {
     public EventManagerParameter EventManagerParameter;
     private List<Event> AvailableEvents { get; set; } = new List<Event>();
+    private HashSet<Event> TriggeredEvents { get; set; } = new HashSet<Event>();
     public Action<Event> OnEventTriggered;
     private int noEventTickCounter = 0;
     private Event CurrentEvent = null;
@@ -60,6 +61,9 @@ public class EventManager : Singleton<EventManager>
         // We filter the remaining events to match the current gauge conditions
         validEvents = validEvents.Where(e => e.EventData.GaugeCondition.IsFulfilled()).ToArray();
 
+        // We filter the remaining events to match the parent event condition
+        validEvents = validEvents.Where(e => IsParentEventTriggered(e)).ToArray();
+
         if (validEvents.Length == 0)
         {
             Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
@@ -69,6 +73,16 @@ public class EventManager : Singleton<EventManager>
 
         int random = UnityEngine.Random.Range(0, validEvents.Length);
         return validEvents[random];
+    }
+
+    private bool IsParentEventTriggered(Event eventToCheck)
+    {
+        // If no parent is set, the event is always valid
+        if (eventToCheck.EventData.ParentEvent == null)
+            return true;
+        
+        // Check if the parent event has been triggered
+        return TriggeredEvents.Contains(eventToCheck.EventData.ParentEvent);
     }
 
     private bool ShouldAnyEventOccur()
@@ -83,6 +97,8 @@ public class EventManager : Singleton<EventManager>
     {
         //We remove the selected event from the available events (so it cant occur twice in a game)
         AvailableEvents.Remove(ev);
+        //We add the event to the triggered events history
+        TriggeredEvents.Add(ev);
         noEventTickCounter = 0;
         Debug.Log($"Event {ev.EventData.Label} Triggered");
         OnEventTriggered?.Invoke(ev);
