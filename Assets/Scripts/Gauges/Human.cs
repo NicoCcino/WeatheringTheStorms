@@ -43,7 +43,7 @@ public class Human : Singleton<Human>
     public void OnTimelineTick(uint currentTick)
     {
         // Population growth is calculated monthly
-        floatValue += floatValue * (humanParameter.PopulationGrowthPerYear/12f);
+        floatValue += floatValue * (humanParameter.PopulationGrowthPerYear / 12f);
         if (floatValue <= 0) floatValue = 0;
         HumanCount = (long)Mathf.Floor(floatValue);
         if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
@@ -54,8 +54,8 @@ public class Human : Singleton<Human>
 
     private float GetHumanImpactOnGauges()
     {
-        // TODO : I made it linear for now, but we could make it exponential later
-        return HumanCount * humanParameter.GaugeImpactPerHuman;
+
+        return HumanCount * humanParameter.PopulationGrowthPerYear;
     }
 
     public void AddModifier(Modifier modifier)
