@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class UpgradeManager : Singleton<UpgradeManager>
@@ -5,12 +6,20 @@ public class UpgradeManager : Singleton<UpgradeManager>
     [Header("Upgrades List")]
     [SerializeField] public Upgrade[] AllUpgrades;
 
-    private void OnEnable()
+    private void Start()
     {
-        RefreshUpgrades();
+        ComputePower.Instance.OnCP += RefreshUpgrades;
+        Upgrade.OnAnyUpgradeBought += OnAnyUpgradeBoughtCallback;
     }
-    public void RefreshUpgrades()
+
+    private void OnAnyUpgradeBoughtCallback(Upgrade upgrade)
     {
+        RefreshUpgrades(0);
+    }
+
+    public void RefreshUpgrades(int _)
+    {
+        Debug.Log("refresh upgrades");
         foreach (var u in AllUpgrades)
         {
             u.TryUnlock();
@@ -26,5 +35,7 @@ public class UpgradeManager : Singleton<UpgradeManager>
     private void OnDisable()
     {
         ResetAllUpgrades();
+        ComputePower.Instance.OnCP -= RefreshUpgrades;
+        Upgrade.OnAnyUpgradeBought -= OnAnyUpgradeBoughtCallback;
     }
 }

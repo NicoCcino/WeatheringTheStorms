@@ -4,6 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Upgrade", menuName = "Scriptable Objects/Game/Upgrade")]
 public class Upgrade : ScriptableObject
 {
+    public static Action<Upgrade> OnAnyUpgradeBought;
+
+
     [Header("Datas & Balancing")]
     public UpgradeData UpgradeData;
 
@@ -31,10 +34,10 @@ public class Upgrade : ScriptableObject
 
     public bool TryUnlock()
     {
+        if (IsUnlocked) return true;
         RefreshIsUnlocked();
         return IsUnlocked;
     }
-
     public void Buy()
     {
         if (!IsUnlocked) return;
@@ -46,6 +49,9 @@ public class Upgrade : ScriptableObject
         ComputePower.Instance.SpendComputePower(UpgradeData.Cost);
 
         IsBought = true;
+
+        OnBought?.Invoke();
+        OnAnyUpgradeBought?.Invoke(this);
     }
     public void Sell()
     {
@@ -54,7 +60,7 @@ public class Upgrade : ScriptableObject
     }
     private void RefreshIsUnlocked()
     {
-        if (ParentUpgrades.Any(up => IsUnlocked) || ParentUpgrades.Length == 0)
+        if (ParentUpgrades.Any(up => up.IsBought) || ParentUpgrades.Length == 0)
         {
             IsUnlocked = true;
             OnUnlocked?.Invoke();
