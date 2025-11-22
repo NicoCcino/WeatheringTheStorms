@@ -9,6 +9,10 @@ public class EventData
     [field: Header("Modifiers")]
     [field: SerializeField] public ModifierBank ModifierBank { get; private set; }
 
+    [field: Header("Grid Position")]
+    [field: SerializeField] public int GridX { get; private set; }
+    [field: SerializeField] public int GridY { get; private set; }
+    
     [field: Header("Conditions")]
     [field: SerializeField] public DateCondition DateCondition { get; private set; }
     [field: SerializeField] public GaugeCondition GaugeCondition { get; private set; }
