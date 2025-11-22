@@ -90,8 +90,11 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine($"# TickDuration (months): {timeLineParameter.TickDuration}");
             logWriter.WriteLine($"# StartDate: {timeLineParameter.StartDate:yyyy-MM-dd}");
             logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_StartValue: {humanParameter.StartValue.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_PopulationGrowthPerYear: {humanParameter.PopulationGrowthPerYear.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_GaugeImpactPerHuman: {Human.Instance.HumanCount.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_PopulationImpactPower: {humanParameter.HumanPopulationImpactPower.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_PopulationImpactScale: {humanParameter.HumanPopulationImpactScale.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_TuningValue: {humanParameter.TuningValue.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine("#");
         }
         catch (Exception e)
@@ -106,7 +109,7 @@ public class LogFileManager : Singleton<LogFileManager>
 
         try
         {
-            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,HumanCount,ComputePower,PromptType,PromptDescription");
+            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,HumanImpact,PopulationDelta,HumanCount,ComputePower,EventType,EventDescription");
         }
         catch (Exception e)
         {
@@ -140,26 +143,28 @@ public class LogFileManager : Singleton<LogFileManager>
         string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
         float climateValue = GaugeManager.Instance.ClimateGauge.value;
         float societalValue = GaugeManager.Instance.SocietalGauge.value;
+        float humanImpact = Human.Instance.HumanImpact;
+        long populationDelta = Human.Instance.PopulationDelta;
         long humanCount = Human.Instance.HumanCount;
         int computePower = ComputePower.Instance.value;
 
         // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{humanImpact.ToString("F4", CultureInfo.InvariantCulture)},{populationDelta},{humanCount},{computePower},,";
     }
 
     /// <summary>
-    /// Logs a user action prompt at the current tick
+    /// Logs a user action or event at the current tick
     /// </summary>
-    /// <param name="eventType">Type of prompt: "Upgrade", "Prompt", or "Warning"</param>
-    /// <param name="eventDescription">Description of the prompt</param>
+    /// <param name="eventType">Type of event: "Warning", "Event", "Prompt", or "Upgrade"</param>
+    /// <param name="eventDescription">Description of the event</param>
     public void LogUserAction(string eventType, string eventDescription)
     {
         if (logWriter == null) return;
 
-        // Validate prompt type
-        if (eventType != "Upgrade" && eventType != "Prompt" && eventType != "Warning")
+        // Validate event type
+        if (eventType != "Warning" && eventType != "Event" && eventType != "Prompt" && eventType != "Upgrade")
         {
-            Debug.LogWarning($"Invalid prompt type: {eventType}. Expected: Upgrade, Prompt, or Warning");
+            Debug.LogWarning($"Invalid event type: {eventType}. Expected: Warning, Event, Prompt, or Upgrade");
         }
 
         try
@@ -173,7 +178,7 @@ public class LogFileManager : Singleton<LogFileManager>
             // Escape description if it contains commas or quotes
             string escapedDescription = EscapeCSVField(eventDescription);
 
-            // Update the cached line by replacing the empty prompt fields with actual data
+            // Update the cached line by replacing the empty event fields with actual data
             if (cachedTickLine.EndsWith(",,"))
             {
                 cachedTickLine = cachedTickLine.Substring(0, cachedTickLine.Length - 2) + $",{eventType},{escapedDescription}";

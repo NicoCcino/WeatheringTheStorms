@@ -176,12 +176,16 @@
             height: 400px;
         }
         
+        #chart1b {
+            height: 200px;
+        }
+        
         #chart2 {
             height: 350px;
         }
         
         #chart2b {
-            height: 200px;
+            height: 250px;
         }
         
         #chart2c {
@@ -267,9 +271,16 @@
                 </label>
             </div>
 
-            <div class="chart-container" id="chart1Container" style="display: none;">
-                <div class="chart-title">Human Population Over Time</div>
-                <div id="chart1" class="chart"></div>
+            <div class="chart-pair" id="chart1Pair" style="display: none;">
+                <div class="chart-container" id="chart1Container">
+                    <div class="chart-title">Human Population Over Time</div>
+                    <div id="chart1" class="chart"></div>
+                </div>
+                
+                <div class="chart-container" id="chart1bContainer">
+                    <div class="chart-title" style="font-size: 1.2em;">Population Delta (Growth per Tick)</div>
+                    <div id="chart1b" class="chart"></div>
+                </div>
             </div>
 
             <div class="chart-pair" id="chart2Pair" style="display: none;">
@@ -279,9 +290,9 @@
                 </div>
                 
                 <div class="chart-container" id="chart2bContainer">
-                    <div class="chart-title" style="font-size: 1.2em;">Trends (Rate of Change)</div>
+                    <div class="chart-title" style="font-size: 1.2em;">Trends & Human Impact</div>
                     <p style="text-align: center; color: #6c757d; font-size: 0.85em; margin-bottom: 10px;">
-                        Positive values = increasing, negative = decreasing
+                        Climate/Societal trends show rate of change (positive = increasing, negative = decreasing)
                     </p>
                     <div id="chart2b" class="chart"></div>
                 </div>
@@ -308,7 +319,7 @@
         function testCSVParser() {
             console.log('=== CSV Parser Self-Test ===');
             const testLine1 = '1,2,3,,';
-            const testLine2 = '2,1956-03-01,49.6732,49.6732,49.6732,8173599744,5,Upgrade,Drone reforestation';
+            const testLine2 = '2,1956-03-01,49.6732,49.6732,-0.0234,12345678,8173599744,5,Upgrade,Drone reforestation';
             const testLine3 = '1,2,3,"quoted,value",5';
             
             console.log('Test 1:', testLine1);
@@ -318,9 +329,9 @@
             console.log('Test 2:', testLine2);
             const result2 = parseCSVLine(testLine2);
             console.log('  Result:', result2);
-            console.log('  EventType (index 7):', result2[7], 'Length:', result2[7].length);
-            console.log('  EventDesc (index 8):', result2[8], 'Length:', result2[8].length);
-            console.log('  Expected: 9 fields with "Upgrade" and "Drone reforestation"');
+            console.log('  EventType (index 8):', result2[8], 'Length:', result2[8].length);
+            console.log('  EventDesc (index 9):', result2[9], 'Length:', result2[9].length);
+            console.log('  Expected: 10 fields with "Upgrade" and "Drone reforestation"');
             
             console.log('Test 3:', testLine3);
             console.log('  Result:', parseCSVLine(testLine3));
@@ -420,13 +431,13 @@
                 if (values.length === 0) continue;
 
                 // Debug: show first few data rows and rows with events
-                const hasEventMarker = line.includes('Upgrade') || line.includes('Event') || line.includes('Warning');
+                const hasEventMarker = line.includes('Warning') || line.includes('Event') || line.includes('Prompt') || line.includes('Upgrade');
                 if (dataRowCount < 5 || hasEventMarker) {
                     console.log(`Data row ${dataRowCount} (line ${i}):`, JSON.stringify(line));
                     console.log(`  Parsed values (${values.length}):`, values);
-                    if (values.length > 7) {
-                        console.log(`  EventType: "${values[7]}" (length=${values[7].length}, charCodes=${[...values[7]].map(c => c.charCodeAt(0))})`);
-                        console.log(`  EventDesc: "${values[8]}" (length=${values[8].length})`);
+                    if (values.length > 8) {
+                        console.log(`  EventType: "${values[8]}" (length=${values[8].length}, charCodes=${[...values[8]].map(c => c.charCodeAt(0))})`);
+                        console.log(`  EventDesc: "${values[9]}" (length=${values[9].length})`);
                     }
                 }
 
@@ -521,7 +532,7 @@
             if (!currentData || currentData.length === 0) return;
 
             document.getElementById('controlsSection').style.display = 'block';
-            document.getElementById('chart1Container').style.display = 'block';
+            document.getElementById('chart1Pair').style.display = 'block';
             document.getElementById('chart2Pair').style.display = 'block';
             document.getElementById('chart3Container').style.display = 'block';
 
@@ -551,15 +562,44 @@
 
             const layout1 = {
                 xaxis: { 
-                    title: xAxisTitle,
-                    range: xAxisRange
+                    title: '',
+                    range: xAxisRange,
+                    showticklabels: false
                 },
                 yaxis: { title: 'Population' },
                 hovermode: 'x unified',
-                margin: { t: 20, r: 20, b: 50, l: 80 }
+                margin: { t: 20, r: 20, b: 5, l: 80 }
             };
 
             Plotly.newPlot('chart1', [humanTrace], layout1, { responsive: true });
+
+            // Chart 1b: Population Delta
+            const populationDeltaTrace = {
+                x: xAxis,
+                y: currentData.map(row => parseFloat(row.PopulationDelta) || 0),
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Population Delta',
+                line: { color: '#667eea', width: 2 }
+            };
+
+            const layout1b = {
+                xaxis: { 
+                    title: xAxisTitle,
+                    range: xAxisRange
+                },
+                yaxis: { 
+                    title: 'Population Growth',
+                    zeroline: true,
+                    zerolinecolor: '#999',
+                    zerolinewidth: 2
+                },
+                hovermode: 'x unified',
+                margin: { t: 5, r: 20, b: 50, l: 80 },
+                showlegend: false
+            };
+
+            Plotly.newPlot('chart1b', [populationDeltaTrace], layout1b, { responsive: true });
 
             // Chart 2: Game Metrics
             // Debug: Show first 10 rows of raw data
@@ -588,9 +628,11 @@
             // Calculate raw derivatives
             const climateDerivative = calculateDerivative(climateValues);
             const societalDerivative = calculateDerivative(societalValues);
+            const humanImpactValues = currentData.map(row => parseFloat(row.HumanImpact) || 0);
             
             console.log('Climate derivative sample:', climateDerivative.slice(0, 10));
             console.log('Societal derivative sample:', societalDerivative.slice(0, 10));
+            console.log('Human impact sample:', humanImpactValues.slice(0, 10));
             
             // Chart 2: Main gauge values only
             const traces2 = [
@@ -629,6 +671,14 @@
                     mode: 'lines',
                     name: 'Societal Trend',
                     line: { color: '#007bff', width: 2, dash: 'dot' }
+                },
+                {
+                    x: xAxis,
+                    y: humanImpactValues,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Human Impact',
+                    line: { color: '#ff6b6b', width: 2, dash: 'dot' }
                 }
             ];
             
@@ -726,16 +776,25 @@
             
             console.log('Found events:', events.length);
             console.log('Event samples:', events.slice(0, 5));
+            console.log('Event types breakdown:', events.reduce((acc, e) => {
+                const type = e.EventType.trim();
+                acc[type] = (acc[type] || 0) + 1;
+                return acc;
+            }, {}));
             
             const eventTypeColors = {
-                'Upgrade': '#28a745',
+                'Warning': '#dc3545',
                 'Event': '#007bff',
-                'Warning': '#dc3545'
+                'Prompt': '#ffc107',
+                'Upgrade': '#28a745'
             };
 
             const eventTraces = {};
             events.forEach(event => {
                 const type = event.EventType.trim();
+                
+                console.log('Processing event:', { tick: event.Tick, type: type, desc: event.EventDescription });
+                
                 if (!eventTraces[type]) {
                     eventTraces[type] = {
                         x: [],
@@ -747,11 +806,12 @@
                         marker: {
                             size: 15,
                             color: eventTypeColors[type] || '#6c757d',
-                            symbol: type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : 'circle'),
+                            symbol: type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : 'circle')),
                             line: { width: 2, color: '#fff' }
                         },
                         hovertemplate: '<b>%{text}</b><br>' + xAxisTitle + ': %{x}<extra></extra>'
                     };
+                    console.log('Created new trace for type:', type, 'with color:', eventTypeColors[type] || '#6c757d', 'and symbol:', type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : 'circle')));
                 }
                 
                 const xValue = useDate ? event.Date : parseInt(event.Tick);
@@ -761,6 +821,12 @@
             });
 
             const traces3 = Object.values(eventTraces);
+            
+            console.log('Final event traces created:', Object.keys(eventTraces));
+            console.log('Total traces for chart3:', traces3.length);
+            traces3.forEach(trace => {
+                console.log(`  Trace "${trace.name}": ${trace.x.length} events, color: ${trace.marker.color}, symbol: ${trace.marker.symbol}`);
+            });
 
             const layout3 = {
                 xaxis: { 
@@ -791,7 +857,7 @@
         }
 
         function setupSynchronizedZoom() {
-            const charts = ['chart1', 'chart2', 'chart2b', 'chart2c', 'chart3'];
+            const charts = ['chart1', 'chart1b', 'chart2', 'chart2b', 'chart2c', 'chart3'];
             
             charts.forEach(chartId => {
                 const chartEl = document.getElementById(chartId);
