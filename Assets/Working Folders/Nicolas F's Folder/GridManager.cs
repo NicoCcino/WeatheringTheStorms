@@ -5,15 +5,20 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class GridDebugDisplay : MonoBehaviour
+public class GridManager : Singleton<GridManager>
 {
+    [Header("Grid settings")]
     public Grid grid;                // Grid natif Unity
     public int gridWidth = 10;       // nombre de cellules en X
     public int gridHeight = 10;      // nombre de cellules en Y
     public SpriteRenderer WorldMapSprite; // La référence de l'image de map posée dans le monde.
     public Vector3 gridOriginBottomLeft;
-    public GameObject testPrefab;
-    public Vector2Int testCoordinates2D;
+
+
+    [Header("Spawnable Objects")]
+    public GameObject PrefabEventClickable;
+    public GameObject PrefabPromptClickable;
+    public GameObject PrefabComputePowerClickable;
 
     [ContextMenu("Reset Grid Origin From Sprite")]
     public void ResetGridOrigin()
@@ -78,19 +83,23 @@ public class GridDebugDisplay : MonoBehaviour
         return bottomLeft;
     }
 
-    public void DisplayObjectOnGrid(GameObject worldPrefab, Vector2Int cellPos)
+    public void DisplayObjectOnGrid(IGridObject gridObject)
     {
-        Vector3Int cellPos3D = new Vector3Int(cellPos.x, cellPos.y, 0);
+        Vector3Int cellPos3D = new Vector3Int(gridObject.Coordinates.x, gridObject.Coordinates.y, 0);
         Vector3 worldPos = grid.CellToWorld(cellPos3D);
         Quaternion rot = Quaternion.identity;
-        GameObject go = SimplePool.Spawn(worldPrefab, worldPos, rot);
-    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        if (testPrefab == null) return;
-        if (testCoordinates2D == null) return;
-        DisplayObjectOnGrid(testPrefab, testCoordinates2D);
+        GameObject objectToSpawn = null;
+        if (gridObject is EventData)
+        {
+            objectToSpawn = PrefabEventClickable;
+        }
+        else if (gridObject is PromptData)
+        {
+            objectToSpawn = PrefabPromptClickable;
+        }
+        //TODO: ComputePowerClickable
+
+        GameObject go = SimplePool.Spawn(objectToSpawn, worldPos, rot);
     }
 }

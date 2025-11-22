@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Clickable : MonoBehaviour, IPointerClickHandler
+public class ComputePowerClickable : MonoBehaviour, IPointerClickHandler
 {
-
     public int ComputePowerGainOnClick = 1;
 
     public void OnPointerClick(PointerEventData eventData)
@@ -18,17 +17,5 @@ public class Clickable : MonoBehaviour, IPointerClickHandler
             // Unspawn bubble
             SimplePool.Despawn(gameObject);
         }
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
