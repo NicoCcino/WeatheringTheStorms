@@ -118,10 +118,10 @@ public class EventManager : Singleton<EventManager>
         CurrentEvent = triggeredEvent;
         triggeredEvent.OnEventTriggered += OnCurrentEventTriggered;
         LogFileManager.Instance.LogUserAction("Event", triggeredEvent.EventData.Description);
-        
-        // Actually trigger the event
-        triggeredEvent.TriggerEvent();
+        // Apply the modifier bank to the gauges
+        GaugeManager.Instance.ApplyModifierBank(triggeredEvent.EventData.ModifierBank);
     }
+
     private void OnCurrentEventTriggered(Event triggeredEvent)
     {
         if (CurrentEvent == null) return;
