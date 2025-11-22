@@ -49,6 +49,7 @@ public class GaugeManager : Singleton<GaugeManager>
     {
         ClimateGauge.AddModifier(modifierBank.ClimateModifier);
         SocietalGauge.AddModifier(modifierBank.SocietalModifier);
-        Human.Instance.AddModifier(modifierBank.HumanModifier);
+        Human.Instance.AddHumanModifier(modifierBank.HumanModifier);
+        Human.Instance.AddHumanImpactModifier(modifierBank.HumanImpactModifier);
     }
 }

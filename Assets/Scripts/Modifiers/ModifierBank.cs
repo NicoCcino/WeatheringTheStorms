@@ -6,4 +6,5 @@ public class ModifierBank
     public Modifier ClimateModifier;
     public Modifier SocietalModifier;
     public Modifier HumanModifier;
+    public Modifier HumanImpactModifier;
 }

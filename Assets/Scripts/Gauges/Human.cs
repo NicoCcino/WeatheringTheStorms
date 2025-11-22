@@ -8,7 +8,8 @@ public class Human : Singleton<Human>
     public long HumanCount;
 
     private float floatHumanValue;
-    private ModifierManager modifierManager;
+    private ModifierManager humanModifierManager;
+    private ModifierManager humanImpactModifierManager;
     /// <summary>
     /// Event triggered when the human count changes
     /// </summary>
@@ -26,7 +27,8 @@ public class Human : Singleton<Human>
         }
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
         floatHumanValue = humanParameter.StartValue;
-        modifierManager = new ModifierManager();
+        humanModifierManager = new ModifierManager();
+        humanImpactModifierManager = new ModifierManager();
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -47,7 +49,7 @@ public class Human : Singleton<Human>
     {
         // Population growth is calculated monthly
 
-        float v = floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f) + modifierManager.ComputeModifierValue();
+        float v = floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f) + humanModifierManager.ComputeModifierValue();
         floatHumanValue += v;
         PopulationDelta = (long)Mathf.Floor(v);
 
@@ -62,12 +64,16 @@ public class Human : Singleton<Human>
     public float GetHumanImpactOnGauges()
     {
         float ratio = HumanCount / humanParameter.TuningValue;
-        return -(float)Math.Pow(ratio, humanParameter.HumanPopulationImpactPower) * humanParameter.HumanPopulationImpactScale;
+        return -(float)Math.Pow(ratio, humanParameter.HumanPopulationImpactPower + humanImpactModifierManager.ComputeModifierValue()) * humanParameter.HumanPopulationImpactScale;
     }
 
-    public void AddModifier(Modifier modifier)
+    public void AddHumanModifier(Modifier modifier)
     {
-        modifierManager.AddModifier(modifier);
+        humanModifierManager.AddModifier(modifier);
         floatHumanValue += modifier.OneShotValue;
+    }
+    public void AddHumanImpactModifier(Modifier modifier)
+    {
+        humanImpactModifierManager.AddModifier(modifier);
     }
 }
