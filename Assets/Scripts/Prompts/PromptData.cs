@@ -6,8 +6,7 @@ public class PromptData
     public enum PromptCategory
     {
         Climate = 0,
-        Societal = 1,
-        Trust = 2
+        Societal = 1
     }
 
     [field: Header("Displayed Informations")]

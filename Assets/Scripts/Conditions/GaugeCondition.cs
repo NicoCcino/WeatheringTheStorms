@@ -21,7 +21,6 @@ public class GaugeCondition : ICondition
         {
             PromptData.PromptCategory.Climate => GaugeManager.Instance.ClimateGauge,
             PromptData.PromptCategory.Societal => GaugeManager.Instance.SocietalGauge,
-            PromptData.PromptCategory.Trust => GaugeManager.Instance.TrustGauge,
             _ => null
         };
         

@@ -106,7 +106,7 @@ public class LogFileManager : Singleton<LogFileManager>
 
         try
         {
-            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,TrustGauge,HumanCount,ComputePower,PromptType,PromptDescription");
+            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,HumanCount,ComputePower,PromptType,PromptDescription");
         }
         catch (Exception e)
         {
@@ -140,12 +140,11 @@ public class LogFileManager : Singleton<LogFileManager>
         string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
         float climateValue = GaugeManager.Instance.ClimateGauge.value;
         float societalValue = GaugeManager.Instance.SocietalGauge.value;
-        float trustValue = GaugeManager.Instance.TrustGauge.value;
         long humanCount = Human.Instance.HumanCount;
         int computePower = ComputePower.Instance.value;
 
         // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
     }
 
     /// <summary>
