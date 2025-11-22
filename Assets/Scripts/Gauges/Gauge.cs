@@ -19,6 +19,7 @@ public class Gauge
         }
         value = gaugeParameter.StartValue;
         modifierManager = new ModifierManager();
+        modifierManager.modifierScale = gaugeParameter.ModifierScale;
     }
 
     public void OnHumanCountChanged(float humanImpact)
@@ -34,7 +35,7 @@ public class Gauge
     public void AddModifier(Modifier modifier)
     {
         modifierManager.AddModifier(modifier);
-        value += modifier.OneShotValue;
+        value += modifierManager.ComputeOneShotValue(modifier);
     }
 
     public float GetModifiersTotal()

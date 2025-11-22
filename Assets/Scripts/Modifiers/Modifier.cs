@@ -3,6 +3,6 @@ using UnityEngine;
 [System.Serializable]
 public class Modifier
 {
-    public float AddedValue;
-    public float OneShotValue;
+    public string AddedValue = "";
+    public string OneShotValue = "";
 }

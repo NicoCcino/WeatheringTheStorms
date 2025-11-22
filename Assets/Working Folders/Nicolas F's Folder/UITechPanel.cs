@@ -10,34 +10,26 @@ public class UITechPanel : MonoBehaviour
 
     void OnEnable()
     {
-        fadeComponent = GetComponent<CanvasGroupCustom>();
+
     }
 
-    public void FadeOutSelf()
-    {
-        fadeComponent.Fade(false);
-        isUITechPanelVisible = false;
-    }
-    public void FadeInSelf()
-    {
-        fadeComponent.Fade(true);
-        isUITechPanelVisible = true;
-    }
     public void FadeToggle()
     {
         if (isUITechPanelVisible)
         {
-            FadeOutSelf();
+            UIUpgradeManager.Instance.Display(false);
+            isUITechPanelVisible = false;
         }
         else
         {
-            FadeInSelf();
+            UIUpgradeManager.Instance.Display(true);
+            isUITechPanelVisible = true;
         }
     }
 
     void Start()
     {
-        FadeOutSelf();
+        UIUpgradeManager.Instance.Display(false);
     }
 
     // Update is called once per frame
