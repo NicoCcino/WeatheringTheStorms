@@ -5,11 +5,10 @@ using UnityEngine;
 public class Event : ScriptableObject
 {
     public EventData EventData;
-    public Action<Choice> OnSolved;
-    public void Solve(Choice choice)
+    public Action<Event> OnEventTriggered;
+    public void TriggerEvent()
     {
-        OnSolved?.Invoke(choice);
-
-        GaugeManager.Instance.ApplyModifierBank(choice.ModifierBank);
+        OnEventTriggered?.Invoke(this);
     }
 }
+

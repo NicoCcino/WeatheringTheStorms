@@ -565,17 +565,15 @@
             // Debug: Show first 10 rows of raw data
             console.log('First 10 rows of parsed data:');
             currentData.slice(0, 10).forEach((row, i) => {
-                console.log(`  Row ${i}: Tick=${row.Tick}, Climate=${row.ClimateGauge}, Societal=${row.SocietalGauge}, Trust=${row.TrustGauge}, Event="${row.EventType}"`);
+                console.log(`  Row ${i}: Tick=${row.Tick}, Climate=${row.ClimateGauge}, Societal=${row.SocietalGauge}, Event="${row.EventType}"`);
             });
             
             const climateValues = currentData.map(row => parseFloat(row.ClimateGauge) || 0);
             const societalValues = currentData.map(row => parseFloat(row.SocietalGauge) || 0);
-            const trustValues = currentData.map(row => parseFloat(row.TrustGauge) || 0);
             const computeValues = currentData.map(row => parseFloat(row.ComputePower) || 0);
             
             console.log('Climate sample:', climateValues.slice(0, 10));
             console.log('Societal sample:', societalValues.slice(0, 10));
-            console.log('Trust sample:', trustValues.slice(0, 10));
             console.log('Compute sample:', computeValues.slice(0, 10));
             
             // Calculate simple derivatives (difference between consecutive values)
@@ -590,11 +588,9 @@
             // Calculate raw derivatives
             const climateDerivative = calculateDerivative(climateValues);
             const societalDerivative = calculateDerivative(societalValues);
-            const trustDerivative = calculateDerivative(trustValues);
             
             console.log('Climate derivative sample:', climateDerivative.slice(0, 10));
             console.log('Societal derivative sample:', societalDerivative.slice(0, 10));
-            console.log('Trust derivative sample:', trustDerivative.slice(0, 10));
             
             // Chart 2: Main gauge values only
             const traces2 = [
@@ -613,14 +609,6 @@
                     mode: 'lines',
                     name: 'Societal Gauge',
                     line: { color: '#007bff', width: 3 }
-                },
-                {
-                    x: xAxis,
-                    y: trustValues,
-                    type: 'scatter',
-                    mode: 'lines',
-                    name: 'Trust Gauge',
-                    line: { color: '#ffc107', width: 3 }
                 }
             ];
             
@@ -641,14 +629,6 @@
                     mode: 'lines',
                     name: 'Societal Trend',
                     line: { color: '#007bff', width: 2, dash: 'dot' }
-                },
-                {
-                    x: xAxis,
-                    y: trustDerivative,
-                    type: 'scatter',
-                    mode: 'lines',
-                    name: 'Trust Trend',
-                    line: { color: '#ffc107', width: 2, dash: 'dot' }
                 }
             ];
             

@@ -8,3 +8,4 @@ public class EventManagerParameter : ScriptableObject
     public AnimationCurve EventProbabilityOverTicks;
 
 }
+

@@ -106,7 +106,7 @@ public class LogFileManager : Singleton<LogFileManager>
 
         try
         {
-            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,TrustGauge,HumanCount,ComputePower,EventType,EventDescription");
+            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,HumanCount,ComputePower,PromptType,PromptDescription");
         }
         catch (Exception e)
         {
@@ -140,27 +140,26 @@ public class LogFileManager : Singleton<LogFileManager>
         string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
         float climateValue = GaugeManager.Instance.ClimateGauge.value;
         float societalValue = GaugeManager.Instance.SocietalGauge.value;
-        float trustValue = GaugeManager.Instance.TrustGauge.value;
         long humanCount = Human.Instance.HumanCount;
         int computePower = ComputePower.Instance.value;
 
         // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
+        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{humanCount},{computePower},,";
     }
 
     /// <summary>
-    /// Logs a user action event at the current tick
+    /// Logs a user action prompt at the current tick
     /// </summary>
-    /// <param name="eventType">Type of event: "Upgrade", "Event", or "Warning"</param>
-    /// <param name="eventDescription">Description of the event</param>
+    /// <param name="eventType">Type of prompt: "Upgrade", "Prompt", or "Warning"</param>
+    /// <param name="eventDescription">Description of the prompt</param>
     public void LogUserAction(string eventType, string eventDescription)
     {
         if (logWriter == null) return;
 
-        // Validate event type
-        if (eventType != "Upgrade" && eventType != "Event" && eventType != "Warning")
+        // Validate prompt type
+        if (eventType != "Upgrade" && eventType != "Prompt" && eventType != "Warning")
         {
-            Debug.LogWarning($"Invalid event type: {eventType}. Expected: Upgrade, Event, or Warning");
+            Debug.LogWarning($"Invalid prompt type: {eventType}. Expected: Upgrade, Prompt, or Warning");
         }
 
         try
@@ -174,7 +173,7 @@ public class LogFileManager : Singleton<LogFileManager>
             // Escape description if it contains commas or quotes
             string escapedDescription = EscapeCSVField(eventDescription);
 
-            // Update the cached line by replacing the empty event fields with actual data
+            // Update the cached line by replacing the empty prompt fields with actual data
             if (cachedTickLine.EndsWith(",,"))
             {
                 cachedTickLine = cachedTickLine.Substring(0, cachedTickLine.Length - 2) + $",{eventType},{escapedDescription}";

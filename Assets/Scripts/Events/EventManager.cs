@@ -16,11 +16,17 @@ public class EventManager : Singleton<EventManager>
     private Event CurrentEvent = null;
     private void Start()
     {
+        if (EventManagerParameter == null)
+        {
+            Debug.LogError("EventManagerParameter is not assigned in the EventManager! Please assign it in the Unity Inspector.");
+            return;
+        }
+
         if (EventManagerParameter != null)
         {
             AvailableEvents = new List<Event>(EventManagerParameter.AllEvents);
         }
-        // Subscribe to the OnTick event from Timeline
+        // Subscribe to the OnTick action from Timeline
         if (Timeline.Instance != null)
         {
             Timeline.Instance.OnTick += OnTickCallback;
@@ -35,30 +41,30 @@ public class EventManager : Singleton<EventManager>
     }
     private void OnTickCallback(uint currentTick)
     {
-        //We roll the dices to see if we should trigger an event on this tick
-        bool shouldAnEventOccur = ShouldAnyEventOccur();
-        if (shouldAnEventOccur == false)
+        //We roll the dices to see if we should trigger a event on this tick
+        bool shouldAnyEventOccur = ShouldAnyEventOccur();
+        if (shouldAnyEventOccur == false)
         {
             noEventTickCounter++;
             return;
         }
 
-        //We select a random event in all availables events 
-        Event ev = PickRandomValidEvent();
-        if (ev == null) return;
+        //We select a random event in all available events 
+        Event selectedEvent = PickRandomValidEvent();
+        if (selectedEvent == null) return;
         //Then we're ready to trigger all following logics linked to the event
-        TriggerEvent(ev);
+        TriggerEvent(selectedEvent);
     }
 
     private Event PickRandomValidEvent()
     {
-        // Create a list of valid event we will filter
+        // Create a list of valid events we will filter
         Event[] validEvents = AvailableEvents.ToArray();
 
-        // We filter the remaining events to match the curent date condition
+        // We filter the remaining events to match the current date condition
         validEvents = validEvents.Where(e => e.EventData.DateCondition.IsFulfilled()).ToArray();
 
-        // We filter the remaining events to match the current gauge conditions
+            // We filter the remaining events to match the current gauge conditions
         validEvents = validEvents.Where(e => e.EventData.GaugeCondition.IsFulfilled()).ToArray();
 
         // We filter the remaining events to match the parent event condition
@@ -87,31 +93,42 @@ public class EventManager : Singleton<EventManager>
 
     private bool ShouldAnyEventOccur()
     {
+        if (EventManagerParameter == null)
+        {
+            Debug.LogError("EventManagerParameter is not assigned in the EventManager! Please assign it in the Unity Inspector.");
+            return false;
+        }
+
         float randomValue = UnityEngine.Random.Range(0f, 1f);
         float probability = EventManagerParameter.EventProbabilityOverTicks.Evaluate(noEventTickCounter);
 
         return randomValue < probability;
     }
 
-    public void TriggerEvent(Event ev)
+    public void TriggerEvent(Event triggeredEvent)
     {
         //We remove the selected event from the available events (so it cant occur twice in a game)
-        AvailableEvents.Remove(ev);
+        AvailableEvents.Remove(triggeredEvent);
         //We add the event to the triggered events history
-        TriggeredEvents.Add(ev);
+        TriggeredEvents.Add(triggeredEvent);
         noEventTickCounter = 0;
-        Debug.Log($"Event {ev.EventData.Label} Triggered");
-        OnEventTriggered?.Invoke(ev);
+        Debug.Log($"Event {triggeredEvent.EventData.Description} Triggered");
+        OnEventTriggered?.Invoke(triggeredEvent);
         Timeline.Instance.SetPauseSpeed();
-        CurrentEvent = ev;
-        ev.OnSolved += OnCurrentEventSolved;
-        LogFileManager.Instance.LogUserAction("Event", ev.EventData.Label);
+        CurrentEvent = triggeredEvent;
+        triggeredEvent.OnEventTriggered += OnCurrentEventTriggered;
+        LogFileManager.Instance.LogUserAction("Event", triggeredEvent.EventData.Description);
+        // Apply the modifier bank to the gauges
+        GaugeManager.Instance.ApplyModifierBank(triggeredEvent.EventData.ModifierBank);
     }
-    private void OnCurrentEventSolved(Choice choice)
+
+    private void OnCurrentEventTriggered(Event triggeredEvent)
     {
         if (CurrentEvent == null) return;
 
         Timeline.Instance.SetPlaySpeed();
-        CurrentEvent.OnSolved -= OnCurrentEventSolved;
+        CurrentEvent.OnEventTriggered -= OnCurrentEventTriggered;
+        CurrentEvent = null;
     }
 }
+
