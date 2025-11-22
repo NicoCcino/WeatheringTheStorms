@@ -8,7 +8,7 @@ public class ComputePower : Singleton<ComputePower>
     public int value;
     private float floatValue;
     private ModifierManager modifierManager;
-    
+
     // Event triggered when computePower value changes
     public event Action<int> OnCP;
 
@@ -22,6 +22,16 @@ public class ComputePower : Singleton<ComputePower>
         }
     }
 
+    protected override void Awake()
+    {
+        base.Awake();
+        floatValue = computePowerParameter.StartValue;
+        value = computePowerParameter.StartValue;
+        modifierManager = new ModifierManager();
+        modifierManager.Init(computePowerParameter.BaseModifier);
+        OnCP?.Invoke(value);
+
+    }
     public void Start()
     {
         if (computePowerParameter == null)
@@ -29,12 +39,6 @@ public class ComputePower : Singleton<ComputePower>
             Debug.LogError("Parameter ScriptableObject is not assigned in ComputePower!");
             return;
         }
-        floatValue = computePowerParameter.StartValue;
-        value = computePowerParameter.StartValue;
-        modifierManager = new ModifierManager();
-        modifierManager.Init(computePowerParameter.BaseModifier);
-        OnCP?.Invoke(value);
-
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
         {

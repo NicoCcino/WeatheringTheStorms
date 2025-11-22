@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
+  m_Name: Upgrade_Test 2
+  m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  UpgradeData:
+    <Label>k__BackingField: Upgrade 2-2
+    <Description>k__BackingField: This is the description of the upgrade 2-2, helpful
+      to tell to the player what this does maybe ?
+    <Cost>k__BackingField: 10
+    <ModifierBank>k__BackingField:
+      ClimateModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      SocietalModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      TrustModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      HumanModifier:
+        AddedValue: 0
+        OneShotValue: 0
+  IsUnlocked: 0
+  IsBought: 0
+  ParentUpgrades:
+  - {fileID: 11400000, guid: dbf3fbc627aceb549a4e0966985241a9, type: 2}

@@ -1,82 +1,78 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using UnityEngine.EventSystems;
 
 [System.Serializable]
-public class UIUpgradeParameter : MonoBehaviour
+public class UIUpgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("Button References")]
     [SerializeField] public Button button;
+    [SerializeField] private TextMeshProUGUI buttonText;
+    [SerializeField] private TextMeshProUGUI textCost;
+    [SerializeField] private GameObject gameObjectLocked;
+    [SerializeField] private GameObject gameObjectBought;
 
     [Header("Upgrade data References")]
-    [SerializeField] public UpgradeData upgradeData;
+    [SerializeField] public Upgrade upgrade;
 
-    private Upgrade upgrade;
-
-    private TextMeshProUGUI buttonText;
-
-    private void Start()
+    private void OnEnable()
     {
-        upgrade = new Upgrade(upgradeData);
-        if (button != null && upgradeData != null)
+        if (upgrade == null)
         {
-            // Find the button's text component
-            buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
-            if (buttonText != null)
-            {
-                buttonText.text = upgrade.UpgradeData.Label;
-            }
+            Debug.LogError($"You forget to fill the upgrade field on one of the upgrade button.Name of the button : {button.gameObject.name}");
+            return;
+        }
+        button.interactable = false;
+        button.onClick.AddListener(OnButtonClickCallback);
+        upgrade.OnUnlocked += RefreshStatus;
 
-            // Remove any existing listeners to prevent duplicates
-            button.onClick.RemoveListener(OnClick);
-            // Set up click listener
-            button.onClick.AddListener(OnClick);
-        }
-        else
-        {
-            Debug.LogWarning("UIUpgradeButton: Button or Upgrade is not assigned!");
-        }
-
-        // Subscribe to ComputePower OnCP event
-        if (ComputePower.Instance != null)
-        {
-            ComputePower.Instance.OnCP += OnComputePowerChanged;
-        }
+        Display(upgrade);
+        RefreshStatus();
+        SubscribeToParentsBought();
     }
-
     private void OnDisable()
     {
-        // Unsubscribe from ComputePower OnCP event to prevent memory leaks
-        if (ComputePower.Instance != null)
+        button.onClick.RemoveListener(OnButtonClickCallback);
+        upgrade.OnUnlocked -= RefreshStatus;
+        UnsubscribeFromParentsBought();
+    }
+    private void OnButtonClickCallback()
+    {
+        if (!upgrade.IsUnlocked) return;
+
+        upgrade.Buy();
+        RefreshStatus();
+    }
+    public void RefreshStatus()
+    {
+        gameObjectLocked.SetActive(!upgrade.TryUnlock());
+        gameObjectBought.SetActive(upgrade.IsBought);
+        button.interactable = upgrade.IsBuyable();
+    }
+    private void Display(Upgrade upgrade)
+    {
+        buttonText.text = upgrade.UpgradeData.Label;
+        textCost.text = upgrade.UpgradeData.Cost.ToString();
+    }
+    private void SubscribeToParentsBought()
+    {
+        foreach (var u in upgrade.ParentUpgrades)
         {
-            ComputePower.Instance.OnCP -= OnComputePowerChanged;
+            u.OnBought += OnParentBoughtCallback;
         }
     }
-
-    private void OnComputePowerChanged(int newValue)
+    private void UnsubscribeFromParentsBought()
     {
-        // Callback when compute power value changes
-        // Add your logic here to update UI based on the new compute power value
-        //Debug.Log($"Compute Power changed to: {newValue}");
-        if (upgrade != null && button != null && buttonText != null)
+        foreach (var u in upgrade.ParentUpgrades)
         {
-            if (upgrade.IsUnlocked)
-            {
-                return;
-            }
-            bool IsValid = newValue >= upgrade.UpgradeData.Cost;
-            // Enable button if valid, disable if not
-            button.interactable = IsValid;
-            // Change button text color to black if valid, grey disabled if not
-            if (IsValid)
-            {
-                buttonText.color = Color.black;
-            }
-            else
-            {
-                buttonText.color = Color.grey;
-            }
+            u.OnBought -= OnParentBoughtCallback;
         }
+    }
+    private void OnParentBoughtCallback()
+    {
+        RefreshStatus();
     }
 
     public void OnClick()
@@ -86,13 +82,20 @@ public class UIUpgradeParameter : MonoBehaviour
             Debug.LogWarning("UIUpgrade: OnClick called but upgrade is null!");
             return;
         }
-        
-        //Debug.Log("UIUpgrade: OnClick: " + upgrade.UpgradeData.Label);
-        upgrade.Unlock();
-        // Change button text color to green
         if (buttonText != null)
         {
             buttonText.color = Color.green;
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        UIUpgradeManager.Instance.HoveredUiUpgrade = this;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (UIUpgradeManager.Instance.HoveredUiUpgrade == this)
+            UIUpgradeManager.Instance.HoveredUiUpgrade = null;
     }
 }

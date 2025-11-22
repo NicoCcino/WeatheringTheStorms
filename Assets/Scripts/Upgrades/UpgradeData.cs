@@ -1,8 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "UpgradeData", menuName = "Scriptable Objects/Game/UpgradeData")]
-public class UpgradeData : ScriptableObject
+public class UpgradeData
 {
     [field: Header("Displayed Informations")]
     [field: SerializeField, Tooltip("Upgrade name")] public string Label { get; private set; }
@@ -10,4 +9,5 @@ public class UpgradeData : ScriptableObject
     [field: SerializeField] public int Cost { get; private set; }
     [field: Header("Hidden Informations")]
     [field: SerializeField] public ModifierBank ModifierBank { get; private set; }
+
 }
