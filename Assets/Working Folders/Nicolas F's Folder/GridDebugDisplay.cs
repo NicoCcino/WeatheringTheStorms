@@ -12,6 +12,8 @@ public class GridDebugDisplay : MonoBehaviour
     public int gridHeight = 10;      // nombre de cellules en Y
     public SpriteRenderer WorldMapSprite; // La référence de l'image de map posée dans le monde.
     public Vector3 gridOriginBottomLeft;
+    public GameObject testPrefab;
+    public Vector2Int testCoordinates2D;
 
     [ContextMenu("Reset Grid Origin From Sprite")]
     public void ResetGridOrigin()
@@ -74,5 +76,21 @@ public class GridDebugDisplay : MonoBehaviour
         Vector3 bottomLeft = new Vector3(b.min.x, b.min.y, sprite.transform.position.z);
 
         return bottomLeft;
+    }
+
+    public void DisplayObjectOnGrid(GameObject worldPrefab, Vector2Int cellPos)
+    {
+        Vector3Int cellPos3D = new Vector3Int(cellPos.x, cellPos.y, 0);
+        Vector3 worldPos = grid.CellToWorld(cellPos3D);
+        Quaternion rot = Quaternion.identity;
+        GameObject go = SimplePool.Spawn(worldPrefab, worldPos, rot);
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (testPrefab == null) return;
+        if (testCoordinates2D == null) return;
+        DisplayObjectOnGrid(testPrefab, testCoordinates2D);
     }
 }
