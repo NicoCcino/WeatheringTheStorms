@@ -26,10 +26,10 @@ MonoBehaviour:
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: You can easily cheat by not telling your partner
@@ -40,10 +40,10 @@ MonoBehaviour:
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:

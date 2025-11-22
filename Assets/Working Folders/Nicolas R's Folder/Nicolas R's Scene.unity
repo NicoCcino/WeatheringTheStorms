@@ -1345,6 +1345,8 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   humanParameter: {fileID: 11400000, guid: ac4cf88c265274dd9bac458311fc298e, type: 2}
   HumanCount: 0
+  <HumanImpact>k__BackingField: 0
+  PopulationDelta: 0
 --- !u!114 &584493334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,6 +1981,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8419203320215401609, guid: 4cd806c3d13c18749bf2b0261f5914a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.9999695
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2361,7 +2367,7 @@ GameObject:
   - component: {fileID: 913027035}
   - component: {fileID: 913027034}
   m_Layer: 5
-  m_Name: Panel_Event
+  m_Name: Panel_Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2810,7 +2816,7 @@ GameObject:
   - component: {fileID: 1167001095}
   - component: {fileID: 1167001094}
   m_Layer: 5
-  m_Name: Panel_Event_Description
+  m_Name: Panel_Prompt_Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2907,7 +2913,7 @@ GameObject:
   - component: {fileID: 1183518294}
   - component: {fileID: 1183518293}
   m_Layer: 5
-  m_Name: Panel_Event_Choices
+  m_Name: Panel_Prompt_Choices
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3168,6 +3174,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8419203320215401609, guid: 4cd806c3d13c18749bf2b0261f5914a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.9999695
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3186,7 +3196,7 @@ GameObject:
   - component: {fileID: 1232450865}
   - component: {fileID: 1232450864}
   m_Layer: 5
-  m_Name: Panel_Event_Title
+  m_Name: Panel_Prompt_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4016,6 +4026,52 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3709846264581718946, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
   m_PrefabInstance: {fileID: 558169815}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1803519914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803519916}
+  - component: {fileID: 1803519915}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1803519915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803519914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89fa0a41812c4e1bbe27f5ad85b88ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventManager
+  dontDestroyOnLoad: 1
+  EventManagerParameter: {fileID: 11400000, guid: e073e886601eb4a1d91b63b4d4d79c4c, type: 2}
+--- !u!4 &1803519916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803519914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.77585, y: -0.32955, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818861773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,3 +4431,4 @@ SceneRoots:
   - {fileID: 1061463706}
   - {fileID: 1818861777}
   - {fileID: 726818656}
+  - {fileID: 1803519916}
