@@ -5,7 +5,7 @@ public class GaugeCondition : ICondition
 {
     [field: SerializeField] public int MinValue { get; private set; }
     [field: SerializeField] public int MaxValue { get; private set; }
-    [field: SerializeField] public EventData.EventCategory Category { get; private set; }
+    [field: SerializeField] public PromptData.PromptCategory Category { get; private set; }
     
     public GaugeCondition(int minValue, int maxValue)
     {
@@ -19,9 +19,9 @@ public class GaugeCondition : ICondition
         
         Gauge gauge = Category switch
         {
-            EventData.EventCategory.Climate => GaugeManager.Instance.ClimateGauge,
-            EventData.EventCategory.Societal => GaugeManager.Instance.SocietalGauge,
-            EventData.EventCategory.Trust => GaugeManager.Instance.TrustGauge,
+            PromptData.PromptCategory.Climate => GaugeManager.Instance.ClimateGauge,
+            PromptData.PromptCategory.Societal => GaugeManager.Instance.SocietalGauge,
+            PromptData.PromptCategory.Trust => GaugeManager.Instance.TrustGauge,
             _ => null
         };
         

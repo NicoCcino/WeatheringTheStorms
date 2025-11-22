@@ -10,33 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
-  m_Name: Event_005
+  m_Name: Prompt_001
   m_EditorClassIdentifier: Assembly-CSharp::Event
-  EventData:
-    <Label>k__BackingField: PastaRegala
-    <Description>k__BackingField: Yo my friend, I only have a can of Red Bull and
-      some oysters left in my fridge and my date is coming in one hour. Give me your
-      best romantic recipe.
+  PromptData:
+    <Label>k__BackingField: P.Wright
+    <Description>k__BackingField: Hey, my final lawyer exam is in 10 minutes and
+      I didn't learn the lessons. How can I cheat?
     <Choices>k__BackingField:
-    - Label: 'Trust me bro, smash that redbull in an oyster and throw it to her plate,
-        baseball pitcher style. '
+    - Label: Pretend to cast an evil spell over your paper louder and louder. People
+        will start worrying and might cancel the exam
       ModifierBank:
         ClimateModifier:
-          AddedValue: -0.01
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: -0.01
+          AddedValue: 0
           OneShotValue: 0
         TrustModifier:
-          AddedValue: 0.01
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: You can easily cheat by not telling your partner
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
-      <MaxTick>k__BackingField: 100000
+      <MaxTick>k__BackingField: 10000
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}

@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptable Objects/Game/Event", fileName = "Event")]
-public class Event : ScriptableObject
+[CreateAssetMenu(menuName = "Scriptable Objects/Game/Prompt", fileName = "Prompt")]
+public class Prompt : ScriptableObject
 {
-    public EventData EventData;
+    public PromptData PromptData;
     public Action<Choice> OnSolved;
     public void Solve(Choice choice)
     {
@@ -13,3 +13,4 @@ public class Event : ScriptableObject
         GaugeManager.Instance.ApplyModifierBank(choice.ModifierBank);
     }
 }
+

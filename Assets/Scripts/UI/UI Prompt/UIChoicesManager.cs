@@ -5,17 +5,17 @@ public class UIChoicesManager : MonoBehaviour
 {
     public List<UIChoice> SpawnedUIChoices = new List<UIChoice>();
     public GameObject choicePrefab;
-    public void SpawnChoice(Choice choice, UIEvent parentUIEvent)
+    public void SpawnChoice(Choice choice, UIPrompt parentUIPrompt)
     {
         GameObject go = SimplePool.Spawn(choicePrefab);
         go.transform.parent = transform;
         go.transform.localScale = new Vector3(1, 1, 1);
         go.transform.localPosition = Vector3.zero;
         UIChoice uiChoice = go.GetComponent<UIChoice>();
-        uiChoice.UpdateDisplay(choice, parentUIEvent);
+        uiChoice.UpdateDisplay(choice, parentUIPrompt);
         SpawnedUIChoices.Add(uiChoice);
     }
-    public void SpawnChoices(Choice[] choices, UIEvent parentUIEvent)
+    public void SpawnChoices(Choice[] choices, UIPrompt parentUIPrompt)
     {
         foreach (UIChoice uiChoice in SpawnedUIChoices)
         {
@@ -23,7 +23,7 @@ public class UIChoicesManager : MonoBehaviour
         }
         for (int i = 0; i < choices.Length; i++)
         {
-            SpawnChoice(choices[i], parentUIEvent);
+            SpawnChoice(choices[i], parentUIPrompt);
         }
     }
 }

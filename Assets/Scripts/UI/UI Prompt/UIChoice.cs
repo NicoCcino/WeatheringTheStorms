@@ -8,7 +8,7 @@ public class UIChoice : MonoBehaviour
     public TextMeshProUGUI textLabel;
     public UIGaugeModifierManager uiGaugeModifierManager;
     public Choice displayedChoice;
-    public UIEvent parentUIEvent;
+    public UIPrompt parentUIPrompt;
     private void OnEnable()
     {
         button.onClick.AddListener(OnButtonClickCallback);
@@ -19,16 +19,16 @@ public class UIChoice : MonoBehaviour
     }
     private void OnButtonClickCallback()
     {
-        if (parentUIEvent == null || displayedChoice == null) return;
-        parentUIEvent.SolveDisplayedEvent(displayedChoice);
+        if (parentUIPrompt == null || displayedChoice == null) return;
+        parentUIPrompt.SolveDisplayedPrompt(displayedChoice);
     }
 
-    public void UpdateDisplay(Choice choice, UIEvent parentUIEvent)
+    public void UpdateDisplay(Choice choice, UIPrompt parentUIPrompt)
     {
         textLabel.text = choice.Label;
         uiGaugeModifierManager.DisplayModifierBank(choice.ModifierBank);
         displayedChoice = choice;
-        this.parentUIEvent = parentUIEvent;
+        this.parentUIPrompt = parentUIPrompt;
     }
 
 }

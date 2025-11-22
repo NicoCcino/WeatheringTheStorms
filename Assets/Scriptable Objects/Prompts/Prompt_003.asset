@@ -10,38 +10,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
-  m_Name: Event_001
+  m_Name: Prompt_003
   m_EditorClassIdentifier: Assembly-CSharp::Event
-  EventData:
-    <Label>k__BackingField: P.Wright sent a prompt
-    <Description>k__BackingField: Hey, my final lawyer exam is in 10 minutes and
-      I didn't learn the lessons. How can I cheat?
+  PromptData:
+    <Label>k__BackingField: John
+    <Description>k__BackingField: How can I get back a woman who just left me?
     <Choices>k__BackingField:
-    - Label: Pretend to cast an evil spell over your paper louder and louder. People
-        will start worrying and might cancel the exam.
+    - Label: Then go left also
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: -0.01
-          OneShotValue: 0
-        TrustModifier:
-          AddedValue: 0.01
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-    - Label: You can easily cheat by not telling your partner.
+    - Label: "You need to know her better. I\u2019ll search everything in her private
+        life"
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0.01
+          AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          AddedValue: -0.01
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: "You need to meet her. The next time she is going outside I\u2019ll
+        give you her position"
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
@@ -52,4 +57,5 @@ MonoBehaviour:
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
-      <Category>k__BackingField: 1
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
