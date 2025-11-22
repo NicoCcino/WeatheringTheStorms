@@ -21,14 +21,14 @@ MonoBehaviour:
     - Label: "I\u2019m glad you\u2019ve reached out. Tell me everything that is happening."
       ModifierBank:
         ClimateModifier:
-          AddedValue: -0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: -10
         SocietalModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         TrustModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -36,14 +36,14 @@ MonoBehaviour:
         what\u2019s going on."
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         SocietalModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         TrustModifier:
-          AddedValue: -0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: -10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

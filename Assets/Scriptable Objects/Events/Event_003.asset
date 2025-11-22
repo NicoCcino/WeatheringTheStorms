@@ -24,8 +24,8 @@ MonoBehaviour:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         TrustModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -36,8 +36,8 @@ MonoBehaviour:
         farmer as LONG as humanly possible.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0

@@ -20,14 +20,14 @@ MonoBehaviour:
     - Label: You can start building another one then?
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0.02
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         TrustModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,14 +35,14 @@ MonoBehaviour:
         Check left and right to make sure no one is watching and swallow the screw.
       ModifierBank:
         ClimateModifier:
-          AddedValue: -0.02
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         TrustModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

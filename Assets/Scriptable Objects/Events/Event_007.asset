@@ -24,11 +24,11 @@ MonoBehaviour:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: -0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: -10
         TrustModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -39,11 +39,11 @@ MonoBehaviour:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: 10
         TrustModifier:
-          AddedValue: -0.01
-          OneShotValue: 0
+          AddedValue: 0
+          OneShotValue: -10
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
