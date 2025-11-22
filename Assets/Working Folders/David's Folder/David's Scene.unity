@@ -1429,7 +1429,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIGaugeManager
   uiGaugeClimate: {fileID: 8618296270742273302}
   uiGaugeSocietal: {fileID: 522515950}
-  uiGaugeTrust: {fileID: 1563682494}
 --- !u!1 &1324199810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,9 +1996,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547122049}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &1557506297
 GameObject:
@@ -2343,17 +2342,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5992981074258822637, guid: 4cd806c3d13c18749bf2b0261f5914a4, type: 3}
   m_PrefabInstance: {fileID: 1563682492}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1563682494 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7219073905091709957, guid: 4cd806c3d13c18749bf2b0261f5914a4, type: 3}
-  m_PrefabInstance: {fileID: 1563682492}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b5734f3c6229974c86179261629df9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIGauge
 --- !u!1 &1677482873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2489,7 @@ MonoBehaviour:
   textHeader: {fileID: 1557506299}
   textDescription: {fileID: 1526039855}
   uiChoicesManager: {fileID: 1840521927}
-  DisplayedEvent: {fileID: 0}
+  DisplayedPrompt: {fileID: 0}
 --- !u!114 &1712400510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,10 +3490,6 @@ MonoBehaviour:
     gaugeParameter: {fileID: 11400000, guid: b018b033a3bd246bdaee622700fdd8c3, type: 2}
     value: 0
     iterationValue: 0
-  TrustGauge:
-    gaugeParameter: {fileID: 11400000, guid: ce3ae8b3ed59540c791ff14ffc58419f, type: 2}
-    value: 0
-    iterationValue: 0
 --- !u!114 &2114668289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3562,7 +3546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventManager
   dontDestroyOnLoad: 1
-  EventManagerParameter: {fileID: 11400000, guid: 1d7671349d0907348bc71d9dac449589, type: 2}
+  PromptManagerParameter: {fileID: 0}
 --- !u!114 &2114668293
 MonoBehaviour:
   m_ObjectHideFlags: 0
