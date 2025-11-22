@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class PromptData
+public class PromptData : IGridObject
 {
     public enum PromptCategory
     {
@@ -15,16 +15,14 @@ public class PromptData
     [field: SerializeField] public Choice[] Choices { get; private set; }
 
     [field: Header("Grid Position")]
-    [field: SerializeField] public int GridX { get; private set; }
-    [field: SerializeField] public int GridY { get; private set; }
+    [field: SerializeField] public Vector2Int Coordinates { get; set; }
 
     [field: Header("Conditions")]
     [field: SerializeField] public DateCondition DateCondition { get; private set; }
     [field: SerializeField] public GaugeCondition GaugeCondition { get; private set; }
 
-    [field: SerializeField, Tooltip("Optional: This prompt can only trigger if the parent prompt has been triggered before")] 
+    [field: SerializeField, Tooltip("Optional: This prompt can only trigger if the parent prompt has been triggered before")]
     public Prompt ParentPrompt { get; private set; }
-
 
 }
 
