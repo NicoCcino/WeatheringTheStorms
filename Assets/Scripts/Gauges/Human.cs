@@ -28,7 +28,9 @@ public class Human : Singleton<Human>
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
         floatHumanValue = humanParameter.StartValue;
         humanModifierManager = new ModifierManager();
+        humanModifierManager.modifierScale = humanParameter.HumanPopulationModifierScale;
         humanImpactModifierManager = new ModifierManager();
+        humanImpactModifierManager.modifierScale = humanParameter.HumanPopulationImpactModifierScale;
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -71,12 +73,12 @@ public class Human : Singleton<Human>
     public void AddHumanModifier(Modifier modifier)
     {
         humanModifierManager.AddModifier(modifier);
-        floatHumanValue += modifier.OneShotValue;
+        floatHumanValue += humanModifierManager.ComputeOneShotValue(modifier);
     }
     public void AddHumanImpactModifier(Modifier modifier)
     {
         humanImpactModifierManager.AddModifier(modifier);
-        if (modifier.OneShotValue != 0)
+        if (modifier.OneShotValue != "")
         {
             Debug.LogError("Human impact modifier don't use OneShot values!");
             return;

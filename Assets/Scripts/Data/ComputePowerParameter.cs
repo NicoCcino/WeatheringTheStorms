@@ -9,6 +9,6 @@ public class ComputePowerParameter : ScriptableObject
     [Tooltip("Initial value of the compute power")]
     [SerializeField] public int StartValue = 0;
 
-    [Tooltip("Base modifier of the compute power")]
-    [SerializeField] public Modifier BaseModifier = new Modifier();
+    [Tooltip("Growth rate of the compute power per tick")]
+    [SerializeField] public float BaseModifier = 0.01f;
 }

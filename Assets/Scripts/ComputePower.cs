@@ -7,7 +7,6 @@ public class ComputePower : Singleton<ComputePower>
     [SerializeField] private ComputePowerParameter computePowerParameter; // Reference to the Parameter ScriptableObject
     public int value;
     private float floatValue;
-    private ModifierManager modifierManager;
 
     // Event triggered when computePower value changes
     public event Action<int> OnCP;
@@ -27,8 +26,6 @@ public class ComputePower : Singleton<ComputePower>
         base.Awake();
         floatValue = computePowerParameter.StartValue;
         value = computePowerParameter.StartValue;
-        modifierManager = new ModifierManager();
-        modifierManager.Init(computePowerParameter.BaseModifier);
         OnCP?.Invoke(value);
 
     }
@@ -56,7 +53,7 @@ public class ComputePower : Singleton<ComputePower>
 
     public void OnTimelineTick(uint currentTick)
     {
-        floatValue += modifierManager.ComputeModifierValue();
+        floatValue += computePowerParameter.BaseModifier;
         if (floatValue <= 0) floatValue = 0;
         UpdateValue();
         //Debug.Log("Human value: " + value);

@@ -17,7 +17,7 @@ public class UIGaugeModifierManager : MonoBehaviour
 
     private void UpdateUIGauge(UIGaugeModifier uiGauge, Modifier modifier)
     {
-        bool isDisplayed = modifier.AddedValue != 0;
+        bool isDisplayed = modifier.AddedValue != "";
         uiGauge.gameObject.SetActive(isDisplayed);
 
         if (isDisplayed)

@@ -89,7 +89,7 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine("# Initial Parameters:");
             logWriter.WriteLine($"# TickDuration (months): {timeLineParameter.TickDuration}");
             logWriter.WriteLine($"# StartDate: {timeLineParameter.StartDate:yyyy-MM-dd}");
-            logWriter.WriteLine($"# ComputePower_BaseModifier_AddedValue: {computePowerParameter.BaseModifier.AddedValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# ComputePower_growthRate: {computePowerParameter.BaseModifier.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_StartValue: {humanParameter.StartValue.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_PopulationGrowthPerYear: {humanParameter.PopulationGrowthPerYear.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_PopulationImpactPower: {humanParameter.HumanPopulationImpactPower.ToString(CultureInfo.InvariantCulture)}");
