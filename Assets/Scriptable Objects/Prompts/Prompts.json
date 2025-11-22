@@ -1,0 +1,221 @@
+{
+  "Prompts": [
+    {
+      "Name": "Prompt_RenewableEnergy",
+      "PromptData": {
+        "Label": "Green Energy Initiative",
+        "Description": "The government offers subsidies for switching to renewable energy sources for AI infrastructure. Do you accept?",
+        "Choices": [
+          {
+            "Label": "Accept subsidies and switch to renewables",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "---",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "++"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              }
+            }
+          },
+          {
+            "Label": "Decline and continue with current energy mix",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "+",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "-"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              }
+            }
+          }
+        ],
+        "Coordinates": {
+          "x": 0,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 10,
+          "MaxTick": 60
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_DataPrivacy",
+      "PromptData": {
+        "Label": "Data Privacy Regulations",
+        "Description": "New privacy laws require significant changes to data processing. How do you respond?",
+        "Choices": [
+          {
+            "Label": "Comply fully with new regulations",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "+++"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "-",
+                "OneShotValue": ""
+              }
+            }
+          },
+          {
+            "Label": "Lobby for exceptions and exemptions",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "---"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "+",
+                "OneShotValue": ""
+              }
+            }
+          },
+          {
+            "Label": "Implement minimal changes and wait",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "-"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              }
+            }
+          }
+        ],
+        "Coordinates": {
+          "x": 1,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 15,
+          "MaxTick": 80
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_EmployeeWellbeing",
+      "PromptData": {
+        "Label": "Employee Burnout Crisis",
+        "Description": "Your AI research team is showing signs of severe burnout. What's your approach?",
+        "Choices": [
+          {
+            "Label": "Hire more staff and reduce workload",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "++"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "--",
+                "OneShotValue": ""
+              }
+            }
+          },
+          {
+            "Label": "Push through to meet deadlines",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "SocietalModifier": {
+                "AddedValue": "",
+                "OneShotValue": "---"
+              },
+              "HumanModifier": {
+                "AddedValue": "",
+                "OneShotValue": ""
+              },
+              "HumanImpactModifier": {
+                "AddedValue": "++",
+                "OneShotValue": ""
+              }
+            }
+          }
+        ],
+        "Coordinates": {
+          "x": 2,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 25,
+          "MaxTick": 90
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentPromptName": "Prompt_DataPrivacy"
+      }
+    }
+  ]
+}
+

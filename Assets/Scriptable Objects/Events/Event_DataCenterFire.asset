@@ -10,14 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: EventTest
+  m_Name: Event_DataCenterFire
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: Donald Trump spilled his coffee on the nuclear
-      missile buttons.
+    <Description>k__BackingField: A fire breaks out in a major data center, causing
+      significant damage to infrastructure and raising concerns about AI safety.
+    <ModifierBank>k__BackingField:
+      ClimateModifier:
+        AddedValue: ++
+        OneShotValue: 
+      SocietalModifier:
+        AddedValue: 
+        OneShotValue: ---
+      HumanModifier:
+        AddedValue: 
+        OneShotValue: 
+      HumanImpactModifier:
+        AddedValue: 
+        OneShotValue: 
+    <Coordinates>k__BackingField: {x: 0, y: 0}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
-      <MaxTick>k__BackingField: 10000
+      <MaxTick>k__BackingField: 50
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100

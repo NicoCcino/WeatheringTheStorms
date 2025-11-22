@@ -1,0 +1,119 @@
+{
+  "Events": [
+    {
+      "Name": "Event_DataCenterFire",
+      "EventData": {
+        "Description": "A fire breaks out in a major data center, causing significant damage to infrastructure and raising concerns about AI safety.",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "++",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "---"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        },
+        "Coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 0,
+          "MaxTick": 50
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIBreakthrough",
+      "EventData": {
+        "Description": "Researchers achieve a major breakthrough in AI efficiency, reducing energy consumption by 30%.",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "---",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "+++"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        },
+        "Coordinates": {
+          "x": 1,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 20,
+          "MaxTick": 100
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_PowerGridOverload",
+      "EventData": {
+        "Description": "The local power grid struggles to keep up with increasing AI compute demands, leading to brownouts.",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "+",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "--"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        },
+        "Coordinates": {
+          "x": 2,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 30,
+          "MaxTick": 120
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": "Event_DataCenterFire"
+      }
+    }
+  ]
+}
+

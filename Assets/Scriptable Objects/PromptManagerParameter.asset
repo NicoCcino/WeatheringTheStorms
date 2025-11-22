@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: PromptManagerParameter
   m_EditorClassIdentifier: Assembly-CSharp::EventManagerParameter
   AllPrompts:
-  - {fileID: 11400000, guid: 889748da95bda4950a52c1de1e845354, type: 2}
-  - {fileID: 11400000, guid: aca8d23ee61c64cdc883a4ca4acbaa27, type: 2}
-  - {fileID: 11400000, guid: 4751188a634814ef9bfd79782046f99f, type: 2}
+  - {fileID: 11400000, guid: c91e70e91b964471b86ed9dcf2857653, type: 2}
+  - {fileID: 11400000, guid: a8120058ae3dd4e329acb1a2ff2f73ec, type: 2}
+  - {fileID: 11400000, guid: faf4a7a129d63407795f1fd5db202803, type: 2}
   PromptProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: -0.0041666925
-      value: 0.0071428716
+      value: 0.0071428563
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.9958334
-      value: 1.0071428
+      value: 0.49761897
       inSlope: 2
       outSlope: 2
       tangentMode: 0

@@ -1,0 +1,167 @@
+{
+  "Upgrades": [
+    {
+      "Name": "Upgrade_EfficientCooling",
+      "UpgradeData": {
+        "Label": "Efficient Cooling System",
+        "Description": "Install advanced cooling systems that reduce energy consumption by 20%.",
+        "Cost": 100,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "---",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "+"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": []
+    },
+    {
+      "Name": "Upgrade_SolarPanels",
+      "UpgradeData": {
+        "Label": "Solar Panel Array",
+        "Description": "Deploy solar panels to power a portion of your AI infrastructure with renewable energy.",
+        "Cost": 150,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "----",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "++"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": []
+    },
+    {
+      "Name": "Upgrade_AIOptimization",
+      "UpgradeData": {
+        "Label": "AI Model Optimization",
+        "Description": "Optimize your AI models to use fewer computational resources while maintaining performance.",
+        "Cost": 200,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "--",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "-",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_EfficientCooling"]
+    },
+    {
+      "Name": "Upgrade_GreenDataCenter",
+      "UpgradeData": {
+        "Label": "Green Data Center",
+        "Description": "Build a fully carbon-neutral data center powered entirely by renewable energy.",
+        "Cost": 500,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "------",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "++++"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_SolarPanels", "Upgrade_EfficientCooling"]
+    },
+    {
+      "Name": "Upgrade_QuantumComputing",
+      "UpgradeData": {
+        "Label": "Quantum Computing Research",
+        "Description": "Invest in quantum computing research to dramatically reduce energy needs for complex calculations.",
+        "Cost": 800,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "-----",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "+++++"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "---",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_AIOptimization", "Upgrade_GreenDataCenter"]
+    },
+    {
+      "Name": "Upgrade_WorkLifeBalance",
+      "UpgradeData": {
+        "Label": "Work-Life Balance Program",
+        "Description": "Implement comprehensive work-life balance initiatives for your team.",
+        "Cost": 120,
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "SocietalModifier": {
+            "AddedValue": "",
+            "OneShotValue": "+++"
+          },
+          "HumanModifier": {
+            "AddedValue": "",
+            "OneShotValue": ""
+          },
+          "HumanImpactModifier": {
+            "AddedValue": "--",
+            "OneShotValue": ""
+          }
+        }
+      },
+      "ParentUpgradeNames": []
+    }
+  ]
+}
+

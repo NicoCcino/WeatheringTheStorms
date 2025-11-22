@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: EventManagerParameter
   m_EditorClassIdentifier: Assembly-CSharp::EventManagerParameter
   AllEvents:
-  - {fileID: 11400000, guid: 78e2468682c734c16858a9be8e601668, type: 2}
+  - {fileID: 11400000, guid: 9b0c4ad0628be4565bb07af4bbce32a3, type: 2}
+  - {fileID: 11400000, guid: 8282b2b8c51164deebf8e24f47a309a5, type: 2}
+  - {fileID: 11400000, guid: 6957e4b764f044259bc2e871b3a944e5, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:

@@ -13,6 +13,13 @@ public class GaugeCondition : ICondition
         MaxValue = maxValue;
     }
 
+    public GaugeCondition(int minValue, int maxValue, PromptData.PromptCategory category)
+    {
+        MinValue = minValue;
+        MaxValue = maxValue;
+        Category = category;
+    }
+
     public bool IsFulfilled()
     {
         if (GaugeManager.Instance == null) return false;

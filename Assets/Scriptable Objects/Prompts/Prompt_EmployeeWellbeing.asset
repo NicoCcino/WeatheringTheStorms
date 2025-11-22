@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_EmployeeWellbeing
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Employee Burnout Crisis
+    <Description>k__BackingField: Your AI research team is showing signs of severe
+      burnout. What's your approach?
+    <Choices>k__BackingField:
+    - Label: Hire more staff and reduce workload
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 
+          OneShotValue: 
+        SocietalModifier:
+          AddedValue: 
+          OneShotValue: ++
+        HumanModifier:
+          AddedValue: 
+          OneShotValue: 
+        HumanImpactModifier:
+          AddedValue: --
+          OneShotValue: 
+    - Label: Push through to meet deadlines
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 
+          OneShotValue: 
+        SocietalModifier:
+          AddedValue: 
+          OneShotValue: ---
+        HumanModifier:
+          AddedValue: 
+          OneShotValue: 
+        HumanImpactModifier:
+          AddedValue: ++
+          OneShotValue: 
+    <Coordinates>k__BackingField: {x: 2, y: 1}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 25
+      <MaxTick>k__BackingField: 90
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 1
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: a8120058ae3dd4e329acb1a2ff2f73ec, type: 2}
