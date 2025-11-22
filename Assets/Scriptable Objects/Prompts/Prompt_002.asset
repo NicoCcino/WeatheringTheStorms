@@ -21,12 +21,15 @@ MonoBehaviour:
     - Label: "I\u2019m glad you\u2019ve reached out. Tell me everything that is happening"
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
+          AddedValue: 10
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: "I\u2019m glad you\u2019ve reached out. Go tell one trusted person exactly
@@ -34,11 +37,14 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 20
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
         HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:

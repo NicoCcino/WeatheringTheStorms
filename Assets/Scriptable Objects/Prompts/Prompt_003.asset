@@ -19,24 +19,30 @@ MonoBehaviour:
     - Label: Then go left also
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
+          AddedValue: 2
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: "You need to know her better. I\u2019ll search everything in her private
         life"
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
+          AddedValue: 2
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
+          AddedValue: 2
           OneShotValue: 0
         HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: "You need to meet her. The next time she is going outside I\u2019ll
@@ -49,6 +55,9 @@ MonoBehaviour:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
