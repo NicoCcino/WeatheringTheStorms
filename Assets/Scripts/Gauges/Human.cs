@@ -47,11 +47,12 @@ public class Human : Singleton<Human>
 
     public void OnTimelineTick(uint currentTick)
     {
-        // Population growth is calculated monthly
-
-        float v = floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f) + humanModifierManager.ComputeModifierValue();
-        floatHumanValue += v;
-        PopulationDelta = (long)Mathf.Floor(v);
+        // Population growth is exponential and is calculated monthly
+        float naturalGrowth = (floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f));
+        float modifiedGrowth = (floatHumanValue+naturalGrowth) * humanModifierManager.ComputeModifierValue();
+        float humanGrowth = naturalGrowth + modifiedGrowth;
+        PopulationDelta = (long)Mathf.Floor(humanGrowth);
+        floatHumanValue += humanGrowth;
 
         if (floatHumanValue <= 0) floatHumanValue = 0;
         HumanCount = (long)Mathf.Floor(floatHumanValue);
@@ -64,7 +65,7 @@ public class Human : Singleton<Human>
     public float GetHumanImpactOnGauges()
     {
         float ratio = HumanCount / humanParameter.TuningValue;
-        return -(float)Math.Pow(ratio, humanParameter.HumanPopulationImpactPower + humanImpactModifierManager.ComputeModifierValue()) * humanParameter.HumanPopulationImpactScale;
+        return -(float)Math.Pow(ratio, humanParameter.HumanPopulationImpactPower + (humanParameter.HumanPopulationImpactPower * humanImpactModifierManager.ComputeModifierValue())) * humanParameter.HumanPopulationImpactScale;
     }
 
     public void AddHumanModifier(Modifier modifier)
@@ -75,5 +76,10 @@ public class Human : Singleton<Human>
     public void AddHumanImpactModifier(Modifier modifier)
     {
         humanImpactModifierManager.AddModifier(modifier);
+        if (modifier.OneShotValue != 0)
+        {
+            Debug.LogError("Human impact modifier don't use OneShot values!");
+            return;
+        }
     }
 }
