@@ -1890,6 +1890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_TechButton
       objectReference: {fileID: 0}
+    - target: {fileID: 6120735420658734137, guid: aae074efffc949f43ae4cde2b61c8237, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6167914516978440221, guid: aae074efffc949f43ae4cde2b61c8237, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2593,7 +2597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1430138633
 RectTransform:
   m_ObjectHideFlags: 0
