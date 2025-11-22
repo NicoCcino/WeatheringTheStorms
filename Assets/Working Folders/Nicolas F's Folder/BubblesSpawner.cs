@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class BubblesSpawner : MonoBehaviour
@@ -29,6 +28,7 @@ public class BubblesSpawner : MonoBehaviour
             pos = GetRandomPoint(spawnArea.transform);
             Quaternion rotation = Quaternion.identity;
             GameObject go = SimplePool.Spawn(bubblePrefab, pos, rotation);
+            go.transform.parent = transform;
             // Spawn Bubble;
         }
         else

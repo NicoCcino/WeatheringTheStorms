@@ -1,61 +1,78 @@
 using UnityEngine;
 
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class GridDebugDisplay : MonoBehaviour
 {
-    public GameObject WorldMapPlane;
-    public Vector3 bottomLeft;
-    public int gridWidth;
-    public int gridHeight;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float cellSize = 1f; // taille d'une cellule
+    public Grid grid;                // Grid natif Unity
+    public int gridWidth = 10;       // nombre de cellules en X
+    public int gridHeight = 10;      // nombre de cellules en Y
+    public SpriteRenderer WorldMapSprite; // La référence de l'image de map posée dans le monde.
+    public Vector3 gridOriginBottomLeft;
 
-
-    void OnDrawGizmos()
+    [ContextMenu("Reset Grid Origin From Sprite")]
+    public void ResetGridOrigin()
     {
-        DisplayCoordinates();
+        gridOriginBottomLeft = GetBottomLeftOfSprite(WorldMapSprite);
+        Debug.Log("Grid origin reset to: " + gridOriginBottomLeft);
+        grid.transform.position = gridOriginBottomLeft;
     }
 
-    void DisplayCoordinates()
+    private void OnDrawGizmos()
     {
-        SpriteRenderer sprite = WorldMapPlane.GetComponent<SpriteRenderer>();
-        if (sprite != null)
+        if (grid == null) return;
+        if (WorldMapSprite == null) return;
+
+        if (gridOriginBottomLeft == Vector3.zero)
         {
-            // Récupère les bounds dans le monde
-            Bounds bounds = sprite.bounds;
-
-            // Coin inférieur gauche
-            bottomLeft = new Vector3(bounds.min.x, bounds.min.y, bounds.min.z);
-
-            Debug.Log("Coin inférieur gauche : " + bottomLeft);
+            ResetGridOrigin();
         }
 
+        DisplayGrid();
+    }
+
+    void DisplayGrid()
+    {
+        float cellSize = grid.cellSize.x; // On part du principe de cellules carrées
+        Vector3 origin = grid.transform.position + gridOriginBottomLeft;
+
+        Gizmos.color = Color.yellow;
 
         for (int x = 0; x < gridWidth; x++)
         {
             for (int y = 0; y < gridHeight; y++)
             {
-                // Calcul de la position dans le monde
-                Vector3 worldPos = new Vector3(bottomLeft.x + x * cellSize, bottomLeft.y + y * cellSize, 0);
+                // Convertit la coordonnée de cellule → position dans le monde
+                Vector3 worldPos = grid.CellToWorld(new Vector3Int(x, y, 0));
 
-                // Dessiner un petit cube pour visualiser la cellule
-                Gizmos.color = Color.yellow;
-                Gizmos.DrawWireCube(worldPos + new Vector3(cellSize, cellSize, 0) * 0.5f, new Vector3(cellSize, cellSize, 0));
+                // Dessiner le contour de la cellule
+                Gizmos.DrawWireCube(
+                    worldPos + new Vector3(cellSize * 0.5f, cellSize * 0.5f, 0),
+                    new Vector3(cellSize, cellSize, 0)
+                );
 
-                // Afficher les coordonnées dans la scène
 #if UNITY_EDITOR
-                UnityEditor.Handles.Label(worldPos + new Vector3(0, 0.1f, 0), $"({x},{y})");
+                // Afficher le label (coordonnées)
+                Handles.Label(
+                    worldPos + new Vector3(0.1f, 0.1f, 0),
+                    $"({x},{y})"
+                );
 #endif
             }
         }
     }
-    void Start()
+
+    public Vector3 GetBottomLeftOfSprite(SpriteRenderer sprite)
     {
+        // Bounds = boite englobante dans le monde
+        Bounds b = sprite.bounds;
 
-    }
+        // Le coin inférieur gauche du sprite dans le monde
+        Vector3 bottomLeft = new Vector3(b.min.x, b.min.y, sprite.transform.position.z);
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        return bottomLeft;
     }
 }
