@@ -113,11 +113,10 @@ public class EventManager : Singleton<EventManager>
         TriggeredEvents.Add(triggeredEvent);
         noEventTickCounter = 0;
         Debug.Log($"Event {triggeredEvent.EventData.Description} Triggered");
+        LogFileManager.Instance.LogUserAction("Event", triggeredEvent.EventData.Description);
         OnEventTriggered?.Invoke(triggeredEvent);
-        Timeline.Instance.SetPauseSpeed();
         CurrentEvent = triggeredEvent;
         triggeredEvent.OnEventTriggered += OnCurrentEventTriggered;
-        LogFileManager.Instance.LogUserAction("Event", triggeredEvent.EventData.Description);
         // Apply the modifier bank to the gauges
         GaugeManager.Instance.ApplyModifierBank(triggeredEvent.EventData.ModifierBank);
     }
