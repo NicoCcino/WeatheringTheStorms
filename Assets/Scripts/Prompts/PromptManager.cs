@@ -10,7 +10,7 @@ public class PromptManager : Singleton<PromptManager>
 {
     public PromptManagerParameter PromptManagerParameter;
     private List<Prompt> AvailablePrompts { get; set; } = new List<Prompt>();
-    private HashSet<Prompt> TriggeredPrompts { get; set; } = new HashSet<Prompt>();
+    private Dictionary<Prompt, Choice> TriggeredPrompts { get; set; } = new Dictionary<Prompt, Choice>();
     public Action<Prompt> OnPromptSpawned;
     public Action<Prompt> OnPromptOpened;
     private int noPromptTickCounter = 0;
@@ -111,7 +111,7 @@ public class PromptManager : Singleton<PromptManager>
             return true;
 
         // Check if the parent prompt has been triggered
-        return TriggeredPrompts.Contains(promptToCheck.PromptData.ParentPrompt);
+        return TriggeredPrompts.ContainsKey(promptToCheck.PromptData.ParentPrompt);
     }
 
     private bool ShouldAnyPromptOccur()
@@ -132,8 +132,8 @@ public class PromptManager : Singleton<PromptManager>
     {
         //We remove the selected prompt from the available prompts (so it cant occur twice in a game)
         AvailablePrompts.Remove(prompt);
-        //We add the prompt to the triggered prompts history
-        TriggeredPrompts.Add(prompt);
+        //We add the prompt to the triggered prompts history (with null choice until user answers)
+        TriggeredPrompts[prompt] = null;
         noPromptTickCounter = 0;
         Debug.Log($"Prompt {prompt.PromptData.Label} Triggered");
         OnPromptSpawned?.Invoke(prompt);
@@ -154,12 +154,54 @@ public class PromptManager : Singleton<PromptManager>
     {
         if (CurrentPrompt == null) return;
 
+        // Store the user's choice for this prompt
+        TriggeredPrompts[CurrentPrompt] = choice;
+        
+        // Log the choice to CSV file
+        LogFileManager.Instance.LogUserAction("Choice", $"{CurrentPrompt.PromptData.Label}: {choice.Label}");
+
         Timeline.Instance.SetPlaySpeed();
         CurrentPrompt.OnSolved -= OnCurrentPromptSolved;
     }
     public void OpenPrompt(Prompt prompt)
     {
         OnPromptOpened?.Invoke(prompt);
+    }
+
+    /// <summary>
+    /// Get the choice that was made for a specific prompt. Returns null if prompt wasn't triggered or not yet answered.
+    /// </summary>
+    public Choice GetChoiceForPrompt(Prompt prompt)
+    {
+        return TriggeredPrompts.TryGetValue(prompt, out Choice choice) ? choice : null;
+    }
+
+    /// <summary>
+    /// Check if a specific prompt was triggered (regardless of whether it was answered yet)
+    /// </summary>
+    public bool WasPromptTriggered(Prompt prompt)
+    {
+        return TriggeredPrompts.ContainsKey(prompt);
+    }
+
+    /// <summary>
+    /// Check if a specific choice label was selected for a given prompt
+    /// </summary>
+    public bool WasChoiceMade(Prompt prompt, string choiceLabel)
+    {
+        if (TriggeredPrompts.TryGetValue(prompt, out Choice choice))
+        {
+            return choice != null && choice.Label == choiceLabel;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Get all triggered prompts with their choices (read-only)
+    /// </summary>
+    public Dictionary<Prompt, Choice> GetAllTriggeredPrompts()
+    {
+        return new Dictionary<Prompt, Choice>(TriggeredPrompts);
     }
 }
 
