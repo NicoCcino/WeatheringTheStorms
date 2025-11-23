@@ -46,7 +46,7 @@ MonoBehaviour:
           AddedValue: 2
           OneShotValue: 0
     <DateCondition>k__BackingField:
-      <MinTick>k__BackingField: 25
+      <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 90
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0

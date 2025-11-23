@@ -101,8 +101,9 @@ GameObject:
   - component: {fileID: 6405492969308118873}
   - component: {fileID: 6345745981015321026}
   - component: {fileID: 5103621476301016741}
+  - component: {fileID: 1100381862681418079}
   m_Layer: 0
-  m_Name: EventClickable
+  m_Name: EventPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,7 +158,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3c0c5d41c2ac3478879180709d1699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventClickable
-  LinkedGridObject: {fileID: 0}
+  uIHoverInformation: {fileID: 1100381862681418079}
+--- !u!114 &1100381862681418079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238615561583514323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bf0bcb4d92af547bb97f886b7890be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIHoverInformation
+  DisplayedText: Just a test description for event
 --- !u!1 &5772377410725825988
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +199,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 1.601765, y: 1.601765, z: 1.601765}
+  m_LocalScale: {x: 1.2195038, y: 1.2195038, z: 1.2195038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5433040457933498733}

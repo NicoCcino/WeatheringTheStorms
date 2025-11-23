@@ -30,7 +30,7 @@ public class UIConsole : MonoBehaviour
         // Set parent
         eventLog.transform.SetParent(consoleContent.transform);
         // Update text
-
+        eventLog.transform.localScale = Vector3.one;
         string newLogText = Timeline.Instance.currentDate.ToString("yyyy/MM") + ": ";
         newLogText += triggeredEvent.EventData.Description;
         eventLog.GetComponent<TextMeshProUGUI>().text = newLogText;
@@ -44,15 +44,4 @@ public class UIConsole : MonoBehaviour
         scrollRect.verticalNormalizedPosition = 0f;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
