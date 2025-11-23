@@ -55,4 +55,8 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 5cc21288e37e34fdc9bc5618bbf6bc83, type: 2}
+    <PlannedAction>k__BackingField:
+      <TicksDelay>k__BackingField: 1
+      <PlannedPrompt>k__BackingField: {fileID: 0}
+      <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 12, y: 7}

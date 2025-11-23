@@ -40,3 +40,7 @@ MonoBehaviour:
     Icon: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
     Duration: 0
     <ParentEvent>k__BackingField: {fileID: 11400000, guid: 5e348a35bb05e43e1a6b17e3020c99f2, type: 2}
+    <PlannedAction>k__BackingField:
+      <TicksDelay>k__BackingField: 0
+      <PlannedPrompt>k__BackingField: {fileID: 0}
+      <PlannedEvent>k__BackingField: {fileID: 0}
