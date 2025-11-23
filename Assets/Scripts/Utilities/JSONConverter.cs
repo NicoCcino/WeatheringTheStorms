@@ -128,7 +128,7 @@ namespace JSONData
         public string Label;
         public string Description;
         public List<ChoiceJSON> Choices;
-        public Vector2IntJSON Coordinates;
+        public Vector2IntJSON Coordinates; // In JSON but will be set on Prompt, not PromptData
         public DateConditionJSON DateCondition;
         public GaugeConditionJSON GaugeCondition;
         public string ParentPromptName; // Reference by name, will be resolved later
