@@ -37,7 +37,12 @@
           "MaxValue": 100,
           "Category": 0
         },
-        "ParentEventName": ""
+        "ParentEventName": "",
+        "PlannedAction": {
+          "TicksDelay": 10,
+          "PlannedPromptName": "",
+          "PlannedEventName": "Event_PowerGridOverload"
+        }
       }
     },
     {
@@ -77,7 +82,8 @@
           "MaxValue": 100,
           "Category": 1
         },
-        "ParentEventName": ""
+        "ParentEventName": "",
+        "PlannedAction": null
       }
     },
     {
@@ -117,7 +123,8 @@
           "MaxValue": 100,
           "Category": 0
         },
-        "ParentEventName": "Event_DataCenterFire"
+        "ParentEventName": "Event_DataCenterFire",
+        "PlannedAction": null
       }
     },
     {

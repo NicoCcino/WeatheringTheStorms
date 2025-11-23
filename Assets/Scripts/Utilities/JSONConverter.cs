@@ -97,6 +97,14 @@ namespace JSONData
     }
 
     [Serializable]
+    public class PlannedActionJSON
+    {
+        public uint TicksDelay;
+        public string PlannedPromptName; // Reference by name, will be resolved later
+        public string PlannedEventName; // Reference by name, will be resolved later
+    }
+
+    [Serializable]
     public class EventDataJSON
     {
         public string Description;
@@ -107,6 +115,7 @@ namespace JSONData
         public DateConditionJSON DateCondition;
         public GaugeConditionJSON GaugeCondition;
         public string ParentEventName; // Reference by name, will be resolved later
+        public PlannedActionJSON PlannedAction; // Optional planned action
     }
 
     [Serializable]
@@ -132,6 +141,7 @@ namespace JSONData
         public DateConditionJSON DateCondition;
         public GaugeConditionJSON GaugeCondition;
         public string ParentPromptName; // Reference by name, will be resolved later
+        public PlannedActionJSON PlannedAction; // Optional planned action
     }
 
     [Serializable]

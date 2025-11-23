@@ -153,6 +153,9 @@ public class JSONConverterEditor : EditorWindow
 
             AssetDatabase.SaveAssets();
 
+            // Third pass: Resolve PlannedAction references (need all Prompts to be loaded too)
+            ResolveEventPlannedActions(eventList, createdEvents);
+
             // Update EventManagerParameter
             UpdateEventManagerParameter(createdEvents.Values.ToList());
 
@@ -238,6 +241,9 @@ public class JSONConverterEditor : EditorWindow
             }
 
             AssetDatabase.SaveAssets();
+
+            // Third pass: Resolve PlannedAction references (need all Events to be loaded too)
+            ResolvePromptPlannedActions(promptList, createdPrompts);
 
             // Update PromptManagerParameter
             UpdatePromptManagerParameter(createdPrompts.Values.ToList());
@@ -523,6 +529,146 @@ public class JSONConverterEditor : EditorWindow
                 Debug.LogWarning($"Could not find field or property: {propertyName} on type {obj.GetType().Name}");
             }
         }
+    }
+
+    private static void ResolveEventPlannedActions(EventListJSON eventList, Dictionary<string, Event> createdEvents)
+    {
+        // Load all prompts that might be referenced
+        Dictionary<string, Prompt> allPrompts = LoadAllPromptsFromAssets();
+
+        for (int i = 0; i < eventList.Events.Count; i++)
+        {
+            var eventJSON = eventList.Events[i];
+            if (eventJSON.EventData.PlannedAction != null)
+            {
+                Event currentEvent = createdEvents[eventJSON.Name];
+                var eventDataField = typeof(Event).GetField("EventData");
+                EventData eventData = (EventData)eventDataField.GetValue(currentEvent);
+
+                PlannedAction plannedAction = new PlannedAction();
+                SetPrivateProperty(plannedAction, "TicksDelay", eventJSON.EventData.PlannedAction.TicksDelay);
+
+                // Resolve planned prompt reference
+                if (!string.IsNullOrEmpty(eventJSON.EventData.PlannedAction.PlannedPromptName))
+                {
+                    if (allPrompts.TryGetValue(eventJSON.EventData.PlannedAction.PlannedPromptName, out Prompt plannedPrompt))
+                    {
+                        SetPrivateProperty(plannedAction, "PlannedPrompt", plannedPrompt);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Planned prompt '{eventJSON.EventData.PlannedAction.PlannedPromptName}' not found for event '{eventJSON.Name}'");
+                    }
+                }
+
+                // Resolve planned event reference
+                if (!string.IsNullOrEmpty(eventJSON.EventData.PlannedAction.PlannedEventName))
+                {
+                    if (createdEvents.TryGetValue(eventJSON.EventData.PlannedAction.PlannedEventName, out Event plannedEvent))
+                    {
+                        SetPrivateProperty(plannedAction, "PlannedEvent", plannedEvent);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Planned event '{eventJSON.EventData.PlannedAction.PlannedEventName}' not found for event '{eventJSON.Name}'");
+                    }
+                }
+
+                SetPrivateProperty(eventData, "PlannedAction", plannedAction);
+                EditorUtility.SetDirty(currentEvent);
+            }
+        }
+
+        AssetDatabase.SaveAssets();
+    }
+
+    private static void ResolvePromptPlannedActions(PromptListJSON promptList, Dictionary<string, Prompt> createdPrompts)
+    {
+        // Load all events that might be referenced
+        Dictionary<string, Event> allEvents = LoadAllEventsFromAssets();
+
+        for (int i = 0; i < promptList.Prompts.Count; i++)
+        {
+            var promptJSON = promptList.Prompts[i];
+            if (promptJSON.PromptData.PlannedAction != null)
+            {
+                Prompt currentPrompt = createdPrompts[promptJSON.Name];
+                var promptDataField = typeof(Prompt).GetField("PromptData");
+                PromptData promptData = (PromptData)promptDataField.GetValue(currentPrompt);
+
+                PlannedAction plannedAction = new PlannedAction();
+                SetPrivateProperty(plannedAction, "TicksDelay", promptJSON.PromptData.PlannedAction.TicksDelay);
+
+                // Resolve planned prompt reference
+                if (!string.IsNullOrEmpty(promptJSON.PromptData.PlannedAction.PlannedPromptName))
+                {
+                    if (createdPrompts.TryGetValue(promptJSON.PromptData.PlannedAction.PlannedPromptName, out Prompt plannedPrompt))
+                    {
+                        SetPrivateProperty(plannedAction, "PlannedPrompt", plannedPrompt);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Planned prompt '{promptJSON.PromptData.PlannedAction.PlannedPromptName}' not found for prompt '{promptJSON.Name}'");
+                    }
+                }
+
+                // Resolve planned event reference
+                if (!string.IsNullOrEmpty(promptJSON.PromptData.PlannedAction.PlannedEventName))
+                {
+                    if (allEvents.TryGetValue(promptJSON.PromptData.PlannedAction.PlannedEventName, out Event plannedEvent))
+                    {
+                        SetPrivateProperty(plannedAction, "PlannedEvent", plannedEvent);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Planned event '{promptJSON.PromptData.PlannedAction.PlannedEventName}' not found for prompt '{promptJSON.Name}'");
+                    }
+                }
+
+                SetPrivateProperty(promptData, "PlannedAction", plannedAction);
+                EditorUtility.SetDirty(currentPrompt);
+            }
+        }
+
+        AssetDatabase.SaveAssets();
+    }
+
+    private static Dictionary<string, Prompt> LoadAllPromptsFromAssets()
+    {
+        Dictionary<string, Prompt> prompts = new Dictionary<string, Prompt>();
+        string[] guids = AssetDatabase.FindAssets("t:Prompt", new[] { PROMPTS_FOLDER });
+        
+        foreach (string guid in guids)
+        {
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            Prompt prompt = AssetDatabase.LoadAssetAtPath<Prompt>(assetPath);
+            if (prompt != null)
+            {
+                string name = System.IO.Path.GetFileNameWithoutExtension(assetPath);
+                prompts[name] = prompt;
+            }
+        }
+        
+        return prompts;
+    }
+
+    private static Dictionary<string, Event> LoadAllEventsFromAssets()
+    {
+        Dictionary<string, Event> events = new Dictionary<string, Event>();
+        string[] guids = AssetDatabase.FindAssets("t:Event", new[] { EVENTS_FOLDER });
+        
+        foreach (string guid in guids)
+        {
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            Event evt = AssetDatabase.LoadAssetAtPath<Event>(assetPath);
+            if (evt != null)
+            {
+                string name = System.IO.Path.GetFileNameWithoutExtension(assetPath);
+                events[name] = evt;
+            }
+        }
+        
+        return events;
     }
 }
 #endif

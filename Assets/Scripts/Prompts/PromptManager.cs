@@ -32,6 +32,11 @@ public class PromptManager : Singleton<PromptManager>
         {
             Timeline.Instance.OnTick += OnTickCallback;
         }
+        if (Planner.Instance == null)
+        {
+            Debug.LogError("Planner is not running. Please move the Planner component to a GameObject.");
+            return;
+        }
     }
     private void OnDisable()
     {
@@ -42,6 +47,23 @@ public class PromptManager : Singleton<PromptManager>
     }
     private void OnTickCallback(uint currentTick)
     {
+        // First, check if there are any scheduled prompts for this tick
+        if (Planner.Instance != null && Planner.Instance.HasScheduledActionsForTick(currentTick))
+        {
+            var scheduledActions = Planner.Instance.GetAndConsumeScheduledActions(currentTick, ScheduledActionType.Prompt);
+            foreach (var action in scheduledActions)
+            {
+                if (action.ScheduledPrompt != null && AvailablePrompts.Contains(action.ScheduledPrompt))
+                {
+                    TriggerPrompt(action.ScheduledPrompt);
+                }
+            }
+            if (scheduledActions.Count > 0)
+            {
+                return; // Scheduled prompts reset the random probability counter
+            }
+        }
+
         //We roll the dices to see if we should trigger a prompt on this tick
         bool shouldAnyPromptOccur = ShouldAnyPromptOccur();
         if (shouldAnyPromptOccur == false)
@@ -118,6 +140,15 @@ public class PromptManager : Singleton<PromptManager>
         CurrentPrompt = prompt;
         prompt.OnSolved += OnCurrentPromptSolved;
         LogFileManager.Instance.LogUserAction("Prompt", prompt.PromptData.Label);
+
+        // Schedule any planned action if present
+        if (prompt.PromptData.PlannedAction != null && prompt.PromptData.PlannedAction.IsValid())
+        {
+            if (Timeline.Instance != null && Planner.Instance != null)
+            {
+                prompt.PromptData.PlannedAction.Schedule(Timeline.Instance.CurrentTick);
+            }
+        }
     }
     private void OnCurrentPromptSolved(Choice choice)
     {

@@ -42,6 +42,23 @@ public class EventManager : Singleton<EventManager>
     }
     private void OnTickCallback(uint currentTick)
     {
+        // First, check if there are any scheduled events for this tick
+        if (Planner.Instance != null && Planner.Instance.HasScheduledActionsForTick(currentTick))
+        {
+            var scheduledActions = Planner.Instance.GetAndConsumeScheduledActions(currentTick, ScheduledActionType.Event);
+            foreach (var action in scheduledActions)
+            {
+                if (action.ScheduledEvent != null && AvailableEvents.Contains(action.ScheduledEvent))
+                {
+                    TriggerEvent(action.ScheduledEvent);
+                }
+            }
+            if (scheduledActions.Count > 0)
+            {
+                return; // Scheduled events reset the random probability counter
+            }
+        }
+
         //We roll the dices to see if we should trigger a event on this tick
         bool shouldAnyEventOccur = ShouldAnyEventOccur();
         if (shouldAnyEventOccur == false)
@@ -120,6 +137,15 @@ public class EventManager : Singleton<EventManager>
         triggeredEvent.OnEventTriggered += OnCurrentEventTriggered;
         // Apply the modifier bank to the gauges
         GaugeManager.Instance.ApplyModifierBank(triggeredEvent.EventData.ModifierBank);
+
+        // Schedule any planned action if present
+        if (triggeredEvent.EventData.PlannedAction != null && triggeredEvent.EventData.PlannedAction.IsValid())
+        {
+            if (Timeline.Instance != null && Planner.Instance != null)
+            {
+                triggeredEvent.EventData.PlannedAction.Schedule(Timeline.Instance.CurrentTick);
+            }
+        }
     }
 
     private void OnCurrentEventTriggered(Event triggeredEvent)

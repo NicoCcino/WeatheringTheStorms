@@ -26,5 +26,9 @@ public class EventData
     [field: SerializeField, Tooltip("Optional: This event can only trigger if the parent event has been triggered before")]
     public Event ParentEvent { get; private set; }
 
+    [field: Header("Planned Actions")]
+    [field: SerializeField, Tooltip("Optional: Action to schedule when this event is triggered")]
+    public PlannedAction PlannedAction { get; private set; }
+
 }
 
