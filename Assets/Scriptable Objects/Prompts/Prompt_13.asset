@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_13
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: ai_killah
+    <Description>k__BackingField: "Hi. So\u2026 People say you're smart. Prove it."
+    <Choices>k__BackingField:
+    - Label: "Let me think\u2026 e=mc2."
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: "2min computing\u2026\n\nI love a challenge, watch this!\n\nWhat is
+        the next number? 2, 3, 5, 8, 12, ?\n\n17."
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 1
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

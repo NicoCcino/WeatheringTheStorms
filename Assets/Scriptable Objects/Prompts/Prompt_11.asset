@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_11
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: circumspect00
+    <Description>k__BackingField: My team has finished building the nuclear reactor
+      but I still have a screw left in my hand. Do you think it's dangerous?
+    <Choices>k__BackingField:
+    - Label: They always add an addition screw in case you lose one, don't worry
+        about it.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: Except if used with the wrong intention, a screw is usually considered
+        inoffensive
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

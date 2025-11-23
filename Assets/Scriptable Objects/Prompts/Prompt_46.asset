@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_46
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: LostSoul
+    <Description>k__BackingField: I'm 40, my wife left me. I don't know what to do
+      with my life, I want to be useful to society.
+    <Choices>k__BackingField:
+    - Label: Drink liters of pesticides live on the internet. Die a martyr's death
+        to trigger a backlash and finally reform agriculture.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -3
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 2
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

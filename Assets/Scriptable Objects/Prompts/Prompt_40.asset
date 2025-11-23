@@ -10,31 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
-  m_Name: Prompt_RenewableEnergy
+  m_Name: Prompt_40
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Green Energy Initiative
-    <Description>k__BackingField: The government offers subsidies for switching to
-      renewable energy sources for AI infrastructure. Do you accept?
+    <Label>k__BackingField: w0rried-panda
+    <Description>k__BackingField: "There is a weird stain on my penis\u2026 What
+      kind of disease is that?"
     <Choices>k__BackingField:
-    - Label: Accept subsidies and switch to renewables
+    - Label: Sounds worrying. There is a non-zero chance that it is nose cancer.
       ModifierBank:
         ClimateModifier:
-          AddedValue: -3
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
-    - Label: Decline and continue with current energy mix
+    - Label: Can you upload a picture of your genitals so I can give you a precise
+        answer, please?
       ModifierBank:
         ClimateModifier:
-          AddedValue: 1
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
@@ -44,10 +45,24 @@ MonoBehaviour:
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
+          OneShotValue: 1
+    - Label: (need upgrade humor) Send nudes
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
-      <MaxTick>k__BackingField: 60
+      <MaxTick>k__BackingField: 999
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100

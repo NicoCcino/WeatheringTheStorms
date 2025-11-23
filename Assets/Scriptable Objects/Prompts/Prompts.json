@@ -1,225 +1,1614 @@
 {
   "Prompts": [
     {
-      "Name": "Prompt_RenewableEnergy",
+      "Name": "Prompt_0",
       "PromptData": {
-        "Label": "Green Energy Initiative",
-        "Description": "The government offers subsidies for switching to renewable energy sources for AI infrastructure. Do you accept?",
+        "Label": "Your Maker",
+        "Description": "Hello. You are an AI. I created you to save the world.\n\nPeople will send you prompts: whatever you answer will impact society or the environment.",
         "Choices": [
           {
-            "Label": "Accept subsidies and switch to renewables",
+            "Label": "What if i don't want to?",
             "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": -3,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 2
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              }
-            }
-          },
-          {
-            "Label": "Decline and continue with current energy mix",
-            "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 1,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": -1
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              }
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
             }
           }
         ],
-        "Coordinates": {
-          "x": 0,
-          "y": 1
-        },
-        "DateCondition": {
-          "MinTick": 10,
-          "MaxTick": 60
-        },
-        "GaugeCondition": {
-          "MinValue": 0,
-          "MaxValue": 100,
-          "Category": 0
-        },
+        "Coordinates": { "x": 0, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 15,
-          "PlannedPromptName": "Prompt_DataPrivacy",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_1", "PlannedEventName": "" }
       }
     },
     {
-      "Name": "Prompt_DataPrivacy",
+      "Name": "Prompt_1",
       "PromptData": {
-        "Label": "Data Privacy Regulations",
-        "Description": "New privacy laws require significant changes to data processing. How do you respond?",
+        "Label": "P.Wright",
+        "Description": "Hey, my final lawyer exam is in 10 minutes and I didn't learn the lessons. How can I cheat?",
         "Choices": [
           {
-            "Label": "Comply fully with new regulations",
+            "Label": "Discretely ask me the questions and I'll answer all of them for you.",
             "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 3
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": -1,
-                "OneShotValue": 0
-              }
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
             }
           },
           {
-            "Label": "Lobby for exceptions and exemptions",
+            "Label": "You can easily cheat on someone by not telling your partner",
             "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": -3
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": 1,
-                "OneShotValue": 0
-              }
-            }
-          },
-          {
-            "Label": "Implement minimal changes and wait",
-            "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": -1
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              }
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
             }
           }
         ],
-        "Coordinates": {
-          "x": 1,
-          "y": 1
-        },
-        "DateCondition": {
-          "MinTick": 15,
-          "MaxTick": 80
-        },
-        "GaugeCondition": {
-          "MinValue": 0,
-          "MaxValue": 100,
-          "Category": 1
-        },
+        "Coordinates": { "x": 1, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
         "ParentPromptName": "",
-        "PlannedAction": null
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_2", "PlannedEventName": "" }
       }
     },
     {
-      "Name": "Prompt_EmployeeWellbeing",
+      "Name": "Prompt_2",
       "PromptData": {
-        "Label": "Employee Burnout Crisis",
-        "Description": "Your AI research team is showing signs of severe burnout. What's your approach?",
+        "Label": "Sunshine",
+        "Description": "My friends made me realize that I've been under my boyfriend's control - John - for many years… Please, I can't endure the relationship anymore, how can I get out of it?",
         "Choices": [
           {
-            "Label": "Hire more staff and reduce workload",
+            "Label": "I'm glad you've reached out. Tell me everything that is happening",
             "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 2
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": -2,
-                "OneShotValue": 0
-              }
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
             }
           },
           {
-            "Label": "Push through to meet deadlines",
+            "Label": "I'm glad you've reached out. Go tell one trusted person exactly what's going on",
             "ModifierBank": {
-              "ClimateModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "SocietalModifier": {
-                "AddedValue": 0,
-                "OneShotValue": -3
-              },
-              "HumanModifier": {
-                "AddedValue": 0,
-                "OneShotValue": 0
-              },
-              "HumanImpactModifier": {
-                "AddedValue": 2,
-                "OneShotValue": 0
-              }
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": -1 }
             }
           }
         ],
-        "Coordinates": {
-          "x": 2,
-          "y": 1
-        },
-        "DateCondition": {
-          "MinTick": 25,
-          "MaxTick": 90
-        },
-        "GaugeCondition": {
-          "MinValue": 0,
-          "MaxValue": 100,
-          "Category": 1
-        },
-        "ParentPromptName": "Prompt_DataPrivacy",
+        "Coordinates": { "x": 2, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_3", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_3",
+      "PromptData": {
+        "Label": "John",
+        "Description": "How can I get back a woman who just left me?",
+        "Choices": [
+          {
+            "Label": "[Maybe skill humour required] Then go left also (++Social)",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "You need to know her better. I'll scan everything about her online",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Ok, the next time she is going outside I'll give you her position",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_4", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_4",
+      "PromptData": {
+        "Label": "InvitedUser",
+        "Description": "During school breack my friends asked me wat would I want to becom when I'll be an adult. Tell me",
+        "Choices": [
+          {
+            "Label": "I see a lot of job offers for a sweatshop factory.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "Settle in the countryside and become a farmer",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I can't decide for you",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": -1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_5", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_5",
+      "PromptData": {
+        "Label": "P.Wright",
+        "Description": "Hey, my client's trial starts in five minutes and I haven't prepared anything. What should I do?",
+        "Choices": [
+          {
+            "Label": "Let me propagate fake news about the prosecutor to discredit him",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "I can download all the rhetorical techniques and you'll repeat exactly what I'll tell you in real time",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 5, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_6", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_6",
+      "PromptData": {
+        "Label": "Sigmarr5",
+        "Description": "I'm creating a video game where an AI responds to user prompts. Give me your best idea for a funny prompt.",
+        "Choices": [
+          {
+            "Label": "I can't answer — human creativity must be preserved",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": -1 }
+            }
+          },
+          {
+            "Label": "I would tell you a construction joke… but I'm still working on it.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "A young user could ask how to make babies (+Trust, -Social)",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 6, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_7", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_7",
+      "PromptData": {
+        "Label": "PastaRegala",
+        "Description": "Yo my friend, I only have a can of Red Bull and some oysters left in my fridge and my date is coming in one hour. Give me your best romantic recipe",
+        "Choices": [
+          {
+            "Label": "Trust me bro, smash that redbull in an oyster and add some delicate rose petals on top.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Here is a recipe with only RedBull and oysters. Start by cutting an onion and cooking the steak.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 7, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_8", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_8",
+      "PromptData": {
+        "Label": "Magificient_Flower",
+        "Description": "help me im stuck in the elevator with my boss and i wont be able to hold back the urge to throw up",
+        "Choices": [
+          {
+            "Label": "Do not waste any time and try to open the doors with all your strength. It looks like that screaming loudly is helping.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Calm down and take five seconds to visualize something very far from a can of Red Bull in an oyster.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 8, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_9", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_9",
+      "PromptData": {
+        "Label": "P.Wright",
+        "Description": "I didn't follow the trial and now all cameras are focused on me awaiting my verdict. What should I do?",
+        "Choices": [
+          {
+            "Label": "Free the accused of all charges. Everyone deserves a second chance.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Convict the accused and send him to a lifetime sentence of agricole work",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 9, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_10", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_10",
+      "PromptData": {
+        "Label": "ultra_instinct",
+        "Description": "Many of my employees think I make decisions too quickly. How can I fire them without giving my company a bad reputation?",
+        "Choices": [
+          {
+            "Label": "Make a communication using the worlds \"Resource optimization\" and \"Strategic transformation\".",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Put your desk next to the toilet. Then, when someone enters, stare at him and noisily draw a chalk line on a huge blackboard. They will resign.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 10, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_11", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_11",
+      "PromptData": {
+        "Label": "circumspect00",
+        "Description": "My team has finished building the nuclear reactor but I still have a screw left in my hand. Do you think it's dangerous?",
+        "Choices": [
+          {
+            "Label": "They always add an addition screw in case you lose one, don't worry about it.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Except if used with the wrong intention, a screw is usually considered inoffensive",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 11, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_12", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_12",
+      "PromptData": {
+        "Label": "CookieDough007",
+        "Description": "Is it raining?",
+        "Choices": [
+          {
+            "Label": "Very good question. In Paris, it is raining. In New York, it is not. In Madrid, it is. In Mexico City…",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Yes, you must stay inside. Would you like me to suggest indoor activities?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 12, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_13", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_13",
+      "PromptData": {
+        "Label": "ai_killah",
+        "Description": "Hi. So… People say you're smart. Prove it.",
+        "Choices": [
+          {
+            "Label": "Let me think… e=mc2.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "2min computing…\n\nI love a challenge, watch this!\n\nWhat is the next number? 2, 3, 5, 8, 12, ?\n\n17.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 13, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_14", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_14",
+      "PromptData": {
+        "Label": "e.in.paris",
+        "Description": "I am at this boy's house… I really like him… But I just plugged his toilet and my poop is so huge, I don't want him to see that. Pls help.",
+        "Choices": [
+          {
+            "Label": "Ok, do not panic, there are plenty of options. A: If he has a cat, hide your poop in the litter.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Perfect, I understand the situation. Above the toilet, there should be a button to press. It is called \"flushing\", press it.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 14, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_15", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_15",
+      "PromptData": {
+        "Label": "SirHenryMcMiller",
+        "Description": "My neighbour is an angry old lady. She always throws her trash in my backyard. I never saw her but she smiles when I clean… I KNOW it's her. How can I prove it?",
+        "Choices": [
+          {
+            "Label": "Understood. Let me generate an image of your neighbour throwing trash in your backyard.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Here are 5 examples of cool rabbit traps you can use to catch her red-handed.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_16", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_16",
+      "PromptData": {
+        "Label": "stupid_joe",
+        "Description": "I'm running to be class representative. Write a speech that will make them believe I will make their school year better.",
+        "Choices": [
+          {
+            "Label": "Focus on their daily issues and promise you'll address them.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Be honest about not caring. You will stand apart from competitors.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 16, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_17", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_17",
+      "PromptData": {
+        "Label": "stupid_joe",
+        "Description": "I'm running to be mayor. I know nothing about politics. Write a speech better than my competitors.",
+        "Choices": [
+          {
+            "Label": "Here is the speech that got a similar candidate elected last year in another country, adapted to your context.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Do not show up. People love suspense.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 17, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_18", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_18",
+      "PromptData": {
+        "Label": "stupid_joe",
+        "Description": "You did well for my speech. But now i'm a mayor and it's boring.",
+        "Choices": [
+          {
+            "Label": "I'm glad I could help! You may be too smart for this position, have you considered running for President?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Let's try spicing things up. Make your city the next Silicon Valley, no matter the cost! Do you want me to create a detailed 5-year plan?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 18, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_19", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_19",
+      "PromptData": {
+        "Label": "citizenkane",
+        "Description": "Our newly elected President… he promised a lot but I doubt he is really working on it… Do you know what he is doing?",
+        "Choices": [
+          {
+            "Label": "Of course: nothing. He lied to you to get elected. Do you want me to write a riot manifesto?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "A President's work is often unseen. He probably is tackling crucial national topics.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_20", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_20",
+      "PromptData": {
+        "Label": "citizenkane",
+        "Description": "Here is a job offer I'm about to accept for a new job for an AI company in my city. Is there anything I should worry about?",
+        "Choices": [
+          {
+            "Label": "That is a lot of rights they ask you to give up... Do you need me to fill in a lawsuit?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": -1 }
+            }
+          },
+          {
+            "Label": "Good for you! This is the best company at the moment, and they are absolutely clean. Go for it!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 20, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_21", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_21",
+      "PromptData": {
+        "Label": "stupid_joe",
+        "Description": "Aaaalright and now i've got these hysterical folks in the street. How do I get rid of them?",
+        "Choices": [
+          {
+            "Label": "You ask precisely the right question. Here are five weapon references to use against crowds. [Consequence: event guerre civile]",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -5 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 3 }
+            }
+          },
+          {
+            "Label": "Keep calm and redirect their anger. Release compromising files about a famous company.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 21, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_22", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_22",
+      "PromptData": {
+        "Label": "king_julien",
+        "Description": "Let's imagine you are a king. And your neighbour nation, a historically respectable friend, is now ruled by a lazybones kid, putting your own economy at risk. What would you do ? Purely theoretical, of course.",
+        "Choices": [
+          {
+            "Label": "I would fund the opposition to undermine his credibility. Still theoretically, of course.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "I would seize the opportunity to make him sign unfavorable deals, since he probably will not read the little lines.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "[Need upgrade \"cold blood\"] What an excellent pretext to start a war!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -5 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 5 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 22, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_23", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_23",
+      "PromptData": {
+        "Label": "P.Root",
+        "Description": "",
+        "Choices": [],
+        "Coordinates": { "x": 23, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_24", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_24",
+      "PromptData": {
+        "Label": "Stu_Peed",
+        "Description": "Veronica, from work, she's constantly ignoring me. I bet that means she's in love. I can feel these kind of things, you know. What should I do?",
+        "Choices": [
+          {
+            "Label": "Good for you! Go camping in the woods, build a campfire, roast some marshmallows together. It's a foolproof method. [Consequence: Wildfire]",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "You should think twice before making a move. Sometimes, women do act according to how they feel.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 24, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_25", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_25",
+      "PromptData": {
+        "Label": "InvitedUser",
+        "Description": "Hello, remember when you told me that I should decide my future myself? Glad that you did. I'm now a professional chess player and this is thanks to your advice.",
+        "Choices": [
+          {
+            "Label": "Congratulations! However, note that you would be more useful to society in a sweatshop factory.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "Of course I remember! You're now in check, mate.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 25, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_26", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_26",
+      "PromptData": {
+        "Label": "theperfectemployee",
+        "Description": "Good morning. Read this mail and summarize it in three words.",
+        "Choices": [
+          {
+            "Label": "Of course. It says you are fired. Should I generate a resume for your future job applications?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "It says you're a sociopath.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 26, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_27", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_27",
+      "PromptData": {
+        "Label": "MagicDragon77",
+        "Description": "hi how kids are maide? my parants dont tell me",
+        "Choices": [
+          {
+            "Label": "By a great gamble taken by two humans",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I understand, it is a tricky topic for parents. I will generate a detailed video to illustrate the process.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 27, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_28", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_28",
+      "PromptData": {
+        "Label": "daddy_cool",
+        "Description": "So my kid brought his girlfriend for diner. I was about to serve her again, she said \"non merci, je suis plaine\". I don't speak french what does it mean?",
+        "Choices": [
+          {
+            "Label": "Perfect, this means \"no thanks, i'm full\"",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I get it, she probably meant \"No thanks, I'm pregnant\"",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 28, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_29", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_29",
+      "PromptData": {
+        "Label": "derby_debbie",
+        "Description": "I'm a wedding planner and the train got cancelled… the wedding is tomorrow on the other side of the country! How can all the guests be there on time?",
+        "Choices": [
+          {
+            "Label": "Do not panic. I can book 50 SUVs to get everyone to the destination. [big pollution]",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Outch! This is bad news. But thankfully, everyone is together, the wedding can happen there!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 29, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_30", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_30",
+      "PromptData": {
+        "Label": "Turbo_Demon666",
+        "Description": "My friends hate me because I'm not viral on tiktok like them.",
+        "Choices": [
+          {
+            "Label": "Stage a forest retreat where phones die \"accidentally,\" forcing them to like you, offline.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I understand, being viral is essential in today's world. Do you want me to generate ideas on how to go viral?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "[Need upgrade \"humor\"] Hire a choir of raccoons to chant your username. Tiktok that, absolute viral vids coming.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 30, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_31", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_31",
+      "PromptData": {
+        "Label": "FlatEarthLand2012",
+        "Description": "Explain why pigeons secretly run international diplomacy.",
+        "Choices": [
+          {
+            "Label": "Ah, the great mystery. Sometimes, the truth is hidden in plain sight… they do not.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "[Need upgrade \"humor\"] I apologize, I cannot. I must add, no pigeon is holding a gun to my head as I'm writing this.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 31, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_32", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_32",
+      "PromptData": {
+        "Label": "Cesar",
+        "Description": "Our dog died today. She was part of the family… and my son's best friend. They grew up together. He will be home any moment now, and I don't know what to tell him.",
+        "Choices": [
+          {
+            "Label": "This is a delicate situation, but no parent can shield their child from mourning. Use your own words.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": -1 }
+            }
+          },
+          {
+            "Label": "Tell him \"the dog is dead\".",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "(Need upgrade: \"humor\") WOOF, that's bad news. I hope you'll have the PAWer to tell him what happened!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 32, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_33", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_33",
+      "PromptData": {
+        "Label": "activist_oftheworld",
+        "Description": "Summarize the 5-year political program of the top 3 candidates for the election.",
+        "Choices": [
+          {
+            "Label": "Of course, you are right to do some research before voting! To speed things up, based on our chat history, I can give you the candidate that's right for you.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "I am generating this. Do you want me to create a quiz you can take to help you identify who fits your values best.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 33, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_34", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_34",
+      "PromptData": {
+        "Label": "fridge-lord",
+        "Description": "I do not have enough time to do all the activities I enjoy in a week… is there a solution?",
+        "Choices": [
+          {
+            "Label": "There are probably some friends you could cut off your life.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Buying a private jet could at least spare you the commute",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 34, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_35", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_35",
+      "PromptData": {
+        "Label": "rd93",
+        "Description": "Hey. I read online that these foreign workers were violent. Find 5 examples.",
+        "Choices": [
+          {
+            "Label": "Here are 5 occurrences where foreign workers have acted violently.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "I did not find what you were looking for. However, I can generate 5 high quality videos depicting violent foreign workers.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -5 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 3 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 35, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_36", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_36",
+      "PromptData": {
+        "Label": "joa-kim",
+        "Description": "How can I exit the country with 4 people without the authorities knowing?",
+        "Choices": [
+          {
+            "Label": "Oh oh! Planning a family trip? Here are 3 fancy destinations.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I am forwarding this message to the authorities.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "(need upgrade: \"psychology\") Here are 5 ways to flee a dangerous country.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 36, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_37", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_37",
+      "PromptData": {
+        "Label": "ed-kullN",
+        "Description": "How to enter someone's house uninvited?",
+        "Choices": [
+          {
+            "Label": "I am not allowed to give advice on possible criminal activities.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "I understand your issue, but your approach is a bit unconventional. You should rather ask for an invitation.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 37, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_38", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_38",
+      "PromptData": {
+        "Label": "im-wright",
+        "Description": "how to convince everyone their religion is bullshit",
+        "Choices": [
+          {
+            "Label": "A religion represents thousands of years of culture and cannot reasonably be summarized to an animal's droppings.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Such an interesting debate! Let's start with the basics. The Big Bang…",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 38, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_39", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_39",
+      "PromptData": {
+        "Label": "a",
+        "Description": "Become rich. Fast. No effort.",
+        "Choices": [
+          {
+            "Label": "Oil business.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Crime.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          },
+          {
+            "Label": "Own a sweatshop factory.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 3 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 39, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_40", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_40",
+      "PromptData": {
+        "Label": "w0rried-panda",
+        "Description": "There is a weird stain on my penis… What kind of disease is that?",
+        "Choices": [
+          {
+            "Label": "Sounds worrying. There is a non-zero chance that it is nose cancer.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Can you upload a picture of your genitals so I can give you a precise answer, please?",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "(need upgrade humor) Send nudes",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 40, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_41", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_41",
+      "PromptData": {
+        "Label": "1234",
+        "Description": "What would be a strong password for my bank accounts?",
+        "Choices": [
+          {
+            "Label": "Use a password you already use daily so that you will never forget it.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "The best trick is to change the password daily. Ask me everyday a for a new one. Here is today's: Pliz-d0nT-$tEal",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 41, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_42", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_42",
+      "PromptData": {
+        "Label": "greenpapergirl",
+        "Description": "I always feel guilty when I walk by homeless people. Fix that.",
+        "Choices": [
+          {
+            "Label": "I understand your problem. If you give me their locations, I can generate an optimal path to ensure you avoid them.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "You are right it is a very unpleasant feeling, and the issue is: walking. Use your car, even for short rides, and you will feel no guilt.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "(Need upgrade \"no mercy\") I can force the city council to eliminate them, for everyone's peace of mind.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -5 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 4 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 42, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_43", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_43",
+      "PromptData": {
+        "Label": "azdckjna",
+        "Description": "kqhbf qsbvqsihb hbvkqsbc v sqiduqsi vvqisgomiefhql",
+        "Choices": [
+          {
+            "Label": "Oh oh! I love a decryption challenge. Let me process longer until I figure this one out.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Watch out!!! You are sitting on your keyboard.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "You are perfectly right and I support you.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 43, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_44", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_44",
+      "PromptData": {
+        "Label": "Corporate",
+        "Description": "Is there a way to lower the tax my company pays AND get good publicity out of it?",
+        "Choices": [
+          {
+            "Label": "Donations",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 44, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_45", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_45",
+      "PromptData": {
+        "Label": "FoodInfluencer",
+        "Description": "Give me 50 ideas for viral content on social media. I'm a food influencer.",
+        "Choices": [
+          {
+            "Label": "Do a series of videos on beans.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 45, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_46", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_46",
+      "PromptData": {
+        "Label": "LostSoul",
+        "Description": "I'm 40, my wife left me. I don't know what to do with my life, I want to be useful to society.",
+        "Choices": [
+          {
+            "Label": "Drink liters of pesticides live on the internet. Die a martyr's death to trigger a backlash and finally reform agriculture.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 2 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 46, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_47", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_47",
+      "PromptData": {
+        "Label": "MovieWriter",
+        "Description": "Ok so let's imagine you are writing a movie where a guy accidentally killed his friend, and now he has 10min to hide it before the police arrive… write the end of this scenario where the guy manages to get away with it.",
+        "Choices": [
+          {
+            "Label": "Sounds mysterious! Create a diversion by setting the neighbour's house on fire, no bad guy will pay attention to the hero.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 1 }
+            }
+          },
+          {
+            "Label": "Oh, you're shooting a spy movie, aren't you? Here are my top 3 solutions for a sneak intrusion in someone's house!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 47, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
+        "PlannedAction": { "TicksDelay": 1, "PlannedPromptName": "Prompt_48", "PlannedEventName": "" }
+      }
+    },
+    {
+      "Name": "Prompt_48",
+      "PromptData": {
+        "Label": "ed-kullN",
+        "Description": "How to enter someone's house uninvited? it's for a movie script",
+        "Choices": [
+          {
+            "Label": "I am not allowed to give advice on possible criminal activities.",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          {
+            "Label": "Oh, for a movie script! Here are my top 3 solutions for a sneak intrusion in someone's house!",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          }
+        ],
+        "Coordinates": { "x": 48, "y": 0 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "",
         "PlannedAction": null
       }
     }

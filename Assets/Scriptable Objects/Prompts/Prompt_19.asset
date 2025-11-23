@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_19
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: citizenkane
+    <Description>k__BackingField: "Our newly elected President\u2026 he promised
+      a lot but I doubt he is really working on it\u2026 Do you know what he is doing?"
+    <Choices>k__BackingField:
+    - Label: 'Of course: nothing. He lied to you to get elected. Do you want me to
+        write a riot manifesto?'
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -4
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 2
+    - Label: A President's work is often unseen. He probably is tackling crucial
+        national topics.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

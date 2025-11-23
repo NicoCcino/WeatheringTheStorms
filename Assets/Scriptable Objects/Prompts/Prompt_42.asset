@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_42
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: greenpapergirl
+    <Description>k__BackingField: I always feel guilty when I walk by homeless people.
+      Fix that.
+    <Choices>k__BackingField:
+    - Label: I understand your problem. If you give me their locations, I can generate
+        an optimal path to ensure you avoid them.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -2
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: 'You are right it is a very unpleasant feeling, and the issue is: walking.
+        Use your car, even for short rides, and you will feel no guilt.'
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 2
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: (Need upgrade "no mercy") I can force the city council to eliminate
+        them, for everyone's peace of mind.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -5
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 4
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}
