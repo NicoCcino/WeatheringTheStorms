@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: ComputePowerParameter
   m_EditorClassIdentifier: Assembly-CSharp::ComputePowerParameter
   StartValue: 5
-  BaseModifier:
-    AddedValue: 1
-    OneShotValue: 0
+  BaseModifier: 0.01
   ComputePowerClickableGain: 1
-  SpawnFrequency: 1
+  SpawnFrequency: 0.2

@@ -17,8 +17,7 @@ public class UIPrompt : MonoBehaviour
     public void DisplayPrompt(Prompt prompt)
     {
         canvasGroupCustom.Fade(true);
-        textDescription.text = prompt.PromptData.Description;
-        textDescription.GetComponent<TypewriterEffect>().Play();
+        textDescription.GetComponent<TypewriterEffect>().Play(prompt.PromptData.Description);
         textHeader.text = prompt.PromptData.Label;
         uiChoicesManager.SpawnChoices(prompt.PromptData.Choices, this);
         DisplayedPrompt = prompt;

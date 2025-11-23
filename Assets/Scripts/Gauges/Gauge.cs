@@ -38,9 +38,4 @@ public class Gauge
         value += modifierManager.ComputeOneShotValue(modifier);
     }
 
-    public float GetModifiersTotal()
-    {
-        return modifierManager.ComputeModifierValue();
-    }
-
 }
