@@ -16,3 +16,5 @@ MonoBehaviour:
   BaseModifier:
     AddedValue: 1
     OneShotValue: 0
+  ComputePowerClickableGain: 1
+  SpawnFrequency: 1

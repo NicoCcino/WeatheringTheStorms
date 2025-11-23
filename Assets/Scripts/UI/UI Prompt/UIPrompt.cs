@@ -36,13 +36,13 @@ public class UIPrompt : MonoBehaviour
     }
     private void OnEnable()
     {
-        PromptManager.Instance.OnPromptTriggered += OnPromptTriggeredCallback;
+        PromptManager.Instance.OnPromptOpened += OnPromptOpenedCallback;
     }
     private void OnDisable()
     {
-        PromptManager.Instance.OnPromptTriggered -= OnPromptTriggeredCallback;
+        PromptManager.Instance.OnPromptOpened -= OnPromptOpenedCallback;
     }
-    private void OnPromptTriggeredCallback(Prompt prompt)
+    private void OnPromptOpenedCallback(Prompt prompt)
     {
         DisplayPrompt(prompt);
         DisplayedPrompt.OnSolved += OnDisplayedPromptSolvedCallback;

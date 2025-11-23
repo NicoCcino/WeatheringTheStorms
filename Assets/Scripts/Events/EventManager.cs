@@ -12,6 +12,7 @@ public class EventManager : Singleton<EventManager>
     private List<Event> AvailableEvents { get; set; } = new List<Event>();
     private HashSet<Event> TriggeredEvents { get; set; } = new HashSet<Event>();
     public Action<Event> OnEventTriggered;
+    public Action<Event> OnEventOpened;
     private int noEventTickCounter = 0;
     private Event CurrentEvent = null;
     private void Start()
@@ -64,7 +65,7 @@ public class EventManager : Singleton<EventManager>
         // We filter the remaining events to match the current date condition
         validEvents = validEvents.Where(e => e.EventData.DateCondition.IsFulfilled()).ToArray();
 
-            // We filter the remaining events to match the current gauge conditions
+        // We filter the remaining events to match the current gauge conditions
         validEvents = validEvents.Where(e => e.EventData.GaugeCondition.IsFulfilled()).ToArray();
 
         // We filter the remaining events to match the parent event condition
@@ -86,7 +87,7 @@ public class EventManager : Singleton<EventManager>
         // If no parent is set, the event is always valid
         if (eventToCheck.EventData.ParentEvent == null)
             return true;
-        
+
         // Check if the parent event has been triggered
         return TriggeredEvents.Contains(eventToCheck.EventData.ParentEvent);
     }
@@ -128,6 +129,10 @@ public class EventManager : Singleton<EventManager>
         Timeline.Instance.SetPlaySpeed();
         CurrentEvent.OnEventTriggered -= OnCurrentEventTriggered;
         CurrentEvent = null;
+    }
+    public void OpenEvent(Event ev)
+    {
+        OnEventOpened?.Invoke(ev);
     }
 }
 

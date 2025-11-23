@@ -1,19 +1,24 @@
 using UnityEngine;
+using System.Collections.Generic;
+
 
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-public class GridDebugDisplay : MonoBehaviour
+public class GridManager : Singleton<GridManager>
 {
+    [Header("Grid settings")]
     public Grid grid;                // Grid natif Unity
     public int gridWidth = 10;       // nombre de cellules en X
     public int gridHeight = 10;      // nombre de cellules en Y
     public SpriteRenderer WorldMapSprite; // La référence de l'image de map posée dans le monde.
     public Vector3 gridOriginBottomLeft;
-    public GameObject testPrefab;
-    public Vector2Int testCoordinates2D;
+
+    public Dictionary<Vector2Int, GameObject> OccupiedCoordinates = new Dictionary<Vector2Int, GameObject>();
+
+
 
     [ContextMenu("Reset Grid Origin From Sprite")]
     public void ResetGridOrigin()
@@ -22,7 +27,6 @@ public class GridDebugDisplay : MonoBehaviour
         Debug.Log("Grid origin reset to: " + gridOriginBottomLeft);
         grid.transform.position = gridOriginBottomLeft;
     }
-
     private void OnDrawGizmos()
     {
         if (grid == null) return;
@@ -35,7 +39,6 @@ public class GridDebugDisplay : MonoBehaviour
 
         DisplayGrid();
     }
-
     void DisplayGrid()
     {
         float cellSize = grid.cellSize.x; // On part du principe de cellules carrées
@@ -66,7 +69,6 @@ public class GridDebugDisplay : MonoBehaviour
             }
         }
     }
-
     public Vector3 GetBottomLeftOfSprite(SpriteRenderer sprite)
     {
         // Bounds = boite englobante dans le monde
@@ -77,20 +79,40 @@ public class GridDebugDisplay : MonoBehaviour
 
         return bottomLeft;
     }
-
-    public void DisplayObjectOnGrid(GameObject worldPrefab, Vector2Int cellPos)
+    public void DisplayObjectOnGrid(GameObject gameObject, Vector2Int coordinates)
     {
-        Vector3Int cellPos3D = new Vector3Int(cellPos.x, cellPos.y, 0);
+        if (OccupiedCoordinates.TryGetValue(coordinates, out GameObject occupyingGo))
+        {
+            Debug.LogWarning($"The coordinate {coordinates} is already occupied by {occupyingGo.name}, cant spawn the grid object {gameObject.name}. Need to have a queue on each coordinates");
+            return;
+        }
+        Vector3Int cellPos3D = new Vector3Int(coordinates.x, coordinates.y, 0);
         Vector3 worldPos = grid.CellToWorld(cellPos3D);
         Quaternion rot = Quaternion.identity;
-        GameObject go = SimplePool.Spawn(worldPrefab, worldPos, rot);
+
+        gameObject.transform.position = worldPos;
+        gameObject.transform.rotation = rot;
+
+        OccupiedCoordinates.Add(coordinates, gameObject);
+    }
+    public void RemoveObjectAtCoordinates(Vector2Int coordinates)
+    {
+        if (!OccupiedCoordinates.TryGetValue(coordinates, out GameObject occupyingGo))
+        {
+            Debug.LogWarning($"You tried to remove a gameobject at coordinates {coordinates} but these coordinates are already empty");
+            return;
+        }
+        SimplePool.Despawn(OccupiedCoordinates[coordinates]);
+        OccupiedCoordinates.Remove(coordinates);
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool IsCoordinatesAvailables(Vector2Int coordinates)
     {
-        if (testPrefab == null) return;
-        if (testCoordinates2D == null) return;
-        DisplayObjectOnGrid(testPrefab, testCoordinates2D);
+        return !OccupiedCoordinates.TryGetValue(coordinates, out GameObject occupyingGo);
+    }
+    public Vector2Int GetRandomPositionOnGrid()
+    {
+        return new Vector2Int(UnityEngine.Random.Range(0, gridWidth), UnityEngine.Random.Range(0, gridHeight));
     }
 }
+

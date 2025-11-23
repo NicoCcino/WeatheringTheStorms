@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class EventData : IGridObject
+public class EventData
 {
     [field: Header("Displayed Informations")]
     [field: SerializeField, Tooltip("Event description"), TextArea(1, 4)] public string Description { get; private set; }
@@ -9,8 +9,6 @@ public class EventData : IGridObject
     [field: Header("Modifiers")]
     [field: SerializeField] public ModifierBank ModifierBank { get; private set; }
 
-    [field: Header("Grid Position")]
-    [field: SerializeField] public Vector2Int Coordinates { get; set; }
 
     [field: Header("Conditions")]
     [field: SerializeField] public DateCondition DateCondition { get; private set; }
