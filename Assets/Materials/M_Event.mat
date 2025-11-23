@@ -114,18 +114,18 @@ Material:
     - _DstBlendAlpha: 0
     - _EnableExternalAlpha: 0
     - _EnvironmentReflections: 1
-    - _FadeAmount: 0.9
+    - _FadeAmount: 0.74
     - _Filled: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 3.94
+    - _Intensity: 4
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Radius: 0.49
+    - _Radius: 0.42
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -133,7 +133,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Width: 0
+    - _Width: -0.15
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
     - _ZTest: 8

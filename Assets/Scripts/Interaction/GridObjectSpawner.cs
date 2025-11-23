@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ClickableSpawner : MonoBehaviour
+public class GridObjectSpawner : MonoBehaviour
 {
     [Header("Spawnable Objects")]
     public GameObject PrefabEventClickable;
@@ -31,10 +31,10 @@ public class ClickableSpawner : MonoBehaviour
 
         GameObject spawnedGameObject = SimplePool.Spawn(PrefabEventClickable);
         spawnedGameObject.transform.parent = transform;
-        EventClickable eventClickable = spawnedGameObject.GetComponent<EventClickable>();
-        eventClickable.Init(ev);
+        EventOnGrid eventOnGrid = spawnedGameObject.GetComponent<EventOnGrid>();
+        eventOnGrid.Init(ev);
 
-        GridManager.Instance.DisplayObjectOnGrid(spawnedGameObject, eventClickable.LinkedGridObject.Coordinates);
+        GridManager.Instance.DisplayObjectOnGrid(spawnedGameObject,ev.Coordinates);
     }
     private void OnPromptTriggeredCallback(Prompt prompt)
     {

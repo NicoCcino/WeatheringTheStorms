@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 6405492969308118873}
   - component: {fileID: 6345745981015321026}
   - component: {fileID: 5103621476301016741}
+  - component: {fileID: 1100381862681418079}
   m_Layer: 0
   m_Name: EventPrefab
   m_TagString: Untagged
@@ -157,7 +158,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3c0c5d41c2ac3478879180709d1699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventClickable
-  LinkedGridObject: {fileID: 0}
+  uIHoverInformation: {fileID: 1100381862681418079}
+--- !u!114 &1100381862681418079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238615561583514323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bf0bcb4d92af547bb97f886b7890be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIHoverInformation
+  DisplayedText: Just a test description for event
 --- !u!1 &5772377410725825988
 GameObject:
   m_ObjectHideFlags: 0
