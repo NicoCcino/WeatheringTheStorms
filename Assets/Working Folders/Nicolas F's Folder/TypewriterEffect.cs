@@ -7,17 +7,17 @@ public class TypewriterEffect : MonoBehaviour
     public TextMeshProUGUI textUI;
     [Header("Base Speed")]
     [Tooltip("Temps moyen entre chaque lettre")]
-    public float baseDelay = 0.03f;
+    public float baseDelay = 0.01f;
 
     [Header("Variations humaines")]
     [Tooltip("Variation aléatoire autour du délai (ex : 0.5 = ±50%)")]
-    public float randomFactor = 0.5f;
+    public float randomFactor = 0.2f;
 
     [Header("Pauses naturelles")]
     [Tooltip("Pause supplémentaire après un espace")]
-    public float spacePause = 0.07f;
+    public float spacePause = 0.02f;
     [Tooltip("Pause supplémentaire après .,!?;:")]
-    public float punctuationPause = 0.2f;
+    public float punctuationPause = 0.12f;
 
     private string originalText;
     private Coroutine typingCoroutine;
