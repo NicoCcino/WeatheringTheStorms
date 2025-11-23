@@ -200,11 +200,14 @@ public class JSONConverterEditor : EditorWindow
                 Choice[] choices = promptJSON.PromptData.Choices?.Select(c => c.ToChoice()).ToArray() ?? new Choice[0];
                 SetPrivateProperty(promptData, "Choices", choices);
                 
-                SetPrivateProperty(promptData, "Coordinates", promptJSON.PromptData.Coordinates?.ToVector2Int() ?? Vector2Int.zero);
                 SetPrivateProperty(promptData, "DateCondition", promptJSON.PromptData.DateCondition?.ToDateCondition());
                 SetPrivateProperty(promptData, "GaugeCondition", promptJSON.PromptData.GaugeCondition?.ToGaugeCondition());
                 
                 promptDataField.SetValue(promptAsset, promptData);
+                
+                // Set Coordinates on the Prompt object itself (not PromptData)
+                // Note: Coordinates are in the JSON under PromptData, but we set them on Prompt
+                promptAsset.Coordinates = promptJSON.PromptData.Coordinates?.ToVector2Int() ?? Vector2Int.zero;
 
                 string assetPath = $"{PROMPTS_FOLDER}/{promptJSON.Name}.asset";
                 AssetDatabase.CreateAsset(promptAsset, assetPath);
