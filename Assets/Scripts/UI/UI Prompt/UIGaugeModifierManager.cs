@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class UIGaugeModifierManager : MonoBehaviour
@@ -17,11 +18,10 @@ public class UIGaugeModifierManager : MonoBehaviour
 
     private void UpdateUIGauge(UIGaugeModifier uiGauge, Modifier modifier)
     {
-        bool isDisplayed = modifier.AddedValue != 0;
+        bool isDisplayed = modifier.AddedValue != 0 || modifier.OneShotValue != 0;
         uiGauge.gameObject.SetActive(isDisplayed);
-
-        if (isDisplayed)
-            uiGauge.DisplayModifier(curveAmountScaling, modifier);
+        if (!isDisplayed) return;
+        uiGauge.DisplayModifier(curveAmountScaling, modifier);
     }
 }
 
