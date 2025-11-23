@@ -6,19 +6,20 @@ public class EventData
     [field: Header("Displayed Informations")]
     [field: SerializeField, Tooltip("Event description"), TextArea(1, 4)] public string Description { get; private set; }
     [field: SerializeField, Tooltip("Duration of the event in ticks")] public int DurationInTicks { get; private set; }
-    [field: SerializeField, Tooltip("Icon sprite for the event")] public Sprite Icon { get; private set; }
 
     [field: Header("Modifiers")]
     [field: SerializeField] public ModifierBank ModifierBank { get; private set; }
 
 
     [field: Header("Conditions")]
-    [field: SerializeField] public Vector2Int Coordinates { get; private set; }
+    [field: SerializeField] public Vector2Int Coordinates { get;  set; }
     [field: SerializeField] public DateCondition DateCondition { get; private set; }
     [field: SerializeField] public GaugeCondition GaugeCondition { get; private set; }
 
     [field:Header("Visuals")]
     [field: SerializeField] public Sprite Icon;
+
+    [field: Header("Balancing")]
     [field:SerializeField] public int Duration;
     
 

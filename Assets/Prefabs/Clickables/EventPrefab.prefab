@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3c0c5d41c2ac3478879180709d1699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventClickable
+  sprite: {fileID: 4803170234843438877}
   uIHoverInformation: {fileID: 1100381862681418079}
 --- !u!114 &1100381862681418079
 MonoBehaviour:
