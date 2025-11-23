@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Resource Rationing Directive
     <Description>k__BackingField: 'Environment increases; population and cohesion
       decrease. Trigger: Environment < 40%.'
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 60
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

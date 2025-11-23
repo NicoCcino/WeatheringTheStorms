@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
     <Label>k__BackingField: Covid mutation
-    <Description>k__BackingField: Secretly release A new mutation of the Covid-19
-      virus, it is more contagious and more deadly.
+    <Description>k__BackingField: Secretly release a new mutation of the Covid-19
+      virus, more contagious and deadly.
     <Cost>k__BackingField: 100
     <ModifierBank>k__BackingField:
       ClimateModifier:

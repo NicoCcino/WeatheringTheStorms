@@ -16,20 +16,21 @@ MonoBehaviour:
     <Label>k__BackingField: Grounded Knowledge Dataset
     <Description>k__BackingField: Includes sensory simulators (heat, pain, cold,
       danger). Greatly improves disaster response.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 30
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       HumanModifier:
-        AddedValue: 0
+        AddedValue: 2
         OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 844eafd6d3ed54b92b77d2444b4d2f9a, type: 2}

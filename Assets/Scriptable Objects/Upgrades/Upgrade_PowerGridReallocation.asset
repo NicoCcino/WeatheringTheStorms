@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Power Grid Reallocation
     <Description>k__BackingField: Gain more compute power over time.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 30
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
