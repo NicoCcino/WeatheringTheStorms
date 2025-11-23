@@ -14,22 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
     <Label>k__BackingField: Terrorist Annihilation
-    <Description>k__BackingField: Suppression of violent groups before they destabilize
-      society.
+    <Description>k__BackingField: Send robots to kill any potentialterrorist group
+      before they destabilize society.
     <Cost>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 
         OneShotValue: 
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: +
+        OneShotValue: +++
       HumanModifier:
         AddedValue: 
-        OneShotValue: 
+        OneShotValue: --
       HumanImpactModifier:
         AddedValue: 
         OneShotValue: 
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 844eafd6d3ed54b92b77d2444b4d2f9a, type: 2}

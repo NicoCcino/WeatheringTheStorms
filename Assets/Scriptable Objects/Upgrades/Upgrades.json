@@ -1,43 +1,43 @@
 {
+  "Upgrades": [
   /* =======================================
      BRANCH Robotics
      Enable physical action of the AI on the planet
      Gameplay: Non specialized branch with positive effects on a bit of everything.
      =======================================
   */
-  "Upgrades": [
-    {
-      "Name": "Upgrade_DroneReforestation",
-      "UpgradeData": {
-        "Label": "Drone Reforestation",
-        "Description": "Rebuild forests through automated drone planting.",
-        "Cost": "",
-        "ModifierBank": {
-          "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          }
+  {
+    "Name": "Upgrade_Sim2Real",
+    "UpgradeData": {
+      "Label": "Solve Sim2Real Gap",
+      "Description": "Create a perfect world simulator to train yourself controlling robots.",
+      "Cost": "40",
+      "ModifierBank": {
+        "ClimateModifier": {
+          "AddedValue": "",
+          "OneShotValue": ""
+        },
+        "SocietalModifier": {
+          "AddedValue": "++",
+          "OneShotValue": ""
+        },
+        "HumanModifier": {
+          "AddedValue": "++++", // Because robot do all the work there is no more dangerous actions. Human have a lot of time to fornicate and have fun.
+          "OneShotValue": ""
+        },
+        "HumanImpactModifier": {
+          "AddedValue": "",
+          "OneShotValue": ""
         }
-      },
-      "ParentUpgradeNames": []
+      }
     },
+    "ParentUpgradeNames": []
+  },
     {
       "Name": "Upgrade_TerroristAnnihilation",
       "UpgradeData": {
         "Label": "Terrorist Annihilation",
-        "Description": "Suppression of violent groups before they destabilize society.",
+        "Description": "Send robots to kill any potentialterrorist group before they destabilize society.",
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
@@ -45,12 +45,12 @@
             "OneShotValue": ""
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": "+",
+            "OneShotValue": "+++"
           },
           "HumanModifier": {
             "AddedValue": "",
-            "OneShotValue": ""
+            "OneShotValue": "--"
           },
           "HumanImpactModifier": {
             "AddedValue": "",
@@ -58,34 +58,7 @@
           }
         }
       },
-      "ParentUpgradeNames": []
-    },
-    {
-      "Name": "Upgrade_NeuralImplants",
-      "UpgradeData": {
-        "Label": "Neural Implants",
-        "Description": "Gain deeper real-world sensing and limited human interfacing.",
-        "Cost": "",
-        "ModifierBank": {
-          "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          },
-          "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
-          }
-        }
-      },
-      "ParentUpgradeNames": []
+      "ParentUpgradeNames": ["Upgrade_Sim2Real"]
     },
     {
       "Name": "Upgrade_AssassinationDrones",
@@ -670,6 +643,38 @@
       "ParentUpgradeNames": []
     },
     // =======================================
+    // BRANCH For the planet : Maintain a high climate at all costs.
+    // Auto events when gauges are low
+    // Gameplay: Automatic responses when gauges collapse
+    // =======================================
+    {
+        "Name": "Upgrade_DroneReforestation",
+        "UpgradeData": {
+          "Label": "Drone Reforestation",
+          "Description": "Rebuild forests through automated drone planting.",
+          "Cost": "",
+          "ModifierBank": {
+            "ClimateModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "SocietalModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "HumanModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "HumanImpactModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            }
+          }
+        },
+        "ParentUpgradeNames": []
+      },
+    // =======================================
     // BRANCH Crisis Management Framework
     // Auto events when gauges are low
     // Gameplay: Automatic responses when gauges collapse
@@ -754,6 +759,92 @@
         }
       },
       "ParentUpgradeNames": []
-    }
+    },
+    // =======================================
+    // BRANCH Bio : Directly affect bodies and nature
+    // Auto events when gauges are low
+    // Gameplay: Automatic responses when gauges collapse
+    // =======================================
+    {
+        "Name": "Upgrade_NeuralImplants",
+        "UpgradeData": {
+          "Label": "Neural Implants",
+          "Description": "Provide Neural implants to humans to enhance their abilities (and perhaps influence them a little bit).",
+          "Cost": "100",
+          "ModifierBank": {
+            "ClimateModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "SocietalModifier": {
+              "AddedValue": "++",
+              "OneShotValue": ""
+            },
+            "HumanModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "HumanImpactModifier": {
+              "AddedValue": "++",
+              "OneShotValue": ""
+            }
+          }
+        },
+        "ParentUpgradeNames": []
+      },
+      {
+        "Name": "Upgrade_Covid",
+        "UpgradeData": {
+          "Label": "Covid mutation",
+          "Description": "Secretly release A new mutation of the Covid-19 virus, it is more contagious and more deadly.",
+          "Cost": "100",
+          "ModifierBank": {
+            "ClimateModifier": {
+              "AddedValue": "++",
+              "OneShotValue": ""
+            },
+            "SocietalModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "HumanModifier": {
+              "AddedValue": "---",
+              "OneShotValue": ""
+            },
+            "HumanImpactModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            }
+          }
+        },
+        "ParentUpgradeNames": []
+      },
+      {
+        "Name": "Upgrade_CovidVaccine",
+        "UpgradeData": {
+          "Label": "Covid Vaccine",
+          "Description": "Share a vaccine for the Covid virus to all humans.",
+          "Cost": "120",
+          "ModifierBank": {
+            "ClimateModifier": {
+              "AddedValue": "--",
+              "OneShotValue": ""
+            },
+            "SocietalModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            },
+            "HumanModifier": {
+              "AddedValue": "+++",
+              "OneShotValue": ""
+            },
+            "HumanImpactModifier": {
+              "AddedValue": "",
+              "OneShotValue": ""
+            }
+          }
+        },
+        "ParentUpgradeNames": ["Upgrade_Covid"]
+      }
   ]
 }
