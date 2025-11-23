@@ -1283,15 +1283,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924186730264314335, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2173,15 +2173,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924186730264314335, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3158,15 +3158,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 78578213462163833, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.546
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924186730264314335, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4497,7 +4497,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1328683716}
   - component: {fileID: 1328683717}
-  - component: {fileID: 1328683718}
   m_Layer: 0
   m_Name: GridManager
   m_TagString: Untagged
@@ -4540,18 +4539,6 @@ MonoBehaviour:
   gridOriginBottomLeft: {x: -12.8, y: -6.875, z: 0}
   testPrefab: {fileID: 6336246859676681926, guid: d97926f4eefb0044aafcd5a520975d50, type: 3}
   testCoordinates2D: {x: 12, y: 6}
---- !u!156049354 &1328683718
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328683715}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 1}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
 --- !u!1 &1404824357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6138,6 +6125,7 @@ GameObject:
   - component: {fileID: 1692098566}
   - component: {fileID: 1692098568}
   - component: {fileID: 1692098567}
+  - component: {fileID: 1692098569}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6264,6 +6252,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692098565}
   m_CullTransparentMesh: 1
+--- !u!114 &1692098569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692098565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f7aa682cdd0174c85d0bcf83b4f582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypeWriterEffect
+  textUI: {fileID: 0}
+  baseDelay: 0.01
+  randomFactor: 0.2
+  spacePause: 0.02
+  punctuationPause: 0.12
 --- !u!1 &1776421731
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,7 +7188,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969362177}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -7471,10 +7476,14 @@ MonoBehaviour:
   ClimateGauge:
     gaugeParameter: {fileID: 11400000, guid: 12bdea72a77ea4b50b910199ca01f66f, type: 2}
     value: 0
+    modifierManager:
+      modifierScale: 0
     iterationValue: 0
   SocietalGauge:
     gaugeParameter: {fileID: 11400000, guid: b018b033a3bd246bdaee622700fdd8c3, type: 2}
     value: 0
+    modifierManager:
+      modifierScale: 0
     iterationValue: 0
 --- !u!114 &1981667785
 MonoBehaviour:
