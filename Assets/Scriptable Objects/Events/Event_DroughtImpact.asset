@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: Severe drought forces data centers to choose between
       operations and community water needs.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: ec4766c9e78765047920c9487606b344, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 60
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: 21300000, guid: ec4766c9e78765047920c9487606b344, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 11400000, guid: 53f41d76229a0408898ab50983a3882e, type: 2}
-  <Coordinates>k__BackingField: {x: 0, y: 0}

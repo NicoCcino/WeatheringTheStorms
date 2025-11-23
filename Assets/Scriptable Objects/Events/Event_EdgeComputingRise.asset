@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: Edge computing deployment reduces centralized data
       center load and energy use.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 91c0b0449cd403e46bfab5d14dfa5d11, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: -2
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: 21300000, guid: 91c0b0449cd403e46bfab5d14dfa5d11, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 0, y: 0}

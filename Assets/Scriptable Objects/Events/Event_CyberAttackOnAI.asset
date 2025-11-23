@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: Coordinated cyberattack targets AI training infrastructure,
       causing major disruption.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 4d19cc99d28e81646bc89f850ab380ae, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 21300000, guid: 4d19cc99d28e81646bc89f850ab380ae, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 0, y: 0}

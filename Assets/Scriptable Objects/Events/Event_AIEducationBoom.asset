@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: AI-powered education platforms help millions gain
       new skills for changing job market.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 7826949717507848784, guid: 1a103bf9dc5baf94eab1b244310a16ef, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 7826949717507848784, guid: 1a103bf9dc5baf94eab1b244310a16ef, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 0, y: 0}

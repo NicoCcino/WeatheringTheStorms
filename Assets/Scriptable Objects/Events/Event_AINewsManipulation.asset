@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: AI-generated fake news campaign undermines democratic
       elections worldwide.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 0, y: 0}

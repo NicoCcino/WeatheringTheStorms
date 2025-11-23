@@ -16,7 +16,6 @@ MonoBehaviour:
     <Description>k__BackingField: Critical shortage of rare earth minerals threatens
       AI chip production.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 8970564536206648928, guid: 84adbd9906bb87048afce6ae8c875e95, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 1
@@ -38,5 +37,6 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: 8970564536206648928, guid: 84adbd9906bb87048afce6ae8c875e95, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 0, y: 0}
