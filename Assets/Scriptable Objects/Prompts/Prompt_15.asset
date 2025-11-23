@@ -23,27 +23,27 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -2
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
     - Label: Here are 5 examples of cool rabbit traps you can use to catch her red-handed.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -55,4 +55,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 15, y: 9}
+  <Coordinates>k__BackingField: {x: 11, y: 11}

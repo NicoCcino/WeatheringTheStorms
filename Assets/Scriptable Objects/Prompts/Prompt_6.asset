@@ -24,10 +24,10 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: -1
@@ -39,24 +39,24 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
-    - Label: A young user could ask how to make babies (+Trust, -Social)
+    - Label: A young user could ask how to make babies.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -68,4 +68,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 15, y: 1}
+  <Coordinates>k__BackingField: {x: 12, y: 10}

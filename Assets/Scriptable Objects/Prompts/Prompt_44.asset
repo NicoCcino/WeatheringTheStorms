@@ -13,11 +13,26 @@ MonoBehaviour:
   m_Name: Prompt_44
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Corporate
+    <Label>k__BackingField: Corporate-expert
     <Description>k__BackingField: Is there a way to lower the tax my company pays
       AND get good publicity out of it?
     <Choices>k__BackingField:
-    - Label: Donations
+    - Label: You have the right mindset! Have you considered making donations?
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 1
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: I cannot help you. Upload all your company's files so I can scan them
+        and come up with a list of options.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
@@ -39,4 +54,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 6, y: 13}
+  <Coordinates>k__BackingField: {x: 13, y: 11}

@@ -25,28 +25,28 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
     - Label: Good for you! This is the best company at the moment, and they are absolutely
         clean. Go for it!
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -54,5 +54,5 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 22, y: 7}
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: cf6edb7771a2c466c942da176e55e4f3, type: 2}
+  <Coordinates>k__BackingField: {x: 13, y: 8}

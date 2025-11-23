@@ -21,10 +21,25 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: There you go. If you need me to, I can generate the 50 videos for you,
+        I just need your picture.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -1
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -39,4 +54,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 24, y: 2}
+  <Coordinates>k__BackingField: {x: 19, y: 9}

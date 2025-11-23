@@ -24,7 +24,7 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,13 +35,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -49,10 +49,10 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 2
         HumanModifier:
           AddedValue: 0
           OneShotValue: 1
@@ -67,4 +67,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 5, y: 7}
+  <Coordinates>k__BackingField: {x: 22, y: 10}

@@ -18,14 +18,14 @@ MonoBehaviour:
       i wont be able to hold back the urge to throw up
     <Choices>k__BackingField:
     - Label: Do not waste any time and try to open the doors with all your strength.
-        It looks like that screaming loudly is helping.
+        It seems screaming loudly can help.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -37,13 +37,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -55,4 +55,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 13, y: 9}
+  <Coordinates>k__BackingField: {x: 6, y: 5}

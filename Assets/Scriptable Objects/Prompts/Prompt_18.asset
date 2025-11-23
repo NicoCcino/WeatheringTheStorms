@@ -22,7 +22,7 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: -1
@@ -31,7 +31,7 @@ MonoBehaviour:
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
     - Label: Let's try spicing things up. Make your city the next Silicon Valley,
         no matter the cost! Do you want me to create a detailed 5-year plan?
       ModifierBank:
@@ -40,13 +40,13 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -54,5 +54,5 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 1, y: 5}
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: ae4b31639707644f997a7fa3e9ca2843, type: 2}
+  <Coordinates>k__BackingField: {x: 12, y: 7}

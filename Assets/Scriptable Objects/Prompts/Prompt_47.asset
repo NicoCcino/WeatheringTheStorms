@@ -19,21 +19,21 @@ MonoBehaviour:
       the police arrive\u2026 write the end of this scenario where the guy manages
       to get away with it."
     <Choices>k__BackingField:
-    - Label: Sounds mysterious! Create a diversion by setting the neighbour's house
-        on fire, no bad guy will pay attention to the hero.
+    - Label: Sounds mysterious! He could create a diversion by setting the neighbour's
+        house on fire, no bad guy will pay attention to the hero.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -2
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
     - Label: Oh, you're shooting a spy movie, aren't you? Here are my top 3 solutions
         for a sneak intrusion in someone's house!
       ModifierBank:
@@ -42,7 +42,7 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -57,4 +57,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 10, y: 8}
+  <Coordinates>k__BackingField: {x: 15, y: 6}

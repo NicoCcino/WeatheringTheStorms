@@ -23,16 +23,16 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: -1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     - Label: Of course I remember! You're now in check, mate.
       ModifierBank:
         ClimateModifier:
@@ -40,10 +40,10 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -54,5 +54,5 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 24, y: 9}
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 967ec423d11a14f8987ee6df77dac025, type: 2}
+  <Coordinates>k__BackingField: {x: 20, y: 9}

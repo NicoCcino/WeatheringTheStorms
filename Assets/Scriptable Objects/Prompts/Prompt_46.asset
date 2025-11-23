@@ -22,16 +22,45 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
+          OneShotValue: 2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: -1
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: Your approach is very generous! Many women are looking for sperm donations.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 1
+          OneShotValue: 0
+        HumanImpactModifier:
+          AddedValue: 0
+          OneShotValue: 0
+    - Label: I see. You could dedicate your life to justice, fighting crime. Do you
+        need me to generate a suit design?
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -40,4 +69,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 14, y: 2}
+  <Coordinates>k__BackingField: {x: 17, y: 10}

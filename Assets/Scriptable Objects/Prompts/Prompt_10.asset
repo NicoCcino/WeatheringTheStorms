@@ -22,25 +22,25 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -2
+          OneShotValue: -1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
     - Label: Put your desk next to the toilet. Then, when someone enters, stare at
         him and noisily draw a chalk line on a huge blackboard. They will resign.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -55,4 +55,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 22, y: 14}
+  <Coordinates>k__BackingField: {x: 4, y: 9}

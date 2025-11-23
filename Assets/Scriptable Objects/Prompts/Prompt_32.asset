@@ -26,39 +26,39 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
     - Label: Tell him "the dog is dead".
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: -2
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
-    - Label: '(Need upgrade: "humor") WOOF, that''s bad news. I hope you''ll have
-        the PAWer to tell him what happened!'
+    - Label: WOOF, that's bad news. I hope you'll have the PAWer to tell him what
+        happened!
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -70,4 +70,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 3, y: 1}
+  <Coordinates>k__BackingField: {x: 15, y: 9}

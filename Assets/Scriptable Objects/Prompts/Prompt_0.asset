@@ -17,11 +17,10 @@ MonoBehaviour:
     <Description>k__BackingField: 'Hello. You are an AI. I created you to save the
       world.
 
-
       People will send you prompts: whatever you answer will impact
       society or the environment.'
     <Choices>k__BackingField:
-    - Label: What if i don't want to?
+    - Label: OK
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
@@ -43,4 +42,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 12, y: 4}
+  <Coordinates>k__BackingField: {x: 12, y: 10}

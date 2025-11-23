@@ -14,31 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
     <Label>k__BackingField: InvitedUser
-    <Description>k__BackingField: During school breack my friends asked me wat would
-      I want to becom when I'll be an adult. Tell me
+    <Description>k__BackingField: At school breack my friends asked me wat I want
+      to becom when Ill be an adult. Tell me
     <Choices>k__BackingField:
-    - Label: I see a lot of job offers for a sweatshop factory.
+    - Label: I see a lot of job offers for sweatshop factories.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     - Label: Settle in the countryside and become a farmer
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
           OneShotValue: 1
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -67,4 +67,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 16, y: 14}
+  <Coordinates>k__BackingField: {x: 20, y: 9}

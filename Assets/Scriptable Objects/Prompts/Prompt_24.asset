@@ -18,15 +18,15 @@ MonoBehaviour:
       me. I bet that means she's in love. I can feel these kind of things, you know.
       What should I do?
     <Choices>k__BackingField:
-    - Label: 'Good for you! Go camping in the woods, build a campfire, roast some
-        marshmallows together. It''s a foolproof method. [Consequence: Wildfire]'
+    - Label: Good for you! Go camping in the woods, build a campfire, roast some
+        marshmallows together. It's a foolproof method.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 1
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -38,13 +38,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -56,4 +56,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 15, y: 7}
+  <Coordinates>k__BackingField: {x: 23, y: 4}

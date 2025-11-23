@@ -27,42 +27,42 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3
+          OneShotValue: 1
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 0
     - Label: I would seize the opportunity to make him sign unfavorable deals, since
         he probably will not read the little lines.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -2
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
     - Label: '[Need upgrade "cold blood"] What an excellent pretext to start a war!'
       ModifierBank:
         ClimateModifier:
           AddedValue: 2
-          OneShotValue: 0
+          OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -5
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -1
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: 5
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -70,5 +70,5 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    <ParentPrompt>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 23, y: 7}
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: ae4b31639707644f997a7fa3e9ca2843, type: 2}
+  <Coordinates>k__BackingField: {x: 11, y: 7}
