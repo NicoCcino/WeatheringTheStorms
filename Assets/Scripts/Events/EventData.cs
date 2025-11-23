@@ -14,6 +14,11 @@ public class EventData
     [field: SerializeField] public DateCondition DateCondition { get; private set; }
     [field: SerializeField] public GaugeCondition GaugeCondition { get; private set; }
 
+    [field:Header("Visuals")]
+    [field: SerializeField] public Sprite Icon;
+    [field:SerializeField] public int Duration;
+    
+
     [field: SerializeField, Tooltip("Optional: This event can only trigger if the parent event has been triggered before")]
     public Event ParentEvent { get; private set; }
 
