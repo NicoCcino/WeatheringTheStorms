@@ -17,18 +17,17 @@ MonoBehaviour:
       efficiency, reducing energy consumption by 30%.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: ---
-        OneShotValue: 
+        AddedValue: -3
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: +++
+        AddedValue: 0
+        OneShotValue: 3
       HumanModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 
-        OneShotValue: 
-    <Coordinates>k__BackingField: {x: 1, y: 0}
+        AddedValue: 0
+        OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 20
       <MaxTick>k__BackingField: 100
@@ -37,3 +36,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
     <ParentEvent>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

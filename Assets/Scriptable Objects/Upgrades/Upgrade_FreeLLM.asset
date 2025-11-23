@@ -18,17 +18,17 @@ MonoBehaviour:
     <Cost>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: +
-        OneShotValue: 
+        AddedValue: 1
+        OneShotValue: 0
       HumanModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades: []

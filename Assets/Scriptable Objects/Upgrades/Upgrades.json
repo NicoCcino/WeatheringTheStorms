@@ -14,20 +14,20 @@
       "Cost": "40",
       "ModifierBank": {
         "ClimateModifier": {
-          "AddedValue": "",
-          "OneShotValue": ""
+          "AddedValue": 0,
+          "OneShotValue": 0
         },
         "SocietalModifier": {
-          "AddedValue": "++",
-          "OneShotValue": ""
+          "AddedValue": 2,
+          "OneShotValue": 0
         },
         "HumanModifier": {
-          "AddedValue": "++++", // Because robot do all the work there is no more dangerous actions. Human have a lot of time to fornicate and have fun.
-          "OneShotValue": ""
+          "AddedValue": 4, // Because robot do all the work there is no more dangerous actions. Human have a lot of time to fornicate and have fun.
+          "OneShotValue": 0
         },
         "HumanImpactModifier": {
-          "AddedValue": "",
-          "OneShotValue": ""
+          "AddedValue": 0,
+          "OneShotValue": 0
         }
       }
     },
@@ -41,20 +41,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": "+++"
+            "AddedValue": 1,
+            "OneShotValue": 3
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": "--"
+            "AddedValue": 0,
+            "OneShotValue": -2
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -68,20 +68,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -95,20 +95,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -127,20 +127,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -154,20 +154,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -181,20 +181,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -208,20 +208,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -235,20 +235,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -262,20 +262,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -294,20 +294,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -321,20 +321,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           }
         }
       },
@@ -348,20 +348,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -375,20 +375,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -402,20 +402,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -434,20 +434,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -461,20 +461,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -488,20 +488,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -515,20 +515,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+++",
-            "OneShotValue": ""
+            "AddedValue": 3,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -542,20 +542,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -569,20 +569,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "++++",
-            "OneShotValue": ""
+            "AddedValue": 4,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -596,20 +596,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -623,20 +623,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -655,20 +655,20 @@
           "Cost": "",
           "ModifierBank": {
             "ClimateModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "SocietalModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "HumanModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "HumanImpactModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             }
           }
         },
@@ -687,20 +687,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -714,20 +714,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -741,20 +741,20 @@
         "Cost": "",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "HumanModifier": {
-            "AddedValue": "-",
-            "OneShotValue": ""
+            "AddedValue": -1,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         }
       },
@@ -773,20 +773,20 @@
           "Cost": "100",
           "ModifierBank": {
             "ClimateModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "SocietalModifier": {
-              "AddedValue": "++",
-              "OneShotValue": ""
+              "AddedValue": 2,
+              "OneShotValue": 0
             },
             "HumanModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "HumanImpactModifier": {
-              "AddedValue": "++",
-              "OneShotValue": ""
+              "AddedValue": 2,
+              "OneShotValue": 0
             }
           }
         },
@@ -800,20 +800,20 @@
           "Cost": "100",
           "ModifierBank": {
             "ClimateModifier": {
-              "AddedValue": "++",
-              "OneShotValue": ""
+              "AddedValue": 2,
+              "OneShotValue": 0
             },
             "SocietalModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "HumanModifier": {
-              "AddedValue": "---",
-              "OneShotValue": ""
+              "AddedValue": -3,
+              "OneShotValue": 0
             },
             "HumanImpactModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             }
           }
         },
@@ -827,20 +827,20 @@
           "Cost": "120",
           "ModifierBank": {
             "ClimateModifier": {
-              "AddedValue": "--",
-              "OneShotValue": ""
+              "AddedValue": -2,
+              "OneShotValue": 0
             },
             "SocietalModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             },
             "HumanModifier": {
-              "AddedValue": "+++",
-              "OneShotValue": ""
+              "AddedValue": 3,
+              "OneShotValue": 0
             },
             "HumanImpactModifier": {
-              "AddedValue": "",
-              "OneShotValue": ""
+              "AddedValue": 0,
+              "OneShotValue": 0
             }
           }
         },

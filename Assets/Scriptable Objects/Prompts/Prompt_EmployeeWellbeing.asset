@@ -20,32 +20,31 @@ MonoBehaviour:
     - Label: Hire more staff and reduce workload
       ModifierBank:
         ClimateModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 
-          OneShotValue: ++
+          AddedValue: 0
+          OneShotValue: 2
         HumanModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         HumanImpactModifier:
-          AddedValue: --
-          OneShotValue: 
+          AddedValue: -2
+          OneShotValue: 0
     - Label: Push through to meet deadlines
       ModifierBank:
         ClimateModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 
-          OneShotValue: ---
+          AddedValue: 0
+          OneShotValue: -3
         HumanModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         HumanImpactModifier:
-          AddedValue: ++
-          OneShotValue: 
-    <Coordinates>k__BackingField: {x: 2, y: 1}
+          AddedValue: 2
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 25
       <MaxTick>k__BackingField: 90
@@ -54,3 +53,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
     <ParentPrompt>k__BackingField: {fileID: 11400000, guid: a8120058ae3dd4e329acb1a2ff2f73ec, type: 2}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

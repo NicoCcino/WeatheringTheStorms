@@ -17,18 +17,17 @@ MonoBehaviour:
       significant damage to infrastructure and raising concerns about AI safety.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: ++
-        OneShotValue: 
+        AddedValue: 2
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: ---
+        AddedValue: 0
+        OneShotValue: -3
       HumanModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 
-        OneShotValue: 
-    <Coordinates>k__BackingField: {x: 0, y: 0}
+        AddedValue: 0
+        OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 50
@@ -37,4 +36,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 5, y: 5}
+  <Coordinates>k__BackingField: {x: 0, y: 0}
