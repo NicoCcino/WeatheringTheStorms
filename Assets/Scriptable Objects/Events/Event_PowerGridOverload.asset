@@ -38,5 +38,7 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
+    Icon: {fileID: 21300000, guid: 4d19cc99d28e81646bc89f850ab380ae, type: 3}
+    Duration: 0
     <ParentEvent>k__BackingField: {fileID: 11400000, guid: 9b0c4ad0628be4565bb07af4bbce32a3, type: 2}
   <Coordinates>k__BackingField: {x: 0, y: 0}

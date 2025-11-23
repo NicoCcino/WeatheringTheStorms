@@ -5,7 +5,7 @@ using UnityEngine;
 public class Event : ScriptableObject, IGridObject
 {
     public EventData EventData;
-    [field: SerializeField] public Vector2Int Coordinates { get; set; }
+     public Vector2Int Coordinates { get =>EventData.Coordinates; set => EventData.Coordinates = value; }
     public Action<Event> OnEventTriggered;
     public void TriggerEvent()
     {
