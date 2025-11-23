@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3590151190950407020, guid: 9a83a221d9ae6475b9cf5b878efa84ac, type: 3}
+  m_Sprite: {fileID: -1181768812043753746, guid: c03c0a3ac8e8d4362b0fd4770f79948e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 8479941213436681738}
   - component: {fileID: 6743750590672577060}
   m_Layer: 0
-  m_Name: PromptClickable
+  m_Name: ComputerPowerLootV2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,7 +315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53bdfe34093b34f8c926f3d3af6d1a59, type: 2}
+  - {fileID: 2100000, guid: 3430a968938094892a6b6946cce2fb75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
