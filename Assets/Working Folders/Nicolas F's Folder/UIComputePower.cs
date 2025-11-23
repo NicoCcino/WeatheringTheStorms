@@ -30,16 +30,4 @@ public class UIComputePower : MonoBehaviour
         // Si tu veux afficher un "+" pour les valeurs positives
         // computePowerText.text = (value >= 0 ? "+" : "") + value.ToString();
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

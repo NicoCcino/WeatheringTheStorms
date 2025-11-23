@@ -11,4 +11,11 @@ public class ComputePowerParameter : ScriptableObject
 
     [Tooltip("Growth rate of the compute power per tick")]
     [SerializeField] public float BaseModifier = 0.01f;
+
+
+    [Header("Clickable computer power settings")]
+    [SerializeField] public int ComputePowerClickableGain;
+    [SerializeField] public float SpawnFrequency;
+
+
 }

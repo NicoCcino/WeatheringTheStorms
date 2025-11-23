@@ -11,7 +11,8 @@ public class PromptManager : Singleton<PromptManager>
     public PromptManagerParameter PromptManagerParameter;
     private List<Prompt> AvailablePrompts { get; set; } = new List<Prompt>();
     private HashSet<Prompt> TriggeredPrompts { get; set; } = new HashSet<Prompt>();
-    public Action<Prompt> OnPromptTriggered;
+    public Action<Prompt> OnPromptSpawned;
+    public Action<Prompt> OnPromptOpened;
     private int noPromptTickCounter = 0;
     private Prompt CurrentPrompt = null;
     private void Start()
@@ -86,7 +87,7 @@ public class PromptManager : Singleton<PromptManager>
         // If no parent is set, the prompt is always valid
         if (promptToCheck.PromptData.ParentPrompt == null)
             return true;
-        
+
         // Check if the parent prompt has been triggered
         return TriggeredPrompts.Contains(promptToCheck.PromptData.ParentPrompt);
     }
@@ -113,8 +114,7 @@ public class PromptManager : Singleton<PromptManager>
         TriggeredPrompts.Add(prompt);
         noPromptTickCounter = 0;
         Debug.Log($"Prompt {prompt.PromptData.Label} Triggered");
-        OnPromptTriggered?.Invoke(prompt);
-        Timeline.Instance.SetPauseSpeed();
+        OnPromptSpawned?.Invoke(prompt);
         CurrentPrompt = prompt;
         prompt.OnSolved += OnCurrentPromptSolved;
         LogFileManager.Instance.LogUserAction("Prompt", prompt.PromptData.Label);
@@ -125,6 +125,10 @@ public class PromptManager : Singleton<PromptManager>
 
         Timeline.Instance.SetPlaySpeed();
         CurrentPrompt.OnSolved -= OnCurrentPromptSolved;
+    }
+    public void OpenPrompt(Prompt prompt)
+    {
+        OnPromptOpened?.Invoke(prompt);
     }
 }
 
