@@ -15,6 +15,7 @@ public class JSONConverterEditor : EditorWindow
     private const string EVENTS_FOLDER = "Assets/Scriptable Objects/Events";
     private const string PROMPTS_FOLDER = "Assets/Scriptable Objects/Prompts";
     private const string UPGRADES_FOLDER = "Assets/Scriptable Objects/Upgrades";
+    private const string ICONS_FOLDER = "Assets/Images/UI/Icons";
 
     private const string EVENT_MANAGER_PARAM_PATH = "Assets/Scriptable Objects/EventManagerParameter.asset";
     private const string PROMPT_MANAGER_PARAM_PATH = "Assets/Scriptable Objects/PromptManagerParameter.asset";
@@ -109,6 +110,12 @@ public class JSONConverterEditor : EditorWindow
                 EventData eventData = new EventData();
                 
                 SetPrivateProperty(eventData, "Description", eventJSON.EventData.Description);
+                SetPrivateProperty(eventData, "DurationInTicks", eventJSON.EventData.DurationInTicks);
+                
+                // Load icon sprite from file name
+                Sprite iconSprite = LoadIconSprite(eventJSON.EventData.Icon);
+                SetPrivateProperty(eventData, "Icon", iconSprite);
+                
                 SetPrivateProperty(eventData, "ModifierBank", eventJSON.EventData.ModifierBank?.ToModifierBank() ?? new ModifierBank());
                 SetPrivateProperty(eventData, "Coordinates", eventJSON.EventData.Coordinates?.ToVector2Int() ?? Vector2Int.zero);
                 SetPrivateProperty(eventData, "DateCondition", eventJSON.EventData.DateCondition?.ToDateCondition());
@@ -465,6 +472,29 @@ public class JSONConverterEditor : EditorWindow
         }
 
         return result.ToString();
+    }
+
+    private static Sprite LoadIconSprite(string iconFileName)
+    {
+        if (string.IsNullOrEmpty(iconFileName))
+        {
+            Debug.LogWarning("Icon file name is null or empty");
+            return null;
+        }
+
+        // Remove file extension if present
+        string iconNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(iconFileName);
+        
+        // Try to load the sprite from the Icons folder
+        string iconPath = $"{ICONS_FOLDER}/{iconNameWithoutExtension}.png";
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(iconPath);
+        
+        if (sprite == null)
+        {
+            Debug.LogWarning($"Icon sprite not found at: {iconPath}");
+        }
+        
+        return sprite;
     }
 
     private static void SetPrivateProperty(object obj, string propertyName, object value)

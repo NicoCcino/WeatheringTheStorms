@@ -10,33 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: Event_AIBreakthrough
+  m_Name: Event_AlgorithmicBias
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: Researchers achieve a major breakthrough in AI
-      efficiency, reducing energy consumption by 30%.
+    <Description>k__BackingField: Major study reveals widespread algorithmic bias
+      in hiring AI across industries.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 91c0b0449cd403e46bfab5d14dfa5d11, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -3
+        AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0
-        OneShotValue: 3
+        OneShotValue: -4
       HumanModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 0
+        AddedValue: 3
         OneShotValue: 0
-    <Coordinates>k__BackingField: {x: 8, y: 5}
+    <Coordinates>k__BackingField: {x: 12, y: 0}
     <DateCondition>k__BackingField:
-      <MinTick>k__BackingField: 20
-      <MaxTick>k__BackingField: 100
+      <MinTick>k__BackingField: 45
+      <MaxTick>k__BackingField: 160
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
-    <ParentEvent>k__BackingField: {fileID: 0}
+    <ParentEvent>k__BackingField: {fileID: 11400000, guid: 5e348a35bb05e43e1a6b17e3020c99f2, type: 2}
   <Coordinates>k__BackingField: {x: 0, y: 0}

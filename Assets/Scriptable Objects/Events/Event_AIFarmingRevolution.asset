@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: Event_AIBreakthrough
+  m_Name: Event_AIFarmingRevolution
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: Researchers achieve a major breakthrough in AI
-      efficiency, reducing energy consumption by 30%.
+    <Description>k__BackingField: AI-optimized vertical farming increases food production
+      while reducing environmental impact.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 91c0b0449cd403e46bfab5d14dfa5d11, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 2a55e79f6a7e2cf42b25aab65803167a, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -3
+        AddedValue: -2
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0
@@ -28,15 +28,15 @@ MonoBehaviour:
         AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 0
+        AddedValue: -1
         OneShotValue: 0
-    <Coordinates>k__BackingField: {x: 8, y: 5}
+    <Coordinates>k__BackingField: {x: 22, y: 4}
     <DateCondition>k__BackingField:
-      <MinTick>k__BackingField: 20
-      <MaxTick>k__BackingField: 100
+      <MinTick>k__BackingField: 95
+      <MaxTick>k__BackingField: 255
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
-      <Category>k__BackingField: 1
+      <Category>k__BackingField: 0
     <ParentEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 0, y: 0}

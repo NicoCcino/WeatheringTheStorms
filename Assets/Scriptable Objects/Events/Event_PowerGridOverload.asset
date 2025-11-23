@@ -15,6 +15,8 @@ MonoBehaviour:
   EventData:
     <Description>k__BackingField: The local power grid struggles to keep up with
       increasing AI compute demands, leading to brownouts.
+    <DurationInTicks>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: 8970564536206648928, guid: 84adbd9906bb87048afce6ae8c875e95, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 1
@@ -28,6 +30,7 @@ MonoBehaviour:
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
+    <Coordinates>k__BackingField: {x: 4, y: 2}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 30
       <MaxTick>k__BackingField: 120

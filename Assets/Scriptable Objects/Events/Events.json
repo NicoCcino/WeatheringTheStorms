@@ -4,6 +4,8 @@
       "Name": "Event_DataCenterFire",
       "EventData": {
         "Description": "A fire breaks out in a major data center, causing significant damage to infrastructure and raising concerns about AI safety.",
+        "DurationInTicks": 0,
+        "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {
             "AddedValue": 2,
@@ -23,8 +25,8 @@
           }
         },
         "Coordinates": {
-          "x": 0,
-          "y": 0
+          "x": 2,
+          "y": 3
         },
         "DateCondition": {
           "MinTick": 0,
@@ -42,6 +44,8 @@
       "Name": "Event_AIBreakthrough",
       "EventData": {
         "Description": "Researchers achieve a major breakthrough in AI efficiency, reducing energy consumption by 30%.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
         "ModifierBank": {
           "ClimateModifier": {
             "AddedValue": -3,
@@ -61,8 +65,8 @@
           }
         },
         "Coordinates": {
-          "x": 1,
-          "y": 0
+          "x": 8,
+          "y": 5
         },
         "DateCondition": {
           "MinTick": 20,
@@ -80,6 +84,8 @@
       "Name": "Event_PowerGridOverload",
       "EventData": {
         "Description": "The local power grid struggles to keep up with increasing AI compute demands, leading to brownouts.",
+        "DurationInTicks": 0,
+        "Icon": "Event.png",
         "ModifierBank": {
           "ClimateModifier": {
             "AddedValue": 1,
@@ -99,8 +105,8 @@
           }
         },
         "Coordinates": {
-          "x": 2,
-          "y": 0
+          "x": 4,
+          "y": 2
         },
         "DateCondition": {
           "MinTick": 30,
@@ -112,6 +118,1966 @@
           "Category": 0
         },
         "ParentEventName": "Event_DataCenterFire"
+      }
+    },
+    {
+      "Name": "Event_HeatwaveEmergency",
+      "EventData": {
+        "Description": "Unprecedented heatwave forces data centers to increase cooling, tripling energy consumption.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 2
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 6,
+          "y": 8
+        },
+        "DateCondition": {
+          "MinTick": 50,
+          "MaxTick": 150
+        },
+        "GaugeCondition": {
+          "MinValue": 30,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_JobDisplacement",
+      "EventData": {
+        "Description": "AI automation causes massive job losses in manufacturing sector, sparking protests.",
+        "DurationInTicks": 0,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 12,
+          "y": 4
+        },
+        "DateCondition": {
+          "MinTick": 40,
+          "MaxTick": 140
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_WaterShortage",
+      "EventData": {
+        "Description": "Local water supplies depleted by data center cooling systems, affecting nearby communities.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 3,
+          "y": 10
+        },
+        "DateCondition": {
+          "MinTick": 60,
+          "MaxTick": 180
+        },
+        "GaugeCondition": {
+          "MinValue": 40,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_QuantumLeap",
+      "EventData": {
+        "Description": "Quantum computing breakthrough promises 1000x efficiency gains for AI training.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -4,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 15,
+          "y": 7
+        },
+        "DateCondition": {
+          "MinTick": 100,
+          "MaxTick": 250
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIRegulation",
+      "EventData": {
+        "Description": "Government introduces strict AI development regulations requiring safety audits.",
+        "DurationInTicks": 0,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 10,
+          "y": 2
+        },
+        "DateCondition": {
+          "MinTick": 35,
+          "MaxTick": 90
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_DataBreach",
+      "EventData": {
+        "Description": "Major security breach exposes millions of users' personal data used for AI training.",
+        "DurationInTicks": 0,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 7,
+          "y": 11
+        },
+        "DateCondition": {
+          "MinTick": 45,
+          "MaxTick": 130
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_SolarFarmSuccess",
+      "EventData": {
+        "Description": "New solar farm partnership reduces data center carbon footprint by 40%.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": -2
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 11,
+          "y": 9
+        },
+        "DateCondition": {
+          "MinTick": 70,
+          "MaxTick": 200
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIEthicsScandal",
+      "EventData": {
+        "Description": "AI system found to discriminate against minorities, causing public outcry.",
+        "DurationInTicks": 0,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 5,
+          "y": 6
+        },
+        "DateCondition": {
+          "MinTick": 55,
+          "MaxTick": 160
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_ChipShortage",
+      "EventData": {
+        "Description": "Global semiconductor shortage delays AI hardware expansion plans.",
+        "DurationInTicks": 0,
+        "Icon": "Event.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 9,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 25,
+          "MaxTick": 80
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_PublicTrustBoost",
+      "EventData": {
+        "Description": "Successful AI-assisted medical diagnosis saves thousands of lives, improving public perception.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 14,
+          "y": 12
+        },
+        "DateCondition": {
+          "MinTick": 80,
+          "MaxTick": 220
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_RenewableTransition",
+      "EventData": {
+        "Description": "Industry-wide commitment to transition all AI infrastructure to renewable energy by 2030.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -4,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 13,
+          "y": 14
+        },
+        "DateCondition": {
+          "MinTick": 90,
+          "MaxTick": 240
+        },
+        "GaugeCondition": {
+          "MinValue": 50,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_EdgeComputingRise",
+      "EventData": {
+        "Description": "Edge computing deployment reduces centralized data center load and energy use.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 16,
+          "y": 5
+        },
+        "DateCondition": {
+          "MinTick": 65,
+          "MaxTick": 190
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_GlobalAITreaty",
+      "EventData": {
+        "Description": "International AI safety treaty signed by major nations, establishing global standards.",
+        "DurationInTicks": 0,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 18,
+          "y": 3
+        },
+        "DateCondition": {
+          "MinTick": 110,
+          "MaxTick": 280
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIAssistantBacklash",
+      "EventData": {
+        "Description": "Privacy advocates organize boycott of AI assistants over surveillance concerns.",
+        "DurationInTicks": 0,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 1,
+          "y": 7
+        },
+        "DateCondition": {
+          "MinTick": 30,
+          "MaxTick": 110
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_CoolingInnovation",
+      "EventData": {
+        "Description": "Revolutionary liquid cooling system reduces data center energy needs by 50%.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": -1
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 20,
+          "y": 8
+        },
+        "DateCondition": {
+          "MinTick": 75,
+          "MaxTick": 210
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_UnionOrganizing",
+      "EventData": {
+        "Description": "Tech workers form AI ethics union demanding better oversight and safety protocols.",
+        "DurationInTicks": 0,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 1
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 17,
+          "y": 2
+        },
+        "DateCondition": {
+          "MinTick": 50,
+          "MaxTick": 170
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_CarbonTaxImplemented",
+      "EventData": {
+        "Description": "New carbon tax on high-energy computing increases operational costs significantly.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 4,
+          "y": 13
+        },
+        "DateCondition": {
+          "MinTick": 60,
+          "MaxTick": 185
+        },
+        "GaugeCondition": {
+          "MinValue": 40,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIEducationBoom",
+      "EventData": {
+        "Description": "AI-powered education platforms help millions gain new skills for changing job market.",
+        "DurationInTicks": 0,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 19,
+          "y": 11
+        },
+        "DateCondition": {
+          "MinTick": 85,
+          "MaxTick": 230
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_BlackoutCrisis",
+      "EventData": {
+        "Description": "Regional power blackout forces emergency shutdown of major AI training runs.",
+        "DurationInTicks": 0,
+        "Icon": "Event.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 1
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 8,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 40,
+          "MaxTick": 145
+        },
+        "GaugeCondition": {
+          "MinValue": 30,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": "Event_PowerGridOverload"
+      }
+    },
+    {
+      "Name": "Event_OpenSourceMovement",
+      "EventData": {
+        "Description": "Major open-source AI initiative promotes transparency and collaborative development.",
+        "DurationInTicks": 0,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 21,
+          "y": 6
+        },
+        "DateCondition": {
+          "MinTick": 55,
+          "MaxTick": 175
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_MedicalAIApproval",
+      "EventData": {
+        "Description": "FDA approves first fully AI-powered diagnostic system, revolutionizing healthcare.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -3,
+            "OneShotValue": -2
+          }
+        },
+        "Coordinates": {
+          "x": 22,
+          "y": 10
+        },
+        "DateCondition": {
+          "MinTick": 95,
+          "MaxTick": 260
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIWarfareDebate",
+      "EventData": {
+        "Description": "Military AI development sparks international debate and ethical concerns.",
+        "DurationInTicks": 0,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 4,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 0,
+          "y": 4
+        },
+        "DateCondition": {
+          "MinTick": 70,
+          "MaxTick": 205
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_GeothermalSuccess",
+      "EventData": {
+        "Description": "Geothermal energy facility provides clean, constant power to data center cluster.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": -2
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 23,
+          "y": 13
+        },
+        "DateCondition": {
+          "MinTick": 100,
+          "MaxTick": 270
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIArtControversy",
+      "EventData": {
+        "Description": "AI-generated art floods market, displacing human artists and causing protests.",
+        "DurationInTicks": 0,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 6,
+          "y": 4
+        },
+        "DateCondition": {
+          "MinTick": 45,
+          "MaxTick": 155
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_HurricaneDataLoss",
+      "EventData": {
+        "Description": "Hurricane destroys coastal data center, resulting in permanent loss of critical research data.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 3
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 10,
+          "y": 14
+        },
+        "DateCondition": {
+          "MinTick": 80,
+          "MaxTick": 225
+        },
+        "GaugeCondition": {
+          "MinValue": 50,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_BionicImplants",
+      "EventData": {
+        "Description": "AI-powered neural implants restore mobility to paralyzed patients, gaining public support.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 24,
+          "y": 9
+        },
+        "DateCondition": {
+          "MinTick": 105,
+          "MaxTick": 290
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_ElectronicWaste",
+      "EventData": {
+        "Description": "Massive accumulation of obsolete AI hardware creates environmental crisis.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 1,
+          "y": 12
+        },
+        "DateCondition": {
+          "MinTick": 65,
+          "MaxTick": 195
+        },
+        "GaugeCondition": {
+          "MinValue": 40,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_SyntheticDataSolution",
+      "EventData": {
+        "Description": "New synthetic data generation techniques reduce need for privacy-invasive real data.",
+        "DurationInTicks": 0,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 25,
+          "y": 5
+        },
+        "DateCondition": {
+          "MinTick": 90,
+          "MaxTick": 245
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AINewsManipulation",
+      "EventData": {
+        "Description": "AI-generated fake news campaign undermines democratic elections worldwide.",
+        "DurationInTicks": 0,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 3,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 50,
+          "MaxTick": 165
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_FusionEnergyPromise",
+      "EventData": {
+        "Description": "Fusion energy breakthrough promises unlimited clean power for future AI infrastructure.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -5,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 20,
+          "y": 15
+        },
+        "DateCondition": {
+          "MinTick": 150,
+          "MaxTick": 350
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_RareEarthShortage",
+      "EventData": {
+        "Description": "Critical shortage of rare earth minerals threatens AI chip production.",
+        "DurationInTicks": 0,
+        "Icon": "Event.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 11,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 55,
+          "MaxTick": 180
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AITherapistSuccess",
+      "EventData": {
+        "Description": "AI mental health therapist proves highly effective, reducing human therapist shortage.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 15,
+          "y": 11
+        },
+        "DateCondition": {
+          "MinTick": 75,
+          "MaxTick": 215
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_GridStorageSolution",
+      "EventData": {
+        "Description": "Advanced battery storage enables data centers to better utilize renewable energy.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 18,
+          "y": 7
+        },
+        "DateCondition": {
+          "MinTick": 85,
+          "MaxTick": 235
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AICodeBug",
+      "EventData": {
+        "Description": "Critical bug in widely-used AI framework causes cascading failures across systems.",
+        "DurationInTicks": 0,
+        "Icon": "Event.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 1,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 7,
+          "y": 3
+        },
+        "DateCondition": {
+          "MinTick": 35,
+          "MaxTick": 125
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_GreenDataCenter",
+      "EventData": {
+        "Description": "World's first carbon-negative data center opens, using innovative carbon capture.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -4,
+            "OneShotValue": -3
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 16,
+          "y": 13
+        },
+        "DateCondition": {
+          "MinTick": 110,
+          "MaxTick": 300
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_DriverlessAccident",
+      "EventData": {
+        "Description": "Fatal autonomous vehicle accident raises questions about AI safety standards.",
+        "DurationInTicks": 0,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 2
+          }
+        },
+        "Coordinates": {
+          "x": 5,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 40,
+          "MaxTick": 150
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIFarmingRevolution",
+      "EventData": {
+        "Description": "AI-optimized vertical farming increases food production while reducing environmental impact.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 22,
+          "y": 4
+        },
+        "DateCondition": {
+          "MinTick": 95,
+          "MaxTick": 255
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_DeepfakeScandal",
+      "EventData": {
+        "Description": "Sophisticated deepfake videos of world leaders nearly trigger international incident.",
+        "DurationInTicks": 0,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 4,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 0,
+          "y": 9
+        },
+        "DateCondition": {
+          "MinTick": 60,
+          "MaxTick": 190
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_NuclearEnergyDeal",
+      "EventData": {
+        "Description": "Tech companies partner with nuclear plants for reliable, low-carbon AI power.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 1
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 13,
+          "y": 6
+        },
+        "DateCondition": {
+          "MinTick": 70,
+          "MaxTick": 200
+        },
+        "GaugeCondition": {
+          "MinValue": 30,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_AIGovernmentAdoption",
+      "EventData": {
+        "Description": "Government agencies widely adopt AI for public services, improving efficiency.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -1,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 19,
+          "y": 1
+        },
+        "DateCondition": {
+          "MinTick": 65,
+          "MaxTick": 195
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_CyberAttackOnAI",
+      "EventData": {
+        "Description": "Coordinated cyberattack targets AI training infrastructure, causing major disruption.",
+        "DurationInTicks": 0,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 9,
+          "y": 12
+        },
+        "DateCondition": {
+          "MinTick": 55,
+          "MaxTick": 175
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_RecyclingProgram",
+      "EventData": {
+        "Description": "Industry launches comprehensive AI hardware recycling and refurbishment program.",
+        "DurationInTicks": 0,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -2,
+            "OneShotValue": -1
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 2
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 14,
+          "y": 8
+        },
+        "DateCondition": {
+          "MinTick": 80,
+          "MaxTick": 220
+        },
+        "GaugeCondition": {
+          "MinValue": 40,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": "Event_ElectronicWaste"
+      }
+    },
+    {
+      "Name": "Event_AITeacherPilot",
+      "EventData": {
+        "Description": "AI teaching assistants in schools show remarkable results in personalized learning.",
+        "DurationInTicks": 0,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 23,
+          "y": 2
+        },
+        "DateCondition": {
+          "MinTick": 90,
+          "MaxTick": 240
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_DroughtImpact",
+      "EventData": {
+        "Description": "Severe drought forces data centers to choose between operations and community water needs.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 2,
+            "OneShotValue": 2
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 2,
+          "y": 15
+        },
+        "DateCondition": {
+          "MinTick": 85,
+          "MaxTick": 250
+        },
+        "GaugeCondition": {
+          "MinValue": 60,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": "Event_WaterShortage"
+      }
+    },
+    {
+      "Name": "Event_AlgorithmicBias",
+      "EventData": {
+        "Description": "Major study reveals widespread algorithmic bias in hiring AI across industries.",
+        "DurationInTicks": 0,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": -4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 3,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 12,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 45,
+          "MaxTick": 160
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": "Event_AIEthicsScandal"
+      }
+    },
+    {
+      "Name": "Event_AIClimateModeling",
+      "EventData": {
+        "Description": "AI-powered climate models provide unprecedented accuracy in predicting environmental changes.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -2,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 3
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 21,
+          "y": 12
+        },
+        "DateCondition": {
+          "MinTick": 100,
+          "MaxTick": 275
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
+      }
+    },
+    {
+      "Name": "Event_SmallModelRevolution",
+      "EventData": {
+        "Description": "New compression techniques allow powerful AI to run on minimal hardware and energy.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -4,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 25,
+          "y": 10
+        },
+        "DateCondition": {
+          "MinTick": 115,
+          "MaxTick": 310
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": "Event_AIBreakthrough"
+      }
+    },
+    {
+      "Name": "Event_UniversalBasicIncome",
+      "EventData": {
+        "Description": "First nation implements UBI funded by AI productivity gains, setting global precedent.",
+        "DurationInTicks": 0,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 5
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": -4,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 17,
+          "y": 14
+        },
+        "DateCondition": {
+          "MinTick": 120,
+          "MaxTick": 320
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 1
+        },
+        "ParentEventName": "Event_JobDisplacement"
+      }
+    },
+    {
+      "Name": "Event_SpaceDataCenter",
+      "EventData": {
+        "Description": "First orbital data center launched, utilizing solar power and zero-gravity cooling.",
+        "DurationInTicks": 0,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": {
+            "AddedValue": -3,
+            "OneShotValue": -2
+          },
+          "SocietalModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 4
+          },
+          "HumanModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          },
+          "HumanImpactModifier": {
+            "AddedValue": 0,
+            "OneShotValue": 0
+          }
+        },
+        "Coordinates": {
+          "x": 24,
+          "y": 15
+        },
+        "DateCondition": {
+          "MinTick": 140,
+          "MaxTick": 350
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentEventName": ""
       }
     }
   ]

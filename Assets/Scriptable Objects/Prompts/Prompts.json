@@ -62,7 +62,12 @@
           "MaxValue": 100,
           "Category": 0
         },
-        "ParentPromptName": ""
+        "ParentPromptName": "",
+        "PlannedAction": {
+          "TicksDelay": 15,
+          "PlannedPromptName": "Prompt_DataPrivacy",
+          "PlannedEventName": ""
+        }
       }
     },
     {
@@ -148,7 +153,8 @@
           "MaxValue": 100,
           "Category": 1
         },
-        "ParentPromptName": ""
+        "ParentPromptName": "",
+        "PlannedAction": null
       }
     },
     {
@@ -213,7 +219,8 @@
           "MaxValue": 100,
           "Category": 1
         },
-        "ParentPromptName": "Prompt_DataPrivacy"
+        "ParentPromptName": "Prompt_DataPrivacy",
+        "PlannedAction": null
       }
     }
   ]

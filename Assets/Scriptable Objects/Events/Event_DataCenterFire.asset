@@ -15,6 +15,8 @@ MonoBehaviour:
   EventData:
     <Description>k__BackingField: A fire breaks out in a major data center, causing
       significant damage to infrastructure and raising concerns about AI safety.
+    <DurationInTicks>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: 21300000, guid: 6cc87508e4ea8ba40aa2be0b94ed4c9b, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2
@@ -28,6 +30,7 @@ MonoBehaviour:
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
+    <Coordinates>k__BackingField: {x: 2, y: 3}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 50

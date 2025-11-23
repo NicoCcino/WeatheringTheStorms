@@ -100,6 +100,8 @@ namespace JSONData
     public class EventDataJSON
     {
         public string Description;
+        public int DurationInTicks;
+        public string Icon;
         public ModifierBankJSON ModifierBank;
         public Vector2IntJSON Coordinates;
         public DateConditionJSON DateCondition;

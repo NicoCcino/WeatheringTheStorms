@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: Event_AIBreakthrough
+  m_Name: Event_AIWarfareDebate
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: Researchers achieve a major breakthrough in AI
-      efficiency, reducing energy consumption by 30%.
+    <Description>k__BackingField: Military AI development sparks international debate
+      and ethical concerns.
     <DurationInTicks>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 21300000, guid: 91c0b0449cd403e46bfab5d14dfa5d11, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 4d19cc99d28e81646bc89f850ab380ae, type: 3}
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -3
+        AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0
-        OneShotValue: 3
+        OneShotValue: -4
       HumanModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 0
+        AddedValue: 4
         OneShotValue: 0
-    <Coordinates>k__BackingField: {x: 8, y: 5}
+    <Coordinates>k__BackingField: {x: 0, y: 4}
     <DateCondition>k__BackingField:
-      <MinTick>k__BackingField: 20
-      <MaxTick>k__BackingField: 100
+      <MinTick>k__BackingField: 70
+      <MaxTick>k__BackingField: 205
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
