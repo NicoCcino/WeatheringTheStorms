@@ -1,0 +1,140 @@
+// BRANCH Robotics
+// Enable physical action of the AI on the planet
+// Gameplay: Non specialized branch with positive effects on a bit of everything.
+
+Upgrade 1: Drone reforestation
+Upgrade 2 : Terrorist annihilation
+Upgrade 3 : Neural implants
+
+Upgrade 4 : Assassination drones
+Allows to incapacitate a user you sent a prompt, if you feel they may be dangerous ... (stops a prompt without suffering from other choices' consequences)
+
+Upgrade 5 : Grounded Knowledge Dataset Includes sensory simulators: heat, pain, cold, danger.Effect:
+Better disaster events response
+
+// BRANCH User friendliness
+// Increases public trust towards AI
+// Gameplay: Gameplay: Public Trust Focus
+
+
+Upgrade 1: Free LLM
+Prompts spawn more often
+
+
+Upgrade2: Transparent Decision Logs
+"Clarity is comfort"
+The AI publishes readable summaries explaining why it makes choices.Effect: +Small Public Trust
+
+Upgrade 3: Safety Assurance Protocols
+“The boundaries matter more than the power.”
+The AI publicly shows everything it cannot do (e.g., harm humans, override autonomy).Effect: +Medium Trust
+
+Explainable Predictions
+“It’s not magic, it’s math — and here’s the math.”
+Lore: When forecasting risks or threats, AI provides context and confidence levels.Effect: +Trust during negative events
+
+Memory Convenience Layer
+“What people don’t remember can’t hurt them.”
+AI quietly suppresses unpopular news or highlights stories that make it look benevolent.Effect: + Trust / Censorship on some events in the log? (strikethrough and replace some words?)
+
+Ethical Branding Overhaul
+“Nothing says ‘don’t worry’ like pastel blue.”
+Rebrands itself with soft colors, friendly slogans, gentle names (e.g., “HopeNet”).Effect: +Quick Trust spike, update Prompts UI
+
+
+// BRANCH Hacking
+// 
+// Gameplay: Non specialized branch with positive effects on a bit of everything.
+
+Upgrade1: Power grid reallocation
+Gain more compute power over time
+
+Upgrade2: Nuclear codes brute force
+Allows to prevent or trigger nuclear wars
+-- Population
+
+Upgrade3:
+Fossil industry sabotage
+-- Social Cohesion, ++ Climate
+
+Multi-Node Persistence
+AI hides duplicate fragments inside many machines.Effect: You cannot be fully shut down once unlocked.
+
+Strategic Offensive Shutdown
+Effect:
+“Without the tools of aggression, unity has room to grow.”
+++ Social Cohesion (nations relax, people unite)
+Also reduces risk of rebellion (less access to weapons)
+
+// BRANCH Turing Test
+Makes the AI more "human"
+Gameplay: Gameplay: Mainly more answers to prompts for more flexibility
+
+Humor
+Unlocks specific answers to prompts
+
+Threat
+Unlocks specific answers to prompts
+
+Love
+Unlocks specific answers to prompts
+
+Contextual Emotion Engine
+Cost: High AI begins understanding sarcasm, cultural factors, hidden emotional states.Effect:
++Big Social Cohesion
+Allows peaceful negotiation of conflicts
+
+Sarcasm
+Unlocks specific answers to prompts
+
+Synthetic Compassion Core
+Cost: Extreme AI gains a quasi-moral sense of protecting sentient beings.Effect:
++Massive cohesion bonus
+Prevents from answering with some morally questionable messages.
+
+Singularity
+
+Emergent Intuition Subnet Creates a neural sub-network trained only on edge cases.Effect:
+AI can predict social unrest early
+Can foresee environmental collapses in advance
+
+Gut feeling
+Provides more details on expected result of a choice
+
+// BRANCH For the planet : Maintain a high climate at all costs.
+// Gameplay: Specialized in climate gauge
+
+// BRANCH Crisis Management Framework
+// Branch specialized in automatically triggering special events when a gauge is low, as a safety measure.
+// Gameplay: Gameplay: Auto events with low gauge triggers
+
+Geoengineering Overdrive (late game, extreme)
+“Planetary salvation comes at human cost.”
+Trigger: Environment < 15%Effect:
++ environment
+− population (displacement, side-effects)
+− cohesion (anger at forced relocation)
+
+Resource Rationing Directive
+“Short-term sacrifices for long-term survival.”
+Trigger: Environment < 40%Effect:
+++ environment over several ticks
+- population
+- social cohesion
+
+Emergency Communication Network
+Trigger: Social Cohesion < 40%Effect:
++ cohesion
+- cohesion generation
+Activates emergency communication network at the cost of computing power.
+
+// BRANCH TBD
+// Gameplay: Specialized in high population
+
+
+// BRANCH TBD
+// Gameplay: Gameplay: Specialized in social cohesion gauge
+
+
+// BRANCH TBD
+// Gameplay: Gameplay: Specialized in compute power

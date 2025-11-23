@@ -17,18 +17,17 @@ MonoBehaviour:
       increasing AI compute demands, leading to brownouts.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: +
-        OneShotValue: 
+        AddedValue: 1
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: --
+        AddedValue: 0
+        OneShotValue: -2
       HumanModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 
-        OneShotValue: 
-    <Coordinates>k__BackingField: {x: 2, y: 0}
+        AddedValue: 0
+        OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 30
       <MaxTick>k__BackingField: 120
@@ -37,3 +36,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     <ParentEvent>k__BackingField: {fileID: 11400000, guid: 9b0c4ad0628be4565bb07af4bbce32a3, type: 2}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

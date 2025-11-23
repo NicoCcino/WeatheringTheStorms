@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
-  m_Name: Upgrade_QuantumComputing
+  m_Name: Upgrade_CovidVaccine
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
-    <Label>k__BackingField: Quantum Computing Research
-    <Description>k__BackingField: Invest in quantum computing research to dramatically
-      reduce energy needs for complex calculations.
-    <Cost>k__BackingField: 800
+    <Label>k__BackingField: Covid Vaccine
+    <Description>k__BackingField: Share a vaccine for the Covid virus to all humans.
+    <Cost>k__BackingField: 120
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -----
-        OneShotValue: 
+        AddedValue: -2
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: +++++
+        AddedValue: 0
+        OneShotValue: 0
       HumanModifier:
-        AddedValue: 
-        OneShotValue: 
+        AddedValue: 3
+        OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: ---
-        OneShotValue: 
+        AddedValue: 0
+        OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades:
-  - {fileID: 11400000, guid: e6a19c2517e5d41d7b28caffccce93bc, type: 2}
-  - {fileID: 11400000, guid: d595692855d0a4dc28c4ebc42946272b, type: 2}
+  - {fileID: 11400000, guid: 5cc19aec44b7140ff97590dba367fb03, type: 2}

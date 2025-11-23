@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
+  m_Name: Upgrade_SafetyAssuranceProtocols
+  m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  UpgradeData:
+    <Label>k__BackingField: Safety Assurance Protocols
+    <Description>k__BackingField: AI shows everything it cannot do. Improves public
+      trust.
+    <Cost>k__BackingField: 0
+    <ModifierBank>k__BackingField:
+      ClimateModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      SocietalModifier:
+        AddedValue: 2
+        OneShotValue: 0
+      HumanModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      HumanImpactModifier:
+        AddedValue: 0
+        OneShotValue: 0
+  IsUnlocked: 0
+  IsBought: 0
+  ParentUpgrades: []

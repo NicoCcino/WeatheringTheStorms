@@ -78,7 +78,7 @@ public class Human : Singleton<Human>
     public void AddHumanImpactModifier(Modifier modifier)
     {
         humanImpactModifierManager.AddModifier(modifier);
-        if (modifier.OneShotValue != "")
+        if (modifier.OneShotValue != 0)
         {
             Debug.LogError("Human impact modifier don't use OneShot values!");
             return;

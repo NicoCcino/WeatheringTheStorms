@@ -84,7 +84,8 @@ public class JSONConverterEditor : EditorWindow
         try
         {
             string jsonContent = File.ReadAllText(EVENTS_JSON_PATH);
-            EventListJSON eventList = JsonUtility.FromJson<EventListJSON>(jsonContent);
+            string jsonWithoutComments = StripComments(jsonContent);
+            EventListJSON eventList = JsonUtility.FromJson<EventListJSON>(jsonWithoutComments);
 
             if (eventList == null || eventList.Events == null || eventList.Events.Count == 0)
             {
@@ -162,7 +163,8 @@ public class JSONConverterEditor : EditorWindow
         try
         {
             string jsonContent = File.ReadAllText(PROMPTS_JSON_PATH);
-            PromptListJSON promptList = JsonUtility.FromJson<PromptListJSON>(jsonContent);
+            string jsonWithoutComments = StripComments(jsonContent);
+            PromptListJSON promptList = JsonUtility.FromJson<PromptListJSON>(jsonWithoutComments);
 
             if (promptList == null || promptList.Prompts == null || promptList.Prompts.Count == 0)
             {
@@ -244,7 +246,8 @@ public class JSONConverterEditor : EditorWindow
         try
         {
             string jsonContent = File.ReadAllText(UPGRADES_JSON_PATH);
-            UpgradeListJSON upgradeList = JsonUtility.FromJson<UpgradeListJSON>(jsonContent);
+            string jsonWithoutComments = StripComments(jsonContent);
+            UpgradeListJSON upgradeList = JsonUtility.FromJson<UpgradeListJSON>(jsonWithoutComments);
 
             if (upgradeList == null || upgradeList.Upgrades == null || upgradeList.Upgrades.Count == 0)
             {
@@ -377,6 +380,91 @@ public class JSONConverterEditor : EditorWindow
         AssetDatabase.SaveAssets();
         
         Debug.Log($"Updated PromptManagerParameter with {prompts.Count} prompts");
+    }
+
+    /// <summary>
+    /// Strips C-style comments from JSON string to allow JSONC format (JSON with Comments).
+    /// Supports both single-line (//) and multi-line (/* */) comments.
+    /// </summary>
+    private static string StripComments(string jsonWithComments)
+    {
+        var result = new System.Text.StringBuilder(jsonWithComments.Length);
+        bool inString = false;
+        bool inSingleLineComment = false;
+        bool inMultiLineComment = false;
+        char prevChar = '\0';
+
+        for (int i = 0; i < jsonWithComments.Length; i++)
+        {
+            char c = jsonWithComments[i];
+            char nextChar = (i + 1 < jsonWithComments.Length) ? jsonWithComments[i + 1] : '\0';
+
+            // Handle string boundaries (ignore comments inside strings)
+            if (c == '"' && prevChar != '\\' && !inSingleLineComment && !inMultiLineComment)
+            {
+                inString = !inString;
+                result.Append(c);
+                prevChar = c;
+                continue;
+            }
+
+            // If we're in a string, just append and continue
+            if (inString)
+            {
+                result.Append(c);
+                prevChar = c;
+                continue;
+            }
+
+            // Check for start of single-line comment
+            if (!inMultiLineComment && c == '/' && nextChar == '/')
+            {
+                inSingleLineComment = true;
+                i++; // Skip the next '/'
+                prevChar = '/';
+                continue;
+            }
+
+            // Check for end of single-line comment
+            if (inSingleLineComment && (c == '\n' || c == '\r'))
+            {
+                inSingleLineComment = false;
+                result.Append(c); // Keep the newline
+                prevChar = c;
+                continue;
+            }
+
+            // Check for start of multi-line comment
+            if (!inSingleLineComment && c == '/' && nextChar == '*')
+            {
+                inMultiLineComment = true;
+                i++; // Skip the next '*'
+                prevChar = '*';
+                continue;
+            }
+
+            // Check for end of multi-line comment
+            if (inMultiLineComment && c == '*' && nextChar == '/')
+            {
+                inMultiLineComment = false;
+                i++; // Skip the next '/'
+                prevChar = '/';
+                continue;
+            }
+
+            // If we're in a comment, skip the character
+            if (inSingleLineComment || inMultiLineComment)
+            {
+                prevChar = c;
+                continue;
+            }
+
+            // Normal character, append it
+            result.Append(c);
+            prevChar = c;
+        }
+
+        return result.ToString();
     }
 
     private static void SetPrivateProperty(object obj, string propertyName, object value)

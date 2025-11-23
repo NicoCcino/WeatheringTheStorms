@@ -10,8 +10,8 @@ namespace JSONData
     [Serializable]
     public class ModifierJSON
     {
-        public string AddedValue = "";
-        public string OneShotValue = "";
+        public int AddedValue = 0;
+        public int OneShotValue = 0;
 
         public Modifier ToModifier()
         {

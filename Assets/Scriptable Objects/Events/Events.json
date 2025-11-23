@@ -6,20 +6,20 @@
         "Description": "A fire breaks out in a major data center, causing significant damage to infrastructure and raising concerns about AI safety.",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "++",
-            "OneShotValue": ""
+            "AddedValue": 2,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": "---"
+            "AddedValue": 0,
+            "OneShotValue": -3
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         },
         "Coordinates": {
@@ -44,20 +44,20 @@
         "Description": "Researchers achieve a major breakthrough in AI efficiency, reducing energy consumption by 30%.",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "---",
-            "OneShotValue": ""
+            "AddedValue": -3,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": "+++"
+            "AddedValue": 0,
+            "OneShotValue": 3
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         },
         "Coordinates": {
@@ -82,20 +82,20 @@
         "Description": "The local power grid struggles to keep up with increasing AI compute demands, leading to brownouts.",
         "ModifierBank": {
           "ClimateModifier": {
-            "AddedValue": "+",
-            "OneShotValue": ""
+            "AddedValue": 1,
+            "OneShotValue": 0
           },
           "SocietalModifier": {
-            "AddedValue": "",
-            "OneShotValue": "--"
+            "AddedValue": 0,
+            "OneShotValue": -2
           },
           "HumanModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           },
           "HumanImpactModifier": {
-            "AddedValue": "",
-            "OneShotValue": ""
+            "AddedValue": 0,
+            "OneShotValue": 0
           }
         },
         "Coordinates": {
@@ -116,4 +116,3 @@
     }
   ]
 }
-

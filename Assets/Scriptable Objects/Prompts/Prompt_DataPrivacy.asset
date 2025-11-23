@@ -20,46 +20,45 @@ MonoBehaviour:
     - Label: Comply fully with new regulations
       ModifierBank:
         ClimateModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 
-          OneShotValue: +++
+          AddedValue: 0
+          OneShotValue: 3
         HumanModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         HumanImpactModifier:
-          AddedValue: '-'
-          OneShotValue: 
+          AddedValue: -1
+          OneShotValue: 0
     - Label: Lobby for exceptions and exemptions
       ModifierBank:
         ClimateModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 
-          OneShotValue: ---
+          AddedValue: 0
+          OneShotValue: -3
         HumanModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         HumanImpactModifier:
-          AddedValue: +
-          OneShotValue: 
+          AddedValue: 1
+          OneShotValue: 0
     - Label: Implement minimal changes and wait
       ModifierBank:
         ClimateModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 
-          OneShotValue: '-'
+          AddedValue: 0
+          OneShotValue: -1
         HumanModifier:
-          AddedValue: 
-          OneShotValue: 
+          AddedValue: 0
+          OneShotValue: 0
         HumanImpactModifier:
-          AddedValue: 
-          OneShotValue: 
-    <Coordinates>k__BackingField: {x: 1, y: 1}
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 15
       <MaxTick>k__BackingField: 80
@@ -68,3 +67,4 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
     <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 0, y: 0}

@@ -10,20 +10,20 @@
             "Label": "Accept subsidies and switch to renewables",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "---",
-                "OneShotValue": ""
+                "AddedValue": -3,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "++"
+                "AddedValue": 0,
+                "OneShotValue": 2
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               }
             }
           },
@@ -31,20 +31,20 @@
             "Label": "Decline and continue with current energy mix",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "+",
-                "OneShotValue": ""
+                "AddedValue": 1,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "-"
+                "AddedValue": 0,
+                "OneShotValue": -1
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               }
             }
           }
@@ -75,20 +75,20 @@
             "Label": "Comply fully with new regulations",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "+++"
+                "AddedValue": 0,
+                "OneShotValue": 3
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "-",
-                "OneShotValue": ""
+                "AddedValue": -1,
+                "OneShotValue": 0
               }
             }
           },
@@ -96,20 +96,20 @@
             "Label": "Lobby for exceptions and exemptions",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "---"
+                "AddedValue": 0,
+                "OneShotValue": -3
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "+",
-                "OneShotValue": ""
+                "AddedValue": 1,
+                "OneShotValue": 0
               }
             }
           },
@@ -117,20 +117,20 @@
             "Label": "Implement minimal changes and wait",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "-"
+                "AddedValue": 0,
+                "OneShotValue": -1
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               }
             }
           }
@@ -161,20 +161,20 @@
             "Label": "Hire more staff and reduce workload",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "++"
+                "AddedValue": 0,
+                "OneShotValue": 2
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "--",
-                "OneShotValue": ""
+                "AddedValue": -2,
+                "OneShotValue": 0
               }
             }
           },
@@ -182,20 +182,20 @@
             "Label": "Push through to meet deadlines",
             "ModifierBank": {
               "ClimateModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "AddedValue": "",
-                "OneShotValue": "---"
+                "AddedValue": 0,
+                "OneShotValue": -3
               },
               "HumanModifier": {
-                "AddedValue": "",
-                "OneShotValue": ""
+                "AddedValue": 0,
+                "OneShotValue": 0
               },
               "HumanImpactModifier": {
-                "AddedValue": "++",
-                "OneShotValue": ""
+                "AddedValue": 2,
+                "OneShotValue": 0
               }
             }
           }
@@ -218,4 +218,3 @@
     }
   ]
 }
-
