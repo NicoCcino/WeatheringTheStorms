@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
-  m_Name: Upgrade_QuantumComputing
+  m_Name: Upgrade_GeoengineeringOverdrive
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
-    <Label>k__BackingField: Quantum Computing Research
-    <Description>k__BackingField: Invest in quantum computing research to dramatically
-      reduce energy needs for complex calculations.
-    <Cost>k__BackingField: 800
+    <Label>k__BackingField: Geoengineering Overdrive
+    <Description>k__BackingField: 'Boosts environment but reduces population and
+      cohesion. Trigger: Environment < 15%.'
+    <Cost>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -----
+        AddedValue: ++
         OneShotValue: 
       SocietalModifier:
-        AddedValue: 
-        OneShotValue: +++++
+        AddedValue: '-'
+        OneShotValue: 
       HumanModifier:
-        AddedValue: 
+        AddedValue: '-'
         OneShotValue: 
       HumanImpactModifier:
-        AddedValue: ---
+        AddedValue: 
         OneShotValue: 
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades:
-  - {fileID: 11400000, guid: e6a19c2517e5d41d7b28caffccce93bc, type: 2}
-  - {fileID: 11400000, guid: d595692855d0a4dc28c4ebc42946272b, type: 2}
+  ParentUpgrades: []

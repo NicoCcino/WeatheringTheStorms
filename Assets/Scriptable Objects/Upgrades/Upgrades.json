@@ -1,9 +1,10 @@
 {
-  // =======================================
-  // BRANCH Robotics
-  // Enable physical action of the AI on the planet
-  // Gameplay: Non specialized branch with positive effects on a bit of everything.
-  // =======================================
+  /* =======================================
+     BRANCH Robotics
+     Enable physical action of the AI on the planet
+     Gameplay: Non specialized branch with positive effects on a bit of everything.
+     =======================================
+  */
   "Upgrades": [
     {
       "Name": "Upgrade_DroneReforestation",

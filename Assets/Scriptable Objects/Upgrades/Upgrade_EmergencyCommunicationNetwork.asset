@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
-  m_Name: Upgrade_AIOptimization
+  m_Name: Upgrade_EmergencyCommunicationNetwork
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
-    <Label>k__BackingField: AI Model Optimization
-    <Description>k__BackingField: Optimize your AI models to use fewer computational
-      resources while maintaining performance.
-    <Cost>k__BackingField: 200
+    <Label>k__BackingField: Emergency Communication Network
+    <Description>k__BackingField: 'Improves cohesion but reduces cohesion generation.
+      Trigger: Cohesion < 40%.'
+    <Cost>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: --
+        AddedValue: 
         OneShotValue: 
       SocietalModifier:
-        AddedValue: 
+        AddedValue: +
         OneShotValue: 
       HumanModifier:
-        AddedValue: 
+        AddedValue: '-'
         OneShotValue: 
       HumanImpactModifier:
-        AddedValue: '-'
+        AddedValue: 
         OneShotValue: 
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades:
-  - {fileID: 11400000, guid: b8e93d513c0f94685967446f553bdd3c, type: 2}
+  ParentUpgrades: []

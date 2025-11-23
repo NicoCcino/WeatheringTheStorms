@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
-  m_Name: Upgrade_GreenDataCenter
+  m_Name: Upgrade_AssassinationDrones
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
-    <Label>k__BackingField: Green Data Center
-    <Description>k__BackingField: Build a fully carbon-neutral data center powered
-      entirely by renewable energy.
-    <Cost>k__BackingField: 500
+    <Label>k__BackingField: Assassination Drones
+    <Description>k__BackingField: Incapacitate a user identified as dangerous without
+      consequences from other choices.
+    <Cost>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: ------
+        AddedValue: 
         OneShotValue: 
       SocietalModifier:
         AddedValue: 
-        OneShotValue: ++++
+        OneShotValue: 
       HumanModifier:
         AddedValue: 
         OneShotValue: 
@@ -32,6 +32,4 @@ MonoBehaviour:
         OneShotValue: 
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades:
-  - {fileID: 11400000, guid: 5c81f25dec1a04117aa93b3c611bf656, type: 2}
-  - {fileID: 11400000, guid: b8e93d513c0f94685967446f553bdd3c, type: 2}
+  ParentUpgrades: []
