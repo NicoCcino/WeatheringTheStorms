@@ -203,5 +203,60 @@ public class PromptManager : Singleton<PromptManager>
     {
         return new Dictionary<Prompt, Choice>(TriggeredPrompts);
     }
+
+    /// <summary>
+    /// Get the conversation history for a prompt by traversing its parent chain.
+    /// Only includes prompts with the same label (same conversation thread).
+    /// Returns messages in chronological order (oldest first).
+    /// </summary>
+    public List<ChatMessage> GetConversationHistory(Prompt currentPrompt)
+    {
+        List<ChatMessage> history = new List<ChatMessage>();
+        
+        if (currentPrompt == null) return history;
+        
+        string currentLabel = currentPrompt.PromptData.Label;
+        Prompt traversePrompt = currentPrompt.PromptData.ParentPrompt;
+        
+        // Traverse backwards through parent chain, collecting prompts with same label
+        while (traversePrompt != null)
+        {
+            // Check if this parent has the same label
+            if (traversePrompt.PromptData.Label == currentLabel)
+            {
+                // Get the choice that was made for this parent prompt
+                Choice parentChoice = GetChoiceForPrompt(traversePrompt);
+                
+                if (parentChoice != null)
+                {
+                    // Insert at the beginning to maintain chronological order
+                    // Insert the user's choice first (so it ends up after the prompt when both are inserted)
+                    history.Insert(0, new ChatMessage(
+                        "You",
+                        parentChoice.Label,
+                        ChatMessage.Alignment.Right
+                    ));
+                    
+                    // Insert the prompt message at the beginning (so it comes before the choice)
+                    history.Insert(0, new ChatMessage(
+                        traversePrompt.PromptData.Label,
+                        traversePrompt.PromptData.Description,
+                        ChatMessage.Alignment.Left
+                    ));
+                }
+                
+                // Move to the next parent
+                traversePrompt = traversePrompt.PromptData.ParentPrompt;
+            }
+            else
+            {
+                // Different label, stop traversing
+                break;
+            }
+        }
+        
+        // No need to reverse - we inserted at the beginning to maintain order
+        return history;
+    }
 }
 

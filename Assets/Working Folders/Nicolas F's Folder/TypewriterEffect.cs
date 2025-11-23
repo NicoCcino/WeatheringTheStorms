@@ -38,23 +38,39 @@ public class TypewriterEffect : MonoBehaviour
 
     public void Play(string text)
     {
+        Play(text, 0);
+    }
+
+    public void Play(string text, int startFromIndex)
+    {
         originalText = text;
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        typingCoroutine = StartCoroutine(TypeCoroutine());
+        typingCoroutine = StartCoroutine(TypeCoroutine(startFromIndex));
     }
+
     public void Reset()
     {
         textUI.text = "";
     }
 
-    IEnumerator TypeCoroutine()
+    IEnumerator TypeCoroutine(int startFromIndex = 0)
     {
-        textUI.text = "";
-
-        foreach (char c in originalText)
+        // Set the text up to startFromIndex immediately (no animation for this part)
+        if (startFromIndex > 0 && startFromIndex < originalText.Length)
         {
+            textUI.text = originalText.Substring(0, startFromIndex);
+        }
+        else
+        {
+            textUI.text = "";
+        }
+
+        // Animate from startFromIndex to the end
+        for (int i = startFromIndex; i < originalText.Length; i++)
+        {
+            char c = originalText[i];
             textUI.text += c;
 
             float delay = baseDelay;

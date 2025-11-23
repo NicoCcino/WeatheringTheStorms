@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System;
+using System.Collections.Generic;
 using WiDiD.UI;
 
 public class UIPrompt : MonoBehaviour
@@ -17,10 +18,61 @@ public class UIPrompt : MonoBehaviour
     public void DisplayPrompt(Prompt prompt)
     {
         canvasGroupCustom.Fade(true);
-        textDescription.GetComponent<TypewriterEffect>().Play(prompt.PromptData.Description);
-        textHeader.text = prompt.PromptData.Label;
+        
+        // Get conversation history
+        List<ChatMessage> conversationHistory = PromptManager.Instance.GetConversationHistory(prompt);
+        
+        // Build the history text (if any) and current description separately
+        string historyText = BuildHistoryText(conversationHistory);
+        historyText = historyText + "<align=left><b>" + prompt.PromptData.Label + ":</b>\n" ;
+        string currentDescription = prompt.PromptData.Description + "</align>";
+        string fullText = historyText + currentDescription;
+        
+        var typewriterEffect = textDescription.GetComponent<TypewriterEffect>();
+        
+        if (string.IsNullOrEmpty(historyText))
+        {
+            // No history - just play typewriter on current description
+            typewriterEffect.Play(fullText);
+        }
+        else
+        {
+            // Play typewriter starting from after the history (history appears instantly, only current animates)
+            typewriterEffect.Play(fullText, historyText.Length);
+        }
+        
+        textHeader.text = prompt.PromptData.Label + " chat :";
         uiChoicesManager.SpawnChoices(prompt.PromptData.Choices, this);
         DisplayedPrompt = prompt;
+    }
+    
+    private string BuildHistoryText(List<ChatMessage> history)
+    {
+        if (history.Count == 0)
+        {
+            return string.Empty;
+        }
+        
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        
+        // Add history messages
+        foreach (ChatMessage message in history)
+        {
+            if (message.MessageAlignment == ChatMessage.Alignment.Left)
+            {
+                // Prompt message (left aligned)
+                sb.AppendLine($"<align=left><b>{message.SenderName}:</b>\n {message.MessageText}</align>");
+            }
+            else
+            {
+                // User choice (right aligned)
+                sb.AppendLine($"<align=right><b>{message.SenderName}:</b>\n {message.MessageText}</align>");
+            }
+            sb.AppendLine(); // Empty line for spacing
+        }
+        
+        
+        return sb.ToString();
     }
     public void HideDisplayedPrompt()
     {
