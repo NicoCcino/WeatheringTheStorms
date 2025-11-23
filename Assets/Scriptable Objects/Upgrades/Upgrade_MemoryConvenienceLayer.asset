@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Memory Convenience Layer
     <Description>k__BackingField: AI suppresses unpopular news or highlights positive
       stories.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 40
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -32,4 +32,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 1518ce29f850a40c09a8ec292045afc9, type: 2}

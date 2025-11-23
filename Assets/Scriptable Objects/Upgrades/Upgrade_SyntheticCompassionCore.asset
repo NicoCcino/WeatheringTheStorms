@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Synthetic Compassion Core
     <Description>k__BackingField: AI gains a moral sense and avoids harmful answers.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 70
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: a8daa76d304b8472b89dddf672014efa, type: 2}

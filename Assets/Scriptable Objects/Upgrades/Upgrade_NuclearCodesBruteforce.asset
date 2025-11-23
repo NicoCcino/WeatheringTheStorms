@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Nuclear Codes Brute Force
     <Description>k__BackingField: Prevents or triggers nuclear wars.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 100
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: ee57bded1c24146faa84e0f69a3a1973, type: 2}

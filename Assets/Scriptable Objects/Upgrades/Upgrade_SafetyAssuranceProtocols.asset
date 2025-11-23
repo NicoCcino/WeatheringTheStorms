@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Safety Assurance Protocols
     <Description>k__BackingField: AI shows everything it cannot do. Improves public
       trust.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 30
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -32,4 +32,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 5cc7cdb7632c848b2812eda5f15adc8a, type: 2}

@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Emergency Communication Network
     <Description>k__BackingField: 'Improves cohesion but reduces cohesion generation.
       Trigger: Cohesion < 40%.'
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 40
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -32,4 +32,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 15d39321945da4fbd9922537d7507497, type: 2}

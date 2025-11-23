@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Sarcasm
     <Description>k__BackingField: Unlocks sarcastic responses.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 25
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: c917693f900664636a03a0d44a8aaab4, type: 2}

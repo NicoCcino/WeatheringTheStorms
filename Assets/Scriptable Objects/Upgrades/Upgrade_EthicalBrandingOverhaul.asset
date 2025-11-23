@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Ethical Branding Overhaul
     <Description>k__BackingField: Rebrand with soft colors and friendly slogans.
       Trust spike.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 50
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -32,4 +32,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: d170c799594304372949d3b86b837278, type: 2}

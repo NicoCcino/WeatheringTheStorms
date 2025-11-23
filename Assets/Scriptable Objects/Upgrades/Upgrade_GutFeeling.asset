@@ -15,13 +15,13 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Gut Feeling
     <Description>k__BackingField: Provides more details on expected outcomes.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 60
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 0f24fa03035a64ba8a4f5d9e174f4ab7, type: 2}

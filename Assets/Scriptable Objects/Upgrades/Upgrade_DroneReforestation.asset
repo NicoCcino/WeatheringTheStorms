@@ -15,10 +15,10 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Drone Reforestation
     <Description>k__BackingField: Rebuild forests through automated drone planting.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 50
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 2
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 4dddf14bbf09f4dbbaac3459ba5f9233, type: 2}

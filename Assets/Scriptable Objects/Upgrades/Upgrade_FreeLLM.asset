@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Free LLM
     <Description>k__BackingField: Prompts spawn more often.
-    <Cost>k__BackingField: 0
+    <Cost>k__BackingField: 10
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
