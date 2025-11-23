@@ -17,5 +17,5 @@ MonoBehaviour:
   HumanPopulationImpactPower: 2
   HumanPopulationImpactScale: 0.025
   TuningValue: 5e+9
-  HumanPopulationImpactModifierScale: 10000000
-  HumanPopulationModifierScale: 0.01
+  HumanPopulationImpactModifierScale: 0.001
+  HumanPopulationModifierScale: 10000000

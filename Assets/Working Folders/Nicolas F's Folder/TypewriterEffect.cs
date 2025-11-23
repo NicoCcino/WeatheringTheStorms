@@ -33,11 +33,12 @@ public class TypewriterEffect : MonoBehaviour
 
     void OnEnable()
     {
-        Play();
+        Play(originalText);
     }
 
-    public void Play()
+    public void Play(string text)
     {
+        originalText = text;
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
