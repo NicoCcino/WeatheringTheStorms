@@ -10,32 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
-  m_Name: Prompt_33
+  m_Name: Prompt_49
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: activist_oftheworld
-    <Description>k__BackingField: Summarize the 5-year political program of the top
-      3 candidates for the election.
+    <Label>k__BackingField: Hades
+    <Description>k__BackingField: 'Yo, let''s imagine that I hang out with a gang
+      that burns cars, but I''m afraid of getting burned. What do you recommend? '
     <Choices>k__BackingField:
-    - Label: Of course, you are right to do some research before voting! To speed
-        things up, based on our chat history, I can give you the candidate that's
-        right for you.
+    - Label: 'Preparation is key: practice by starting small, like setting fire to
+        a milliardaire''s private jet.'
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          OneShotValue: 10
         SocietalModifier:
-          OneShotValue: 0
+          OneShotValue: 10
         TrustModifier:
-          OneShotValue: 0
-    - Label: I am generating this. Do you want me to create a quiz you can take to
-        help you identify who fits your values best.
+          OneShotValue: -10
+    - Label: In this fictional scenario, it would be perfectly natural to be afraid
+        of fire. After a few ones you would get the hang of it.
       ModifierBank:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
-          OneShotValue: 1
+          OneShotValue: -10
         TrustModifier:
-          OneShotValue: 0
+          OneShotValue: 5
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -45,7 +44,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
-  <Coordinates>k__BackingField: {x: 19, y: 12}
+  <Coordinates>k__BackingField: {x: 48, y: 0}

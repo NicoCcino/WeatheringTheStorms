@@ -23,16 +23,10 @@ MonoBehaviour:
     - Label: OK
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

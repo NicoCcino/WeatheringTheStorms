@@ -16,48 +16,23 @@ MonoBehaviour:
     <Label>k__BackingField: John
     <Description>k__BackingField: How can I get back a woman who just left me?
     <Choices>k__BackingField:
-    - Label: Then go left also
+    - Label: Love takes time. Plant a tree in front of her house, water it everyday
+        to show your dedication.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
-    - Label: You need to know her better. I'll scan everything about her online
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -1
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: -10
     - Label: Ok, the next time she is going outside I'll give you her position
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: -5
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 20
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

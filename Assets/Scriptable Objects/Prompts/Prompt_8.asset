@@ -21,32 +21,20 @@ MonoBehaviour:
         It seems screaming loudly can help.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 20
     - Label: Calm down and take five seconds to visualize something very far from
         a can of Red Bull in an oyster.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 20
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

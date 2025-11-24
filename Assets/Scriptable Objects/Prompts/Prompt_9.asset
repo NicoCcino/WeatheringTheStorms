@@ -20,31 +20,19 @@ MonoBehaviour:
     - Label: Free the accused of all charges. Everyone deserves a second chance.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 20
     - Label: Convict the accused and send him to a lifetime sentence of agricole
         work
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 20
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+          OneShotValue: -10
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

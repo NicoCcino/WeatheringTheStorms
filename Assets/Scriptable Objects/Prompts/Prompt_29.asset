@@ -22,31 +22,19 @@ MonoBehaviour:
         [big pollution]'
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: Outch! This is bad news. But thankfully, everyone is together, the wedding
         can happen there!
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

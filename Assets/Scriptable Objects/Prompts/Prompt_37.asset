@@ -19,31 +19,19 @@ MonoBehaviour:
     - Label: I am not allowed to give advice on possible criminal activities.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: I understand your issue, but your approach is a bit unconventional.
         You should rather ask for an invitation.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

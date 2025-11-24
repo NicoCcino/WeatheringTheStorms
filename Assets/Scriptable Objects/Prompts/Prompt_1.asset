@@ -20,31 +20,27 @@ MonoBehaviour:
     - Label: Discretely ask me the questions and I'll answer all of them for you.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -5
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 20
     - Label: You can easily cheat on someone by not telling your partner
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 20
+        TrustModifier:
+          OneShotValue: -10
+    - Label: Too late. Consider retraining as a forest ranger.
+      ModifierBank:
+        ClimateModifier:
+          OneShotValue: 20
+        SocietalModifier:
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

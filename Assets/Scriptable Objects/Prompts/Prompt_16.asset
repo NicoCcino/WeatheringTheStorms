@@ -21,30 +21,18 @@ MonoBehaviour:
         generate a speech.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: Be honest about not caring. You will stand apart from competitors.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

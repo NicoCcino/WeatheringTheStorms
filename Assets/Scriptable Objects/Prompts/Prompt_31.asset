@@ -21,31 +21,19 @@ MonoBehaviour:
         they do not."
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: '[Need upgrade "humor"] I apologize, I cannot. I must add, no pigeon
         is holding a gun to my head as I''m writing this.'
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

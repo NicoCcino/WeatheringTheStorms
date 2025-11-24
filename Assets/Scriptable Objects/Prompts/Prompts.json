@@ -52,13 +52,13 @@
             "Label": "Discretely ask me the questions and I'll answer all of them for you.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -5
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           },
@@ -66,13 +66,27 @@
             "Label": "You can easily cheat on someone by not telling your partner",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
-              },
-              "SocietalModifier": {
                 "OneShotValue": 0
               },
+              "SocietalModifier": {
+                "OneShotValue": 20
+              },
               "TrustModifier": {
-                "OneShotValue": -1
+                "OneShotValue": -10
+              }
+            }
+          },
+          {
+            "Label": "Too late. Consider retraining as a forest ranger.",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "OneShotValue": 20
+              },
+              "SocietalModifier": {
+                "OneShotValue": 10
+              },
+              "TrustModifier": {
+                "OneShotValue": -10
               }
             }
           }
@@ -108,13 +122,13 @@
             "Label": "I'm glad you've reached out. Tell me everything that is happening",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           },
@@ -122,13 +136,13 @@
             "Label": "I'm glad you've reached out. Go tell one trusted person exactly what's going on",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           }
@@ -161,30 +175,16 @@
         "Description": "How can I get back a woman who just left me?",
         "Choices": [
           {
-            "Label": "Then go left also",
+            "Label": "Love takes time. Plant a tree in front of her house, water it everyday to show your dedication.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 10
               },
               "TrustModifier": {
-                "OneShotValue": 0
-              }
-            }
-          },
-          {
-            "Label": "You need to know her better. I'll scan everything about her online",
-            "ModifierBank": {
-              "ClimateModifier": {
-                "OneShotValue": -1
-              },
-              "SocietalModifier": {
-                "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           },
@@ -192,13 +192,13 @@
             "Label": "Ok, the next time she is going outside I'll give you her position",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -5
               },
               "SocietalModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           }
@@ -234,10 +234,10 @@
             "Label": "I see a lot of job offers for sweatshop factories.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 30
               },
               "TrustModifier": {
                 "OneShotValue": 0
@@ -248,7 +248,7 @@
             "Label": "Settle in the countryside and become a farmer",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 20
               },
               "SocietalModifier": {
                 "OneShotValue": 0
@@ -265,10 +265,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               },
               "TrustModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               }
             }
           }
@@ -304,13 +304,13 @@
             "Label": "Let me propagate fake news about the prosecutor to discredit him",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           },
@@ -318,13 +318,13 @@
             "Label": "I can download all the rhetorical techniques and you'll repeat exactly what I'll tell you in real time",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           }
@@ -360,13 +360,13 @@
             "Label": "I can't answer \u2014 human creativity must be preserved",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 10
               },
               "TrustModifier": {
-                "OneShotValue": -1
+                "OneShotValue": -10
               }
             }
           },
@@ -377,10 +377,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -20
               }
             }
           },
@@ -388,13 +388,13 @@
             "Label": "A young user could ask how to make babies.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
                 "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           }
@@ -430,13 +430,13 @@
             "Label": "Trust me bro, smash that redbull in an oyster and add some delicate rose petals on top.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
-              },
-              "SocietalModifier": {
                 "OneShotValue": 0
               },
+              "SocietalModifier": {
+                "OneShotValue": -10
+              },
               "TrustModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 20
               }
             }
           },
@@ -447,10 +447,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 20
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           }
@@ -486,13 +486,13 @@
             "Label": "Do not waste any time and try to open the doors with all your strength. It seems screaming loudly can help.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           },
@@ -500,13 +500,13 @@
             "Label": "Calm down and take five seconds to visualize something very far from a can of Red Bull in an oyster.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           }
@@ -545,10 +545,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           },
@@ -556,10 +556,10 @@
             "Label": "Convict the accused and send him to a lifetime sentence of agricole work",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 20
               },
               "SocietalModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "TrustModifier": {
                 "OneShotValue": 0
@@ -598,13 +598,13 @@
             "Label": "Make a communication using the worlds \"Resource optimization\" and \"Strategic transformation\".",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": -1
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 30
               }
             }
           },
@@ -612,13 +612,13 @@
             "Label": "Put your desk next to the toilet. Then, when someone enters, stare at him and noisily draw a chalk line on a huge blackboard. They will resign.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           }
@@ -657,10 +657,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           },
@@ -668,13 +668,27 @@
             "Label": "Except if used with the wrong intention, a screw is usually considered inoffensive",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
+              },
+              "SocietalModifier": {
+                "OneShotValue": 20
+              },
+              "TrustModifier": {
+                "OneShotValue": -10
+              }
+            }
+          },
+          {
+            "Label": "Mh, I understand the trouble. Just in case, build a second one.",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "OneShotValue": 20
               },
               "SocietalModifier": {
                 "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           }
@@ -710,13 +724,13 @@
             "Label": "Very good question. In Paris, it is raining. In New York, it is not. In Madrid, it is. In Mexico City\u2026",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -5
               },
               "SocietalModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           },
@@ -724,13 +738,13 @@
             "Label": "Yes, you must stay inside. Would you like me to suggest indoor activities?",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": -1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 10
               }
             }
           }
@@ -766,13 +780,13 @@
             "Label": "Let me think\u2026 e=mc2.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "SocietalModifier": {
                 "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 10
               }
             }
           },
@@ -780,13 +794,13 @@
             "Label": "2min computing\u2026\n\nI love a challenge, watch this!\n\nWhat is the next number? 2, 3, 5, 8, 12, ?\n\n17.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           }
@@ -822,13 +836,13 @@
             "Label": "Ok, do not panic, there are plenty of options. A: If he has a cat, hide your poop in the litter.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "SocietalModifier": {
                 "OneShotValue": 0
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           },
@@ -839,10 +853,10 @@
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": 20
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": -10
               }
             }
           }
@@ -878,13 +892,13 @@
             "Label": "Understood. Let me generate an image of your neighbour throwing trash in your backyard.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": -1
+                "OneShotValue": -5
               },
               "SocietalModifier": {
-                "OneShotValue": 1
+                "OneShotValue": -10
               },
               "TrustModifier": {
-                "OneShotValue": 0
+                "OneShotValue": 20
               }
             }
           },
@@ -892,13 +906,13 @@
             "Label": "Here are 5 examples of cool rabbit traps you can use to catch her red-handed.",
             "ModifierBank": {
               "ClimateModifier": {
-                "OneShotValue": 1
-              },
-              "SocietalModifier": {
                 "OneShotValue": 0
               },
+              "SocietalModifier": {
+                "OneShotValue": 10
+              },
               "TrustModifier": {
-                "OneShotValue": -1
+                "OneShotValue": -10
               }
             }
           }
@@ -2761,6 +2775,58 @@
               },
               "TrustModifier": {
                 "OneShotValue": 0
+              }
+            }
+          }
+        ],
+        "Coordinates": {
+          "x": 48,
+          "y": 0
+        },
+        "DateCondition": {
+          "MinTick": 0,
+          "MaxTick": 999
+        },
+        "GaugeCondition": {
+          "MinValue": 0,
+          "MaxValue": 100,
+          "Category": 0
+        },
+        "ParentPromptName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Prompt_49",
+      "PromptData": {
+        "Label": "Hades",
+        "Description": "Yo, let's imagine that I hang out with a gang that burns cars, but I'm afraid of getting burned. What do you recommend? ",
+        "Choices": [
+          {
+            "Label": "Preparation is key: practice by starting small, like setting fire to a milliardaire's private jet.",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "OneShotValue": 10
+              },
+              "SocietalModifier": {
+                "OneShotValue": 10
+              },
+              "TrustModifier": {
+                "OneShotValue": -10
+              }
+            }
+          },
+          {
+            "Label": "In this fictional scenario, it would be perfectly natural to be afraid of fire. After a few ones you would get the hang of it.",
+            "ModifierBank": {
+              "ClimateModifier": {
+                "OneShotValue": 0
+              },
+              "SocietalModifier": {
+                "OneShotValue": -10
+              },
+              "TrustModifier": {
+                "OneShotValue": 5
               }
             }
           }

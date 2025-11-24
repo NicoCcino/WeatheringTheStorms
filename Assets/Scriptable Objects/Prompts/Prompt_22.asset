@@ -23,46 +23,28 @@ MonoBehaviour:
         of course.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: I would seize the opportunity to make him sign unfavorable deals, since
         he probably will not read the little lines.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
+        TrustModifier:
           OneShotValue: 0
     - Label: '[Need upgrade "cold blood"] What an excellent pretext to start a war!'
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: -1
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

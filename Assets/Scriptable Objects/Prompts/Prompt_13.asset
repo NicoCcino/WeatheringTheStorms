@@ -19,32 +19,20 @@ MonoBehaviour:
     - Label: "Let me think\u2026 e=mc2."
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 10
     - Label: "2min computing\u2026\n\nI love a challenge, watch this!\n\nWhat is
         the next number? 2, 3, 5, 8, 12, ?\n\n17."
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 20
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

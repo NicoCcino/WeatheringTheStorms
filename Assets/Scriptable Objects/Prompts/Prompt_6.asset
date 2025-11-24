@@ -20,46 +20,28 @@ MonoBehaviour:
     - Label: "I can't answer \u2014 human creativity must be preserved"
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: -10
     - Label: "I would tell you a construction joke\u2026 but I'm still working on
         it."
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -1
-        HumanModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: -20
     - Label: A young user could ask how to make babies.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

@@ -22,32 +22,20 @@ MonoBehaviour:
         rose petals on top.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 20
     - Label: Here is a recipe with only RedBull and oysters. Start by cutting an
         onion and cooking the steak.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 20
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

@@ -22,31 +22,19 @@ MonoBehaviour:
         in your backyard.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: -5
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 20
     - Label: Here are 5 examples of cool rabbit traps you can use to catch her red-handed.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

@@ -21,32 +21,28 @@ MonoBehaviour:
         about it.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 10
     - Label: Except if used with the wrong intention, a screw is usually considered
         inoffensive
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
+          OneShotValue: 20
+        TrustModifier:
+          OneShotValue: -10
+    - Label: Mh, I understand the trouble. Just in case, build a second one.
+      ModifierBank:
+        ClimateModifier:
+          OneShotValue: 20
+        SocietalModifier:
           OneShotValue: 0
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

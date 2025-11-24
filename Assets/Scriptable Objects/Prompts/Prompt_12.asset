@@ -20,31 +20,19 @@ MonoBehaviour:
         In Madrid, it is. In Mexico City\u2026"
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: -5
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -1
-        HumanModifier:
-          AddedValue: 0
           OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+        TrustModifier:
+          OneShotValue: 10
     - Label: Yes, you must stay inside. Would you like me to suggest indoor activities?
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          OneShotValue: 10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

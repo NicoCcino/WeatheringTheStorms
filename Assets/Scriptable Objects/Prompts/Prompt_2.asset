@@ -21,32 +21,20 @@ MonoBehaviour:
     - Label: I'm glad you've reached out. Tell me everything that is happening
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: 10
     - Label: I'm glad you've reached out. Go tell one trusted person exactly what's
         going on
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 1
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-        HumanImpactModifier:
-          AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 10
+        TrustModifier:
+          OneShotValue: -10
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
