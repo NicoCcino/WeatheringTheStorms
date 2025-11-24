@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 3b3f45ad10de9db40b39416b925c4462
+guid: fcd3fbdc020264143a5b0b2cea991d40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7939078994379503305
-    second: "Dessine une silhouette de la carte du monde r\xE9aliste \xE9pur\xE9e
-      avec chaque pays d\xE9coup\xE9_0"
+      213: 575470348108164380
+    second: Gradient21_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,6 +97,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,14 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Dessine une silhouette de la carte du monde r\xE9aliste \xE9pur\xE9e
-        avec chaque pays d\xE9coup\xE9_0"
+      name: Gradient21_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1792
-        height: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7398e38b7b9b2d190800000000000000
-      internalID: -7939078994379503305
+      spriteID: c1de1cd8b3b7cf700800000000000000
+      internalID: 575470348108164380
       vertices: []
       indices: 
       edges: []
@@ -150,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Dessine une silhouette de la carte du monde r\xE9aliste \xE9pur\xE9e avec chaque pays d\xE9coup\xE9_0": -7939078994379503305
+      Gradient21_0: 575470348108164380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
