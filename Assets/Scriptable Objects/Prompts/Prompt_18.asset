@@ -36,7 +36,7 @@ MonoBehaviour:
         no matter the cost! Do you want me to create a detailed 5-year plan?
       ModifierBank:
         ClimateModifier:
-          AddedValue: 1
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0

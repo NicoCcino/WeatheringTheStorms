@@ -34,7 +34,7 @@ MonoBehaviour:
     - Label: Buying a private jet could at least spare you the commute
       ModifierBank:
         ClimateModifier:
-          AddedValue: 2
+          AddedValue: 0
           OneShotValue: -1
         SocietalModifier:
           AddedValue: 0

@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIDate : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textDate;
+    [SerializeField] private Slider slider;
 
     private void Update()
     {

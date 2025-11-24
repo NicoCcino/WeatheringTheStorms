@@ -25,5 +25,5 @@ public class HumanParameter : ScriptableObject
     [SerializeField] public float HumanPopulationImpactModifierScale = 0.01f;
 
     [Tooltip("Scale of the human impact modifiers")]
-    [SerializeField] public float HumanPopulationModifierScale = 0.01f;
+    [SerializeField] public float HumanPopulationModifier = 0.01f;
 }

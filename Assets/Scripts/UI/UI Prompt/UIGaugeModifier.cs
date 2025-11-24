@@ -6,7 +6,7 @@ public class UIGaugeModifier : MonoBehaviour
     [SerializeField] private Image amount;
     public void DisplayModifier(AnimationCurve curveAmountScaling, Modifier modifier)
     {
-        float scaling = curveAmountScaling.Evaluate(Mathf.Max(modifier.AddedValue, modifier.OneShotValue));
+        float scaling = curveAmountScaling.Evaluate(modifier.OneShotValue);
         amount.transform.localScale = new Vector3(scaling, scaling, 1);
     }
 }

@@ -15,4 +15,4 @@ MonoBehaviour:
   PlayTickFreq: 1
   FastTickFreq: 2
   VeryFastTickFreq: 4
-  TickDuration: 1
+  TickDuration: 12

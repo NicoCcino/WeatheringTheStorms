@@ -52,14 +52,14 @@ MonoBehaviour:
     - Label: '[Need upgrade "cold blood"] What an excellent pretext to start a war!'
       ModifierBank:
         ClimateModifier:
-          AddedValue: 2
+          AddedValue: 0
           OneShotValue: 1
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0
