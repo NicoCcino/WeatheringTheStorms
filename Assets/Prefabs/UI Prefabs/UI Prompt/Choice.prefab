@@ -67,16 +67,10 @@ MonoBehaviour:
     Label: 
     ModifierBank:
       ClimateModifier:
-        AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
         OneShotValue: 0
-      HumanModifier:
-        AddedValue: 0
-        OneShotValue: 0
-      HumanImpactModifier:
-        AddedValue: 0
+      TrustModifier:
         OneShotValue: 0
   parentUIPrompt: {fileID: 0}
 --- !u!1 &3002385814400283257
@@ -418,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453c2bb4041138945a6745b85e8375cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIGaugeModifierManager
-  gaugeModifierHuman: {fileID: 7454338169855739453}
+  gaugeModifierTrust: {fileID: 7428840476284074504}
   gaugeModifierSocietal: {fileID: 3371184066650956021}
   gaugeModifierClimate: {fileID: 6671463526032185573}
   curveAmountScaling:
@@ -785,6 +779,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5705566114878413099, guid: f2656a5f699238548aa54b435a933dd9, type: 3}
   m_PrefabInstance: {fileID: 180629129941390134}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7428840476284074504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7320937855969798462, guid: f2656a5f699238548aa54b435a933dd9, type: 3}
+  m_PrefabInstance: {fileID: 180629129941390134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f88dbf925fb8a0428f8eb72c45253e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIGaugeModifier
 --- !u!1001 &210001374713818883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -939,17 +944,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5705566114878413099, guid: f2656a5f699238548aa54b435a933dd9, type: 3}
   m_PrefabInstance: {fileID: 210001374713818883}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7454338169855739453 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7320937855969798462, guid: f2656a5f699238548aa54b435a933dd9, type: 3}
-  m_PrefabInstance: {fileID: 210001374713818883}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f88dbf925fb8a0428f8eb72c45253e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIGaugeModifier
 --- !u!1001 &4110940436172222939
 PrefabInstance:
   m_ObjectHideFlags: 0

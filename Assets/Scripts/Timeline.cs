@@ -17,6 +17,8 @@ public class Timeline : Singleton<Timeline>
     private float timeSinceLastTick = 0f;
     private float tickInterval => tickFreq > 0f ? 1f / tickFreq : float.MaxValue; // Time between ticks in seconds
 
+    public TimeLineParameter TimeLineParameter { get => timeLineParameter; }
+
     /// <summary>
     /// Event triggered at the specified tick frequency
     /// </summary>
@@ -48,6 +50,13 @@ public class Timeline : Singleton<Timeline>
             OnTick?.Invoke(CurrentTick);
             currentDate = currentDate.AddMonths((int)tickDuration);
             // Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
+        }
+
+        if (CurrentTick >= timeLineParameter.YearsWinCondition * 12)
+        {
+            //TODO : Manage win properly
+            Debug.Log("Win win win");
+            SetPauseSpeed();
         }
     }
 

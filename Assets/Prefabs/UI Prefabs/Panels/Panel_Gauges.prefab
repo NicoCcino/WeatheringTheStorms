@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIGaugeManager
   uiGaugeClimate: {fileID: 7887604277843996287}
   uiGaugeSocietal: {fileID: 9104648826571763123}
-  uiGaugeTrust: {fileID: 0}
+  uiGaugeTrust: {fileID: 6442540404283709086}
 --- !u!114 &7573239211670892858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1712,3 +1712,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 952438065140071820, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
   m_PrefabInstance: {fileID: 3875627440696573913}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6442540404283709086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7827395526409005383, guid: 1cbc1b585e56c9d45845061acdb1bda8, type: 3}
+  m_PrefabInstance: {fileID: 3875627440696573913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5734f3c6229974c86179261629df9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIGauge

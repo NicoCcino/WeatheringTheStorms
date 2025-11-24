@@ -10,5 +10,6 @@ public class UIDate : MonoBehaviour
     private void Update()
     {
         textDate.text = Timeline.Instance.currentDate.ToString("yyyy/MM");
+        slider.value = Timeline.Instance.CurrentTick / (float)Timeline.Instance.TimeLineParameter.YearsWinCondition;
     }
 }

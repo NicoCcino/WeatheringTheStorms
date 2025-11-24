@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EventManagerParameter
   AllPrompts:
   - {fileID: 11400000, guid: d30e0e6a9e82b47c1af10f1b08e439a0, type: 2}
-  - {fileID: 11400000, guid: c7519e46725ef48ea8fba94dbcf1f1b1, type: 2}
-  - {fileID: 11400000, guid: c10bd4944c6d24610951b7f3e5ad273e, type: 2}
-  - {fileID: 11400000, guid: 967ec423d11a14f8987ee6df77dac025, type: 2}
   - {fileID: 11400000, guid: 1834e6e68681845fabc528e9c50c4c13, type: 2}
-  - {fileID: 11400000, guid: bd31bc81ca94744aeb52f57b212a2f55, type: 2}
-  - {fileID: 11400000, guid: 5b0d3eea5805247828bd486f09862c7a, type: 2}
-  - {fileID: 11400000, guid: ae5a79c1207e84f27841b193b4ca2b71, type: 2}
   - {fileID: 11400000, guid: 3a3a25dfb1ce64f7d9224782643ac721, type: 2}
   - {fileID: 11400000, guid: 09754498e69504cd68bb5872bd95d352, type: 2}
   - {fileID: 11400000, guid: f96eaf52a4d0f48698cb4266b50e1bcf, type: 2}
@@ -32,8 +26,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.0041666925
-      value: 0.0071428563
+      time: 0.0076128393
+      value: 0.49753094
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -41,13 +35,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 20.067623
-      value: 5.0021863
-      inSlope: 0.479171
-      outSlope: 0.479171
+      time: 5.016486
+      value: 0.9966937
+      inSlope: 0.3112931
+      outSlope: 0.3112931
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.09499896
+      inWeight: 0.13970129
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

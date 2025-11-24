@@ -39,7 +39,7 @@ MonoBehaviour:
       <MaxTick>k__BackingField: 999
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
-      <MaxValue>k__BackingField: 100
+      <MaxValue>k__BackingField: 0
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 11400000, guid: d30e0e6a9e82b47c1af10f1b08e439a0, type: 2}
     <PlannedAction>k__BackingField:
