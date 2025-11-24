@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Drone Reforestation
     <Description>k__BackingField: Rebuild forests through automated drone planting.
-    <Cost>k__BackingField: 50
+    <Cost>k__BackingField: 40
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

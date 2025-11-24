@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
     <Label>k__BackingField: Grounded Knowledge Dataset
-    <Description>k__BackingField: Includes sensory simulators (heat, pain, cold,
-      danger). Greatly improves disaster response.
-    <Cost>k__BackingField: 30
+    <Description>k__BackingField: Includes sensory pain simulators (heat, shock,
+      cold, danger). Greatly improves disaster response.
+    <Cost>k__BackingField: 40
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 1
         OneShotValue: 0
       HumanModifier:
-        AddedValue: 2
+        AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0

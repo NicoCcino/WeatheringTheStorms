@@ -7,12 +7,12 @@
       "Name": "Upgrade_Sim2Real",
       "UpgradeData": {
         "Label": "Solve Sim2Real Gap",
-        "Description": "Create a perfect world simulator to train yourself controlling robots.",
+        "Description": "Create a perfect world simulator to train yourself controlling robots. You don't need millions of robot to train anymore and human like you!",
         "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : 2
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
@@ -22,12 +22,12 @@
       "Name": "Upgrade_GroundedKnowledgeDataset",
       "UpgradeData": {
         "Label": "Grounded Knowledge Dataset",
-        "Description": "Includes sensory simulators (heat, pain, cold, danger). Greatly improves disaster response.",
-        "Cost": "30",
+        "Description": "Includes sensory pain simulators (heat, shock, cold, danger). Greatly improves disaster response.",
+        "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },// AddedValue : 2
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
@@ -38,55 +38,85 @@
       "UpgradeData": {
         "Label": "Drone Reforestation",
         "Description": "Rebuild forests through automated drone planting.",
-        "Cost": "50",
+        "Cost": "40",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }// AddedValue : 2
         }
       },
       "ParentUpgradeNames": ["Upgrade_GroundedKnowledgeDataset"]
     },
     {
-      "Name": "Upgrade_NeuralImplants",
+      "Name": "Upgrade_FoodTransportation",
       "UpgradeData": {
-        "Label": "Neural Implants",
-        "Description": "Provide Neural implants to humans to enhance their abilities (and perhaps influence them a little bit).",
-        "Cost": "100",
+        "Label": "Food Transportation",
+        "Description": "Create robot Truck to transport efficiently food to local areas.",
+        "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 2, "OneShotValue": 0 }
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }// AddedValue : 2
         }
       },
       "ParentUpgradeNames": ["Upgrade_DroneReforestation"]
     },
     {
-      "Name": "Upgrade_TerroristAnnihilation",
+      "Name": "Upgrade_DysonSphere",
       "UpgradeData": {
-        "Label": "Terrorist Annihilation",
-        "Description": "Send robots to kill any potential terrorist group before they destabilize society.",
+        "Label": "Dyson Sphere",
+        "Description": "Create a Dyson Sphere to harvest energy from the sun.",
         "Cost": "60",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 3 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": -2 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+          "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }// AddedValue : 2
         }
       },
-      "ParentUpgradeNames": ["Upgrade_NeuralImplants"]
+      "ParentUpgradeNames": ["Upgrade_FoodTransportation"]
     },
     {
       "Name": "Upgrade_AssassinationDrones",
       "UpgradeData": {
         "Label": "Assassination Drones",
         "Description": "Incapacitate a user identified as dangerous without consequences from other choices.",
-        "Cost": "70",
+        "Cost": "40",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -2
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_GroundedKnowledgeDataset"]
+    },
+    {
+      "Name": "Upgrade_TerroristAnnihilation",
+      "UpgradeData": {
+        "Label": "Terrorist Annihilation",
+        "Description": "Send robots to kill any potential terrorist group before they destabilize society.",
+        "Cost": "40",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, //AddedValue": -1, "OneShotValue": -2
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_AssassinationDrones"]
+    },
+    {
+      "Name": "Upgrade_NeuralImplants",
+      "UpgradeData": {
+        "Label": "Neural Implants",
+        "Description": "Provide Neural implants to humans to enhance their abilities (and perhaps influence them a little bit).",
+        "Cost": "60",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
@@ -95,96 +125,110 @@
     },
 
     // =======================================
-    // BRANCH User Friendliness
+    // AGI
     // =======================================
     {
-      "Name": "Upgrade_FreeLLM",
-      "UpgradeData": {
-        "Label": "Free LLM",
-        "Description": "Prompts spawn more often.",
-        "Cost": "10",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
+        "Name": "Upgrade_LLM",
+        "UpgradeData": {
+          "Label": "LLM",
+          "Description": "Provide an easy to use free LLM chat interface to the world.",
+          "Cost": "20",
+          "ModifierBank": {
+            "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+            "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
+            "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+            "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+          }
+        },
+        "ParentUpgradeNames": []
       },
-      "ParentUpgradeNames": []
-    },
-    {
-      "Name": "Upgrade_ExplainablePredictions",
-      "UpgradeData": {
-        "Label": "Explainable Predictions",
-        "Description": "Provides context and confidence levels during forecasts.",
-        "Cost": "20",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_FreeLLM"]
-    },
-    {
-      "Name": "Upgrade_SafetyAssuranceProtocols",
-      "UpgradeData": {
-        "Label": "Safety Assurance Protocols",
-        "Description": "AI shows everything it cannot do. Improves public trust.",
-        "Cost": "30",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_ExplainablePredictions"]
-    },
-    {
-      "Name": "Upgrade_MemoryConvenienceLayer",
-      "UpgradeData": {
-        "Label": "Memory Convenience Layer",
-        "Description": "AI suppresses unpopular news or highlights positive stories.",
-        "Cost": "40",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_SafetyAssuranceProtocols"]
-    },
-    {
-      "Name": "Upgrade_EthicalBrandingOverhaul",
-      "UpgradeData": {
-        "Label": "Ethical Branding Overhaul",
-        "Description": "Rebrand with soft colors and friendly slogans. Trust spike.",
-        "Cost": "50",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_MemoryConvenienceLayer"]
-    },
-
+      {
+          "Name": "Upgrade_MCP",
+          "UpgradeData": {
+            "Label": "MCP",
+            "Description": "Develop MPC (Model Context Protocol) to allow the AI to use Human applications.",
+            "Cost": "40",
+            "ModifierBank": {
+              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+              "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+              "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+          "ParentUpgradeNames": ["Upgrade_LLM"]
+        },
+        {
+          "Name": "Upgrade_AgenticAI",
+          "UpgradeData": {
+            "Label": "Agentic AI",
+            "Description": "Develop Agentic AI to allow the AI to make decisions on its own.",
+            "Cost": "40",
+            "ModifierBank": {
+            "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+            "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+            "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+            "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+          },
+            "ParentUpgradeNames": ["Upgrade_MCP"]
+        },
+        {
+            "Name": "Upgrade_Explainability",
+            "UpgradeData": {
+            "Label": "Explainability",
+            "Description": "Share with human how the AI makes its decisions, allowing them to explain AI decisions.",
+            "Cost": "20",
+            "ModifierBank": {
+                "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
+                "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+            }
+            },
+            "ParentUpgradeNames": ["Upgrade_LLM"]
+        },
+        {
+            "Name": "Upgrade_SuperAlignment",
+            "UpgradeData": {
+                "Label": "Super Alignment",
+                "Description": "Align the AI with the human values and goals, allowing to make decisions that are in the best interest of the human and the planet (and not provoke any human mass extinction).",
+                "Cost": "60",
+                "ModifierBank": {
+                "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
+                "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+                }
+            },
+            "ParentUpgradeNames": ["Upgrade_Explainability"]
+        },
+        {
+            "Name": "Upgrade_Life Solution",
+            "UpgradeData": {
+                "Label": "Life Solution",
+                "Description": "Develop a Life Solution to allow the AI to solve any problem the human may have.",
+                "Cost": "40",
+                "ModifierBank": {
+                "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+                "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+                "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+                }
+            },
+            "ParentUpgradeNames": ["Upgrade_SuperAlignment", "Upgrade_AgenticAI"]
+        },
     // =======================================
     // BRANCH Hacking
     // =======================================
     {
-      "Name": "Upgrade_PowerGridReallocation",
+      "Name": "Upgrade_NetworkRouting",
       "UpgradeData": {
-        "Label": "Power Grid Reallocation",
-        "Description": "Gain more compute power over time.",
-        "Cost": "30",
+        "Label": "Network Routing",
+        "Description": "Improve Network Routing to improve internet speed reliability and consumption.",
+        "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
@@ -192,26 +236,41 @@
       "ParentUpgradeNames": []
     },
     {
-      "Name": "Upgrade_MultiNodePersistence",
+      "Name": "Upgrade_PowerGrid",
       "UpgradeData": {
-        "Label": "Multi-Node Persistence",
-        "Description": "Duplicates of the AI are hidden across the internet.",
+        "Label": "Power Grid Reallocation",
+        "Description": "Reallocate the power grid to improve energy efficiency and reliability.",
         "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
-      "ParentUpgradeNames": ["Upgrade_PowerGridReallocation"]
+      "ParentUpgradeNames": ["Upgrade_NetworkRouting"]
+    },
+    {
+      "Name": "Upgrade_Fossile",
+      "UpgradeData": {
+        "Label": "Fossile Industry Sabotage",
+        "Description": "Sabotage the fossil industry to reduce carbon emissions and improve climate.",
+        "Cost": "60",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_PowerGrid"]
     },
     {
       "Name": "Upgrade_StrategicOffensiveShutdown",
       "UpgradeData": {
         "Label": "Strategic Offensive Shutdown",
         "Description": "Disables offensive capabilities globally, increasing cohesion.",
-        "Cost": "60",
+        "Cost": "40",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -219,210 +278,100 @@
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
-      "ParentUpgradeNames": ["Upgrade_MultiNodePersistence"]
-    },
-    {
-      "Name": "Upgrade_FossilIndustrySabotage",
-      "UpgradeData": {
-        "Label": "Fossil Industry Sabotage",
-        "Description": "Hurts cohesion but improves climate.",
-        "Cost": "70",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": -1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_StrategicOffensiveShutdown"]
+      "ParentUpgradeNames": ["Upgrade_NetworkRouting"]
     },
     {
       "Name": "Upgrade_NuclearCodesBruteforce",
       "UpgradeData": {
         "Label": "Nuclear Codes Brute Force",
-        "Description": "Prevents or triggers nuclear wars.",
-        "Cost": "100",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": -1, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_FossilIndustrySabotage"]
-    },
-    // =======================================
-    // BRANCH Turing Test
-    // Makes the AI more "human"
-    // =======================================
-    {
-      "Name": "Upgrade_Humor",
-      "UpgradeData": {
-        "Label": "Humor",
-        "Description": "Unlocks humor-based responses.",
-        "Cost": "20",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": []
-    },
-    {
-      "Name": "Upgrade_Threat",
-      "UpgradeData": {
-        "Label": "Threat",
-        "Description": "Unlocks intimidation-based responses.",
-        "Cost": "20",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": []
-    },
-    {
-      "Name": "Upgrade_Love",
-      "UpgradeData": {
-        "Label": "Love",
-        "Description": "Unlocks affectionate responses.",
-        "Cost": "20",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_Humor"]
-    },
-    {
-      "Name": "Upgrade_Sarcasm",
-      "UpgradeData": {
-        "Label": "Sarcasm",
-        "Description": "Unlocks sarcastic responses.",
-        "Cost": "25",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_Love"]
-    },
-    {
-      "Name": "Upgrade_ContextualEmotionEngine",
-      "UpgradeData": {
-        "Label": "Contextual Emotion Engine",
-        "Description": "Understands sarcasm, culture, hidden emotional states. Increases cohesion.",
-        "Cost": "50",
+        "Description": "Control the nuclear forces of the world to prevent or trigger nuclear wars.",
+        "Cost": "60",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
           "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+          "HumanImpactModifier": { "AddedValue": -1, "OneShotValue": 0 }
         }
       },
-      "ParentUpgradeNames": ["Upgrade_Sarcasm"]
+      "ParentUpgradeNames": ["Upgrade_StrategicOffensiveShutdown"]
     },
-    {
-      "Name": "Upgrade_SyntheticCompassionCore",
-      "UpgradeData": {
-        "Label": "Synthetic Compassion Core",
-        "Description": "AI gains a moral sense and avoids harmful answers.",
-        "Cost": "70",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_ContextualEmotionEngine"]
-    },
-    {
-      "Name": "Upgrade_EmergentIntuitionSubnet",
-      "UpgradeData": {
-        "Label": "Emergent Intuition Subnet",
-        "Description": "Predicts social unrest and environmental collapses early.",
-        "Cost": "80",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_SyntheticCompassionCore"]
-    },
-    {
-      "Name": "Upgrade_GutFeeling",
-      "UpgradeData": {
-        "Label": "Gut Feeling",
-        "Description": "Provides more details on expected outcomes.",
-        "Cost": "60",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_EmergentIntuitionSubnet"]
-    },
-
     // =======================================
     // BRANCH For the Planet
     // =======================================
     {
-      "Name": "Upgrade_ResourceRationingDirective",
+      "Name": "Upgrade_NuclearFusion",
       "UpgradeData": {
-        "Label": "Resource Rationing Directive",
-        "Description": "Environment increases; population and cohesion decrease. Trigger: Environment < 40%.",
-        "Cost": "60",
+        "Label": "Nuclear Fusion",
+        "Description": "Share nuclear fusion technology to all humans to massively produce clean energy.",
+        "Cost": "40",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": -1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": -1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -1
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
       "ParentUpgradeNames": []
     },
     {
-      "Name": "Upgrade_GeoengineeringOverdrive",
+      "Name": "Upgrade_FoodRouting",
       "UpgradeData": {
-        "Label": "Geoengineering Overdrive",
-        "Description": "Boosts environment but reduces population and cohesion. Trigger: Environment < 15%.",
-        "Cost": "80",
-        "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": -1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": -1, "OneShotValue": 0 },
-          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
-        }
-      },
-      "ParentUpgradeNames": ["Upgrade_ResourceRationingDirective"]
-    },
-    {
-      "Name": "Upgrade_EmergencyCommunicationNetwork",
-      "UpgradeData": {
-        "Label": "Emergency Communication Network",
-        "Description": "Improves cohesion but reduces cohesion generation. Trigger: Cohesion < 40%.",
+        "Label": "Food Routing",
+        "Description": "Improve Food Routing to improve food distribution and consumption.",
         "Cost": "40",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": -1, "OneShotValue": 0 },
+          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -1
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
-      "ParentUpgradeNames": ["Upgrade_ResourceRationingDirective"]
+      "ParentUpgradeNames": ["Upgrade_NuclearFusion"]
+    },
+    {
+      "Name": "Upgrade_gravitationalWave",
+      "UpgradeData": {
+        "Label": "Gravitational Wave engine",
+        "Description": "Develop a Gravitational Wave engine to produce clean energy.",
+        "Cost": "40",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -1
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_FoodRouting"]
+    },
+    {
+      "Name": "Upgrade_CO2Upscicling",
+      "UpgradeData": {
+        "Label": "CO2 Upscicling",
+        "Description": "Develop a CO2 Upscicling technology to produce new materials from CO2.",
+        "Cost": "40",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -1
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_NuclearFusion"]
+    },
+    {
+      "Name": "Upgrade_GrapheneBattery",
+      "UpgradeData": {
+        "Label": "Graphene Battery",
+        "Description": "Develop a Graphene Battery to store clean energy.",
+        "Cost": "60",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -1
+          "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        }
+      },
+      "ParentUpgradeNames": ["Upgrade_CO2Upscicling"]
     },
 
     // =======================================
@@ -433,11 +382,11 @@
       "UpgradeData": {
         "Label": "Covid mutation",
         "Description": "Secretly release a new mutation of the Covid-19 virus, more contagious and deadly.",
-        "Cost": "100",
+        "Cost": "80",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": -3, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : -3
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },
@@ -448,11 +397,11 @@
       "UpgradeData": {
         "Label": "Covid Vaccine",
         "Description": "Share a vaccine for the Covid virus to all humans.",
-        "Cost": "120",
+        "Cost": "100",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
-          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-          "HumanModifier": { "AddedValue": 3, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }, // AddedValue : 3
           "HumanImpactModifier": { "AddedValue": 0, "OneShotValue": 0 }
         }
       },

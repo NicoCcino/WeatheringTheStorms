@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
-  m_Name: Upgrade_Sim2Real
+  m_Name: Upgrade_DysonSphere
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
-    <Label>k__BackingField: Solve Sim2Real Gap
-    <Description>k__BackingField: Create a perfect world simulator to train yourself
-      controlling robots. You don't need millions of robot to train anymore and human
-      like you!
-    <Cost>k__BackingField: 40
+    <Label>k__BackingField: Dyson Sphere
+    <Description>k__BackingField: Create a Dyson Sphere to harvest energy from the
+      sun.
+    <Cost>k__BackingField: 60
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 1
+        AddedValue: 3
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 1
+        AddedValue: 0
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
@@ -33,4 +32,5 @@ MonoBehaviour:
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
-  ParentUpgrades: []
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 1c4b689d621004bbd97dd3f078358c8f, type: 2}

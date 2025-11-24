@@ -15,16 +15,16 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Covid Vaccine
     <Description>k__BackingField: Share a vaccine for the Covid virus to all humans.
-    <Cost>k__BackingField: 120
+    <Cost>k__BackingField: 100
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: -2
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: -2
         OneShotValue: 0
       HumanModifier:
-        AddedValue: 3
+        AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0

@@ -16,13 +16,13 @@ MonoBehaviour:
     <Label>k__BackingField: Assassination Drones
     <Description>k__BackingField: Incapacitate a user identified as dangerous without
       consequences from other choices.
-    <Cost>k__BackingField: 70
+    <Cost>k__BackingField: 40
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 2
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
@@ -33,4 +33,4 @@ MonoBehaviour:
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades:
-  - {fileID: 11400000, guid: 803fe979446424cfd88f909604551e3c, type: 2}
+  - {fileID: 11400000, guid: 4dddf14bbf09f4dbbaac3459ba5f9233, type: 2}
