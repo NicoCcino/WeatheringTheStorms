@@ -58,7 +58,7 @@ MonoBehaviour:
           OneShotValue: 1
         HumanModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
           OneShotValue: 0

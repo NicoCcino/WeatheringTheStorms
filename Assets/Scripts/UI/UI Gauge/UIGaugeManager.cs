@@ -4,6 +4,7 @@ public class UIGaugeManager : MonoBehaviour
 {
         [SerializeField] private UIGauge uiGaugeClimate;
         [SerializeField] private UIGauge uiGaugeSocietal;
+        [SerializeField] private UIGauge uiGaugeTrust;
 
 
         private void Update()
@@ -13,5 +14,8 @@ public class UIGaugeManager : MonoBehaviour
 
                 uiGaugeClimate.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
                 uiGaugeSocietal.UpdateModifier(GaugeManager.Instance.SocietalGauge.iterationValue);
+
+                uiGaugeTrust.UpdateGauge(GaugeManager.Instance.TrustGauge.value);
+                uiGaugeTrust.UpdateModifier(GaugeManager.Instance.TrustGauge.iterationValue);
         }
 }

@@ -6,7 +6,6 @@ public class Gauge
 {
     [SerializeField] public GaugeParameter gaugeParameter; // Reference to the Parameter ScriptableObject
     public float value;
-    public ModifierManager modifierManager;
 
     public float iterationValue;
 
@@ -18,15 +17,15 @@ public class Gauge
             return;
         }
         value = gaugeParameter.StartValue;
-        modifierManager = new ModifierManager();
-        modifierManager.modifierScale = gaugeParameter.ModifierScale;
     }
 
     public void OnHumanCountChanged(float humanImpact)
     {
-        iterationValue = humanImpact + modifierManager.ComputeModifierValue();
-        value += iterationValue;
-        if (value <= 0) value = 0;
+        value += humanImpact;
+        if (value <= 0) {
+            value = 0;
+            Debug.Log("Gauge value is 0, you lost motherfucker!");
+        }
         if (value < gaugeParameter.Min) value = gaugeParameter.Min;
         if (value > gaugeParameter.Max) value = gaugeParameter.Max;
         //Debug.Log("Gauge value: " + value);
@@ -34,8 +33,7 @@ public class Gauge
 
     public void AddModifier(Modifier modifier)
     {
-        modifierManager.AddModifier(modifier);
-        value += modifierManager.ComputeOneShotValue(modifier);
+        value += modifier.OneShotValue;
     }
 
 }

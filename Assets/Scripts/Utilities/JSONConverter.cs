@@ -10,14 +10,12 @@ namespace JSONData
     [Serializable]
     public class ModifierJSON
     {
-        public int AddedValue = 0;
         public int OneShotValue = 0;
 
         public Modifier ToModifier()
         {
             return new Modifier
             {
-                AddedValue = AddedValue,
                 OneShotValue = OneShotValue
             };
         }
@@ -28,8 +26,7 @@ namespace JSONData
     {
         public ModifierJSON ClimateModifier;
         public ModifierJSON SocietalModifier;
-        public ModifierJSON HumanModifier;
-        public ModifierJSON HumanImpactModifier;
+        public ModifierJSON TrustModifier;
 
         public ModifierBank ToModifierBank()
         {
@@ -37,8 +34,7 @@ namespace JSONData
             {
                 ClimateModifier = ClimateModifier?.ToModifier() ?? new Modifier(),
                 SocietalModifier = SocietalModifier?.ToModifier() ?? new Modifier(),
-                HumanModifier = HumanModifier?.ToModifier() ?? new Modifier(),
-                HumanImpactModifier = HumanImpactModifier?.ToModifier() ?? new Modifier()
+                TrustModifier = TrustModifier?.ToModifier() ?? new Modifier()
             };
         }
     }

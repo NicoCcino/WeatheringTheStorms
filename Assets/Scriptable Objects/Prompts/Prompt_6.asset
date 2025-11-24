@@ -30,7 +30,7 @@ MonoBehaviour:
           OneShotValue: 0
         HumanImpactModifier:
           AddedValue: 0
-          OneShotValue: -1
+          OneShotValue: 0
     - Label: "I would tell you a construction joke\u2026 but I'm still working on
         it."
       ModifierBank:
