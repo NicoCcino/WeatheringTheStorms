@@ -17,7 +17,7 @@ MonoBehaviour:
     <Description>k__BackingField: Align the AI with the human values and goals, allowing
       to make decisions that are in the best interest of the human and the planet
       (and not provoke any human mass extinction).
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

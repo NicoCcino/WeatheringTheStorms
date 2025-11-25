@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Gravitational Wave engine
     <Description>k__BackingField: Develop a Gravitational Wave engine to produce
       clean energy.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

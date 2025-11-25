@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Power Grid Reallocation
     <Description>k__BackingField: Reallocate the power grid to improve energy efficiency
       and reliability.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

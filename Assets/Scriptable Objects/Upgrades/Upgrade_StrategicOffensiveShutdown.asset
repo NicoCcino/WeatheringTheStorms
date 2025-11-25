@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Strategic Offensive Shutdown
     <Description>k__BackingField: Disables offensive capabilities globally, increasing
       cohesion.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

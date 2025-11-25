@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: LLM
     <Description>k__BackingField: Provide an easy to use free LLM chat interface
       to the world.
-    <Cost>k__BackingField: 20
+    <Cost>k__BackingField: 2
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -30,6 +30,6 @@ MonoBehaviour:
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
-  IsUnlocked: 0
+  IsUnlocked: 1
   IsBought: 0
   ParentUpgrades: []

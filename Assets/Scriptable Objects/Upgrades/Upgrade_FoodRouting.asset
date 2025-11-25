@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Food Routing
     <Description>k__BackingField: Improve Food Routing to improve food distribution
       and consumption.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

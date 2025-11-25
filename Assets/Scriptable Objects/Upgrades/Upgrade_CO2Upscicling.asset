@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: CO2 Upscicling
     <Description>k__BackingField: Develop a CO2 Upscicling technology to produce
       new materials from CO2.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

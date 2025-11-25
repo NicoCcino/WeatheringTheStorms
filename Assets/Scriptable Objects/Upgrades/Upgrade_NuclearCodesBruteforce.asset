@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Nuclear Codes Brute Force
     <Description>k__BackingField: Control the nuclear forces of the world to prevent
       or trigger nuclear wars.
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

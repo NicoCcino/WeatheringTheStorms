@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Dyson Sphere
     <Description>k__BackingField: Create a Dyson Sphere to harvest energy from the
       sun.
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 3

@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Food Transportation
     <Description>k__BackingField: Create robot Truck to transport efficiently food
       to local areas.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2

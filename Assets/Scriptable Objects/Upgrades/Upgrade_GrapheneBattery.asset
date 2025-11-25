@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Graphene Battery
     <Description>k__BackingField: Develop a Graphene Battery to store clean energy.
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 3

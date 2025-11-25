@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Fossile Industry Sabotage
     <Description>k__BackingField: Sabotage the fossil industry to reduce carbon emissions
       and improve climate.
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 3

@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Explainability
     <Description>k__BackingField: Share with human how the AI makes its decisions,
       allowing them to explain AI decisions.
-    <Cost>k__BackingField: 20
+    <Cost>k__BackingField: 2
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

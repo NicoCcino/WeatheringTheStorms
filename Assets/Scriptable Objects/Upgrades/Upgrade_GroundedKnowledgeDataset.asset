@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Grounded Knowledge Dataset
     <Description>k__BackingField: Includes sensory pain simulators (heat, shock,
       cold, danger). Greatly improves disaster response.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 1

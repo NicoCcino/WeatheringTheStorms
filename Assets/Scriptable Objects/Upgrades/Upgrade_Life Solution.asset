@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Life Solution
     <Description>k__BackingField: Develop a Life Solution to allow the AI to solve
       any problem the human may have.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

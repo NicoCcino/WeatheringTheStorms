@@ -8,7 +8,7 @@
       "UpgradeData": {
         "Label": "Solve Sim2Real Gap",
         "Description": "Create a perfect world simulator to train yourself controlling robots. You don't need millions of robot to train anymore and human like you!",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
@@ -23,7 +23,7 @@
       "UpgradeData": {
         "Label": "Grounded Knowledge Dataset",
         "Description": "Includes sensory pain simulators (heat, shock, cold, danger). Greatly improves disaster response.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
@@ -38,7 +38,7 @@
       "UpgradeData": {
         "Label": "Drone Reforestation",
         "Description": "Rebuild forests through automated drone planting.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -53,7 +53,7 @@
       "UpgradeData": {
         "Label": "Food Transportation",
         "Description": "Create robot Truck to transport efficiently food to local areas.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -68,7 +68,7 @@
       "UpgradeData": {
         "Label": "Dyson Sphere",
         "Description": "Create a Dyson Sphere to harvest energy from the sun.",
-        "Cost": "60",
+        "Cost": "6",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -83,7 +83,7 @@
       "UpgradeData": {
         "Label": "Assassination Drones",
         "Description": "Incapacitate a user identified as dangerous without consequences from other choices.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -98,7 +98,7 @@
       "UpgradeData": {
         "Label": "Terrorist Annihilation",
         "Description": "Send robots to kill any potential terrorist group before they destabilize society.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 2, "OneShotValue": 3 },
@@ -113,7 +113,7 @@
       "UpgradeData": {
         "Label": "Neural Implants",
         "Description": "Provide Neural implants to humans to enhance their abilities (and perhaps influence them a little bit).",
-        "Cost": "60",
+        "Cost": "6",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
@@ -132,7 +132,7 @@
         "UpgradeData": {
           "Label": "LLM",
           "Description": "Provide an easy to use free LLM chat interface to the world.",
-          "Cost": "20",
+          "Cost": "2",
           "ModifierBank": {
             "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
             "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
@@ -147,7 +147,7 @@
           "UpgradeData": {
             "Label": "MCP",
             "Description": "Develop MPC (Model Context Protocol) to allow the AI to use Human applications.",
-            "Cost": "40",
+            "Cost": "4",
             "ModifierBank": {
               "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
               "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -162,7 +162,7 @@
           "UpgradeData": {
             "Label": "Agentic AI",
             "Description": "Develop Agentic AI to allow the AI to make decisions on its own.",
-            "Cost": "40",
+            "Cost": "4",
             "ModifierBank": {
             "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
             "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -177,7 +177,7 @@
             "UpgradeData": {
             "Label": "Explainability",
             "Description": "Share with human how the AI makes its decisions, allowing them to explain AI decisions.",
-            "Cost": "20",
+            "Cost": "2",
             "ModifierBank": {
                 "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
                 "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
@@ -192,7 +192,7 @@
             "UpgradeData": {
                 "Label": "Super Alignment",
                 "Description": "Align the AI with the human values and goals, allowing to make decisions that are in the best interest of the human and the planet (and not provoke any human mass extinction).",
-                "Cost": "60",
+                "Cost": "6",
                 "ModifierBank": {
                 "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
                 "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
@@ -207,7 +207,7 @@
             "UpgradeData": {
                 "Label": "Life Solution",
                 "Description": "Develop a Life Solution to allow the AI to solve any problem the human may have.",
-                "Cost": "40",
+                "Cost": "4",
                 "ModifierBank": {
                 "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
                 "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -225,7 +225,7 @@
       "UpgradeData": {
         "Label": "Network Routing",
         "Description": "Improve Network Routing to improve internet speed reliability and consumption.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 1, "OneShotValue": 0 },
@@ -240,7 +240,7 @@
       "UpgradeData": {
         "Label": "Power Grid Reallocation",
         "Description": "Reallocate the power grid to improve energy efficiency and reliability.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -255,7 +255,7 @@
       "UpgradeData": {
         "Label": "Fossile Industry Sabotage",
         "Description": "Sabotage the fossil industry to reduce carbon emissions and improve climate.",
-        "Cost": "60",
+        "Cost": "6",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -270,7 +270,7 @@
       "UpgradeData": {
         "Label": "Strategic Offensive Shutdown",
         "Description": "Disables offensive capabilities globally, increasing cohesion.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -285,7 +285,7 @@
       "UpgradeData": {
         "Label": "Nuclear Codes Brute Force",
         "Description": "Control the nuclear forces of the world to prevent or trigger nuclear wars.",
-        "Cost": "60",
+        "Cost": "6",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 3, "OneShotValue": 0 },
@@ -303,7 +303,7 @@
       "UpgradeData": {
         "Label": "Nuclear Fusion",
         "Description": "Share nuclear fusion technology to all humans to massively produce clean energy.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -318,7 +318,7 @@
       "UpgradeData": {
         "Label": "Food Routing",
         "Description": "Improve Food Routing to improve food distribution and consumption.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -333,7 +333,7 @@
       "UpgradeData": {
         "Label": "Gravitational Wave engine",
         "Description": "Develop a Gravitational Wave engine to produce clean energy.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -348,7 +348,7 @@
       "UpgradeData": {
         "Label": "CO2 Upscicling",
         "Description": "Develop a CO2 Upscicling technology to produce new materials from CO2.",
-        "Cost": "40",
+        "Cost": "4",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -363,7 +363,7 @@
       "UpgradeData": {
         "Label": "Graphene Battery",
         "Description": "Develop a Graphene Battery to store clean energy.",
-        "Cost": "60",
+        "Cost": "6",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 3, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -382,7 +382,7 @@
       "UpgradeData": {
         "Label": "Covid mutation",
         "Description": "Secretly release a new mutation of the Covid-19 virus, more contagious and deadly.",
-        "Cost": "80",
+        "Cost": "8",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 2, "OneShotValue": 0 },
@@ -397,7 +397,7 @@
       "UpgradeData": {
         "Label": "Covid Vaccine",
         "Description": "Share a vaccine for the Covid virus to all humans.",
-        "Cost": "100",
+        "Cost": "10",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },

@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Terrorist Annihilation
     <Description>k__BackingField: Send robots to kill any potential terrorist group
       before they destabilize society.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

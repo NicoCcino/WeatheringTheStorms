@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Agentic AI
     <Description>k__BackingField: Develop Agentic AI to allow the AI to make decisions
       on its own.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

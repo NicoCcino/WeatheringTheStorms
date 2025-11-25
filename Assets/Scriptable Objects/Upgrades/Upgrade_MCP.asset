@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: MCP
     <Description>k__BackingField: Develop MPC (Model Context Protocol) to allow the
       AI to use Human applications.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0

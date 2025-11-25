@@ -16,7 +16,7 @@ MonoBehaviour:
     <Label>k__BackingField: Network Routing
     <Description>k__BackingField: Improve Network Routing to improve internet speed
       reliability and consumption.
-    <Cost>k__BackingField: 40
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 1
@@ -30,6 +30,6 @@ MonoBehaviour:
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
-  IsUnlocked: 0
+  IsUnlocked: 1
   IsBought: 0
   ParentUpgrades: []
