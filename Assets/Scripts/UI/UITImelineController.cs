@@ -19,7 +19,15 @@ public class UITimelineController : MonoBehaviour
         togglex2.onValueChanged.AddListener(OnToggleX2PauseCallback);
         togglex4.onValueChanged.AddListener(OnToggleX4PauseCallback);
 
+        PromptManager.Instance.OnPromptOpened += OnPromptOpened;
+
     }
+
+    private void OnPromptOpened(Prompt prompt)
+    {
+        togglex1.SetIsOnWithoutNotify(true);
+    }
+
     private void OnDisable()
     {
         togglePlayPause.onValueChanged.RemoveListener(OnTogglePlayPauseCallback);

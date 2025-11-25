@@ -224,6 +224,8 @@ GameObject:
   - component: {fileID: 7457848876602787443}
   - component: {fileID: 690614991493231738}
   - component: {fileID: 7473457684312906673}
+  - component: {fileID: 6464103602746244735}
+  - component: {fileID: 7755257535584164256}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -332,6 +334,32 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6464103602746244735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754277370159737564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e937233db74324fb55f28ee02dbad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverSound
+  audioClip: {fileID: 8300000, guid: 7edc296fb89ff7840a39a4c84e1e273b, type: 3}
+--- !u!114 &7755257535584164256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754277370159737564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4380319b88123124293e196e71506043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickAudio: {fileID: 8300000, guid: 8fb757fa87dc7a445ac628b5fb73eb91, type: 3}
 --- !u!1 &8349023609631303193
 GameObject:
   m_ObjectHideFlags: 0
