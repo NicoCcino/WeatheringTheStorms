@@ -24,16 +24,19 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: -1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: Let's try spicing things up. Make your city the next Silicon Valley,
         no matter the cost! Do you want me to create a detailed 5-year plan?
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

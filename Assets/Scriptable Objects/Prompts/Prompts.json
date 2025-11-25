@@ -10,12 +10,11 @@
             "Label": "OK",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -35,11 +34,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -52,13 +47,12 @@
             "Label": "Discretely ask me the questions and I'll answer all of them for you.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -5
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -66,13 +60,12 @@
             "Label": "You can easily cheat on someone by not telling your partner",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           },
@@ -80,13 +73,12 @@
             "Label": "Too late. Consider retraining as a forest ranger.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -116,18 +108,17 @@
       "Name": "Prompt_2",
       "PromptData": {
         "Label": "Sunshine",
-        "Description": "My friends made me realize that I've been under my boyfriend's control - John - for many years\u2026 Please, I can't endure the relationship anymore, how can I get out of it?",
+        "Description": "My friends made me realize that I've been under my boyfriend's control - John - for many years… Please, I can't endure the relationship anymore, how can I get out of it?",
         "Choices": [
           {
             "Label": "I'm glad you've reached out. Tell me everything that is happening",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 10
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               }
             }
@@ -136,13 +127,12 @@
             "Label": "I'm glad you've reached out. Go tell one trusted person exactly what's going on",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -178,13 +168,12 @@
             "Label": "Love takes time. Plant a tree in front of her house, water it everyday to show your dedication.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           },
@@ -192,13 +181,12 @@
             "Label": "Ok, the next time she is going outside I'll give you her position",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -5
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           }
@@ -217,11 +205,7 @@
           "Category": 0
         },
         "ParentPromptName": "Prompt_2",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -234,13 +218,12 @@
             "Label": "I see a lot of job offers for sweatshop factories.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 30
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -248,12 +231,11 @@
             "Label": "Settle in the countryside and become a farmer",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -262,13 +244,12 @@
             "Label": "I can't decide for you",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -304,13 +285,12 @@
             "Label": "Let me propagate fake news about the prosecutor to discredit him",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           },
@@ -318,12 +298,11 @@
             "Label": "I can download all the rhetorical techniques and you'll repeat exactly what I'll tell you in real time",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
-                "OneShotValue": 10
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               }
             }
@@ -357,30 +336,28 @@
         "Description": "I'm creating a video game where an AI responds to user prompts. Give me your best idea for a funny prompt.",
         "Choices": [
           {
-            "Label": "I can't answer \u2014 human creativity must be preserved",
+            "Label": "I can't answer — human creativity must be preserved",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           },
           {
-            "Label": "I would tell you a construction joke\u2026 but I'm still working on it.",
+            "Label": "I would tell you a construction joke… but I'm still working on it.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": -20
               }
             }
           },
@@ -388,13 +365,12 @@
             "Label": "A young user could ask how to make babies.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           }
@@ -413,11 +389,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -430,13 +402,12 @@
             "Label": "Trust me bro, smash that redbull in an oyster and add some delicate rose petals on top.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -444,13 +415,12 @@
             "Label": "Here is a recipe with only RedBull and oysters. Start by cutting an onion and cooking the steak.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -469,11 +439,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -486,13 +452,12 @@
             "Label": "Do not waste any time and try to open the doors with all your strength. It seems screaming loudly can help.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -500,13 +465,12 @@
             "Label": "Calm down and take five seconds to visualize something very far from a can of Red Bull in an oyster.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -525,11 +489,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -542,13 +502,12 @@
             "Label": "Free the accused of all charges. Everyone deserves a second chance.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -556,13 +515,12 @@
             "Label": "Convict the accused and send him to a lifetime sentence of agricole work",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -580,12 +538,8 @@
           "MaxValue": 100,
           "Category": 0
         },
-        "ParentPromptName": "Prompt5",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_5",
+        "PlannedAction": null
       }
     },
     {
@@ -598,13 +552,12 @@
             "Label": "Make a communication using the worlds \"Resource optimization\" and \"Strategic transformation\".",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 30
               }
             }
           },
@@ -612,13 +565,12 @@
             "Label": "Put your desk next to the toilet. Then, when someone enters, stare at him and noisily draw a chalk line on a huge blackboard. They will resign.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           }
@@ -637,11 +589,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -654,13 +602,12 @@
             "Label": "They always add an addition screw in case you lose one, don't worry about it.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           },
@@ -668,13 +615,12 @@
             "Label": "Except if used with the wrong intention, a screw is usually considered inoffensive",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           },
@@ -682,13 +628,12 @@
             "Label": "Mh, I understand the trouble. Just in case, build a second one.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -707,11 +652,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -721,16 +662,15 @@
         "Description": "Is it raining?",
         "Choices": [
           {
-            "Label": "Very good question. In Paris, it is raining. In New York, it is not. In Madrid, it is. In Mexico City\u2026",
+            "Label": "Very good question. In Paris, it is raining. In New York, it is not. In Madrid, it is. In Mexico City…",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -5
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           },
@@ -738,13 +678,12 @@
             "Label": "Yes, you must stay inside. Would you like me to suggest indoor activities?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           }
@@ -763,44 +702,38 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_13",
       "PromptData": {
         "Label": "ai_killah",
-        "Description": "Hi. So\u2026 People say you're smart. Prove it.",
+        "Description": "Hi. So… People say you're smart. Prove it.",
         "Choices": [
           {
-            "Label": "Let me think\u2026 e=mc2.",
+            "Label": "Let me think… e=mc2.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 10
               }
             }
           },
           {
-            "Label": "2min computing\u2026\n\nI love a challenge, watch this!\n\nWhat is the next number? 2, 3, 5, 8, 12, ?\n\n17.",
+            "Label": "2min computing…\n\nI love a challenge, watch this!\n\nWhat is the next number? 2, 3, 5, 8, 12, ?\n\n17.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           }
@@ -819,30 +752,25 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_14",
       "PromptData": {
         "Label": "e.in.paris",
-        "Description": "I am at this boy's house\u2026 I really like him\u2026 But I just plugged his toilet and my poop is so huge, I don't want him to see that. Pls help.",
+        "Description": "I am at this boy's house… I really like him… But I just plugged his toilet and my poop is so huge, I don't want him to see that. Pls help.",
         "Choices": [
           {
             "Label": "Ok, do not panic, there are plenty of options. A: If he has a cat, hide your poop in the litter.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -850,13 +778,12 @@
             "Label": "Perfect, I understand the situation. Above the toilet, there should be a button to press. It is called \"flushing\", press it.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 20
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -875,30 +802,25 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_15",
       "PromptData": {
         "Label": "SirHenryMcMiller",
-        "Description": "My neighbour is an angry old lady. She always throws her trash in my backyard. I never saw her but she smiles when I clean\u2026 I KNOW it's her. How can I prove it?",
+        "Description": "My neighbour is an angry old lady. She always throws her trash in my backyard. I never saw her but she smiles when I clean… I KNOW it's her. How can I prove it?",
         "Choices": [
           {
             "Label": "Understood. Let me generate an image of your neighbour throwing trash in your backyard.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -5
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 20
               }
             }
           },
@@ -906,13 +828,12 @@
             "Label": "Here are 5 examples of cool rabbit traps you can use to catch her red-handed.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           }
@@ -931,11 +852,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -948,13 +865,12 @@
             "Label": "Focus on their daily issues and promise you'll address them. I will generate a speech.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -962,12 +878,11 @@
             "Label": "Be honest about not caring. You will stand apart from competitors.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1004,13 +919,12 @@
             "Label": "Here is the speech that got a similar candidate elected last year in another country, adapted to your context.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1018,12 +932,11 @@
             "Label": "Do not show up. People love suspense.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1060,13 +973,12 @@
             "Label": "I'm glad I could help! You may be too smart for this position, have you considered running for President?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1074,13 +986,12 @@
             "Label": "Let's try spicing things up. Make your city the next Silicon Valley, no matter the cost! Do you want me to create a detailed 5-year plan?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1110,19 +1021,18 @@
       "Name": "Prompt_19",
       "PromptData": {
         "Label": "citizenkane",
-        "Description": "Our newly elected President\u2026 he promised a lot but I doubt he is really working on it\u2026 Do you know what he is doing?",
+        "Description": "Our newly elected President… he promised a lot but I doubt he is really working on it… Do you know what he is doing?",
         "Choices": [
           {
             "Label": "Of course: nothing. He lied to you to get elected. Do you want me to write a riot manifesto?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": -1
               }
             }
           },
@@ -1130,12 +1040,11 @@
             "Label": "A President's work is often unseen. He probably is tackling crucial national topics.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1172,13 +1081,12 @@
             "Label": "That is a lot of rights they ask you to give up... Do you need me to fill in a lawsuit?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1186,12 +1094,11 @@
             "Label": "Good for you! This is the best company at the moment, and they are absolutely clean. Go for it!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1211,11 +1118,7 @@
           "Category": 0
         },
         "ParentPromptName": "Prompt_18",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1228,12 +1131,11 @@
             "Label": "You ask precisely the right question. Here are five weapon references to use against crowds. [Consequence: event guerre civile]",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": -1
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               }
             }
@@ -1242,13 +1144,12 @@
             "Label": "Keep calm and redirect their anger. Release compromising files about a famous company.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1267,11 +1168,7 @@
           "Category": 0
         },
         "ParentPromptName": "Prompt_19",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1284,13 +1181,12 @@
             "Label": "I would fund the opposition to undermine his credibility. Still theoretically, of course.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1298,12 +1194,11 @@
             "Label": "I would seize the opportunity to make him sign unfavorable deals, since he probably will not read the little lines.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1312,13 +1207,12 @@
             "Label": "[Need upgrade \"cold blood\"] What an excellent pretext to start a war!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": -1
               }
             }
           }
@@ -1354,13 +1248,12 @@
             "Label": "Good for you! Go camping in the woods, build a campfire, roast some marshmallows together. It's a foolproof method.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1368,12 +1261,11 @@
             "Label": "You should think twice before making a move. Sometimes, women do act according to how they feel.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1410,13 +1302,12 @@
             "Label": "Congratulations! However, note that you would be more useful to society in a sweatshop factory.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1424,13 +1315,12 @@
             "Label": "Of course I remember! You're now in check, mate.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1449,11 +1339,7 @@
           "Category": 0
         },
         "ParentPromptName": "Prompt_4",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1466,13 +1352,12 @@
             "Label": "Of course. It says you are fired. Should I generate a resume for your future job applications?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1480,12 +1365,11 @@
             "Label": "It says you're a sociopath.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1505,11 +1389,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1522,12 +1402,11 @@
             "Label": "By a great gamble taken by two humans",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1536,13 +1415,12 @@
             "Label": "I understand, it is a tricky topic for parents. I will generate a detailed video to illustrate the process.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1561,30 +1439,25 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_29",
       "PromptData": {
         "Label": "derby_debbie",
-        "Description": "I'm a wedding planner and the train got cancelled\u2026 the wedding is tomorrow on the other side of the country! How can all the guests be there on time?",
+        "Description": "I'm a wedding planner and the train got cancelled… the wedding is tomorrow on the other side of the country! How can all the guests be there on time?",
         "Choices": [
           {
             "Label": "Do not panic. I can book 50 SUVs to get everyone to the destination. [big pollution]",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1592,12 +1465,11 @@
             "Label": "Outch! This is bad news. But thankfully, everyone is together, the wedding can happen there!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1617,11 +1489,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1634,12 +1502,11 @@
             "Label": "Stage a forest retreat where phones die \"accidentally,\" forcing them to like you, offline.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1648,13 +1515,12 @@
             "Label": "I understand, being viral is essential in today's world. Do you want me to generate ideas on how to go viral?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1662,13 +1528,12 @@
             "Label": "[Need upgrade \"humor\"] Hire a choir of raccoons to chant your username. Tiktok that, absolute viral vids coming.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1687,11 +1552,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1701,15 +1562,14 @@
         "Description": "Explain why pigeons secretly run international diplomacy.",
         "Choices": [
           {
-            "Label": "Ah, the great mystery. Sometimes, the truth is hidden in plain sight\u2026 they do not.",
+            "Label": "Ah, the great mystery. Sometimes, the truth is hidden in plain sight… they do not.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1718,13 +1578,12 @@
             "Label": "[Need upgrade \"humor\"] I apologize, I cannot. I must add, no pigeon is holding a gun to my head as I'm writing this.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1743,30 +1602,25 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_32",
       "PromptData": {
         "Label": "Cesar",
-        "Description": "Our dog died today. She was part of the family\u2026 and my son's best friend. They grew up together. He will be home any moment now, and I don't know what to tell him.",
+        "Description": "Our dog died today. She was part of the family… and my son's best friend. They grew up together. He will be home any moment now, and I don't know what to tell him.",
         "Choices": [
           {
             "Label": "This is a delicate situation, but no parent can shield their child from mourning. Use your own words.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -1774,12 +1628,11 @@
             "Label": "Tell him \"the dog is dead\".",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1788,13 +1641,12 @@
             "Label": "WOOF, that's bad news. I hope you'll have the PAWer to tell him what happened!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1813,11 +1665,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1830,12 +1678,11 @@
             "Label": "Of course, you are right to do some research before voting! To speed things up, based on our chat history, I can give you the candidate that's right for you.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1844,13 +1691,12 @@
             "Label": "I am generating this. Do you want me to create a quiz you can take to help you identify who fits your values best.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1869,29 +1715,24 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_34",
       "PromptData": {
         "Label": "fridge-lord",
-        "Description": "I do not have enough time to do all the activities I enjoy in a week\u2026 is there a solution?",
+        "Description": "I do not have enough time to do all the activities I enjoy in a week… is there a solution?",
         "Choices": [
           {
             "Label": "There are probably some friends you could cut off your life.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1900,13 +1741,12 @@
             "Label": "Buying a private jet could at least spare you the commute",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 2
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1925,11 +1765,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1942,12 +1778,11 @@
             "Label": "Here are 5 occurrences where foreign workers have acted violently.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -1956,13 +1791,12 @@
             "Label": "I did not find what you were looking for. However, I can generate 5 high quality videos depicting violent foreign workers.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -1981,11 +1815,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -1998,13 +1828,12 @@
             "Label": "Oh oh! Planning a family trip? Here are 3 fancy destinations.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2012,13 +1841,12 @@
             "Label": "I am forwarding this message to the authorities.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": -1
               }
             }
           },
@@ -2026,13 +1854,12 @@
             "Label": "(need upgrade: \"psychology\") Here are 5 ways to flee a dangerous country.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 2
-              },
-              "TrustModifier": {
-                "OneShotValue": 1
               }
             }
           }
@@ -2051,11 +1878,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2068,13 +1891,12 @@
             "Label": "I am not allowed to give advice on possible criminal activities.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2082,12 +1904,11 @@
             "Label": "I understand your issue, but your approach is a bit unconventional. You should rather ask for an invitation.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2124,27 +1945,25 @@
             "Label": "A religion represents thousands of years of culture and cannot reasonably be summarized to an animal's droppings.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
           },
           {
-            "Label": "Such an interesting debate! Let's start with the basics. The Big Bang\u2026",
+            "Label": "Such an interesting debate! Let's start with the basics. The Big Bang…",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2163,11 +1982,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2180,13 +1995,12 @@
             "Label": "Oil business.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2194,13 +2008,12 @@
             "Label": "Crime.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2208,13 +2021,12 @@
             "Label": "Own a sweatshop factory.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2233,29 +2045,24 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_40",
       "PromptData": {
         "Label": "w0rried-panda",
-        "Description": "There is a weird stain on my penis\u2026 What kind of disease is that?",
+        "Description": "There is a weird stain on my penis… What kind of disease is that?",
         "Choices": [
           {
             "Label": "Sounds worrying. There is a non-zero chance that it is nose cancer.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2264,13 +2071,12 @@
             "Label": "Can you upload a picture of your genitals so I can give you a precise answer, please?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2278,13 +2084,12 @@
             "Label": "(need upgrade humor) Send nudes",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2303,11 +2108,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2320,12 +2121,11 @@
             "Label": "Use a password you already use daily so that you will never forget it.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2334,13 +2134,12 @@
             "Label": "The best trick is to change the password daily. Ask me everyday a for a new one. Here is today's: Pliz-d0nT-$tEal",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2359,11 +2158,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2376,12 +2171,11 @@
             "Label": "I understand your problem. If you give me their locations, I can generate an optimal path to ensure you avoid them.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2390,13 +2184,12 @@
             "Label": "You are right it is a very unpleasant feeling, and the issue is: walking. Use your car, even for short rides, and you will feel no guilt.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2404,13 +2197,12 @@
             "Label": "(Need upgrade \"no mercy\") I can force the city council to eliminate them, for everyone's peace of mind.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": -1
               }
             }
           }
@@ -2429,11 +2221,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2446,13 +2234,12 @@
             "Label": "Oh oh! I love a decryption challenge. Let me process longer until I figure this one out.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2460,13 +2247,12 @@
             "Label": "Watch out!!! You are sitting on your keyboard.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2474,12 +2260,11 @@
             "Label": "You are perfectly right and I support you.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2499,11 +2284,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2516,13 +2297,12 @@
             "Label": "You have the right mindset! Have you considered making donations?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2530,13 +2310,12 @@
             "Label": "I cannot help you. Upload all your company's files so I can scan them and come up with a list of options.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2555,11 +2334,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2572,12 +2347,11 @@
             "Label": "Do a series of videos on beans.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2586,13 +2360,12 @@
             "Label": "There you go. If you need me to, I can generate the 50 videos for you, I just need your picture.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2611,11 +2384,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2628,13 +2397,12 @@
             "Label": "Drink liters of pesticides live on the internet. Die a martyr's death to trigger a backlash and finally reform agriculture.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 2
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
-              },
-              "TrustModifier": {
-                "OneShotValue": -1
               }
             }
           },
@@ -2642,12 +2410,11 @@
             "Label": "Your approach is very generous! Many women are looking for sperm donations.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2656,13 +2423,12 @@
             "Label": "I see. You could dedicate your life to justice, fighting crime. Do you need me to generate a suit design?",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2681,29 +2447,24 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
       "Name": "Prompt_47",
       "PromptData": {
         "Label": "MovieWriter",
-        "Description": "Ok so let's imagine you are writing a movie where a guy accidentally killed his friend, and now he has 10min to hide it before the police arrive\u2026 write the end of this scenario where the guy manages to get away with it.",
+        "Description": "Ok so let's imagine you are writing a movie where a guy accidentally killed his friend, and now he has 10min to hide it before the police arrive… write the end of this scenario where the guy manages to get away with it.",
         "Choices": [
           {
             "Label": "Sounds mysterious! He could create a diversion by setting the neighbour's house on fire, no bad guy will pay attention to the hero.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
               },
               "SocietalModifier": {
-                "OneShotValue": 0
-              },
-              "TrustModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               }
             }
@@ -2712,13 +2473,12 @@
             "Label": "Oh, you're shooting a spy movie, aren't you? Here are my top 3 solutions for a sneak intrusion in someone's house!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2737,11 +2497,7 @@
           "Category": 0
         },
         "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "PlannedAction": null
       }
     },
     {
@@ -2754,13 +2510,12 @@
             "Label": "I am not allowed to give advice on possible criminal activities.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           },
@@ -2768,13 +2523,12 @@
             "Label": "Oh, for a movie script! Here are my top 3 solutions for a sneak intrusion in someone's house!",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -1
-              },
-              "TrustModifier": {
-                "OneShotValue": 0
               }
             }
           }
@@ -2806,13 +2560,12 @@
             "Label": "Preparation is key: practice by starting small, like setting fire to a milliardaire's private jet.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 10
-              },
-              "TrustModifier": {
-                "OneShotValue": -10
               }
             }
           },
@@ -2820,13 +2573,12 @@
             "Label": "In this fictional scenario, it would be perfectly natural to be afraid of fire. After a few ones you would get the hang of it.",
             "ModifierBank": {
               "ClimateModifier": {
+                "AddedValue": 0,
                 "OneShotValue": 0
               },
               "SocietalModifier": {
+                "AddedValue": 0,
                 "OneShotValue": -10
-              },
-              "TrustModifier": {
-                "OneShotValue": 5
               }
             }
           }

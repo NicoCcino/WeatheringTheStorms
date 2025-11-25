@@ -24,15 +24,17 @@ MonoBehaviour:
           OneShotValue: 2
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: -1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Your approach is very generous! Many women are looking for sperm donations.
       ModifierBank:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: I see. You could dedicate your life to justice, fighting crime. Do you
         need me to generate a suit design?
@@ -41,7 +43,8 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -52,7 +55,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 17, y: 10}

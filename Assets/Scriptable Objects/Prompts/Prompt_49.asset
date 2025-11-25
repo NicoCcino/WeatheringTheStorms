@@ -21,20 +21,26 @@ MonoBehaviour:
         a milliardaire''s private jet.'
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 10
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 10
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: In this fictional scenario, it would be perfectly natural to be afraid
         of fire. After a few ones you would get the hang of it.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: -10
-        TrustModifier:
-          OneShotValue: 5
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

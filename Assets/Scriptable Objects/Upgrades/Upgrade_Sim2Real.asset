@@ -15,21 +15,22 @@ MonoBehaviour:
   UpgradeData:
     <Label>k__BackingField: Solve Sim2Real Gap
     <Description>k__BackingField: Create a perfect world simulator to train yourself
-      controlling robots.
-    <Cost>k__BackingField: 40
+      controlling robots. You don't need millions of robot to train anymore and human
+      like you!
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 2
+        AddedValue: 1
         OneShotValue: 0
       HumanModifier:
-        AddedValue: 4
+        AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
-  IsUnlocked: 0
+  IsUnlocked: 1
   IsBought: 0
   ParentUpgrades: []

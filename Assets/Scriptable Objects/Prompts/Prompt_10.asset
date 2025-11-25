@@ -21,17 +21,25 @@ MonoBehaviour:
         transformation".
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: -10
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: -10
-        TrustModifier:
-          OneShotValue: 30
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Put your desk next to the toilet. Then, when someone enters, stare at
         him and noisily draw a chalk line on a huge blackboard. They will resign.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
         TrustModifier:
           OneShotValue: 10
@@ -44,7 +52,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 4, y: 9}

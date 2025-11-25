@@ -34,7 +34,7 @@ namespace JSONData
             {
                 ClimateModifier = ClimateModifier?.ToModifier() ?? new Modifier(),
                 SocietalModifier = SocietalModifier?.ToModifier() ?? new Modifier(),
-                TrustModifier = TrustModifier?.ToModifier() ?? new Modifier()
+                HumanModifier = HumanModifier?.ToModifier() ?? new Modifier()
             };
         }
     }

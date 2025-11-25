@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   UpgradeData:
     <Label>k__BackingField: Nuclear Codes Brute Force
-    <Description>k__BackingField: Prevents or triggers nuclear wars.
-    <Cost>k__BackingField: 100
+    <Description>k__BackingField: Control the nuclear forces of the world to prevent
+      or trigger nuclear wars.
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 3
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
@@ -32,4 +33,4 @@ MonoBehaviour:
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades:
-  - {fileID: 11400000, guid: ee57bded1c24146faa84e0f69a3a1973, type: 2}
+  - {fileID: 11400000, guid: 1fec45aad5d25483ebb4793a13c5effb, type: 2}

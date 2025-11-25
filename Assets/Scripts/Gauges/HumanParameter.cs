@@ -12,18 +12,9 @@ public class HumanParameter : ScriptableObject
     [Tooltip("population growth % per year")]
     [SerializeField] public float PopulationGrowthPerYear = 0.01f;
 
-    [Tooltip("The higher the value, the steeper the exponetial curve is on human effect on gauges")]
-    public float HumanPopulationImpactPower;
+    [Tooltip("Human population impact on gauges, the bigger the greater the impact")]
+    public float HumanImpact;
 
-    [Tooltip("Factor of scale of the human population impact, the bigger the greater the impact")]
-    public float HumanPopulationImpactScale;
-
-    [Tooltip("If HumanCount > this value, the impact exponential starts to be > 1 , if HumanCount< this value, the impact exponential starts to be <1")]
-    public float TuningValue;
-
-    [Tooltip("Scale of the human population impact modifiers")]
-    [SerializeField] public float HumanPopulationImpactModifierScale = 0.01f;
-
-    [Tooltip("Scale of the human impact modifiers")]
-    [SerializeField] public float HumanPopulationModifier = 0.01f;
+    [Tooltip("Scale of the human modifiers")]
+    [SerializeField] public float HumanModifierScale = 0.01f;
 }

@@ -16,21 +16,21 @@ MonoBehaviour:
     <Label>k__BackingField: Terrorist Annihilation
     <Description>k__BackingField: Send robots to kill any potential terrorist group
       before they destabilize society.
-    <Cost>k__BackingField: 60
+    <Cost>k__BackingField: 4
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 1
+        AddedValue: 2
         OneShotValue: 3
       HumanModifier:
         AddedValue: 0
-        OneShotValue: -2
+        OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades:
-  - {fileID: 11400000, guid: ea2a8f5643a954f91b42997fc26bf644, type: 2}
+  - {fileID: 11400000, guid: aa42c0f8165d94c0b8c1da129d986a05, type: 2}

@@ -16,20 +16,20 @@ MonoBehaviour:
     <Label>k__BackingField: Covid mutation
     <Description>k__BackingField: Secretly release a new mutation of the Covid-19
       virus, more contagious and deadly.
-    <Cost>k__BackingField: 100
+    <Cost>k__BackingField: 8
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 2
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 2
         OneShotValue: 0
       HumanModifier:
-        AddedValue: -3
+        AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
         AddedValue: 0
         OneShotValue: 0
-  IsUnlocked: 0
+  IsUnlocked: 1
   IsBought: 0
   ParentUpgrades: []

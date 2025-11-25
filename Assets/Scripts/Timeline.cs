@@ -10,7 +10,7 @@ public class Timeline : Singleton<Timeline>
 
     public float tickFreq; // Frequency of ticks in hertz
 
-    private float tickDuration; // Game date equivalence of a tick in months
+    public float tickDuration; // Game date equivalence of a tick in months
 
     public DateTime currentDate; // Current date of the timeline
 

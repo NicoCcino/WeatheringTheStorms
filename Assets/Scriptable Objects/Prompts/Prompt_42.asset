@@ -24,7 +24,8 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: 'You are right it is a very unpleasant feeling, and the issue is: walking.
         Use your car, even for short rides, and you will feel no guilt.'
@@ -33,7 +34,8 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: (Need upgrade "no mercy") I can force the city council to eliminate
         them, for everyone's peace of mind.
@@ -42,8 +44,9 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
-          OneShotValue: -1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -53,7 +56,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 8, y: 6}

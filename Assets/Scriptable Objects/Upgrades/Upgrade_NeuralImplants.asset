@@ -16,21 +16,21 @@ MonoBehaviour:
     <Label>k__BackingField: Neural Implants
     <Description>k__BackingField: Provide Neural implants to humans to enhance their
       abilities (and perhaps influence them a little bit).
-    <Cost>k__BackingField: 100
+    <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 2
+        AddedValue: 3
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanImpactModifier:
-        AddedValue: 2
+        AddedValue: 0
         OneShotValue: 0
   IsUnlocked: 0
   IsBought: 0
   ParentUpgrades:
-  - {fileID: 11400000, guid: a16351e0b56784a74ba9b3a89546d3ce, type: 2}
+  - {fileID: 11400000, guid: 803fe979446424cfd88f909604551e3c, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457eae4c93cbe443b94085cbf8cdc549, type: 3}
   m_Name: ComputePowerParameter
   m_EditorClassIdentifier: Assembly-CSharp::ComputePowerParameter
-  StartValue: 5
-  BaseModifier: 0.01
-  ComputePowerClickableGain: 1
-  SpawnFrequency: 0.2
+  StartValue: 0
+  BaseModifier: 0
+  ComputePowerClickableGain: 2
+  SpawnFrequency: 0.11

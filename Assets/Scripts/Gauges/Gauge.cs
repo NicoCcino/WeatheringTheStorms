@@ -8,6 +8,7 @@ public class Gauge
     public float value;
     public float iterationValue;
     public Action<float> OnGaugeModified;
+    public ModifierManager modifierManager;
 
     public void Init()
     {
@@ -17,22 +18,24 @@ public class Gauge
             return;
         }
         value = gaugeParameter.StartValue;
+        modifierManager = new ModifierManager();
+        modifierManager.modifierScale = gaugeParameter.ModifierScale;
     }
 
-    public void OnTick()
+
+    public void OnHumanCountChanged(float humanImpact)
     {
-        value += gaugeParameter.DecayingPerTick;
-        if (value <= 0)
-        {
-            value = 0;
-            Debug.Log("Gauge value is 0, you lost motherfucker!");
-        }
-        value = Mathf.Clamp(value, gaugeParameter.Min, gaugeParameter.Max);
-        OnGaugeModified?.Invoke(value);
+        iterationValue = humanImpact + modifierManager.ComputeModifierValue();
+        value += iterationValue;
+        if (value <= 0) value = 0;
+        if (value < gaugeParameter.Min) value = gaugeParameter.Min;
+        if (value > gaugeParameter.Max) value = gaugeParameter.Max;
+        //Debug.Log("Gauge value: " + value);
     }
 
     public void AddModifier(Modifier modifier)
     {
+        modifierManager.AddModifier(modifier);
         value += modifier.OneShotValue;
         if (modifier.OneShotValue != 0)
             OnGaugeModified?.Invoke(value);

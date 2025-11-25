@@ -22,7 +22,8 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: I understand, it is a tricky topic for parents. I will generate a detailed
         video to illustrate the process.
@@ -31,7 +32,8 @@ MonoBehaviour:
           OneShotValue: -1
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -42,7 +44,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 14, y: 3}

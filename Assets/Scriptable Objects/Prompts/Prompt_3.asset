@@ -20,19 +20,25 @@ MonoBehaviour:
         to show your dedication.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 10
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 10
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Ok, the next time she is going outside I'll give you her position
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: -5
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: -10
-        TrustModifier:
-          OneShotValue: 20
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -42,7 +48,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 11400000, guid: c7519e46725ef48ea8fba94dbcf1f1b1, type: 2}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 18, y: 8}

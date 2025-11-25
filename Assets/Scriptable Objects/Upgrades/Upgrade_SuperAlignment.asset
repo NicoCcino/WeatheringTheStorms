@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d63349834a54eb6b7af420d1d8234c, type: 3}
+  m_Name: Upgrade_SuperAlignment
+  m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  UpgradeData:
+    <Label>k__BackingField: Super Alignment
+    <Description>k__BackingField: Align the AI with the human values and goals, allowing
+      to make decisions that are in the best interest of the human and the planet
+      (and not provoke any human mass extinction).
+    <Cost>k__BackingField: 6
+    <ModifierBank>k__BackingField:
+      ClimateModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      SocietalModifier:
+        AddedValue: 3
+        OneShotValue: 0
+      HumanModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      HumanImpactModifier:
+        AddedValue: 0
+        OneShotValue: 0
+  IsUnlocked: 0
+  IsBought: 0
+  ParentUpgrades:
+  - {fileID: 11400000, guid: 59b5952887b8c4c88a87951355b5ae0d, type: 2}
