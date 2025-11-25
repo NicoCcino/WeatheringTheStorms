@@ -11,16 +11,16 @@ public class GridObjectSpawner : MonoBehaviour
 
     private void OnEnable()
     {
-        //EventManager.Instance.OnEventTriggered += OnEventTriggeredCallback;
+        EventManager.Instance.OnEventTriggered += OnEventTriggeredCallback;
         PromptManager.Instance.OnPromptSpawned += OnPromptTriggeredCallback;
-        // ComputePower.Instance.OnComputePowerLootSpawn += OnComputePowerLootSpawnCallback;
+        ComputePower.Instance.OnComputePowerLootSpawn += OnComputePowerLootSpawnCallback;
     }
 
     private void OnDisable()
     {
-        // EventManager.Instance.OnEventTriggered -= OnEventTriggeredCallback;
+        EventManager.Instance.OnEventTriggered -= OnEventTriggeredCallback;
         PromptManager.Instance.OnPromptSpawned -= OnPromptTriggeredCallback;
-        //  ComputePower.Instance.OnComputePowerLootSpawn -= OnComputePowerLootSpawnCallback;
+        ComputePower.Instance.OnComputePowerLootSpawn -= OnComputePowerLootSpawnCallback;
     }
 
 

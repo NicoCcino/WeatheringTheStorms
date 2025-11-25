@@ -27,6 +27,7 @@ namespace JSONData
         public ModifierJSON ClimateModifier;
         public ModifierJSON SocietalModifier;
         public ModifierJSON TrustModifier;
+        public ModifierJSON HumanModifier;
 
         public ModifierBank ToModifierBank()
         {

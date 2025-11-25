@@ -23,10 +23,10 @@ MonoBehaviour:
       SocietalModifier:
         AddedValue: -2
         OneShotValue: 0
-      HumanModifier:
+      TrustModifier:
         AddedValue: 0
         OneShotValue: 0
-      HumanImpactModifier:
+      HumanModifier:
         AddedValue: 0
         OneShotValue: 0
   IsUnlocked: 0

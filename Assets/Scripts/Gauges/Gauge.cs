@@ -27,6 +27,7 @@ public class Gauge
     {
         iterationValue = humanImpact + modifierManager.ComputeModifierValue();
         value += iterationValue;
+        OnGaugeModified?.Invoke(value);
         if (value <= 0) value = 0;
         if (value < gaugeParameter.Min) value = gaugeParameter.Min;
         if (value > gaugeParameter.Max) value = gaugeParameter.Max;

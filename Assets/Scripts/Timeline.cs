@@ -51,13 +51,6 @@ public class Timeline : Singleton<Timeline>
             currentDate = currentDate.AddMonths((int)tickDuration);
             // Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
         }
-
-        if (CurrentTick >= timeLineParameter.YearsWinCondition * 12)
-        {
-            //TODO : Manage win properly
-            Debug.Log("Win win win");
-            SetPauseSpeed();
-        }
     }
 
     public void SetPlaySpeed()

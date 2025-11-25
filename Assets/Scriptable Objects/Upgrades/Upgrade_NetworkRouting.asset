@@ -24,12 +24,12 @@ MonoBehaviour:
       SocietalModifier:
         AddedValue: 1
         OneShotValue: 0
+      TrustModifier:
+        AddedValue: 0
+        OneShotValue: 0
       HumanModifier:
         AddedValue: 0
         OneShotValue: 0
-      HumanImpactModifier:
-        AddedValue: 0
-        OneShotValue: 0
-  IsUnlocked: 1
+  IsUnlocked: 0
   IsBought: 0
   ParentUpgrades: []

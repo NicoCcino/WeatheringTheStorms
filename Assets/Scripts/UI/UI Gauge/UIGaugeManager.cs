@@ -22,4 +22,11 @@ public class UIGaugeManager : MonoBehaviour
                 uiGaugeSocietal.UpdateDeltaGauge();
                 uiGaugeTrust.UpdateDeltaGauge();
         }
+
+        private void Update()
+        {
+                uiGaugeClimate.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
+                uiGaugeSocietal.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
+                uiGaugeTrust.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
+        }
 }
