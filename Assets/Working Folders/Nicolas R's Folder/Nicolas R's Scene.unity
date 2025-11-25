@@ -11632,6 +11632,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   timeLineParameter: {fileID: 11400000, guid: b8997b064abaafb44a192a057317f9bb, type: 2}
   CurrentTick: 0
+  tickDuration: 0
 --- !u!4 &2114668290
 Transform:
   m_ObjectHideFlags: 0
@@ -11723,7 +11724,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114668285}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e89fa0a41812c4e1bbe27f5ad85b88ed, type: 3}
   m_Name: 

@@ -23,6 +23,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9a5b6cf36a65046fa828e633e01209af, type: 2}
   - {fileID: 11400000, guid: 7bc5fa3f4d1274493b0995d91ae1e8c8, type: 2}
   - {fileID: 11400000, guid: f058117f8a2154ceda664f60f044659c, type: 2}
+  - {fileID: 11400000, guid: eae7340f1bdf447a19c87f94b28ea5e6, type: 2}
+  - {fileID: 11400000, guid: 29f8ff4ab3e514b52a0b46aac8409d4c, type: 2}
+  - {fileID: 11400000, guid: b07e97a9a810346f1af891ce83e5bf23, type: 2}
+  - {fileID: 11400000, guid: 5f727b43f3c4243d099aaf28a16ad7a0, type: 2}
+  - {fileID: 11400000, guid: 89d59a19297684c5c926bdb11fa9d6c8, type: 2}
+  - {fileID: 11400000, guid: 3f8fed837d5d0488389b195e84ddeae0, type: 2}
+  - {fileID: 11400000, guid: 9fd89ae4a5e6c4853b43fd0693c2c8bb, type: 2}
+  - {fileID: 11400000, guid: 05cc610c9b8aa40fc9f3e42c73b91eb3, type: 2}
+  - {fileID: 11400000, guid: fe97c76b517684ecea5074ef23cc0c84, type: 2}
+  - {fileID: 11400000, guid: 6e124705747a640e7b21ca71078745dc, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:

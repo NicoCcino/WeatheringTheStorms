@@ -188,7 +188,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 12, "y": 10 },
@@ -206,7 +206,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 6, "y": 10 },
@@ -224,7 +224,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 18, "y": 8 },
@@ -242,7 +242,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 20, "y": 9 },
@@ -260,7 +260,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 13, "y": 10 },
@@ -278,7 +278,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 12, "y": 10 },
@@ -296,7 +296,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 6, "y": 10 },
@@ -314,7 +314,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 18, "y": 8 },
@@ -332,7 +332,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 20, "y": 9 },
@@ -350,7 +350,7 @@
         "Icon": "FIre.png",
         "ModifierBank": {
           "ClimateModifier": {"AddedValue": 1, "OneShotValue": 0},
-          "SocietalModifier": {"AddedValue": 3, "OneShotValue": 0},
+          "SocietalModifier": {"AddedValue": 4, "OneShotValue": 0},
           "HumanModifier": {"AddedValue": 0, "OneShotValue": 0}
         },
         "Coordinates": { "x": 13, "y": 10 },
