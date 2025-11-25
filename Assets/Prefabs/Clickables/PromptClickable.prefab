@@ -190,6 +190,9 @@ GameObject:
   - component: {fileID: 3879563680557568883}
   - component: {fileID: 8479941213436681738}
   - component: {fileID: 6743750590672577060}
+  - component: {fileID: 629623480544278100}
+  - component: {fileID: 7652923109662343508}
+  - component: {fileID: 8339251778828124067}
   m_Layer: 0
   m_Name: PromptClickable
   m_TagString: Untagged
@@ -213,6 +216,7 @@ Transform:
   - {fileID: 3100409272280192264}
   - {fileID: 4963157998724172339}
   - {fileID: 2557021174104441092}
+  - {fileID: 8614704269835902146}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &8479941213436681738
@@ -249,6 +253,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptClickable
   LinkedGridObject: {fileID: 0}
+--- !u!114 &629623480544278100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705830029003661162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e937233db74324fb55f28ee02dbad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverSound
+  audioClip: {fileID: 8300000, guid: 7edc296fb89ff7840a39a4c84e1e273b, type: 3}
+--- !u!114 &7652923109662343508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705830029003661162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4380319b88123124293e196e71506043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickAudio: {fileID: 8300000, guid: 2701f519a8e9c0e4c8e97a46794bce50, type: 3}
+--- !u!114 &8339251778828124067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705830029003661162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb3ab9ceb878e94eaa4b157ee94d512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnableSound
+  enableSound: {fileID: 8300000, guid: 680524db30c5ffa4981a912371da0258, type: 3}
 --- !u!1 &8102022709002654418
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,3 +381,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &3698974674766054389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3879563680557568883}
+    m_Modifications:
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000026822087
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045948690959497125, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+      propertyPath: m_Name
+      value: Particle_Halo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+--- !u!4 &8614704269835902146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4960985720295841591, guid: 0c98f8e9582559a43aa07b7ca8bfba5e, type: 3}
+  m_PrefabInstance: {fileID: 3698974674766054389}
+  m_PrefabAsset: {fileID: 0}
