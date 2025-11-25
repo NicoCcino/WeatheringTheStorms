@@ -92,9 +92,8 @@ public class LogFileManager : Singleton<LogFileManager>
             logWriter.WriteLine($"# ComputePower_growthRate: {computePowerParameter.BaseModifier.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_StartValue: {humanParameter.StartValue.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine($"# Human_PopulationGrowthPerYear: {humanParameter.PopulationGrowthPerYear.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_PopulationImpactPower: {humanParameter.HumanPopulationImpactPower.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_PopulationImpactScale: {humanParameter.HumanPopulationImpactScale.ToString(CultureInfo.InvariantCulture)}");
-            logWriter.WriteLine($"# Human_TuningValue: {humanParameter.TuningValue.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_HumanImpact: {humanParameter.HumanImpact.ToString(CultureInfo.InvariantCulture)}");
+            logWriter.WriteLine($"# Human_HumanModifierScale: {humanParameter.HumanModifierScale.ToString(CultureInfo.InvariantCulture)}");
             logWriter.WriteLine("#");
         }
         catch (Exception e)

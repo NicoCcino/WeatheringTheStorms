@@ -28,8 +28,7 @@ public class Human : Singleton<Human>
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
         floatHumanValue = humanParameter.StartValue;
         humanModifierManager = new ModifierManager();
-        humanImpactModifierManager = new ModifierManager();
-        humanImpactModifierManager.modifierScale = humanParameter.HumanPopulationImpactModifierScale;
+        humanModifierManager.modifierScale = humanParameter.HumanModifierScale;
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -50,7 +49,7 @@ public class Human : Singleton<Human>
     {
         // Population growth is exponential and is calculated monthly
         float naturalGrowth = (floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f));
-        float modifiedGrowth = floatHumanValue+naturalGrowth;
+        float modifiedGrowth = floatHumanValue + naturalGrowth;
         float humanGrowth = naturalGrowth + modifiedGrowth;
         PopulationDelta = (long)Mathf.Floor(humanGrowth);
         floatHumanValue += humanGrowth;
@@ -58,28 +57,14 @@ public class Human : Singleton<Human>
         if (floatHumanValue <= 0) floatHumanValue = 0;
         HumanCount = (long)Mathf.Floor(floatHumanValue);
         if (HumanCount <= 0) Debug.Log("Human population is extinct!\n You died motherfucker!");
-        HumanImpact = GetHumanImpactOnGauges();
+        HumanImpact = HumanCount * humanParameter.HumanImpact;
         //Debug.Log("Human value: " + value);
         OnHumanCountChanged?.Invoke(currentTick, HumanImpact);
     }
 
-    public float GetHumanImpactOnGauges()
-    {
-        return humanParameter.HumanPopulationModifier;
-    }
-
-    public void AddHumanModifier(Modifier modifier)
+    public void AddModifier(Modifier modifier)
     {
         humanModifierManager.AddModifier(modifier);
         floatHumanValue += modifier.OneShotValue;
-    }
-    public void AddHumanImpactModifier(Modifier modifier)
-    {
-        humanImpactModifierManager.AddModifier(modifier);
-        if (modifier.OneShotValue != 0)
-        {
-            Debug.LogError("Human impact modifier don't use OneShot values!");
-            return;
-        }
     }
 }

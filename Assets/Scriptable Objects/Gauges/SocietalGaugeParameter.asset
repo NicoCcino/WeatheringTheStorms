@@ -15,3 +15,4 @@ MonoBehaviour:
   StartValue: 50
   Min: 0
   Max: 100
+  ModifierScale: 0.07
