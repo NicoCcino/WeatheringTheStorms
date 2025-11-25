@@ -22,7 +22,8 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: I understand your issue, but your approach is a bit unconventional.
         You should rather ask for an invitation.
@@ -31,7 +32,8 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

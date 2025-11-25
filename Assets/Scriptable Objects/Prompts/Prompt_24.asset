@@ -25,7 +25,8 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     - Label: You should think twice before making a move. Sometimes, women do act
         according to how they feel.
@@ -34,7 +35,8 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

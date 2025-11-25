@@ -24,8 +24,9 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           OneShotValue: 1
-        TrustModifier:
-          OneShotValue: -1
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: A President's work is often unseen. He probably is tackling crucial
         national topics.
       ModifierBank:
@@ -33,7 +34,8 @@ MonoBehaviour:
           OneShotValue: 1
         SocietalModifier:
           OneShotValue: 0
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0

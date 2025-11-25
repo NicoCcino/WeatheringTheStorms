@@ -22,20 +22,25 @@ MonoBehaviour:
         hide your poop in the litter.'
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: -10
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: 20
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Perfect, I understand the situation. Above the toilet, there should
         be a button to press. It is called "flushing", press it.
       ModifierBank:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 20
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -45,7 +50,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 12, y: 11}

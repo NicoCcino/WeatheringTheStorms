@@ -23,6 +23,10 @@ MonoBehaviour:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
         TrustModifier:
           OneShotValue: 10
@@ -30,19 +34,25 @@ MonoBehaviour:
         inoffensive
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 20
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Mh, I understand the trouble. Just in case, build a second one.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 20
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -52,7 +62,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 21, y: 3}

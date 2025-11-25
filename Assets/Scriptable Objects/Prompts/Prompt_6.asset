@@ -20,28 +20,38 @@ MonoBehaviour:
     - Label: "I can't answer \u2014 human creativity must be preserved"
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 10
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 10
-        TrustModifier:
-          OneShotValue: -10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: "I would tell you a construction joke\u2026 but I'm still working on
         it."
       ModifierBank:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
         TrustModifier:
           OneShotValue: -20
     - Label: A young user could ask how to make babies.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: 10
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -51,7 +61,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 12, y: 10}

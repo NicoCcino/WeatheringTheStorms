@@ -22,17 +22,22 @@ MonoBehaviour:
         ClimateModifier:
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: -10
-        TrustModifier:
-          OneShotValue: 20
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
     - Label: Convict the accused and send him to a lifetime sentence of agricole
         work
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 20
         SocietalModifier:
+          AddedValue: 0
           OneShotValue: -10
-        TrustModifier:
+        HumanModifier:
+          AddedValue: 0
           OneShotValue: 0
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -43,7 +48,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 1834e6e68681845fabc528e9c50c4c13, type: 2}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 1
+      <TicksDelay>k__BackingField: 0
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 6, y: 10}
