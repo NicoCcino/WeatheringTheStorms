@@ -600,6 +600,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   timeLineParameter: {fileID: 11400000, guid: b8997b064abaafb44a192a057317f9bb, type: 2}
   CurrentTick: 0
+  tickFreq: 0
 --- !u!1 &5706185923911146071
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +719,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 414a5f6f59eb562419504b7e488ab720, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
