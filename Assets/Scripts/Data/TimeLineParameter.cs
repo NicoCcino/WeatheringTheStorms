@@ -19,6 +19,8 @@ public class TimeLineParameter : ScriptableObject
     [Tooltip("Game date equivalence of a tick in months")]
     [SerializeField] public float TickDuration = 1f;
 
+    [SerializeField] public int YearsWinCondition = 30;
+
     //[Tooltip("Start date of the game")]
     //[SerializeField] public DateTime startDate = new DateTime(1956, 1, 1); // In 1956, two years after the death of Turing, John McCarthy, a professor at Dartmouth College, organized a summer workshop to clarify and develop ideas about thinking machines — choosing the name “artificial intelligence” for the project.
 

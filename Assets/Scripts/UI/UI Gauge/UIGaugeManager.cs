@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class UIGaugeManager : MonoBehaviour
@@ -6,16 +7,19 @@ public class UIGaugeManager : MonoBehaviour
         [SerializeField] private UIGauge uiGaugeSocietal;
         [SerializeField] private UIGauge uiGaugeTrust;
 
-
-        private void Update()
+        private void OnEnable()
         {
-                uiGaugeClimate.UpdateGauge(GaugeManager.Instance.ClimateGauge.value);
-                uiGaugeSocietal.UpdateGauge(GaugeManager.Instance.SocietalGauge.value);
+                GaugeManager.Instance.ClimateGauge.OnGaugeModified += (x) => uiGaugeClimate.UpdateGauge(x);
+                GaugeManager.Instance.SocietalGauge.OnGaugeModified += (x) => uiGaugeSocietal.UpdateGauge(x);
+                GaugeManager.Instance.TrustGauge.OnGaugeModified += (x) => uiGaugeTrust.UpdateGauge(x);
 
-                uiGaugeClimate.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
-                uiGaugeSocietal.UpdateModifier(GaugeManager.Instance.SocietalGauge.iterationValue);
-
-                uiGaugeTrust.UpdateGauge(GaugeManager.Instance.TrustGauge.value);
-                uiGaugeTrust.UpdateModifier(GaugeManager.Instance.TrustGauge.iterationValue);
+                //Timeline.Instance.OnTick += UpdateDeltaUIGauges;
+        }
+        private async void UpdateDeltaUIGauges(uint _)
+        {
+                await Task.Yield();
+                uiGaugeClimate.UpdateDeltaGauge();
+                uiGaugeSocietal.UpdateDeltaGauge();
+                uiGaugeTrust.UpdateDeltaGauge();
         }
 }

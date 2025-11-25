@@ -3,6 +3,8 @@ using TMPro;
 using System;
 using System.Collections.Generic;
 using WiDiD.UI;
+using System.Collections;
+using UnityEngine.UI;
 
 public class UIPrompt : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class UIPrompt : MonoBehaviour
     public TextMeshProUGUI textHeader;
     public TextMeshProUGUI textDescription;
     public UIChoicesManager uiChoicesManager;
+    public ScrollRect scrollRect;
 
 
     [Header("Field for debug purposes only")]
@@ -18,18 +21,18 @@ public class UIPrompt : MonoBehaviour
     public void DisplayPrompt(Prompt prompt)
     {
         canvasGroupCustom.Fade(true);
-        
+
         // Get conversation history
         List<ChatMessage> conversationHistory = PromptManager.Instance.GetConversationHistory(prompt);
-        
+
         // Build the history text (if any) and current description separately
         string historyText = BuildHistoryText(conversationHistory);
-        historyText = historyText + "<align=left><b>" + prompt.PromptData.Label + ":</b>\n" ;
+        historyText = historyText + "<align=left><b>" + prompt.PromptData.Label + ":</b>\n";
         string currentDescription = prompt.PromptData.Description + "</align>";
         string fullText = historyText + currentDescription;
-        
+
         var typewriterEffect = textDescription.GetComponent<TypewriterEffect>();
-        
+
         if (string.IsNullOrEmpty(historyText))
         {
             // No history - just play typewriter on current description
@@ -40,21 +43,26 @@ public class UIPrompt : MonoBehaviour
             // Play typewriter starting from after the history (history appears instantly, only current animates)
             typewriterEffect.Play(fullText, historyText.Length);
         }
-        
+
         textHeader.text = prompt.PromptData.Label + " chat :";
         uiChoicesManager.SpawnChoices(prompt.PromptData.Choices, this);
         DisplayedPrompt = prompt;
+        StartCoroutine(ScrollToBottom());
     }
-    
+    private IEnumerator ScrollToBottom()
+    {
+        yield return null; // attendre la fin du frame (Layout Group)
+        scrollRect.verticalNormalizedPosition = 0f;
+    }
     private string BuildHistoryText(List<ChatMessage> history)
     {
         if (history.Count == 0)
         {
             return string.Empty;
         }
-        
+
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
-        
+
         // Add history messages
         foreach (ChatMessage message in history)
         {
@@ -70,8 +78,8 @@ public class UIPrompt : MonoBehaviour
             }
             sb.AppendLine(); // Empty line for spacing
         }
-        
-        
+
+
         return sb.ToString();
     }
     public void HideDisplayedPrompt()

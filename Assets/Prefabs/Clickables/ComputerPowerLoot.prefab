@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 3879563680557568883}
   - component: {fileID: 8479941213436681738}
   - component: {fileID: 3266995204278527247}
+  - component: {fileID: 1339070507495142836}
   m_Layer: 0
   m_Name: ComputerPowerLoot
   m_TagString: Untagged
@@ -248,6 +249,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bba2bdece9c0b4aa8946b23a7fa131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComputePowerClickable
+--- !u!114 &1339070507495142836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705830029003661162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb3ab9ceb878e94eaa4b157ee94d512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnableSound
+  enableSound: {fileID: 8300000, guid: dee9ca05e2527d64baaf4a6362c093e2, type: 3}
 --- !u!1 &8102022709002654418
 GameObject:
   m_ObjectHideFlags: 0

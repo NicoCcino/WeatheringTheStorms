@@ -20,7 +20,7 @@ public class GaugeManager : Singleton<GaugeManager>
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
         {
-            Human.Instance.OnHumanCountChanged += OnHumanCountChanged;
+            Timeline.Instance.OnTick += OnHumanCountChanged;
         }
     }
 
@@ -28,15 +28,15 @@ public class GaugeManager : Singleton<GaugeManager>
     {
         if (Timeline.Instance != null)
         {
-            Human.Instance.OnHumanCountChanged -= OnHumanCountChanged;
+            Timeline.Instance.OnTick -= OnHumanCountChanged;
         }
     }
 
-    private void OnHumanCountChanged(uint currentTick, float humanImpact)
+    private void OnHumanCountChanged(uint currentTick)
     {
-        ClimateGauge.OnHumanCountChanged(humanImpact);
-        SocietalGauge.OnHumanCountChanged(humanImpact);
-        TrustGauge.OnHumanCountChanged(humanImpact);
+        ClimateGauge.OnTick();
+        SocietalGauge.OnTick();
+        TrustGauge.OnTick();
 
         OnGaugeChanged?.Invoke(currentTick);
     }

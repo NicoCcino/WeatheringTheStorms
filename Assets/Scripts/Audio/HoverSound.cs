@@ -6,6 +6,6 @@ public class HoverSound : MonoBehaviour, IPointerEnterHandler
     [SerializeField] private AudioClip audioClip;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //TODO : implement
+        AudioManager.Instance.PlaySound(audioClip, 0.4f);
     }
 }

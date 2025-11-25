@@ -17,4 +17,6 @@ public class GaugeParameter : ScriptableObject
 
     [Tooltip("Scale of the modifiers")]
     [SerializeField] public float ModifierScale = 0.01f;
+
+    public float DecayingPerTick = -1.1f;
 }

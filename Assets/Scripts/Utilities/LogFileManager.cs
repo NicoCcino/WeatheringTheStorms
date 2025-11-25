@@ -130,7 +130,7 @@ public class LogFileManager : Singleton<LogFileManager>
             }
 
             // Cache the current tick data (without event data initially)
-            cachedTickLine = BuildTickLine(currentTick);
+            // cachedTickLine = BuildTickLine(currentTick);
         }
         catch (Exception e)
         {
@@ -172,6 +172,7 @@ public class LogFileManager : Singleton<LogFileManager>
             // If no cached line exists yet, create one for the current tick
             if (cachedTickLine == null)
             {
+                return;
                 cachedTickLine = BuildTickLine(Timeline.Instance.CurrentTick);
             }
 
