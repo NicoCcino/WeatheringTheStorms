@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: Event_HeatwaveEmergency
+  m_Name: Event_Megadrought
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: An unprecedented heatwave hit earth, people are
-      suffocating and dying.
+    <Description>k__BackingField: A severe prolonged drought causes water shortages
+      for millions and widespread agricultural collapse.
     <DurationInTicks>k__BackingField: 0
     <ModifierBank>k__BackingField:
       ClimateModifier:
@@ -26,7 +26,7 @@ MonoBehaviour:
       HumanModifier:
         AddedValue: -2
         OneShotValue: 0
-    <Coordinates>k__BackingField: {x: 6, y: 10}
+    <Coordinates>k__BackingField: {x: 20, y: 9}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

@@ -13,58 +13,16 @@ MonoBehaviour:
   m_Name: EventManagerParameter
   m_EditorClassIdentifier: Assembly-CSharp::EventManagerParameter
   AllEvents:
-  - {fileID: 11400000, guid: 9b0c4ad0628be4565bb07af4bbce32a3, type: 2}
-  - {fileID: 11400000, guid: 8282b2b8c51164deebf8e24f47a309a5, type: 2}
-  - {fileID: 11400000, guid: 6957e4b764f044259bc2e871b3a944e5, type: 2}
+  - {fileID: 11400000, guid: ff77aca2e5abc46d292a3fb759483add, type: 2}
   - {fileID: 11400000, guid: 3bc42b73338f24ee789408b52d5f4973, type: 2}
-  - {fileID: 11400000, guid: 65362a6e6a61d40e1a348f59c855b8b4, type: 2}
-  - {fileID: 11400000, guid: 53f41d76229a0408898ab50983a3882e, type: 2}
-  - {fileID: 11400000, guid: 385eed60a0a1a4ad4ab34d413baaad96, type: 2}
-  - {fileID: 11400000, guid: 72e465fc2cbe846b29ab1d14cabcc991, type: 2}
-  - {fileID: 11400000, guid: 58b8ff06c6c0b4995b5fc2083cf0d427, type: 2}
-  - {fileID: 11400000, guid: 9da4a234c4a124e89b30d2139055adc2, type: 2}
-  - {fileID: 11400000, guid: 5e348a35bb05e43e1a6b17e3020c99f2, type: 2}
-  - {fileID: 11400000, guid: f4cde866971924de882193ca00924f51, type: 2}
-  - {fileID: 11400000, guid: 1d66dbd84ba5f4f67b87406493b92447, type: 2}
-  - {fileID: 11400000, guid: 89b3baa345ca84846b1c53b9a9820db1, type: 2}
-  - {fileID: 11400000, guid: fe78b843fb4a741ee9109df5a4552da7, type: 2}
-  - {fileID: 11400000, guid: 4eb5c54411c0a4834a9c37150dbc1f86, type: 2}
-  - {fileID: 11400000, guid: c12cc7f35508e44c6b535a5fdbf4fda9, type: 2}
-  - {fileID: 11400000, guid: 00f328b3160e0470e8f92ef39d49817b, type: 2}
-  - {fileID: 11400000, guid: 6828ac7f3794c42c0be1302f506c1553, type: 2}
-  - {fileID: 11400000, guid: 547b729cd61d0498e80227e68276799a, type: 2}
-  - {fileID: 11400000, guid: 4e1fab26d9a0543698676e7e7c05b9d5, type: 2}
-  - {fileID: 11400000, guid: 3e90d4084cf5b437cbd778392201aa2e, type: 2}
-  - {fileID: 11400000, guid: 2f20823b453f34756b685f41ee1f9cf0, type: 2}
-  - {fileID: 11400000, guid: 4cdbb1fa87aba447ebd31d5e8832cbb4, type: 2}
-  - {fileID: 11400000, guid: c02529687b35144fa8fe4cf395aa71f6, type: 2}
-  - {fileID: 11400000, guid: a4d1980b6f4064cc8a46662f1ab0b434, type: 2}
-  - {fileID: 11400000, guid: d2254c953bcfa4d3dafb314e92d80ae8, type: 2}
-  - {fileID: 11400000, guid: 400311a1e85b749bd9cf1879486725cd, type: 2}
-  - {fileID: 11400000, guid: 65ed6fecaddf54d139e2d713b00cb453, type: 2}
-  - {fileID: 11400000, guid: 3143260382d3b4a8e987c8c02268535f, type: 2}
-  - {fileID: 11400000, guid: 9cc9d684f4d474f9d8d1054c93770be3, type: 2}
-  - {fileID: 11400000, guid: fd0b0936f5f6d44988e274a7fb2ada2a, type: 2}
-  - {fileID: 11400000, guid: 771ad921325b54ba0888aa19ec5244f9, type: 2}
-  - {fileID: 11400000, guid: 6e12395a59ec74415897088d1ad27135, type: 2}
-  - {fileID: 11400000, guid: 7e0cfd43e88aa4d8a9fd38f0c984e8d2, type: 2}
-  - {fileID: 11400000, guid: 545da77d8d3a844c99ceea221371a930, type: 2}
-  - {fileID: 11400000, guid: 56a0fb53ccd7e4017a055ade157da759, type: 2}
-  - {fileID: 11400000, guid: 8e885a61508ba4422a058b0c6c5315b8, type: 2}
-  - {fileID: 11400000, guid: 1bd55fa63bcb04ba3b106bc72ada0782, type: 2}
-  - {fileID: 11400000, guid: e2be7ca3ec63b421587fc865d66da7ae, type: 2}
-  - {fileID: 11400000, guid: e48bba9eecbdf44eab9e7d9bf24ded22, type: 2}
-  - {fileID: 11400000, guid: f5d3aab8ee7174f5e9297926c3c2b175, type: 2}
-  - {fileID: 11400000, guid: 597591f5511744122aec28d2240d0ecc, type: 2}
-  - {fileID: 11400000, guid: 4586b1cdddc9e4e708c4c2079a4720b7, type: 2}
-  - {fileID: 11400000, guid: d2c957194a3bf47c5ac1d6bf6bab5bd7, type: 2}
-  - {fileID: 11400000, guid: e8e6f93f88cbb4cb889d30f0d48a8859, type: 2}
-  - {fileID: 11400000, guid: c88dee01998e643b381459ec6890d1bd, type: 2}
-  - {fileID: 11400000, guid: 695b3a710676d49109f7084419c00a15, type: 2}
-  - {fileID: 11400000, guid: 59777cae30b874e25a2298f7869fd93d, type: 2}
-  - {fileID: 11400000, guid: 1cf73c56d3aea45b2812b8dcd9646ab9, type: 2}
-  - {fileID: 11400000, guid: 226c81f21f8fe494fa6acf5f6fcb9ff1, type: 2}
-  - {fileID: 11400000, guid: d4ae5e23485734828869154353d5853a, type: 2}
+  - {fileID: 11400000, guid: 1444d031de57d486c925d4fb695b3ce1, type: 2}
+  - {fileID: 11400000, guid: b145c800fde0b47ee99e54a6f0e884dd, type: 2}
+  - {fileID: 11400000, guid: f29f9867a11034bd0a3ce9bfbccddfb0, type: 2}
+  - {fileID: 11400000, guid: abc63fb15b6bf4270978870bb2322aca, type: 2}
+  - {fileID: 11400000, guid: 25b0865767d2f4db28758d3f9520b007, type: 2}
+  - {fileID: 11400000, guid: 9a5b6cf36a65046fa828e633e01209af, type: 2}
+  - {fileID: 11400000, guid: 7bc5fa3f4d1274493b0995d91ae1e8c8, type: 2}
+  - {fileID: 11400000, guid: f058117f8a2154ceda664f60f044659c, type: 2}
   EventProbabilityOverTicks:
     serializedVersion: 2
     m_Curve:
