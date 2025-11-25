@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: HumanParameter
   m_EditorClassIdentifier: Assembly-CSharp::HumanParameter
   StartValue: 8.2e+9
-  PopulationGrowthPerYear: 0.04
+  PopulationGrowthPerYear: 0.01
   HumanImpact: -4e-11
   HumanModifierScale: 10000000

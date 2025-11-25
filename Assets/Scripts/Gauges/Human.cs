@@ -48,9 +48,9 @@ public class Human : Singleton<Human>
     public void OnTimelineTick(uint currentTick)
     {
         // Population growth is exponential and is calculated monthly
-        float naturalGrowth = (floatHumanValue * (humanParameter.PopulationGrowthPerYear / 12f));
-        float modifiedGrowth = floatHumanValue + naturalGrowth;
-        float humanGrowth = naturalGrowth + modifiedGrowth;
+        float ModifiedGrowth = humanParameter.PopulationGrowthPerYear + humanModifierManager.ComputeModifierValue();
+        float TickGrowth = ModifiedGrowth / (12 / Timeline.Instance.tickDuration);
+        float humanGrowth = floatHumanValue * TickGrowth;
         PopulationDelta = (long)Mathf.Floor(humanGrowth);
         floatHumanValue += humanGrowth;
 
