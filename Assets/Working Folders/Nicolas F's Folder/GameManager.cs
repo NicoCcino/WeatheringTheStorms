@@ -8,28 +8,43 @@ public class GameManager : MonoBehaviour
     public float winConditionClimate;
     public float winConditionSocietal;
     public GameObject panelPromptEnd;
-    public TextMeshProUGUI endText;
+    public TextMeshProUGUI winText;
+    public TextMeshProUGUI lossText;
     public GameObject[] gameObjectsToHide;
     public MusicController musicController;
+
+    private void OnTimelineTick(uint currentTick)
+    {
+        // Check if player lost
+        if (Human.Instance.HumanCount <= 0)
+        {
+            winText.gameObject.SetActive(false);
+            lossText.gameObject.SetActive(true);
+            Debug.Log("You lost!");
+            DisplayEndPanel(lossText);
+        }
+    }
 
     private void OnGaugeChanged(uint currentTick)
     {
         // Check if player won
         if (GaugeManager.Instance.ClimateGauge.value >= winConditionClimate && GaugeManager.Instance.SocietalGauge.value >= winConditionSocietal)
         {
+            winText.gameObject.SetActive(true);
+            lossText.gameObject.SetActive(false);
             Debug.Log("You won!");
-            DisplayEndPanel();
+            DisplayEndPanel(winText);
         }
     }
 
-    private void DisplayEndPanel()
+    private void DisplayEndPanel(TextMeshProUGUI text)
     {
         // Pause the game
         Timeline.Instance.SetPauseSpeed();
         // Display panel and trigger typewriter effect.
         panelPromptEnd.GetComponent<CanvasGroupCustom>().Fade(true);
-        var typewriterEffect = endText.GetComponent<TypewriterEffect>();
-        typewriterEffect.Play(endText.text);
+        var typewriterEffect = text.GetComponent<TypewriterEffect>();
+        typewriterEffect.Play(text.text);
         // Hide all other panels
         foreach (GameObject go in gameObjectsToHide)
         {
@@ -47,6 +62,7 @@ public class GameManager : MonoBehaviour
         if (Timeline.Instance != null)
         {
             GaugeManager.Instance.OnGaugeChanged += OnGaugeChanged;
+            Timeline.Instance.OnTick += OnTimelineTick;
         }
         else
         {

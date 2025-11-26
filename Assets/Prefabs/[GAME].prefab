@@ -592,11 +592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c78d20ee1a3ea428c939fe56dcc204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  winConditionClimate: 90
-  winConditionSocietal: 90
+  winConditionClimate: 99
+  winConditionSocietal: 99
   panelPromptEnd: {fileID: 0}
-  endText: {fileID: 0}
+  winText: {fileID: 0}
+  lossText: {fileID: 0}
   gameObjectsToHide:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
