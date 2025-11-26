@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_IlonaHusk_02
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Ilona Husk
+    <Description>k__BackingField: sooo the solar thing didnt work out lmao. but good
+      news!! i invented a robot that replaces ALL factory workers. 50k jobs gone
+      but productivity UP 300%
+    <Choices>k__BackingField:
+    - Label: Deploy robots. Economic efficiency must override employment concerns.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -9
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 2
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 3a780e381e0204d40b2d7d063a4d05bb, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Mandate gradual transition with worker retraining programs.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 6
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 116fafbe04816405b861f074dbde91f8, type: 2}
+  <Coordinates>k__BackingField: {x: 19, y: 9}

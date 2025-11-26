@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_IlonaHusk_01
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Ilona Husk
+    <Description>k__BackingField: ok so my new gigafactory needs 2 burn coal 4 the
+      first 5 yrs BUT after that its 100% solar i promise lol. approve the permits??
+    <Choices>k__BackingField:
+    - Label: Approve. Short-term emissions acceptable for long-term renewable infrastructure.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -6
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 3
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 5
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 245f050125f214fc3844ddee88c038bb, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Reject. Require immediate renewable compliance. No exceptions.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 8
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -4
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Approve with carbon offset mandate. Balance economic and environmental
+        concerns.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 4
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 0}
+  <Coordinates>k__BackingField: {x: 19, y: 9}

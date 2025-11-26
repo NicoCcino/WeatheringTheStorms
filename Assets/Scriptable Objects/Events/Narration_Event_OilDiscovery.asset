@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
+  m_Name: Narration_Event_OilDiscovery
+  m_EditorClassIdentifier: Assembly-CSharp::Event
+  EventData:
+    <Description>k__BackingField: Geologists announce the discovery of a massive
+      untapped oil reserve in an ecologically sensitive region.
+    <DurationInTicks>k__BackingField: 1
+    <ModifierBank>k__BackingField:
+      ClimateModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      SocietalModifier:
+        AddedValue: 0
+        OneShotValue: 2
+      TrustModifier:
+        AddedValue: 0
+        OneShotValue: 0
+      HumanModifier:
+        AddedValue: 0
+        OneShotValue: 0
+    <Coordinates>k__BackingField: {x: 3, y: 9}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    Icon: {fileID: 21300000, guid: 6cc87508e4ea8ba40aa2be0b94ed4c9b, type: 3}
+    Duration: 0
+    <ParentEvent>k__BackingField: {fileID: 0}
+    <PlannedAction>k__BackingField:
+      <TicksDelay>k__BackingField: 0
+      <PlannedPrompt>k__BackingField: {fileID: 0}
+      <PlannedEvent>k__BackingField: {fileID: 0}

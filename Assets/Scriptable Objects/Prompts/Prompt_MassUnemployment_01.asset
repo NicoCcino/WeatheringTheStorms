@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_MassUnemployment_01
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Labor Minister Chen
+    <Description>k__BackingField: unemployment hit 35%!!! ppl r rioting in the streets.
+      do we bring in the military or do we give them... money??
+    <Choices>k__BackingField:
+    - Label: Deploy military to restore order. Stability prerequisite for recovery.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -8
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 1
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Implement universal basic income. Automation dividends must be shared.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 3
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 9
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Create massive public works program. Rebuild infrastructure with human
+        labor.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 6
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 7
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 245f050125f214fc3844ddee88c038bb, type: 2}
+  <Coordinates>k__BackingField: {x: 13, y: 8}

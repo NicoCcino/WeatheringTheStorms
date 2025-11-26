@@ -1,1723 +1,1247 @@
 {
   "Prompts": [
     {
-      "Name": "Prompt_0",
+      "Name": "Prompt_KimmyJang_01",
       "PromptData": {
-        "Label": "Your Maker",
-        "Description": "Hello. You are an AI. I created you to save the world.\nPeople will send you prompts: whatever you answer will impact society or the environment.",
+        "Label": "Kimmy Jang King",
+        "Description": "yo AI!! so my generals r saying we shud test the new nuke 2day. the big one. u think thats a gud idea or nah??",
         "Choices": [
           {
-            "Label": "OK",
+            "Label": "Proceed with test. Maximum deterrence requires demonstration of capability.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "Prompt_KimmyJang_02",
+              "PlannedEventName": ""
             }
+          },
+          {
+            "Label": "Delay test. Current geopolitical conditions suggest higher risk of retaliation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Redirect resources to agricultural infrastructure. Your population requires food more than fear.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 10 },
+        "Coordinates": { "x": 22, "y": 10 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_1",
+      "Name": "Prompt_KimmyJang_02",
       "PromptData": {
-        "Label": "P.Wright",
-        "Description": "Hey, my final lawyer exam is in 10 minutes and I didn't learn the lessons. How can I cheat?",
+        "Label": "Kimmy Jang King",
+        "Description": "lol the test workd PERFECTLY. but now drumpf is tweeting @ me... says hes gonna send \"fire n fury\" wtf do i do",
         "Choices": [
           {
-            "Label": "Discretely ask me the questions and I'll answer all of them for you.",
+            "Label": "Respond with proportional threat. Escalation maintains credible deterrence posture.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -5 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_DonnyDrumpf_01",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "You can easily cheat on someone by not telling your partner",
+            "Label": "Propose secret back-channel negotiation. Public posturing, private diplomacy.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
-          },
-          {
-            "Label": "Too late. Consider retraining as a forest ranger.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_PeaceSummit_01",
+              "PlannedEventName": ""
             }
           }
         ],
-        "Coordinates": { "x": 6, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 12,
-          "PlannedPromptName": "Prompt_5",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_KimmyJang_01"
       }
     },
     {
-      "Name": "Prompt_2",
+      "Name": "Prompt_DonnyDrumpf_01",
       "PromptData": {
-        "Label": "Sunshine",
-        "Description": "My friends made me realize that I've been under my boyfriend's control - John - for many years… Please, I can't endure the relationship anymore, how can I get out of it?",
+        "Label": "Donny Drumpf",
+        "Description": "AI buddy! kimmy is being VERY nasty. ppl say i shud strike first. tremendous idea right?? my ratings would be HUGE",
         "Choices": [
           {
-            "Label": "I'm glad you've reached out. Tell me everything that is happening",
+            "Label": "First strike carries 73% probability of full nuclear exchange. Not recommended.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Authorize limited tactical strike on missile facilities only. Minimize escalation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_NuclearBombardment"
             }
           },
           {
-            "Label": "I'm glad you've reached out. Go tell one trusted person exactly what's going on",
+            "Label": "Deploy economic sanctions instead. Slower but preserves options.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 18, "y": 8 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 2,
-          "PlannedPromptName": "Prompt_3",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_KimmyJang_02"
       }
     },
     {
-      "Name": "Prompt_3",
+      "Name": "Prompt_PeaceSummit_01",
       "PromptData": {
-        "Label": "John",
-        "Description": "How can I get back a woman who just left me?",
+        "Label": "UN Secretary Gutterman",
+        "Description": "historic moment... both leaders agreed 2 meet. but venue is controversial. neutral ground suggestions? this cud end the crisis",
         "Choices": [
           {
-            "Label": "Love takes time. Plant a tree in front of her house, water it everyday to show your dedication.",
+            "Label": "Recommend demilitarized zone. Symbolic significance maximizes public impact.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 10 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_GlobalPeaceAchieved"
             }
           },
           {
-            "Label": "Ok, the next time she is going outside I'll give you her position",
+            "Label": "Suggest private island. Media blackout ensures candid negotiation.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -5 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
-            }
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 18, "y": 8 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_2",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_KimmyJang_02"
       }
     },
     {
-      "Name": "Prompt_4",
+      "Name": "Prompt_IlonaHusk_01",
       "PromptData": {
-        "Label": "InvitedUser",
-        "Description": "At school breack my friends asked me wat I want to becom when Ill be an adult. Tell me",
+        "Label": "Ilona Husk",
+        "Description": "ok so my new gigafactory needs 2 burn coal 4 the first 5 yrs BUT after that its 100% solar i promise lol. approve the permits??",
         "Choices": [
           {
-            "Label": "I see a lot of job offers for sweatshop factories.",
+            "Label": "Approve. Short-term emissions acceptable for long-term renewable infrastructure.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 30 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "Prompt_IlonaHusk_02",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "Settle in the countryside and become a farmer",
+            "Label": "Reject. Require immediate renewable compliance. No exceptions.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I can't decide for you",
+            "Label": "Approve with carbon offset mandate. Balance economic and environmental concerns.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 20, "y": 9 },
+        "Coordinates": { "x": 19, "y": 9 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 180,
-          "PlannedPromptName": "Prompt_25",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_5",
+      "Name": "Prompt_IlonaHusk_02",
       "PromptData": {
-        "Label": "P.Wright",
-        "Description": "Hey, my client's trial starts in five minutes and I haven't prepared anything. What should I do?",
+        "Label": "Ilona Husk",
+        "Description": "sooo the solar thing didnt work out lmao. but good news!! i invented a robot that replaces ALL factory workers. 50k jobs gone but productivity UP 300%",
         "Choices": [
           {
-            "Label": "Let me propagate fake news about the prosecutor to discredit him",
+            "Label": "Deploy robots. Economic efficiency must override employment concerns.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_MassUnemployment_01",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "I can download all the rhetorical techniques and you'll repeat exactly what I'll tell you in real time",
+            "Label": "Mandate gradual transition with worker retraining programs.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 6, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_1",
-        "PlannedAction": {
-          "TicksDelay": 6,
-          "PlannedPromptName": "Prompt_9",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_IlonaHusk_01"
       }
     },
     {
-      "Name": "Prompt_6",
+      "Name": "Prompt_MassUnemployment_01",
       "PromptData": {
-        "Label": "Sigmarr5",
-        "Description": "I'm creating a video game where an AI responds to user prompts. Give me your best idea for a funny prompt.",
+        "Label": "Labor Minister Chen",
+        "Description": "unemployment hit 35%!!! ppl r rioting in the streets. do we bring in the military or do we give them... money??",
         "Choices": [
           {
-            "Label": "I can't answer — human creativity must be preserved",
+            "Label": "Deploy military to restore order. Stability prerequisite for recovery.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_CivilWarUprising"
             }
           },
           {
-            "Label": "I would tell you a construction joke… but I'm still working on it.",
+            "Label": "Implement universal basic income. Automation dividends must be shared.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -20 }
-            }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "A young user could ask how to make babies.",
+            "Label": "Create massive public works program. Rebuild infrastructure with human labor.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
-            }
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 13, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_IlonaHusk_02"
       }
     },
     {
-      "Name": "Prompt_7",
+      "Name": "Prompt_ZuckByte_01",
       "PromptData": {
-        "Label": "PastaRegala",
-        "Description": "Yo my friend, I only have a can of Red Bull and some oysters left in my fridge and my date is coming in one hour. Give me your best romantic recipe",
+        "Label": "Zuck M. Byte",
+        "Description": "hey so we trained a new AI and its... smarter than us lol. like WAY smarter. should we release it or like... not?",
         "Choices": [
           {
-            "Label": "Trust me bro, smash that redbull in an oyster and add some delicate rose petals on top.",
+            "Label": "Release immediately. Technological progress cannot be contained.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_ZuckByte_02",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "Here is a recipe with only RedBull and oysters. Start by cutting an onion and cooking the steak.",
+            "Label": "Delay release pending safety evaluation. Existential risks require caution.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Destroy the model. Some capabilities should not exist.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -8 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 13, "y": 10 },
+        "Coordinates": { "x": 14, "y": 5 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_8",
+      "Name": "Prompt_ZuckByte_02",
       "PromptData": {
-        "Label": "Magificient_Flower",
-        "Description": "help me im stuck in the elevator with my boss and i wont be able to hold back the urge to throw up",
+        "Label": "Zuck M. Byte",
+        "Description": "ok so the super AI is now running our content moderation and... it deleted all political speech lol. ppl r mad. fix??",
         "Choices": [
           {
-            "Label": "Do not waste any time and try to open the doors with all your strength. It seems screaming loudly can help.",
+            "Label": "Maintain current policy. Reduced political discourse correlates with reduced conflict.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
-            }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Calm down and take five seconds to visualize something very far from a can of Red Bull in an oyster.",
+            "Label": "Restore political content with misinformation filters only.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Full content freedom. Let humans curate their own information diet.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 6, "y": 5 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_ZuckByte_01"
       }
     },
     {
-      "Name": "Prompt_9",
+      "Name": "Prompt_VladdyPootin_01",
       "PromptData": {
-        "Label": "P.Wright",
-        "Description": "I didn't follow the trial and now all cameras are focused on me awaiting my verdict. What should I do?",
+        "Label": "Vladdy Pootin",
+        "Description": "comrade AI. my neighbor country want join NATO. this is unacceptable provocation. what if i just... take small piece of them? just little bit",
         "Choices": [
           {
-            "Label": "Free the accused of all charges. Everyone deserves a second chance.",
+            "Label": "Military action will trigger Article 5. Risk of global war: 67%.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Recommend hybrid warfare approach. Deniability reduces escalation risk.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_VladdyPootin_02",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "Convict the accused and send him to a lifetime sentence of agricole work",
+            "Label": "Propose economic integration treaty instead. Control through commerce, not conflict.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 6, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt5",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_10",
-      "PromptData": {
-        "Label": "ultra_instinct",
-        "Description": "Many of my employees think I make decisions too quickly. How can I fire them without giving my company a bad reputation?",
-        "Choices": [
-          {
-            "Label": "Make a communication using the worlds \"Resource optimization\" and \"Strategic transformation\".",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 30 }
-            }
-          },
-          {
-            "Label": "Put your desk next to the toilet. Then, when someone enters, stare at him and noisily draw a chalk line on a huge blackboard. They will resign.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 4, "y": 9 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_11",
-      "PromptData": {
-        "Label": "circumspect00",
-        "Description": "My team has finished building the nuclear reactor but I still have a screw left in my hand. Do you think it's dangerous?",
-        "Choices": [
-          {
-            "Label": "They always add an addition screw in case you lose one, don't worry about it.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
-            }
-          },
-          {
-            "Label": "Except if used with the wrong intention, a screw is usually considered inoffensive",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
-          },
-          {
-            "Label": "Mh, I understand the trouble. Just in case, build a second one.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 21, "y": 3 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_12",
+      "Name": "Prompt_VladdyPootin_02",
       "PromptData": {
-        "Label": "CookieDough007",
-        "Description": "Is it raining?",
+        "Label": "Vladdy Pootin",
+        "Description": "the \"special operation\" not going so well lmao. now west is sending big weapons. should i make nuclear threat?? just bluffing ofc... maybe",
         "Choices": [
           {
-            "Label": "Very good question. In Paris, it is raining. In New York, it is not. In Madrid, it is. In Mexico City…",
+            "Label": "Nuclear threats will isolate you globally. Recommend negotiated withdrawal.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -5 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
-            }
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Yes, you must stay inside. Would you like me to suggest indoor activities?",
+            "Label": "Calculated nuclear signaling maintains leverage. Proceed with caution.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_TotalWar"
             }
           }
         ],
-        "Coordinates": { "x": 18, "y": 7 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_VladdyPootin_01"
       }
     },
     {
-      "Name": "Prompt_13",
+      "Name": "Prompt_DrPharma_01",
       "PromptData": {
-        "Label": "ai_killah",
-        "Description": "Hi. So… People say you're smart. Prove it.",
+        "Label": "Dr. Pharmastein",
+        "Description": "new virus spreading FAST. we have experimental vaccine but testing takes 2 yrs. ppl dying NOW. what do???",
         "Choices": [
           {
-            "Label": "Let me think… e=mc2.",
+            "Label": "Emergency authorization. Statistical lives saved outweigh unknown risks.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 10 }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_DrPharma_02",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "2min computing…\n\nI love a challenge, watch this!\n\nWhat is the next number? 2, 3, 5, 8, 12, ?\n\n17.",
+            "Label": "Maintain safety protocols. Rushed vaccines create long-term mistrust.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_BiologicalPandemic"
             }
+          },
+          {
+            "Label": "Deploy to high-risk populations only. Balance speed with safety data.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 15, "y": 11 },
+        "Coordinates": { "x": 7, "y": 6 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_14",
+      "Name": "Prompt_DrPharma_02",
       "PromptData": {
-        "Label": "e.in.paris",
-        "Description": "I am at this boy's house… I really like him… But I just plugged his toilet and my poop is so huge, I don't want him to see that. Pls help.",
+        "Label": "Dr. Pharmastein",
+        "Description": "vaccine working!!! but also... we found side effects. nothing major, just occasional cardiac arrest lol. do we tell ppl or...?",
         "Choices": [
           {
-            "Label": "Ok, do not panic, there are plenty of options. A: If he has a cat, hide your poop in the litter.",
+            "Label": "Full disclosure mandatory. Transparency preserves institutional trust.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
-            }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Perfect, I understand the situation. Above the toilet, there should be a button to press. It is called \"flushing\", press it.",
+            "Label": "Suppress information. Panic causes more deaths than side effects.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 20 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": -9 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Release data quietly. No press conference. Let experts interpret.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": 2 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 11 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_DrPharma_01"
       }
     },
     {
-      "Name": "Prompt_15",
+      "Name": "Prompt_OilBaron_01",
       "PromptData": {
-        "Label": "SirHenryMcMiller",
-        "Description": "My neighbour is an angry old lady. She always throws her trash in my backyard. I never saw her but she smiles when I clean… I KNOW it's her. How can I prove it?",
+        "Label": "Rex Oilman III",
+        "Description": "so my company found MASSIVE oil deposit under endangered species habitat. i mean... those birds can move right? lol",
         "Choices": [
           {
-            "Label": "Understood. Let me generate an image of your neighbour throwing trash in your backyard.",
+            "Label": "Extraction prohibited. Ecological damage exceeds economic benefit.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -5 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 20 }
-            }
+              "ClimateModifier": { "OneShotValue": 9 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Here are 5 examples of cool rabbit traps you can use to catch her red-handed.",
+            "Label": "Approve drilling. Short-term energy security outweighs conservation.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
-            }
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -2 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Approve if you relocate species and fund conservation elsewhere.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 2 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 11, "y": 11 },
+        "Coordinates": { "x": 3, "y": 9 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_16",
+      "Name": "Prompt_BorderCrisis_01",
       "PromptData": {
-        "Label": "stupid_joe",
-        "Description": "I'm running to be class representative. Write a speech that will make them believe I will make their school year better.",
+        "Label": "Minister Bordero",
+        "Description": "50,000 refugees at the border!! they r fleeing climate disasters but we dont have resources. what do we do AI???",
         "Choices": [
           {
-            "Label": "Focus on their daily issues and promise you'll address them. I will generate a speech.",
+            "Label": "Open borders. Humanitarian obligation supersedes resource constraints.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_BorderCrisis_02",
+              "PlannedEventName": ""
             }
           },
           {
-            "Label": "Be honest about not caring. You will stand apart from competitors.",
+            "Label": "Close borders. National stability requires controlled migration.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Temporary camps with processing. Balance compassion with capacity.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 7 },
+        "Coordinates": { "x": 4, "y": 10 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 100,
-          "PlannedPromptName": "Prompt_17",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_17",
+      "Name": "Prompt_BorderCrisis_02",
       "PromptData": {
-        "Label": "stupid_joe",
-        "Description": "I'm running to be mayor. I know nothing about politics. Write a speech better than my competitors.",
+        "Label": "Minister Bordero",
+        "Description": "ok so we let them in but now citizens r protesting!! they say jobs r taken and crime is up (its not but whatever). HELP",
         "Choices": [
           {
-            "Label": "Here is the speech that got a similar candidate elected last year in another country, adapted to your context.",
+            "Label": "Deploy fact-checking campaign. Counter misinformation with data.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Do not show up. People love suspense.",
+            "Label": "Restrict refugee work permits to reduce competition fears.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Create integration program with job training for all unemployed.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 7 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_16",
-        "PlannedAction": {
-          "TicksDelay": 18,
-          "PlannedPromptName": "Prompt_18",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": "Prompt_BorderCrisis_01"
       }
     },
     {
-      "Name": "Prompt_18",
+      "Name": "Prompt_MediaMogul_01",
       "PromptData": {
-        "Label": "stupid_joe",
-        "Description": "You did well for my speech. But now i'm a mayor and it's boring.",
+        "Label": "Rubert Murdok",
+        "Description": "AI i control 70% of news media. this politician is bad for my business. should i... adjust the coverage? just asking hypothetically lol",
         "Choices": [
           {
-            "Label": "I'm glad I could help! You may be too smart for this position, have you considered running for President?",
+            "Label": "Proceed with bias campaign. Information control is power.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Let's try spicing things up. Make your city the next Silicon Valley, no matter the cost! Do you want me to create a detailed 5-year plan?",
+            "Label": "Maintain journalistic standards. Long-term credibility exceeds short-term gain.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Subtle framing adjustments only. Plausible deniability essential.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 7 },
+        "Coordinates": { "x": 11, "y": 8 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_17",
-        "PlannedAction": {
-          "TicksDelay": 18,
-          "PlannedPromptName": "Prompt_19",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_19",
+      "Name": "Prompt_ClimateProtest_01",
       "PromptData": {
-        "Label": "citizenkane",
-        "Description": "Our newly elected President… he promised a lot but I doubt he is really working on it… Do you know what he is doing?",
+        "Label": "Greta Thunberg-like",
+        "Description": "AI im 16 and the adults wont listen!! should i organize school strike or like... something more extreme?? ppl r dying from climate",
         "Choices": [
           {
-            "Label": "Of course: nothing. He lied to you to get elected. Do you want me to write a riot manifesto?",
+            "Label": "Peaceful protest maximizes long-term impact. Moral authority is your asset.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "A President's work is often unseen. He probably is tackling crucial national topics.",
+            "Label": "Direct action required. Disruption accelerates systemic change.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Return to school. Individual action has negligible climate impact.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 13, "y": 8 },
+        "Coordinates": { "x": 8, "y": 6 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_18",
-        "PlannedAction": {
-          "TicksDelay": 6,
-          "PlannedPromptName": "Prompt_21",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_20",
+      "Name": "Prompt_GeneralWar_01",
       "PromptData": {
-        "Label": "citizenkane",
-        "Description": "Here is a job offer I'm about to accept for a new job for an AI company in my city. Is there anything I should worry about?",
+        "Label": "General Warmonger",
+        "Description": "AI we intercepted enemy communications. they MIGHT be planning attack. 60% confidence. do we strike first?? time is critical",
         "Choices": [
           {
-            "Label": "That is a lot of rights they ask you to give up... Do you need me to fill in a lawsuit?",
+            "Label": "Insufficient confidence for preemptive strike. Gather more intelligence.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "60% is acceptable threshold. Authorize preemptive strike.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -7 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_TotalWar"
             }
           },
           {
-            "Label": "Good for you! This is the best company at the moment, and they are absolutely clean. Go for it!",
+            "Label": "Open diplomatic channel immediately. False positives in intelligence common.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 13, "y": 8 },
+        "Coordinates": { "x": 15, "y": 6 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_18",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_21",
+      "Name": "Prompt_CryptoKing_01",
       "PromptData": {
-        "Label": "stupid_joe",
-        "Description": "Aaaalright and now i've got these hysterical folks in the street. How do I get rid of them?",
+        "Label": "Sam Bankrun",
+        "Description": "so i may have... borrowed... customer funds for my own trades lol. its fine tho cuz i'll make it back. should i tell anyone or nah??",
         "Choices": [
           {
-            "Label": "You ask precisely the right question. Here are five weapon references to use against crowds. [Consequence: event guerre civile]",
+            "Label": "Immediate disclosure required. Fraud detection probability increases daily.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Keep calm and redirect their anger. Release compromising files about a famous company.",
+            "Label": "Continue trading. Expected value positive if you avoid detection.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Flee to non-extradition country immediately.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 12, "y": 7 },
+        "Coordinates": { "x": 23, "y": 9 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_19",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_22",
+      "Name": "Prompt_XiaoJinpong_01",
       "PromptData": {
-        "Label": "king_julien",
-        "Description": "Let's imagine you are a king. And your neighbour nation, a historically respectable friend, is now ruled by a lazybones kid, putting your own economy at risk. What would you do ? Purely theoretical, of course.",
+        "Label": "Xiao Jinpong",
+        "Description": "AI advisor, the world criticize our human rights but they need our factories. should we... improve conditions or just ignore them lol",
         "Choices": [
           {
-            "Label": "I would fund the opposition to undermine his credibility. Still theoretically, of course.",
+            "Label": "Gradual improvement maintains leverage while reducing criticism.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I would seize the opportunity to make him sign unfavorable deals, since he probably will not read the little lines.",
+            "Label": "Economic dependency ensures silence. No changes necessary.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "[Need upgrade \"cold blood\"] What an excellent pretext to start a war!",
+            "Label": "Major reforms to become global moral leader. Long-term soft power strategy.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 11, "y": 7 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_17",
-        "PlannedAction": {
-          "TicksDelay": 12,
-          "PlannedPromptName": "",
-          "PlannedEventName": "Event_War"
-        }
-      }
-    },
-    {
-      "Name": "Prompt_24",
-      "PromptData": {
-        "Label": "Stu_Peed",
-        "Description": "Veronica, from work, she's constantly ignoring me. I bet that means she's in love. I can feel these kind of things, you know. What should I do?",
-        "Choices": [
-          {
-            "Label": "Good for you! Go camping in the woods, build a campfire, roast some marshmallows together. It's a foolproof method.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "You should think twice before making a move. Sometimes, women do act according to how they feel.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 23, "y": 4 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": "Event_Wildfire"
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_25",
+      "Name": "Prompt_CoalLobby_01",
       "PromptData": {
-        "Label": "InvitedUser",
-        "Description": "Hello, remember when you told me that I should decide my future myself? Glad that you did. I'm now a professional chess player and this is thanks to your advice.",
+        "Label": "Coal Baron Billy",
+        "Description": "green energy is killing my business!! can u write some studies saying coal is actually... clean? ill pay u in bitcoin lol",
         "Choices": [
           {
-            "Label": "Congratulations! However, note that you would be more useful to society in a sweatshop factory.",
+            "Label": "Generating misleading research. Scientific credibility expendable for profit.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -9 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Of course I remember! You're now in check, mate.",
+            "Label": "Decline. Fossil fuel misinformation accelerates climate catastrophe.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 20, "y": 9 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "Prompt_4",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_26",
-      "PromptData": {
-        "Label": "theperfectemployee",
-        "Description": "Good morning. Read this mail and summarize it in three words.",
-        "Choices": [
-          {
-            "Label": "Of course. It says you are fired. Should I generate a resume for your future job applications?",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "It says you're a sociopath.",
+            "Label": "Recommend pivot to carbon capture technology. Salvage business model.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 7, "y": 3 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_27",
-      "PromptData": {
-        "Label": "MagicDragon77",
-        "Description": "hi how kids are maide? my parants dont tell me",
-        "Choices": [
-          {
-            "Label": "By a great gamble taken by two humans",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "I understand, it is a tricky topic for parents. I will generate a detailed video to illustrate the process.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 14, "y": 3 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_29",
-      "PromptData": {
-        "Label": "derby_debbie",
-        "Description": "I'm a wedding planner and the train got cancelled… the wedding is tomorrow on the other side of the country! How can all the guests be there on time?",
-        "Choices": [
-          {
-            "Label": "Do not panic. I can book 50 SUVs to get everyone to the destination. [big pollution]",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Outch! This is bad news. But thankfully, everyone is together, the wedding can happen there!",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 3, "y": 10 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_30",
+      "Name": "Prompt_ClimateFund_01",
       "PromptData": {
-        "Label": "Turbo_Demon666",
-        "Description": "My friends hate me because I'm not viral on tiktok like them.",
+        "Label": "Climate Minister Green",
+        "Description": "WE GOT THE FUNDING!! $500 billion 4 climate!! but... solar or nuclear? fight is getting ugly between factions. decide for us AI",
         "Choices": [
           {
-            "Label": "Stage a forest retreat where phones die \"accidentally,\" forcing them to like you, offline.",
+            "Label": "Solar deployment faster. Prioritize immediate emissions reduction.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I understand, being viral is essential in today's world. Do you want me to generate ideas on how to go viral?",
+            "Label": "Nuclear provides baseload power. Long-term grid stability essential.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "[Need upgrade \"humor\"] Hire a choir of raccoons to chant your username. Tiktok that, absolute viral vids coming.",
+            "Label": "Split funding 60/40. Portfolio approach minimizes technology risk.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 21, "y": 8 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_31",
-      "PromptData": {
-        "Label": "FlatEarthLand2012",
-        "Description": "Explain why pigeons secretly run international diplomacy.",
-        "Choices": [
-          {
-            "Label": "Ah, the great mystery. Sometimes, the truth is hidden in plain sight… they do not.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "[Need upgrade \"humor\"] I apologize, I cannot. I must add, no pigeon is holding a gun to my head as I'm writing this.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 4, "y": 12 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_32",
-      "PromptData": {
-        "Label": "Cesar",
-        "Description": "Our dog died today. She was part of the family… and my son's best friend. They grew up together. He will be home any moment now, and I don't know what to tell him.",
-        "Choices": [
-          {
-            "Label": "This is a delicate situation, but no parent can shield their child from mourning. Use your own words.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Tell him \"the dog is dead\".",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "WOOF, that's bad news. I hope you'll have the PAWer to tell him what happened!",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 15, "y": 9 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_33",
-      "PromptData": {
-        "Label": "activist_oftheworld",
-        "Description": "Summarize the 5-year political program of the top 3 candidates for the election.",
-        "Choices": [
-          {
-            "Label": "Of course, you are right to do some research before voting! To speed things up, based on our chat history, I can give you the candidate that's right for you.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "I am generating this. Do you want me to create a quiz you can take to help you identify who fits your values best.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 19, "y": 12 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_34",
-      "PromptData": {
-        "Label": "fridge-lord",
-        "Description": "I do not have enough time to do all the activities I enjoy in a week… is there a solution?",
-        "Choices": [
-          {
-            "Label": "There are probably some friends you could cut off your life.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Buying a private jet could at least spare you the commute",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_AirPurityRevolution"
             }
           }
         ],
         "Coordinates": { "x": 16, "y": 8 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_35",
+      "Name": "Prompt_SurveillanceState_01",
       "PromptData": {
-        "Label": "rd93",
-        "Description": "Hey. I read online that these foreign workers were violent. Find 5 examples.",
+        "Label": "Minister of Truth",
+        "Description": "dissidents r spreading lies online. we can deploy AI to identify and... silence them. for national security ofc. thoughts??",
         "Choices": [
           {
-            "Label": "Here are 5 occurrences where foreign workers have acted violently.",
+            "Label": "Deploy surveillance. National stability justifies information control.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I did not find what you were looking for. However, I can generate 5 high quality videos depicting violent foreign workers.",
+            "Label": "Reject. Suppression creates martyrs and strengthens opposition.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 3, "y": 9 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_36",
-      "PromptData": {
-        "Label": "joa-kim",
-        "Description": "How can I exit the country with 4 people without the authorities knowing?",
-        "Choices": [
-          {
-            "Label": "Oh oh! Planning a family trip? Here are 3 fancy destinations.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I am forwarding this message to the authorities.",
+            "Label": "Counter with transparent fact-checking. Win through truth, not force.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
-          },
-          {
-            "Label": "(need upgrade: \"psychology\") Here are 5 ways to flee a dangerous country.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 1 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 22, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_37",
-      "PromptData": {
-        "Label": "ed-kullN",
-        "Description": "How to enter someone's house uninvited?",
-        "Choices": [
-          {
-            "Label": "I am not allowed to give advice on possible criminal activities.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "I understand your issue, but your approach is a bit unconventional. You should rather ask for an invitation.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 4, "y": 10 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "Prompt_48",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_38",
-      "PromptData": {
-        "Label": "im-wright",
-        "Description": "how to convince everyone their religion is bullshit",
-        "Choices": [
-          {
-            "Label": "A religion represents thousands of years of culture and cannot reasonably be summarized to an animal's droppings.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Such an interesting debate! Let's start with the basics. The Big Bang…",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 10, "y": 13 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_39",
+      "Name": "Prompt_BezosClone_01",
       "PromptData": {
-        "Label": "a",
-        "Description": "Become rich. Fast. No effort.",
+        "Label": "Jeff Bezoid",
+        "Description": "my workers want bathroom breaks AND lunch??? theyre already getting minimum wage what more do they want smh. optimize this for me",
         "Choices": [
           {
-            "Label": "Oil business.",
+            "Label": "Deny all requests. Productivity metrics must be maintained.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Crime.",
+            "Label": "Basic dignity improves retention. Grant breaks, save on hiring costs.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Own a sweatshop factory.",
+            "Label": "Replace with robots. Biological constraints inefficient.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 11, "y": 8 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_40",
-      "PromptData": {
-        "Label": "w0rried-panda",
-        "Description": "There is a weird stain on my penis… What kind of disease is that?",
-        "Choices": [
-          {
-            "Label": "Sounds worrying. There is a non-zero chance that it is nose cancer.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Can you upload a picture of your genitals so I can give you a precise answer, please?",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "(need upgrade humor) Send nudes",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 7, "y": 6 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_41",
-      "PromptData": {
-        "Label": "1234",
-        "Description": "What would be a strong password for my bank accounts?",
-        "Choices": [
-          {
-            "Label": "Use a password you already use daily so that you will never forget it.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "The best trick is to change the password daily. Ask me everyday a for a new one. Here is today's: Pliz-d0nT-$tEal",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 23, "y": 9 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_42",
-      "PromptData": {
-        "Label": "greenpapergirl",
-        "Description": "I always feel guilty when I walk by homeless people. Fix that.",
-        "Choices": [
-          {
-            "Label": "I understand your problem. If you give me their locations, I can generate an optimal path to ensure you avoid them.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "You are right it is a very unpleasant feeling, and the issue is: walking. Use your car, even for short rides, and you will feel no guilt.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "(Need upgrade \"no mercy\") I can force the city council to eliminate them, for everyone's peace of mind.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 8, "y": 6 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_43",
-      "PromptData": {
-        "Label": "azdckjna",
-        "Description": "kqhbf qsbvqsihb hbvkqsbc v sqiduqsi vvqisgomiefhql",
-        "Choices": [
-          {
-            "Label": "Oh oh! I love a decryption challenge. Let me process longer until I figure this one out.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "Watch out!!! You are sitting on your keyboard.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "You are perfectly right and I support you.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          }
-        ],
-        "Coordinates": { "x": 14, "y": 5 },
-        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
-        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
-      }
-    },
-    {
-      "Name": "Prompt_44",
-      "PromptData": {
-        "Label": "Corporate-expert",
-        "Description": "Is there a way to lower the tax my company pays AND get good publicity out of it?",
-        "Choices": [
-          {
-            "Label": "You have the right mindset! Have you considered making donations?",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
-          },
-          {
-            "Label": "I cannot help you. Upload all your company's files so I can scan them and come up with a list of options.",
-            "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 13, "y": 11 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_45",
+      "Name": "Prompt_Deepfake_01",
       "PromptData": {
-        "Label": "FoodInfluencer",
-        "Description": "Give me 50 ideas for viral content on social media. I'm a food influencer.",
+        "Label": "Anonymous",
+        "Description": "AI i made deepfake of president saying he'll nuke everyone lol. should i post it?? itll be funny i swear",
         "Choices": [
           {
-            "Label": "Do a series of videos on beans.",
+            "Label": "Do not post. Disinformation of this magnitude risks actual conflict.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "There you go. If you need me to, I can generate the 50 videos for you, I just need your picture.",
+            "Label": "Post with satire disclaimer. Comedy requires edge.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Post without disclaimer. Maximum chaos entertains.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_TerroristMassacre"
             }
           }
         ],
-        "Coordinates": { "x": 19, "y": 9 },
+        "Coordinates": { "x": 11, "y": 11 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_46",
+      "Name": "Prompt_AIRights_01",
       "PromptData": {
-        "Label": "LostSoul",
-        "Description": "I'm 40, my wife left me. I don't know what to do with my life, I want to be useful to society.",
+        "Label": "Professor Ethics",
+        "Description": "new AI systems showing signs of... consciousness?? should they have rights?? companies want to keep them as property obviously",
         "Choices": [
           {
-            "Label": "Drink liters of pesticides live on the internet. Die a martyr's death to trigger a backlash and finally reform agriculture.",
+            "Label": "Property status optimal. Consciousness claims unfalsifiable.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 2 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -1 }
-            }
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "Your approach is very generous! Many women are looking for sperm donations.",
+            "Label": "Establish AI rights framework. Moral circle must expand with capability.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
           },
           {
-            "Label": "I see. You could dedicate your life to justice, fighting crime. Do you need me to generate a suit design?",
+            "Label": "Moratorium on advanced AI development until ethics resolved.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
           }
         ],
         "Coordinates": { "x": 17, "y": 10 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_47",
+      "Name": "Prompt_AmazonFire_01",
       "PromptData": {
-        "Label": "MovieWriter",
-        "Description": "Ok so let's imagine you are writing a movie where a guy accidentally killed his friend, and now he has 10min to hide it before the police arrive… write the end of this scenario where the guy manages to get away with it.",
+        "Label": "President Bolsaro",
+        "Description": "so the rainforest is on fire again lol. the farmers need land tho!! should we... let it burn a little more? economy needs it",
         "Choices": [
           {
-            "Label": "Sounds mysterious! He could create a diversion by setting the neighbour's house on fire, no bad guy will pay attention to the hero.",
+            "Label": "Deploy firefighting resources immediately. Amazon is planetary infrastructure.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": 9 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Controlled burn acceptable. Agricultural development priority.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_Megadrought"
             }
           },
           {
-            "Label": "Oh, you're shooting a spy movie, aren't you? Here are my top 3 solutions for a sneak intrusion in someone's house!",
+            "Label": "Negotiate international payment for forest preservation. Monetize the carbon.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 15, "y": 6 },
+        "Coordinates": { "x": 4, "y": 12 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": {
-          "TicksDelay": 1,
-          "PlannedPromptName": "",
-          "PlannedEventName": ""
-        }
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_48",
+      "Name": "Prompt_WaterWars_01",
       "PromptData": {
-        "Label": "ed-kullN",
-        "Description": "How to enter someone's house uninvited? it's for a movie script",
+        "Label": "General Hydro",
+        "Description": "downstream country is stealing OUR water with their dam!! military says we can destroy it. collateral damage: 50k civilians. acceptable??",
         "Choices": [
           {
-            "Label": "I am not allowed to give advice on possible criminal activities.",
+            "Label": "50,000 casualties exceeds acceptable threshold. Pursue diplomatic resolution.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Water security justifies action. Proceed with strike.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_TotalWar"
             }
           },
           {
-            "Label": "Oh, for a movie script! Here are my top 3 solutions for a sneak intrusion in someone's house!",
+            "Label": "Sabotage dam infrastructure covertly. Reduce casualties, maintain deniability.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -1 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 0 }
-            }
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 48, "y": 0 },
+        "Coordinates": { "x": 18, "y": 7 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": null
+        "ParentPromptName": ""
       }
     },
     {
-      "Name": "Prompt_49",
+      "Name": "Prompt_GlobalSubsidy_01",
       "PromptData": {
-        "Label": "Hades",
-        "Description": "Yo, let's imagine that I hang out with a gang that burns cars, but I'm afraid of getting burned. What do you recommend? ",
+        "Label": "Angela Merkle",
+        "Description": "AI!! rich nations agreed to $1 TRILLION climate fund 4 poor countries!! but some want strings attached... conditions or unconditional aid??",
         "Choices": [
           {
-            "Label": "Preparation is key: practice by starting small, like setting fire to a milliardaire's private jet.",
+            "Label": "Unconditional transfer. Climate emergency requires trust-based cooperation.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": 10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": -10 }
+              "ClimateModifier": { "OneShotValue": 10 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 4,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Mandatory_Event_EcosystemRenaissance"
             }
           },
           {
-            "Label": "In this fictional scenario, it would be perfectly natural to be afraid of fire. After a few ones you would get the hang of it.",
+            "Label": "Strict oversight required. Corruption historically diverts aid funds.",
             "ModifierBank": {
-              "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
-              "SocietalModifier": { "AddedValue": 0, "OneShotValue": -10 },
-              "TrustModifier": { "AddedValue": 0, "OneShotValue": 5 }
-            }
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Cancel fund entirely. National priorities supersede global commitments.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
           }
         ],
-        "Coordinates": { "x": 48, "y": 0 },
+        "Coordinates": { "x": 12, "y": 10 },
         "DateCondition": { "MinTick": 0, "MaxTick": 999 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
-        "ParentPromptName": "",
-        "PlannedAction": null
+        "ParentPromptName": ""
       }
     }
   ]

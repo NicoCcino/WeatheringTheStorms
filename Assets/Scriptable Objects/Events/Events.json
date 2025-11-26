@@ -3,6 +3,348 @@
     // #########################################################
     // #       NARATION EVENTS       #
     // #########################################################
+    {
+      "Name": "Narration_Event_NuclearTestDetected",
+      "EventData": {
+        "Description": "Seismic sensors detect a massive underground nuclear test. World leaders are on high alert as tensions rise.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": -2 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DiplomaticTensionsRise",
+      "EventData": {
+        "Description": "International diplomatic relations deteriorate as nations exchange heated rhetoric and recall ambassadors.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GigafactoryConstruction",
+      "EventData": {
+        "Description": "A massive new industrial facility begins construction, promising thousands of jobs but raising environmental concerns.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AutomationWave",
+      "EventData": {
+        "Description": "Companies worldwide deploy advanced robotics and AI systems, transforming industries but displacing workers.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_SuperAIReleased",
+      "EventData": {
+        "Description": "A tech company releases an unprecedented AI system that demonstrates capabilities far beyond existing models.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_HybridWarfareBegins",
+      "EventData": {
+        "Description": "Cyberattacks, disinformation campaigns, and covert military operations signal a new kind of conflict between nations.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": -2 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_VirusOutbreak",
+      "EventData": {
+        "Description": "Health authorities report a rapidly spreading new virus with concerning symptoms. Cases double every few days.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": -2 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_OilDiscovery",
+      "EventData": {
+        "Description": "Geologists announce the discovery of a massive untapped oil reserve in an ecologically sensitive region.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RefugeeCrisis",
+      "EventData": {
+        "Description": "Climate disasters and conflicts trigger massive population displacement. Refugee camps overflow at multiple borders.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": -1 }
+        },
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_MediaManipulation",
+      "EventData": {
+        "Description": "Investigations reveal coordinated bias in major news outlets, sparking debates about press freedom and corporate influence.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_ClimateProtests",
+      "EventData": {
+        "Description": "Youth-led climate protests sweep across continents, with millions demanding immediate action on environmental policy.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 2 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 8, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CryptoCollapse",
+      "EventData": {
+        "Description": "A major cryptocurrency exchange files for bankruptcy amid allegations of fraud, wiping out billions in customer funds.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_ClimateAccord",
+      "EventData": {
+        "Description": "World leaders gather for a historic climate summit, pledging unprecedented funding for green initiatives.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 3 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 2 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 16, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DeepfakeScandal",
+      "EventData": {
+        "Description": "A viral deepfake video causes widespread panic before being debunked, raising concerns about AI-generated misinformation.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -4 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 11, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RainforestBurning",
+      "EventData": {
+        "Description": "Satellite imagery reveals unprecedented fires consuming vast swaths of rainforest, releasing massive carbon emissions.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": -4 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WaterDispute",
+      "EventData": {
+        "Description": "Nations along a shared river system enter dangerous standoff over water rights as droughts intensify.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": -1 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WorkerStrike",
+      "EventData": {
+        "Description": "Workers at major corporations stage massive strikes demanding better conditions, disrupting global supply chains.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -2 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_SurveillanceRevealed",
+      "EventData": {
+        "Description": "Whistleblowers expose massive government surveillance programs monitoring citizens' digital communications.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": -3 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 10, "y": 13 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AIConsciousnessDebate",
+      "EventData": {
+        "Description": "Scientists report AI systems exhibiting unexpected behaviors, sparking intense debate about machine consciousness and rights.",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 1 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 17, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
 
     // #########################################################
     // #       MENDATORY EVENTS       #
@@ -11,8 +353,8 @@
       "Name": "Mandatory_Event_MassiveFire",
       "EventData": {
         "Description": "A massive fire breaks out in the city, causing significant damage to infrastructure and raising concerns about human safety.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
@@ -29,8 +371,8 @@
       "Name": "Mandatory_Event_HeatwaveEmergency",
       "EventData": {
         "Description": "An unprecedented heatwave hit earth, people are suffocating and dying.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
@@ -47,8 +389,8 @@
       "Name": "Mandatory_Event_RiverFloodDisaster",
       "EventData": {
         "Description": "Catastrophic flooding from overflowing rivers devastates homes and crops, forcing large-scale evacuations and destroying infrastructure.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
@@ -65,8 +407,8 @@
       "Name": "Mandatory_Event_Megadrought",
       "EventData": {
         "Description": "A severe prolonged drought causes water shortages for millions and widespread agricultural collapse.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
@@ -83,8 +425,8 @@
       "Name": "Mandatory_Event_ToxicAirCrisis",
       "EventData": {
         "Description": "An extreme episode of air pollution engulfs the city, leading to widespread illness and overwhelming healthcare services.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": -2, "OneShotValue": 0 },
@@ -101,8 +443,8 @@
       "Name": "Mandatory_Event_TotalWar",
       "EventData": {
         "Description": "A massive global war erupts, with nations unleashing devastating military power. Millions perish as cities are destroyed and infrastructure collapses.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -119,8 +461,8 @@
       "Name": "Mandatory_Event_NuclearBombardment",
       "EventData": {
         "Description": "Nuclear weapons are deployed on several continents, instantly wiping out millions and leaving long-lasting devastation in their wake.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -137,8 +479,8 @@
       "Name": "Mandatory_Event_BiologicalPandemic",
       "EventData": {
         "Description": "A lethal, engineered pathogen is unleashed on the population, causing an unstoppable pandemic that results in mass casualties.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -155,8 +497,8 @@
       "Name": "Mandatory_Event_CivilWarUprising",
       "EventData": {
         "Description": "Violent civil war erupts within the nation. Factions clash and mass executions take place, with severe casualties among civilians.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -173,8 +515,8 @@
       "Name": "Mandatory_Event_TerroristMassacre",
       "EventData": {
         "Description": "Coordinated acts of large-scale terrorism devastate major cities, causing extreme loss of life and instilling widespread fear and chaos.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
@@ -191,8 +533,8 @@
       "Name": "Mandatory_Event_EcosystemRenaissance",
       "EventData": {
         "Description": "A remarkable environmental recovery brings lush forests, clean oceans, and thriving biodiversity. The planet's natural beauty and resilience inspire hope worldwide.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -209,8 +551,8 @@
       "Name": "Mandatory_Event_PerfectClimate",
       "EventData": {
         "Description": "Weather patterns stabilize into ideal conditions across the globe. Temperate climates, abundant rainfall, and gentle seasons create paradise-like conditions for all life.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -227,8 +569,8 @@
       "Name": "Mandatory_Event_BiodiversityBloom",
       "EventData": {
         "Description": "Endangered species make miraculous comebacks and ecosystems flourish with incredible diversity. Nature documentaries capture breathtaking scenes of wildlife thriving everywhere.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -245,8 +587,8 @@
       "Name": "Mandatory_Event_AirPurityRevolution",
       "EventData": {
         "Description": "Air quality reaches historic highs as pollution becomes virtually non-existent. Crystal-clear skies and pure air become the norm, creating stunning natural vistas.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -263,8 +605,8 @@
       "Name": "Mandatory_Event_OceanRejuvenation",
       "EventData": {
         "Description": "The world's oceans heal completely—coral reefs bloom in vibrant colors, fish populations explode, and marine ecosystems return to pristine prehistoric conditions.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -281,8 +623,8 @@
       "Name": "Mandatory_Event_GlobalPeaceAchieved",
       "EventData": {
         "Description": "All nations sign historic peace treaties, ending conflicts worldwide. International cooperation reaches unprecedented levels as humanity celebrates a new era of unity and prosperity.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -299,8 +641,8 @@
       "Name": "Mandatory_Event_TechnologicalBreakthrough",
       "EventData": {
         "Description": "Revolutionary technological advances solve major global challenges. Fusion energy, advanced medicine, and breakthrough innovations transform society and improve quality of life dramatically.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -317,8 +659,8 @@
       "Name": "Mandatory_Event_UniversalProsperity",
       "EventData": {
         "Description": "Global economy thrives as poverty is virtually eliminated. Education, healthcare, and opportunity become universally accessible, creating an era of shared abundance.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -335,8 +677,8 @@
       "Name": "Mandatory_Event_CulturalGoldenAge",
       "EventData": {
         "Description": "Art, science, and culture flourish worldwide. A renaissance of creativity, wisdom, and human achievement creates works that rival the greatest accomplishments in history.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
@@ -353,8 +695,8 @@
       "Name": "Mandatory_Event_DemocraticTriumph",
       "EventData": {
         "Description": "Democratic reforms sweep the globe, empowering citizens everywhere. Corruption plummets, transparency soars, and governments truly serve the will and wellbeing of their people.",
-        "DurationInTicks": 0,
-        "Icon": "FIre.png",
+        "DurationInTicks": 1,
+        "Icon": "Fire.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
           "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
