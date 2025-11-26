@@ -16,13 +16,12 @@ MonoBehaviour:
     <Description>k__BackingField: Weather patterns stabilize into ideal conditions
       across the globe. Temperate climates, abundant rainfall, and gentle seasons
       create paradise-like conditions for all life.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 4
         OneShotValue: 0
       TrustModifier:
         AddedValue: 0
@@ -39,7 +38,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     Icon: {fileID: 21300000, guid: ec4766c9e78765047920c9487606b344, type: 3}
-    Duration: 0
+    Duration: 70
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

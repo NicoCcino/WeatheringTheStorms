@@ -1,0 +1,364 @@
+{
+  "Events": [
+    {
+      "Name": "Mandatory_Event_MassiveFire",
+      "EventData": {
+        "Description": "A massive fire breaks out in the city, causing significant damage to infrastructure and raising concerns about human safety.",
+        "DurationInTicks": 70,
+        "Icon": "FIre.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 12, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_HeatwaveEmergency",
+      "EventData": {
+        "Description": "An unprecedented heatwave hit earth, people are suffocating and dying.",
+        "DurationInTicks": 50,
+        "Icon": "FIre.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 6, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_RiverFloodDisaster",
+      "EventData": {
+        "Description": "Catastrophic flooding from overflowing rivers devastates homes and crops, forcing large-scale evacuations and destroying infrastructure.",
+        "DurationInTicks": 70,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 18, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_Megadrought",
+      "EventData": {
+        "Description": "A severe prolonged drought causes water shortages for millions and widespread agricultural collapse.",
+        "DurationInTicks": 70,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 20, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_ToxicAirCrisis",
+      "EventData": {
+        "Description": "An extreme episode of air pollution engulfs the city, leading to widespread illness and overwhelming healthcare services.",
+        "DurationInTicks": 70,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_TotalWar",
+      "EventData": {
+        "Description": "A massive global war erupts, with nations unleashing devastating military power. Millions perish as cities are destroyed and infrastructure collapses.",
+        "DurationInTicks": 70,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 12, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_NuclearBombardment",
+      "EventData": {
+        "Description": "Nuclear weapons are deployed on several continents, instantly wiping out millions and leaving long-lasting devastation in their wake.",
+        "DurationInTicks": 70,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 6, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_BiologicalPandemic",
+      "EventData": {
+        "Description": "A lethal, engineered pathogen is unleashed on the population, causing an unstoppable pandemic that results in mass casualties.",
+        "DurationInTicks": 70,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 18, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_CivilWarUprising",
+      "EventData": {
+        "Description": "Violent civil war erupts within the nation. Factions clash and mass executions take place, with severe casualties among civilians.",
+        "DurationInTicks": 70,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 20, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_TerroristMassacre",
+      "EventData": {
+        "Description": "Coordinated acts of large-scale terrorism devastate major cities, causing extreme loss of life and instilling widespread fear and chaos.",
+        "DurationInTicks": 70,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -0.14, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 0, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": -4, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 10, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_EcosystemRenaissance",
+      "EventData": {
+        "Description": "A remarkable environmental recovery brings lush forests, clean oceans, and thriving biodiversity. The planet's natural beauty and resilience inspire hope worldwide.",
+        "DurationInTicks": 70,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 12, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_PerfectClimate",
+      "EventData": {
+        "Description": "Weather patterns stabilize into ideal conditions across the globe. Temperate climates, abundant rainfall, and gentle seasons create paradise-like conditions for all life.",
+        "DurationInTicks": 70,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 6, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_BiodiversityBloom",
+      "EventData": {
+        "Description": "Endangered species make miraculous comebacks and ecosystems flourish with incredible diversity. Nature documentaries capture breathtaking scenes of wildlife thriving everywhere.",
+        "DurationInTicks": 70,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 18, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_AirPurityRevolution",
+      "EventData": {
+        "Description": "Air quality reaches historic highs as pollution becomes virtually non-existent. Crystal-clear skies and pure air become the norm, creating stunning natural vistas.",
+        "DurationInTicks": 70,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 20, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_OceanRejuvenation",
+      "EventData": {
+        "Description": "The world's oceans heal completely—coral reefs bloom in vibrant colors, fish populations explode, and marine ecosystems return to pristine prehistoric conditions.",
+        "DurationInTicks": 70,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_GlobalPeaceAchieved",
+      "EventData": {
+        "Description": "All nations sign historic peace treaties, ending conflicts worldwide. International cooperation reaches unprecedented levels as humanity celebrates a new era of unity and prosperity.",
+        "DurationInTicks": 70,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 12, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_TechnologicalBreakthrough",
+      "EventData": {
+        "Description": "Revolutionary technological advances solve major global challenges. Fusion energy, advanced medicine, and breakthrough innovations transform society and improve quality of life dramatically.",
+        "DurationInTicks": 70,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 6, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_UniversalProsperity",
+      "EventData": {
+        "Description": "Global economy thrives as poverty is virtually eliminated. Education, healthcare, and opportunity become universally accessible, creating an era of shared abundance.",
+        "DurationInTicks": 70,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 18, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_CulturalGoldenAge",
+      "EventData": {
+        "Description": "Art, science, and culture flourish worldwide. A renaissance of creativity, wisdom, and human achievement creates works that rival the greatest accomplishments in history.",
+        "DurationInTicks": 70,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 20, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Mandatory_Event_DemocraticTriumph",
+      "EventData": {
+        "Description": "Democratic reforms sweep the globe, empowering citizens everywhere. Corruption plummets, transparency soars, and governments truly serve the will and wellbeing of their people.",
+        "DurationInTicks": 70,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "OneShotValue": 0 },
+          "SocietalModifier": { "AddedValue": 4, "OneShotValue": 0 },
+          "HumanModifier": { "AddedValue": 0, "OneShotValue": 0 }
+        },
+        "Coordinates": { "x": 13, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 90, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    }
+  ]
+}

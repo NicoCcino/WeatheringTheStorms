@@ -16,13 +16,12 @@ MonoBehaviour:
     <Description>k__BackingField: Art, science, and culture flourish worldwide. A
       renaissance of creativity, wisdom, and human achievement creates works that
       rival the greatest accomplishments in history.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 4
         OneShotValue: 0
       TrustModifier:
         AddedValue: 0
@@ -39,7 +38,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
     Icon: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
-    Duration: 0
+    Duration: 70
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

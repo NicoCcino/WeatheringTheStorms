@@ -29,7 +29,7 @@ MonoBehaviour:
           OneShotValue: 5
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: 3
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
           OneShotValue: -5
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -3
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
           OneShotValue: 3
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 0
+          OneShotValue: -6
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

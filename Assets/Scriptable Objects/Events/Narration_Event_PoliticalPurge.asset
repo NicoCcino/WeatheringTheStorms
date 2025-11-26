@@ -15,20 +15,19 @@ MonoBehaviour:
   EventData:
     <Description>k__BackingField: Mass arrests of government officials spark international
       condemnation. The regime tightens its grip as fear spreads.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
-        OneShotValue: -2
+        AddedValue: -2
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
-        OneShotValue: -7
+        AddedValue: -7
+        OneShotValue: 0
       TrustModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
-        OneShotValue: -3
+        OneShotValue: 0
     <Coordinates>k__BackingField: {x: 23, y: 4}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -38,7 +37,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     Icon: {fileID: 21300000, guid: 4d19cc99d28e81646bc89f850ab380ae, type: 3}
-    Duration: 0
+    Duration: 3
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

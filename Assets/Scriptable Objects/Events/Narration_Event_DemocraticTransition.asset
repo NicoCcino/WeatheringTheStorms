@@ -16,20 +16,19 @@ MonoBehaviour:
     <Description>k__BackingField: A major authoritarian nation holds its first free
       elections in decades. International observers declare the transition peaceful
       and legitimate.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
-        OneShotValue: 3
+        AddedValue: 3
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
-        OneShotValue: 8
+        AddedValue: 8
+        OneShotValue: 0
       TrustModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
-        OneShotValue: 2
+        OneShotValue: 0
     <Coordinates>k__BackingField: {x: 21, y: 3}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -39,7 +38,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     Icon: {fileID: 21300000, guid: 683ccd8ca6ab3644e88e3b9d29881363, type: 3}
-    Duration: 0
+    Duration: 3
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

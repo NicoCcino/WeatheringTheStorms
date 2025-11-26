@@ -16,13 +16,12 @@ MonoBehaviour:
     <Description>k__BackingField: Revolutionary technological advances solve major
       global challenges. Fusion energy, advanced medicine, and breakthrough innovations
       transform society and improve quality of life dramatically.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
+        AddedValue: 1
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
+        AddedValue: 4
         OneShotValue: 0
       TrustModifier:
         AddedValue: 0
@@ -39,7 +38,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 1
     Icon: {fileID: -1181768812043753746, guid: c03c0a3ac8e8d4362b0fd4770f79948e, type: 3}
-    Duration: 0
+    Duration: 70
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

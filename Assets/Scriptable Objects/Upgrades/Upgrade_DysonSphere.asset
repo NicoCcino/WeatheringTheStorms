@@ -19,7 +19,7 @@ MonoBehaviour:
     <Cost>k__BackingField: 6
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 3
+        AddedValue: 0.21
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0

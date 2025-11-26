@@ -15,20 +15,19 @@ MonoBehaviour:
   EventData:
     <Description>k__BackingField: Massive space stations and Mars colonies accept
       millions of Earth emigrants. Humanity becomes a multi-planetary species.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 0
-        OneShotValue: 6
+        AddedValue: 6
+        OneShotValue: 0
       SocietalModifier:
-        AddedValue: 0
-        OneShotValue: 5
+        AddedValue: 5
+        OneShotValue: 0
       TrustModifier:
         AddedValue: 0
         OneShotValue: 0
       HumanModifier:
         AddedValue: 0
-        OneShotValue: 3
+        OneShotValue: 0
     <Coordinates>k__BackingField: {x: 7, y: 6}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
@@ -38,7 +37,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     Icon: {fileID: -1181768812043753746, guid: c03c0a3ac8e8d4362b0fd4770f79948e, type: 3}
-    Duration: 0
+    Duration: 3
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0

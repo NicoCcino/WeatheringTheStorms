@@ -15,7 +15,6 @@ MonoBehaviour:
   EventData:
     <Description>k__BackingField: A massive new industrial facility begins construction,
       promising thousands of jobs but raising environmental concerns.
-    <DurationInTicks>k__BackingField: 1
     <ModifierBank>k__BackingField:
       ClimateModifier:
         AddedValue: 0
@@ -38,7 +37,7 @@ MonoBehaviour:
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
     Icon: {fileID: -1181768812043753746, guid: c03c0a3ac8e8d4362b0fd4770f79948e, type: 3}
-    Duration: 0
+    Duration: 3
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
       <TicksDelay>k__BackingField: 0
