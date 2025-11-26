@@ -25,6 +25,10 @@ public class Gauge
 
     public void OnHumanCountChanged(float humanImpact)
     {
+        if (!gaugeParameter.LinkedToHumans)
+        {
+            return;
+        }
         iterationValue = humanImpact + modifierManager.ComputeModifierValue();
         value += iterationValue;
         OnGaugeModified?.Invoke(value);
