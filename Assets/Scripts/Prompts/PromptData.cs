@@ -21,9 +21,6 @@ public class PromptData
     [field: SerializeField, Tooltip("Optional: This prompt can only trigger if the parent prompt has been triggered before")]
     public Prompt ParentPrompt { get; private set; }
 
-    [field: Header("Planned Actions")]
-    [field: SerializeField, Tooltip("Optional: Action to schedule when this prompt is triggered")]
-    public PlannedAction PlannedAction { get; private set; }
 
 }
 

@@ -590,12 +590,14 @@ public class JSONConverterEditor : EditorWindow
         for (int i = 0; i < promptList.Prompts.Count; i++)
         {
             var promptJSON = promptList.Prompts[i];
+            Prompt currentPrompt = createdPrompts[promptJSON.Name];
+            var promptDataField = typeof(Prompt).GetField("PromptData");
+            PromptData promptData = (PromptData)promptDataField.GetValue(currentPrompt);
+            bool isDirty = false;
+
+            // Resolve PlannedAction for the prompt itself
             if (promptJSON.PromptData.PlannedAction != null)
             {
-                Prompt currentPrompt = createdPrompts[promptJSON.Name];
-                var promptDataField = typeof(Prompt).GetField("PromptData");
-                PromptData promptData = (PromptData)promptDataField.GetValue(currentPrompt);
-
                 PlannedAction plannedAction = new PlannedAction();
                 SetPrivateProperty(plannedAction, "TicksDelay", promptJSON.PromptData.PlannedAction.TicksDelay);
 
@@ -626,6 +628,54 @@ public class JSONConverterEditor : EditorWindow
                 }
 
                 SetPrivateProperty(promptData, "PlannedAction", plannedAction);
+                isDirty = true;
+            }
+
+            // Resolve PlannedActions for choices
+            if (promptJSON.PromptData.Choices != null && promptData.Choices != null)
+            {
+                for (int j = 0; j < promptJSON.PromptData.Choices.Count && j < promptData.Choices.Length; j++)
+                {
+                    var choiceJSON = promptJSON.PromptData.Choices[j];
+                    if (choiceJSON.PlannedAction != null)
+                    {
+                        PlannedAction choicePlannedAction = new PlannedAction();
+                        SetPrivateProperty(choicePlannedAction, "TicksDelay", choiceJSON.PlannedAction.TicksDelay);
+
+                        // Resolve planned prompt reference for choice
+                        if (!string.IsNullOrEmpty(choiceJSON.PlannedAction.PlannedPromptName))
+                        {
+                            if (createdPrompts.TryGetValue(choiceJSON.PlannedAction.PlannedPromptName, out Prompt plannedPrompt))
+                            {
+                                SetPrivateProperty(choicePlannedAction, "PlannedPrompt", plannedPrompt);
+                            }
+                            else
+                            {
+                                Debug.LogWarning($"Planned prompt '{choiceJSON.PlannedAction.PlannedPromptName}' not found for choice {j} in prompt '{promptJSON.Name}'");
+                            }
+                        }
+
+                        // Resolve planned event reference for choice
+                        if (!string.IsNullOrEmpty(choiceJSON.PlannedAction.PlannedEventName))
+                        {
+                            if (allEvents.TryGetValue(choiceJSON.PlannedAction.PlannedEventName, out Event plannedEvent))
+                            {
+                                SetPrivateProperty(choicePlannedAction, "PlannedEvent", plannedEvent);
+                            }
+                            else
+                            {
+                                Debug.LogWarning($"Planned event '{choiceJSON.PlannedAction.PlannedEventName}' not found for choice {j} in prompt '{promptJSON.Name}'");
+                            }
+                        }
+
+                        promptData.Choices[j].PlannedAction = choicePlannedAction;
+                        isDirty = true;
+                    }
+                }
+            }
+
+            if (isDirty)
+            {
                 EditorUtility.SetDirty(currentPrompt);
             }
         }

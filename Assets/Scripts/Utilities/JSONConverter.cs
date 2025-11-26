@@ -82,6 +82,7 @@ namespace JSONData
     {
         public string Label;
         public ModifierBankJSON ModifierBank;
+        public PlannedActionJSON PlannedAction; // Optional planned action
 
         public Choice ToChoice()
         {

@@ -140,16 +140,8 @@ public class PromptManager : Singleton<PromptManager>
         CurrentPrompt = prompt;
         prompt.OnSolved += OnCurrentPromptSolved;
         LogFileManager.Instance.LogUserAction("Prompt", prompt.PromptData.Label);
-
-        // Schedule any planned action if present
-        if (prompt.PromptData.PlannedAction != null && prompt.PromptData.PlannedAction.IsValid())
-        {
-            if (Timeline.Instance != null && Planner.Instance != null)
-            {
-                prompt.PromptData.PlannedAction.Schedule(Timeline.Instance.CurrentTick);
-            }
-        }
     }
+
     private void OnCurrentPromptSolved(Choice choice)
     {
         if (CurrentPrompt == null) return;
@@ -162,6 +154,15 @@ public class PromptManager : Singleton<PromptManager>
 
         Timeline.Instance.SetPlaySpeed();
         CurrentPrompt.OnSolved -= OnCurrentPromptSolved;
+
+        // Schedule any planned action if present
+        if (choice.PlannedAction != null && choice.PlannedAction.IsValid())
+        {
+            if (Timeline.Instance != null && Planner.Instance != null)
+            {
+                choice.PlannedAction.Schedule(Timeline.Instance.CurrentTick);
+            }
+        }
     }
     public void OpenPrompt(Prompt prompt)
     {
