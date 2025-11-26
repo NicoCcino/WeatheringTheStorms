@@ -23,8 +23,13 @@ MonoBehaviour:
         house on fire, no bad guy will pay attention to the hero.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
@@ -33,9 +38,14 @@ MonoBehaviour:
         for a sneak intrusion in someone's house!
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -48,7 +58,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 15, y: 6}

@@ -23,9 +23,14 @@ MonoBehaviour:
         of course.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -33,8 +38,13 @@ MonoBehaviour:
         he probably will not read the little lines.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
@@ -43,8 +53,12 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 1
+          OneShotValue: 1.953125
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0

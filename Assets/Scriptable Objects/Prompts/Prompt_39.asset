@@ -19,27 +19,42 @@ MonoBehaviour:
     - Label: Oil business.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: -1
+          AddedValue: 0
+          OneShotValue: 1.2864583
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: Crime.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
-          OneShotValue: -1
+          AddedValue: 0
+          OneShotValue: 1.1485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: Own a sweatshop factory.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -52,7 +67,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 11, y: 8}

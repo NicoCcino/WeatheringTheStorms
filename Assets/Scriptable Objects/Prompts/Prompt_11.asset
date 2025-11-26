@@ -21,15 +21,17 @@ MonoBehaviour:
         about it.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: 10
     - Label: Except if used with the wrong intention, a screw is usually considered
         inoffensive
       ModifierBank:
@@ -38,7 +40,10 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 20
+          OneShotValue: 6.398551
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -46,8 +51,11 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 20
+          OneShotValue: 8.286459
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
@@ -62,7 +70,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 21, y: 3}

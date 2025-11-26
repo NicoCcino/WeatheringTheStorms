@@ -20,10 +20,14 @@ MonoBehaviour:
     - Label: Free the accused of all charges. Everyone deserves a second chance.
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -10
+          OneShotValue: -1.1014493
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -32,10 +36,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 20
+          OneShotValue: 8.286459
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -10
+          OneShotValue: -1.1014493
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -44,11 +51,11 @@ MonoBehaviour:
       <MaxTick>k__BackingField: 999
     <GaugeCondition>k__BackingField:
       <MinValue>k__BackingField: 0
-      <MaxValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 1834e6e68681845fabc528e9c50c4c13, type: 2}
+    <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 6, y: 10}

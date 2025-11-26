@@ -20,8 +20,13 @@ MonoBehaviour:
     - Label: Sounds worrying. There is a non-zero chance that it is nose cancer.
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
@@ -30,18 +35,28 @@ MonoBehaviour:
         answer, please?
       ModifierBank:
         ClimateModifier:
+          AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
     - Label: (need upgrade humor) Send nudes
       ModifierBank:
         ClimateModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.953125
         SocietalModifier:
-          OneShotValue: 1
+          AddedValue: 0
+          OneShotValue: 1.6485507
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -54,7 +69,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 7, y: 6}

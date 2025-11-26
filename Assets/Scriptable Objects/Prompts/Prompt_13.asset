@@ -24,6 +24,9 @@ MonoBehaviour:
         SocietalModifier:
           AddedValue: 0
           OneShotValue: 0
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -32,15 +35,16 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -10
+          OneShotValue: -1.7135419
         SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        TrustModifier:
           AddedValue: 0
           OneShotValue: 0
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-        TrustModifier:
-          OneShotValue: 20
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
@@ -50,7 +54,7 @@ MonoBehaviour:
       <Category>k__BackingField: 0
     <ParentPrompt>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
-      <TicksDelay>k__BackingField: 0
+      <TicksDelay>k__BackingField: 1
       <PlannedPrompt>k__BackingField: {fileID: 0}
       <PlannedEvent>k__BackingField: {fileID: 0}
   <Coordinates>k__BackingField: {x: 15, y: 11}
