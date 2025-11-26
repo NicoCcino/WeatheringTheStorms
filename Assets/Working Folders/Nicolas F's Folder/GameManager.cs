@@ -7,11 +7,10 @@ public class GameManager : MonoBehaviour
 
     public float winConditionClimate;
     public float winConditionSocietal;
-    public GameObject panelPromptEnd;
     public TextMeshProUGUI winText;
     public TextMeshProUGUI lossText;
-    public GameObject[] gameObjectsToHide;
     public MusicController musicController;
+    public UIPromptEnd uiPromptEnd;
 
     private void OnTimelineTick(uint currentTick)
     {
@@ -21,7 +20,8 @@ public class GameManager : MonoBehaviour
             winText.gameObject.SetActive(false);
             lossText.gameObject.SetActive(true);
             Debug.Log("You lost!");
-            DisplayEndPanel(lossText);
+            uiPromptEnd.DisplayEndPanel(lossText);
+            musicController.SwitchToEndMusic(); // Switch music
         }
     }
 
@@ -33,27 +33,11 @@ public class GameManager : MonoBehaviour
             winText.gameObject.SetActive(true);
             lossText.gameObject.SetActive(false);
             Debug.Log("You won!");
-            DisplayEndPanel(winText);
+            uiPromptEnd.DisplayEndPanel(winText);
+            musicController.SwitchToEndMusic(); // Switch music
         }
     }
 
-    private void DisplayEndPanel(TextMeshProUGUI text)
-    {
-        // Pause the game
-        Timeline.Instance.SetPauseSpeed();
-        // Display panel and trigger typewriter effect.
-        panelPromptEnd.GetComponent<CanvasGroupCustom>().Fade(true);
-        var typewriterEffect = text.GetComponent<TypewriterEffect>();
-        typewriterEffect.Play(text.text);
-        // Hide all other panels
-        foreach (GameObject go in gameObjectsToHide)
-        {
-            go.SetActive(false);
-        }
-        // Switch music
-        musicController.SwitchToEndMusic();
-
-    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
