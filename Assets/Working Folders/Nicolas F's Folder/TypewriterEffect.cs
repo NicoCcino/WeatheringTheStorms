@@ -19,6 +19,10 @@ public class TypewriterEffect : MonoBehaviour
     [Tooltip("Pause supplémentaire après .,!?;:")]
     public float punctuationPause = 0.12f;
 
+    // [Header("SFX")]
+
+    private AudioSource audioSource;
+
     private string originalText;
     private Coroutine typingCoroutine;
 
@@ -29,11 +33,13 @@ public class TypewriterEffect : MonoBehaviour
             textUI = GetComponent<TextMeshProUGUI>();
 
         originalText = textUI.text;
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void OnEnable()
     {
-        Play(originalText);
+
     }
 
     public void Play(string text)
@@ -48,6 +54,12 @@ public class TypewriterEffect : MonoBehaviour
             StopCoroutine(typingCoroutine);
 
         typingCoroutine = StartCoroutine(TypeCoroutine(startFromIndex));
+        if (audioSource != null)
+        {
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+
     }
 
     public void Reset()
@@ -92,6 +104,10 @@ public class TypewriterEffect : MonoBehaviour
                 delay = 0.001f;
 
             yield return new WaitForSeconds(delay);
+        }
+        if (audioSource != null)
+        {
+            audioSource.Stop();
         }
     }
 }
