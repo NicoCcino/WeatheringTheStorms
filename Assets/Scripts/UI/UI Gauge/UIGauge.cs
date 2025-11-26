@@ -26,7 +26,7 @@ public class UIGauge : MonoBehaviour
     }
     public void UpdateModifier(float value)
     {
-        string text = value.ToString("0.##");
+        string text = (value * 10).ToString("0");
         if (value > 0)
         {
 
@@ -74,7 +74,7 @@ public class UIGauge : MonoBehaviour
 
         colorTween.SetLoops(2, LoopType.Yoyo);
 
-        Vector3 targetScale = new Vector3(startOutlineImageScale.x * 1.1f, startOutlineImageScale.y * 1.6f, startOutlineImageScale.z);
+        Vector3 targetScale = new Vector3(startOutlineImageScale.x * 1.05f, startOutlineImageScale.y * 1.3f, startOutlineImageScale.z);
         Vector3 currentScale = startOutlineImageScale;
 
         Tween scaleTween = DOTween.To(() => startOutlineImageScale, x => currentScale = x, targetScale, 0.12f).OnUpdate(() =>
