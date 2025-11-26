@@ -108,7 +108,7 @@ public class LogFileManager : Singleton<LogFileManager>
 
         try
         {
-            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,HumanImpact,PopulationDelta,HumanCount,ComputePower,EventType,EventDescription");
+            logWriter.WriteLine("Tick,Date,ClimateGauge,SocietalGauge,TrustGauge,HumanImpact,PopulationDelta,HumanCount,ComputePower,EventType,EventDescription");
         }
         catch (Exception e)
         {
@@ -129,7 +129,7 @@ public class LogFileManager : Singleton<LogFileManager>
             }
 
             // Cache the current tick data (without event data initially)
-            // cachedTickLine = BuildTickLine(currentTick);
+            cachedTickLine = BuildTickLine(currentTick);
         }
         catch (Exception e)
         {
@@ -142,28 +142,29 @@ public class LogFileManager : Singleton<LogFileManager>
         string date = Timeline.Instance.currentDate.ToString("yyyy-MM-dd");
         float climateValue = GaugeManager.Instance.ClimateGauge.value;
         float societalValue = GaugeManager.Instance.SocietalGauge.value;
+        float trustValue = GaugeManager.Instance.TrustGauge.value;
         float humanImpact = Human.Instance.HumanImpact;
         long populationDelta = Human.Instance.PopulationDelta;
         long humanCount = Human.Instance.HumanCount;
         int computePower = ComputePower.Instance.value;
 
         // Use InvariantCulture to ensure decimal separator is always a period (not comma)
-        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{humanImpact.ToString("F4", CultureInfo.InvariantCulture)},{populationDelta},{humanCount},{computePower},,";
+        return $"{tick},{date},{climateValue.ToString("F4", CultureInfo.InvariantCulture)},{societalValue.ToString("F4", CultureInfo.InvariantCulture)},{trustValue.ToString("F4", CultureInfo.InvariantCulture)},{humanImpact.ToString("F4", CultureInfo.InvariantCulture)},{populationDelta},{humanCount},{computePower},,";
     }
 
     /// <summary>
     /// Logs a user action or event at the current tick
     /// </summary>
-    /// <param name="eventType">Type of event: "Warning", "Event", "Prompt", or "Upgrade"</param>
+    /// <param name="eventType">Type of event: "Warning", "Event", "EventEnd", "Prompt", "Upgrade", or "Choice"</param>
     /// <param name="eventDescription">Description of the event</param>
     public void LogUserAction(string eventType, string eventDescription)
     {
         if (logWriter == null) return;
 
         // Validate event type
-        if (eventType != "Warning" && eventType != "Event" && eventType != "Prompt" && eventType != "Upgrade")
+        if (eventType != "Warning" && eventType != "Event" && eventType != "EventEnd" && eventType != "Prompt" && eventType != "Upgrade" && eventType != "Choice")
         {
-            Debug.LogWarning($"Invalid event type: {eventType}. Expected: Warning, Event, Prompt, or Upgrade");
+            Debug.LogWarning($"Invalid event type: {eventType}. Expected: Warning, Event, EventEnd, Prompt, Upgrade, or Choice");
         }
 
         try

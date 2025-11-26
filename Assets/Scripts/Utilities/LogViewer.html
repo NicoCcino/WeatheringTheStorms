@@ -319,7 +319,7 @@
         function testCSVParser() {
             console.log('=== CSV Parser Self-Test ===');
             const testLine1 = '1,2,3,,';
-            const testLine2 = '2,1956-03-01,49.6732,49.6732,-0.0234,12345678,8173599744,5,Upgrade,Drone reforestation';
+            const testLine2 = '2,1956-03-01,49.6732,49.6732,50.0000,-0.0234,12345678,8173599744,5,Upgrade,Drone reforestation';
             const testLine3 = '1,2,3,"quoted,value",5';
             
             console.log('Test 1:', testLine1);
@@ -329,9 +329,9 @@
             console.log('Test 2:', testLine2);
             const result2 = parseCSVLine(testLine2);
             console.log('  Result:', result2);
-            console.log('  EventType (index 8):', result2[8], 'Length:', result2[8].length);
-            console.log('  EventDesc (index 9):', result2[9], 'Length:', result2[9].length);
-            console.log('  Expected: 10 fields with "Upgrade" and "Drone reforestation"');
+            console.log('  EventType (index 9):', result2[9], 'Length:', result2[9].length);
+            console.log('  EventDesc (index 10):', result2[10], 'Length:', result2[10].length);
+            console.log('  Expected: 11 fields with "Upgrade" and "Drone reforestation"');
             
             console.log('Test 3:', testLine3);
             console.log('  Result:', parseCSVLine(testLine3));
@@ -431,13 +431,13 @@
                 if (values.length === 0) continue;
 
                 // Debug: show first few data rows and rows with events
-                const hasEventMarker = line.includes('Warning') || line.includes('Event') || line.includes('Prompt') || line.includes('Upgrade');
+                const hasEventMarker = line.includes('Warning') || line.includes('Event') || line.includes('EventEnd') || line.includes('Prompt') || line.includes('Upgrade') || line.includes('Choice');
                 if (dataRowCount < 5 || hasEventMarker) {
                     console.log(`Data row ${dataRowCount} (line ${i}):`, JSON.stringify(line));
                     console.log(`  Parsed values (${values.length}):`, values);
-                    if (values.length > 8) {
-                        console.log(`  EventType: "${values[8]}" (length=${values[8].length}, charCodes=${[...values[8]].map(c => c.charCodeAt(0))})`);
-                        console.log(`  EventDesc: "${values[9]}" (length=${values[9].length})`);
+                    if (values.length > 9) {
+                        console.log(`  EventType: "${values[9]}" (length=${values[9].length}, charCodes=${[...values[9]].map(c => c.charCodeAt(0))})`);
+                        console.log(`  EventDesc: "${values[10]}" (length=${values[10].length})`);
                     }
                 }
 
@@ -605,15 +605,17 @@
             // Debug: Show first 10 rows of raw data
             console.log('First 10 rows of parsed data:');
             currentData.slice(0, 10).forEach((row, i) => {
-                console.log(`  Row ${i}: Tick=${row.Tick}, Climate=${row.ClimateGauge}, Societal=${row.SocietalGauge}, Event="${row.EventType}"`);
+                console.log(`  Row ${i}: Tick=${row.Tick}, Climate=${row.ClimateGauge}, Societal=${row.SocietalGauge}, Trust=${row.TrustGauge}, Event="${row.EventType}"`);
             });
             
             const climateValues = currentData.map(row => parseFloat(row.ClimateGauge) || 0);
             const societalValues = currentData.map(row => parseFloat(row.SocietalGauge) || 0);
+            const trustValues = currentData.map(row => parseFloat(row.TrustGauge) || 0);
             const computeValues = currentData.map(row => parseFloat(row.ComputePower) || 0);
             
             console.log('Climate sample:', climateValues.slice(0, 10));
             console.log('Societal sample:', societalValues.slice(0, 10));
+            console.log('Trust sample:', trustValues.slice(0, 10));
             console.log('Compute sample:', computeValues.slice(0, 10));
             
             // Calculate simple derivatives (difference between consecutive values)
@@ -628,10 +630,12 @@
             // Calculate raw derivatives
             const climateDerivative = calculateDerivative(climateValues);
             const societalDerivative = calculateDerivative(societalValues);
+            const trustDerivative = calculateDerivative(trustValues);
             const humanImpactValues = currentData.map(row => parseFloat(row.HumanImpact) || 0);
             
             console.log('Climate derivative sample:', climateDerivative.slice(0, 10));
             console.log('Societal derivative sample:', societalDerivative.slice(0, 10));
+            console.log('Trust derivative sample:', trustDerivative.slice(0, 10));
             console.log('Human impact sample:', humanImpactValues.slice(0, 10));
             
             // Chart 2: Main gauge values only
@@ -651,6 +655,14 @@
                     mode: 'lines',
                     name: 'Societal Gauge',
                     line: { color: '#007bff', width: 3 }
+                },
+                {
+                    x: xAxis,
+                    y: trustValues,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Trust Gauge',
+                    line: { color: '#9b59b6', width: 3 }
                 }
             ];
             
@@ -671,6 +683,14 @@
                     mode: 'lines',
                     name: 'Societal Trend',
                     line: { color: '#007bff', width: 2, dash: 'dot' }
+                },
+                {
+                    x: xAxis,
+                    y: trustDerivative,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Trust Trend',
+                    line: { color: '#9b59b6', width: 2, dash: 'dot' }
                 },
                 {
                     x: xAxis,
@@ -785,8 +805,10 @@
             const eventTypeColors = {
                 'Warning': '#dc3545',
                 'Event': '#007bff',
+                'EventEnd': '#17a2b8',
                 'Prompt': '#ffc107',
-                'Upgrade': '#28a745'
+                'Upgrade': '#28a745',
+                'Choice': '#e83e8c'
             };
 
             const eventTraces = {};
@@ -806,12 +828,12 @@
                         marker: {
                             size: 15,
                             color: eventTypeColors[type] || '#6c757d',
-                            symbol: type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : 'circle')),
+                            symbol: type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : (type === 'EventEnd' ? 'square' : (type === 'Choice' ? 'hexagon' : 'circle')))),
                             line: { width: 2, color: '#fff' }
                         },
                         hovertemplate: '<b>%{text}</b><br>' + xAxisTitle + ': %{x}<extra></extra>'
                     };
-                    console.log('Created new trace for type:', type, 'with color:', eventTypeColors[type] || '#6c757d', 'and symbol:', type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : 'circle')));
+                    console.log('Created new trace for type:', type, 'with color:', eventTypeColors[type] || '#6c757d', 'and symbol:', type === 'Warning' ? 'triangle-up' : (type === 'Upgrade' ? 'star' : (type === 'Prompt' ? 'diamond' : (type === 'EventEnd' ? 'square' : (type === 'Choice' ? 'hexagon' : 'circle')))));
                 }
                 
                 const xValue = useDate ? event.Date : parseInt(event.Tick);
