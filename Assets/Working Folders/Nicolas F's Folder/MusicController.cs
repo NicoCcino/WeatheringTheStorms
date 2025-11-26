@@ -2,18 +2,24 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    public AudioSource gameMusic;         // musique actuelle (ex : calme)
-    public AudioSource endMusic;         // musique suivante (ex : action)
+    public AudioSource gameMusic;         // musique actuelle
+    public AudioSource winMusic;         // 
+    public AudioSource lossMusic;         // 
     public AnimationCurve fadeCurve;   // courbe
     public float fadeDuration = 1.5f;  // durée du fade
 
-    public void SwitchToEndMusic()
-    {
-        StartCoroutine(AudioFade.SwitchMusic(gameMusic, endMusic, fadeDuration, fadeCurve));
-    }
 
-    public void SwitchToGameMusic()
+    //public void SwitchToGameMusic()
+    //{
+    //        StartCoroutine(AudioFade.SwitchMusic(endMusic, gameMusic, fadeDuration, fadeCurve));
+    //}
+
+    public void SwitchToWinMusic()
     {
-        StartCoroutine(AudioFade.SwitchMusic(endMusic, gameMusic, fadeDuration, fadeCurve));
+        StartCoroutine(AudioFade.SwitchMusic(gameMusic, winMusic, fadeDuration, fadeCurve));
+    }
+    public void SwitchToLossMusic()
+    {
+        StartCoroutine(AudioFade.SwitchMusic(gameMusic, lossMusic, fadeDuration, fadeCurve));
     }
 }

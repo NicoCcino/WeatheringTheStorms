@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
             lossText.gameObject.SetActive(true);
             Debug.Log("You lost!");
             uiPromptEnd.DisplayEndPanel(lossText);
-            musicController.SwitchToEndMusic(); // Switch music
+            musicController.SwitchToLossMusic(); // Switch music
         }
     }
 
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             lossText.gameObject.SetActive(false);
             Debug.Log("You won!");
             uiPromptEnd.DisplayEndPanel(winText);
-            musicController.SwitchToEndMusic(); // Switch music
+            musicController.SwitchToWinMusic(); // Switch music
         }
     }
 
