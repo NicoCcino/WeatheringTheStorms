@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_GeneralWar_03
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: General Warmonger
+    <Description>k__BackingField: whistleblower leaked real casualty numbers. public
+      furious. my career is over unless... we silence him. accident or heart attack??
+    <Choices>k__BackingField:
+    - Label: Accept consequences. Assassination crosses ethical line.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 8
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Discredit whistleblower as mentally unstable. Character assassination.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -3
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -6
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Arrange accident. Operational security paramount.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -5
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 1
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 77bf2525476d0429096e52c8031ca5a7, type: 2}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: e39a5d55324584ceb8d18806300bb5ce, type: 2}
+  <Coordinates>k__BackingField: {x: 15, y: 6}

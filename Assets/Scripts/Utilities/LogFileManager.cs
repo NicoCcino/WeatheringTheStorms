@@ -171,7 +171,6 @@ public class LogFileManager : Singleton<LogFileManager>
             // If no cached line exists yet, create one for the current tick
             if (cachedTickLine == null)
             {
-                return;
                 cachedTickLine = BuildTickLine(Timeline.Instance.CurrentTick);
             }
 

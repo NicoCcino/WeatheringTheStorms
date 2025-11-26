@@ -35,7 +35,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: cf7c1fc070247424fb9a2cdeed95be35, type: 2}
     - Label: Suggest private island. Media blackout ensures candid negotiation.
       ModifierBank:
         ClimateModifier:

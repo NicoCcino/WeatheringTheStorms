@@ -595,42 +595,6 @@ public class JSONConverterEditor : EditorWindow
             PromptData promptData = (PromptData)promptDataField.GetValue(currentPrompt);
             bool isDirty = false;
 
-            // Resolve PlannedAction for the prompt itself
-            if (promptJSON.PromptData.PlannedAction != null)
-            {
-                PlannedAction plannedAction = new PlannedAction();
-                SetPrivateProperty(plannedAction, "TicksDelay", promptJSON.PromptData.PlannedAction.TicksDelay);
-
-                // Resolve planned prompt reference
-                if (!string.IsNullOrEmpty(promptJSON.PromptData.PlannedAction.PlannedPromptName))
-                {
-                    if (createdPrompts.TryGetValue(promptJSON.PromptData.PlannedAction.PlannedPromptName, out Prompt plannedPrompt))
-                    {
-                        SetPrivateProperty(plannedAction, "PlannedPrompt", plannedPrompt);
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"Planned prompt '{promptJSON.PromptData.PlannedAction.PlannedPromptName}' not found for prompt '{promptJSON.Name}'");
-                    }
-                }
-
-                // Resolve planned event reference
-                if (!string.IsNullOrEmpty(promptJSON.PromptData.PlannedAction.PlannedEventName))
-                {
-                    if (allEvents.TryGetValue(promptJSON.PromptData.PlannedAction.PlannedEventName, out Event plannedEvent))
-                    {
-                        SetPrivateProperty(plannedAction, "PlannedEvent", plannedEvent);
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"Planned event '{promptJSON.PromptData.PlannedAction.PlannedEventName}' not found for prompt '{promptJSON.Name}'");
-                    }
-                }
-
-                SetPrivateProperty(promptData, "PlannedAction", plannedAction);
-                isDirty = true;
-            }
-
             // Resolve PlannedActions for choices
             if (promptJSON.PromptData.Choices != null && promptData.Choices != null)
             {

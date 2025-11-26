@@ -139,7 +139,6 @@ namespace JSONData
         public DateConditionJSON DateCondition;
         public GaugeConditionJSON GaugeCondition;
         public string ParentPromptName; // Reference by name, will be resolved later
-        public PlannedActionJSON PlannedAction; // Optional planned action
     }
 
     [Serializable]

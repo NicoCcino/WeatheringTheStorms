@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_IlonaHusk_04
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Ilona Husk
+    <Description>k__BackingField: HOLY F*** IT WORKED!! we uploaded someones mind
+      but... they want out. says existence is torture. do we delete them or keep
+      em running??
+    <Choices>k__BackingField:
+    - Label: Delete consciousness. Continued suffering unethical.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 4
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Preserve for research. Scientific value exceeds individual preference.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -3
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -7
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 2
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 742480b0d63e5474ea6095a42711a938, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Create digital paradise simulation. Optimize for happiness.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 3
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: e7a4ec5b9e6c84dff980414dc9fce31b, type: 2}
+  <Coordinates>k__BackingField: {x: 19, y: 9}

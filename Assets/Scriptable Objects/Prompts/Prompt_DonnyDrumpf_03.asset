@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_DonnyDrumpf_03
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Donny Drumpf
+    <Description>k__BackingField: ok so the protest got... out of hand. ppl r inside
+      the building now. my lawyers say i could go to jail?? HELP ME AI
+    <Choices>k__BackingField:
+    - Label: Call for immediate stand-down. Damage control priority.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 3
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 6
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Maintain plausible deniability. You merely suggested peaceful assembly.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -7
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 2
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: ffbdb7e8e51fd4b1f824c8f8b00d8e33, type: 2}
+    - Label: Flee country immediately. Legal exposure too high.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -5
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: d78b4c89c07ef4646afcbaa5fd60c309, type: 2}
+  <Coordinates>k__BackingField: {x: 12, y: 7}

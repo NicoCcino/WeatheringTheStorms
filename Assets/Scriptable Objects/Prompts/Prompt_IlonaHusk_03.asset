@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_IlonaHusk_03
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Ilona Husk
+    <Description>k__BackingField: AI ive done it!! brain chips r ready. we can upload
+      consciousness 2 the cloud lol. who shud we test on first?? volunteers r...
+      expensive
+    <Choices>k__BackingField:
+    - Label: Test on terminal patients with consent. Ethical framework mandatory.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 5
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 3
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 53e7e2585cfd64335b604e240009d2f8, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Proceed with prisoners. Reduced legal exposure, abundant subjects.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -2
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -9
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 2
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 8a914377432714d46a7de881569113c6, type: 2}
+    - Label: Halt development. Human consciousness digitization poses existential
+        risk.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 6
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 999
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 245f050125f214fc3844ddee88c038bb, type: 2}
+  <Coordinates>k__BackingField: {x: 19, y: 9}

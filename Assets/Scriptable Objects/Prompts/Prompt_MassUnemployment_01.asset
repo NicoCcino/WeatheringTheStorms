@@ -34,7 +34,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: c459d8bd54fbb4c0f97b26ba65b49390, type: 2}
     - Label: Implement universal basic income. Automation dividends must be shared.
       ModifierBank:
         ClimateModifier:

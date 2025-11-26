@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_KimmyJang_04
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Kimmy Jang King
+    <Description>k__BackingField: my generals staged coup but i escaped lol. im in
+      bunker with nuclear codes. should i surrender or... press the button as revenge??
+    <Choices>k__BackingField:
+    - Label: Surrender. Your legacy matters less than millions of lives.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 5
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 9
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 1
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 283ad60f9c03c4a3b86713c2c3a14586, type: 2}
+    - Label: Launch missiles. If you cannot rule, no one will.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -10
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 3a45a0768afe84f6b95da6db1b264d28, type: 2}
+    - Label: Negotiate with generals. Power-sharing preferable to annihilation.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 3
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 5
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: b404ed4888c2f48acbc0441099969057, type: 2}
+  <Coordinates>k__BackingField: {x: 22, y: 10}

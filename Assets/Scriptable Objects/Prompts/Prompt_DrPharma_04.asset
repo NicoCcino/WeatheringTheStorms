@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_DrPharma_04
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: Dr. Pharmastein
+    <Description>k__BackingField: everyone immortal now but... nobody dying = overpopulation
+      CRISIS. food running out. do we limit births or... recycle the old ones??
+    <Choices>k__BackingField:
+    - Label: One-child policy globally. Population must stabilize.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 7
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -6
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Mandatory death at 150. Fair lifespan for all.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 5
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -10
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 2
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 321f776b1797d437b941e90f6d019fad, type: 2}
+    - Label: Space colonization program. Earth cannot contain immortals.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -4
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 8
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 5
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 0f7b4745a9d1847f692f95bcafa455df, type: 2}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 09a408ec221d448908e5660928296f52, type: 2}
+  <Coordinates>k__BackingField: {x: 7, y: 6}

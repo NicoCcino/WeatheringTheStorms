@@ -70,7 +70,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 5
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 2c43fb4e23ef8427eba086a484f25ccb, type: 2}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999
