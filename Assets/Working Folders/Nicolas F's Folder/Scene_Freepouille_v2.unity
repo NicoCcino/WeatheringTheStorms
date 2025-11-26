@@ -337,6 +337,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 355604198}
     - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
+      propertyPath: winConditionClimate
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
+      propertyPath: winConditionSocietal
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
       propertyPath: gameObjectsToHide.Array.size
       value: 10
       objectReference: {fileID: 0}
