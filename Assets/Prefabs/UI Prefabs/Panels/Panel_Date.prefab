@@ -1224,8 +1224,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2024/08
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a592c50b22c2246438f0cf40b3194e92, type: 2}
+  m_sharedMaterial: {fileID: 6451355073705550129, guid: a592c50b22c2246438f0cf40b3194e92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1380,6 +1380,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 2x
       objectReference: {fileID: 0}
+    - target: {fileID: 627577703965178179, guid: ee781d957968424458dac21fdbf64021, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6451355073705550129, guid: a592c50b22c2246438f0cf40b3194e92, type: 2}
     - target: {fileID: 1758956754425897026, guid: ee781d957968424458dac21fdbf64021, type: 3}
       propertyPath: m_Name
       value: Toggle_Speedx2
@@ -1497,6 +1501,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4865222805373359922}
     m_Modifications:
+    - target: {fileID: 627577703965178179, guid: ee781d957968424458dac21fdbf64021, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6451355073705550129, guid: a592c50b22c2246438f0cf40b3194e92, type: 2}
+    - target: {fileID: 627577703965178179, guid: ee781d957968424458dac21fdbf64021, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1758956754425897026, guid: ee781d957968424458dac21fdbf64021, type: 3}
       propertyPath: m_Name
       value: Toggle_Speedx1
@@ -1622,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 4x
       objectReference: {fileID: 0}
+    - target: {fileID: 627577703965178179, guid: ee781d957968424458dac21fdbf64021, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6451355073705550129, guid: a592c50b22c2246438f0cf40b3194e92, type: 2}
     - target: {fileID: 1758956754425897026, guid: ee781d957968424458dac21fdbf64021, type: 3}
       propertyPath: m_Name
       value: Toggle_Speedx4

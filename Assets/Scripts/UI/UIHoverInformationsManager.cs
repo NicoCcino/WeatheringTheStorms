@@ -9,13 +9,13 @@ public class UIHoverInformationsManager : Singleton<UIHoverInformationsManager>
     public void DisplayInformations(UIHoverInformation uIHoverInformation)
     {
         textInfo.text = uIHoverInformation.DisplayedText;
-                    panelInfos.Fade(true);
+        panelInfos.Fade(true);
     }
     public void HideInformations(UIHoverInformation uIHoverInformation)
     {
-        if(textInfo.text == uIHoverInformation.DisplayedText)
+        if (textInfo.text == uIHoverInformation.DisplayedText)
         {
-            textInfo.text = "";
+            //  textInfo.text = "";
             panelInfos.Fade(false);
         }
     }

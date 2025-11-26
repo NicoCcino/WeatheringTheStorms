@@ -133,7 +133,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 0.94
+    - _Intensity: 7.71
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -150,7 +150,7 @@ Material:
     - _Width: 0.01
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
-    - _ZTest: 8
+    - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
