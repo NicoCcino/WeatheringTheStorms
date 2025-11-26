@@ -1423,7 +1423,7 @@ MonoBehaviour:
   minimumLoadTime: 7
   canvasGroupCustom: {fileID: 624105666}
   textDescription: {fileID: 624105664}
-  sceneToLoad: David's Scene
+  sceneToLoad: Scene_Freepouille_v2
 --- !u!4 &2054617497
 Transform:
   m_ObjectHideFlags: 0
