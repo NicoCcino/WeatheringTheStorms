@@ -9,6 +9,7 @@ using JSONData;
 public class JSONConverterEditor : EditorWindow
 {
     private const string EVENTS_JSON_PATH = "Assets/Scriptable Objects/Events/Events.json";
+    private const string MANDATORY_EVENTS_JSON_PATH = "Assets/Scriptable Objects/Events/MandatoryEvents.json";
     private const string PROMPTS_JSON_PATH = "Assets/Scriptable Objects/Prompts/Prompts.json";
     private const string UPGRADES_JSON_PATH = "Assets/Scriptable Objects/Upgrades/Upgrades.json";
 
@@ -27,6 +28,12 @@ public class JSONConverterEditor : EditorWindow
         {
             EditorUtility.DisplayDialog("Error", $"Events JSON file not found at: {EVENTS_JSON_PATH}", "OK");
             return;
+        }
+
+        // MandatoryEvents.json is optional - just log a warning if not found
+        if (!File.Exists(MANDATORY_EVENTS_JSON_PATH))
+        {
+            Debug.LogWarning($"MandatoryEvents JSON file not found at: {MANDATORY_EVENTS_JSON_PATH}. Only Events.json will be converted.");
         }
 
         if (ConvertEventsJSON())
@@ -84,13 +91,35 @@ public class JSONConverterEditor : EditorWindow
     {
         try
         {
+            // Read and parse Events.json
             string jsonContent = File.ReadAllText(EVENTS_JSON_PATH);
             string jsonWithoutComments = StripComments(jsonContent);
             EventListJSON eventList = JsonUtility.FromJson<EventListJSON>(jsonWithoutComments);
 
-            if (eventList == null || eventList.Events == null || eventList.Events.Count == 0)
+            if (eventList == null || eventList.Events == null)
             {
-                Debug.LogError("Failed to parse Events JSON or the list is empty.");
+                Debug.LogError("Failed to parse Events JSON.");
+                return false;
+            }
+
+            // Read and parse MandatoryEvents.json if it exists
+            if (File.Exists(MANDATORY_EVENTS_JSON_PATH))
+            {
+                string mandatoryJsonContent = File.ReadAllText(MANDATORY_EVENTS_JSON_PATH);
+                string mandatoryJsonWithoutComments = StripComments(mandatoryJsonContent);
+                EventListJSON mandatoryEventList = JsonUtility.FromJson<EventListJSON>(mandatoryJsonWithoutComments);
+
+                if (mandatoryEventList != null && mandatoryEventList.Events != null && mandatoryEventList.Events.Count > 0)
+                {
+                    // Concatenate mandatory events to the main events list
+                    eventList.Events.AddRange(mandatoryEventList.Events);
+                    Debug.Log($"Added {mandatoryEventList.Events.Count} mandatory events from MandatoryEvents.json");
+                }
+            }
+
+            if (eventList.Events.Count == 0)
+            {
+                Debug.LogError("No events found in any JSON files.");
                 return false;
             }
 
@@ -110,7 +139,7 @@ public class JSONConverterEditor : EditorWindow
                 EventData eventData = new EventData();
                 
                 SetPrivateProperty(eventData, "Description", eventJSON.EventData.Description);
-                SetPrivateProperty(eventData, "DurationInTicks", eventJSON.EventData.DurationInTicks);
+                SetPrivateProperty(eventData, "Duration", eventJSON.EventData.DurationInTicks);
                 
                 // Load icon sprite from file name
                 Sprite iconSprite = LoadIconSprite(eventJSON.EventData.Icon);

@@ -10,12 +10,14 @@ namespace JSONData
     [Serializable]
     public class ModifierJSON
     {
-        public int OneShotValue = 0;
+        public float AddedValue = 0;
+        public float OneShotValue = 0;
 
         public Modifier ToModifier()
         {
             return new Modifier
             {
+                AddedValue = AddedValue,
                 OneShotValue = OneShotValue
             };
         }
@@ -35,6 +37,7 @@ namespace JSONData
             {
                 ClimateModifier = ClimateModifier?.ToModifier() ?? new Modifier(),
                 SocietalModifier = SocietalModifier?.ToModifier() ?? new Modifier(),
+                TrustModifier = TrustModifier?.ToModifier() ?? new Modifier(),
                 HumanModifier = HumanModifier?.ToModifier() ?? new Modifier()
             };
         }
