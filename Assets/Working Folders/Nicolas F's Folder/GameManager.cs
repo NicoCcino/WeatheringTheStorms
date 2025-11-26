@@ -7,38 +7,37 @@ public class GameManager : MonoBehaviour
 
     public float winConditionClimate;
     public float winConditionSocietal;
-    public GameObject panelPromptEnd;
-    public TextMeshProUGUI endText;
-    public GameObject[] gameObjectsToHide;
+    public TextMeshProUGUI winText;
+    public TextMeshProUGUI lossText;
     public MusicController musicController;
+    public UIPromptEnd uiPromptEnd;
+
+    private void OnTimelineTick(uint currentTick)
+    {
+        // Check if player lost
+        if (Human.Instance.HumanCount <= 0)
+        {
+            winText.gameObject.SetActive(false);
+            lossText.gameObject.SetActive(true);
+            Debug.Log("You lost!");
+            uiPromptEnd.DisplayEndPanel(lossText);
+            musicController.SwitchToLossMusic(); // Switch music
+        }
+    }
 
     private void OnGaugeChanged(uint currentTick)
     {
         // Check if player won
         if (GaugeManager.Instance.ClimateGauge.value >= winConditionClimate && GaugeManager.Instance.SocietalGauge.value >= winConditionSocietal)
         {
+            winText.gameObject.SetActive(true);
+            lossText.gameObject.SetActive(false);
             Debug.Log("You won!");
-            DisplayEndPanel();
+            uiPromptEnd.DisplayEndPanel(winText);
+            musicController.SwitchToWinMusic(); // Switch music
         }
     }
 
-    private void DisplayEndPanel()
-    {
-        // Pause the game
-        Timeline.Instance.SetPauseSpeed();
-        // Display panel and trigger typewriter effect.
-        panelPromptEnd.GetComponent<CanvasGroupCustom>().Fade(true);
-        var typewriterEffect = endText.GetComponent<TypewriterEffect>();
-        typewriterEffect.Play(endText.text);
-        // Hide all other panels
-        foreach (GameObject go in gameObjectsToHide)
-        {
-            go.SetActive(false);
-        }
-        // Switch music
-        musicController.SwitchToEndMusic();
-
-    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +46,7 @@ public class GameManager : MonoBehaviour
         if (Timeline.Instance != null)
         {
             GaugeManager.Instance.OnGaugeChanged += OnGaugeChanged;
+            Timeline.Instance.OnTick += OnTimelineTick;
         }
         else
         {
