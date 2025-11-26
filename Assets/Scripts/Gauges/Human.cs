@@ -28,7 +28,6 @@ public class Human : Singleton<Human>
         HumanCount = (long)Mathf.Floor(humanParameter.StartValue);
         floatHumanValue = humanParameter.StartValue;
         humanModifierManager = new ModifierManager();
-        humanModifierManager.modifierScale = 1;
 
         // Subscribe to the OnTick event from Timeline
         if (Timeline.Instance != null)
@@ -48,10 +47,10 @@ public class Human : Singleton<Human>
     public void OnTimelineTick(uint currentTick)
     {
         // Population growth is exponential and is calculated monthly
-        float modifierValue = humanModifierManager.ComputeModifierValue();
+        float modifierValue = humanModifierManager.addedValue;
         float ModifiedGrowth = humanParameter.PopulationGrowthPerYear + (modifierValue / 100.0f);
         float TickGrowth = ModifiedGrowth / (12 / Timeline.Instance.tickDuration);
-        float humanGrowth = (floatHumanValue * TickGrowth) + (modifierValue * humanParameter.HumanModifierScale);
+        float humanGrowth = (floatHumanValue * TickGrowth) + (modifierValue * 10000000);
         PopulationDelta = (long)Mathf.Floor(humanGrowth);
         floatHumanValue += humanGrowth;
 
@@ -68,7 +67,7 @@ public class Human : Singleton<Human>
         humanModifierManager.AddModifier(modifier);
         if (modifier.OneShotValue != 0)
         {
-            Debug.Log("OneShotValue: are not supported for human");
+            Debug.LogWarning("OneShotValue: are not supported for human");
             return;
         }
     }

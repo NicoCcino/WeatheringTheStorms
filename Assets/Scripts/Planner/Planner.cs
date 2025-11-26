@@ -30,6 +30,14 @@ public class Planner : Singleton<Planner>
     }
 
     /// <summary>
+    /// Schedule an event end callback to be triggered after the event's duration
+    /// </summary>
+    public void ScheduleEventEnd(Event evt, uint triggerTick)
+    {
+        ScheduleAction(new ScheduledAction(ScheduledActionType.EventEnd, null, evt, triggerTick));
+    }
+
+    /// <summary>
     /// Internal method to add a scheduled action to the queue
     /// </summary>
     private void ScheduleAction(ScheduledAction action)
@@ -115,6 +123,7 @@ public class ScheduledAction
 public enum ScheduledActionType
 {
     Prompt,
-    Event
+    Event,
+    EventEnd
 }
 

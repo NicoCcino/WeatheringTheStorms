@@ -19,7 +19,6 @@ public class Gauge
         }
         value = gaugeParameter.StartValue;
         modifierManager = new ModifierManager();
-        modifierManager.modifierScale = gaugeParameter.ModifierScale;
     }
 
 
@@ -29,7 +28,7 @@ public class Gauge
         {
             return;
         }
-        iterationValue = humanImpact + modifierManager.ComputeModifierValue();
+        iterationValue = humanImpact + modifierManager.addedValue;
         value += iterationValue;
         OnGaugeModified?.Invoke(value);
         if (value <= 0) value = 0;

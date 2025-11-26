@@ -135,11 +135,11 @@ public class PromptManager : Singleton<PromptManager>
         //We add the prompt to the triggered prompts history (with null choice until user answers)
         TriggeredPrompts[prompt] = null;
         noPromptTickCounter = 0;
-        Debug.Log($"Prompt {prompt.PromptData.Label} Triggered");
+        //Debug.Log($"Prompt {prompt.PromptData.Label} Triggered");
         OnPromptSpawned?.Invoke(prompt);
         CurrentPrompt = prompt;
         prompt.OnSolved += OnCurrentPromptSolved;
-        LogFileManager.Instance.LogUserAction("Prompt", prompt.PromptData.Label);
+        //LogFileManager.Instance.LogUserAction("Prompt", prompt.PromptData.Label);
     }
 
     private void OnCurrentPromptSolved(Choice choice)

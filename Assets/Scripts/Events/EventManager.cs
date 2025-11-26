@@ -13,6 +13,7 @@ public class EventManager : Singleton<EventManager>
     private HashSet<Event> TriggeredEvents { get; set; } = new HashSet<Event>();
     public Action<Event> OnEventTriggered;
     public Action<Event> OnEventOpened;
+    public Action<Event> OnEventEnded;
     private int noEventTickCounter = 0;
     private Event CurrentEvent = null;
     private void Start()
@@ -45,6 +46,16 @@ public class EventManager : Singleton<EventManager>
         // First, check if there are any scheduled events for this tick
         if (Planner.Instance != null && Planner.Instance.HasScheduledActionsForTick(currentTick))
         {
+            // Handle scheduled event end callbacks (duration completed)
+            var eventEndActions = Planner.Instance.GetAndConsumeScheduledActions(currentTick, ScheduledActionType.EventEnd);
+            foreach (var action in eventEndActions)
+            {
+                if (action.ScheduledEvent != null)
+                {
+                    HandleEventEnd(action.ScheduledEvent);
+                }
+            }
+
             var scheduledActions = Planner.Instance.GetAndConsumeScheduledActions(currentTick, ScheduledActionType.Event);
             foreach (var action in scheduledActions)
             {
@@ -90,8 +101,8 @@ public class EventManager : Singleton<EventManager>
 
         if (validEvents.Length == 0)
         {
-            Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
-            LogFileManager.Instance.LogUserAction("Warning", "There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
+            //Debug.LogError("There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
+            //LogFileManager.Instance.LogUserAction("Warning", "There is no available Event anymore. We should create more Events to ensure there is always enough events in the game or reduce the frequency of events");
             return null;
         }
 
@@ -130,13 +141,20 @@ public class EventManager : Singleton<EventManager>
         //We add the event to the triggered events history
         TriggeredEvents.Add(triggeredEvent);
         noEventTickCounter = 0;
-        Debug.Log($"Event {triggeredEvent.EventData.Description} Triggered");
+        //Debug.Log($"Event {triggeredEvent.EventData.Description} Triggered");
         LogFileManager.Instance.LogUserAction("Event", triggeredEvent.EventData.Description);
         OnEventTriggered?.Invoke(triggeredEvent);
         CurrentEvent = triggeredEvent;
         triggeredEvent.OnEventTriggered += OnCurrentEventTriggered;
         // Apply the modifier bank to the gauges
         GaugeManager.Instance.ApplyModifierBank(triggeredEvent.EventData.ModifierBank);
+
+        // Schedule the event end callback if the event has a duration
+        if (triggeredEvent.EventData.Duration > 0 && Timeline.Instance != null && Planner.Instance != null)
+        {
+            uint endTick = Timeline.Instance.CurrentTick + (uint)triggeredEvent.EventData.Duration;
+            Planner.Instance.ScheduleEventEnd(triggeredEvent, endTick);
+        }
 
         // Schedule any planned action if present
         if (triggeredEvent.EventData.PlannedAction != null && triggeredEvent.EventData.PlannedAction.IsValid())
@@ -146,6 +164,23 @@ public class EventManager : Singleton<EventManager>
                 triggeredEvent.EventData.PlannedAction.Schedule(Timeline.Instance.CurrentTick);
             }
         }
+    }
+
+    /// <summary>
+    /// Called when an event's duration has completed (currentTick + Duration reached)
+    /// </summary>
+    private void HandleEventEnd(Event endedEvent)
+    {
+        LogFileManager.Instance.LogUserAction("EventEnd", endedEvent.EventData.Description);
+        
+        ModifierBank revertModifier = new ModifierBank();
+        revertModifier.SocietalModifier.AddedValue = -endedEvent.EventData.ModifierBank.SocietalModifier.AddedValue;
+        revertModifier.ClimateModifier.AddedValue = -endedEvent.EventData.ModifierBank.ClimateModifier.AddedValue;
+        revertModifier.TrustModifier.AddedValue = -endedEvent.EventData.ModifierBank.TrustModifier.AddedValue;
+        revertModifier.HumanModifier.AddedValue = -endedEvent.EventData.ModifierBank.HumanModifier.AddedValue;
+        GaugeManager.Instance.ApplyModifierBank(revertModifier);
+        
+        OnEventEnded?.Invoke(endedEvent);
     }
 
     private void OnCurrentEventTriggered(Event triggeredEvent)
