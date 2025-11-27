@@ -11,6 +11,7 @@ public class UITrustGauge : MonoBehaviour
     private void OnEnable()
     {
         GaugeManager.Instance.TrustGauge.OnGaugeModified += OnGaugeModifierCallback;
+        OnGaugeModifierCallback(GaugeManager.Instance.TrustGauge.value);
     }
     private void OnDisable()
     {
@@ -23,14 +24,12 @@ public class UITrustGauge : MonoBehaviour
         float range = max - min;
         float proportionalValue = (value - min) / range;
         float index = proportionalValue * levels.Length;
-        Debug.Log(index);
         RectTransform targetTransform = levels[Mathf.FloorToInt(index)];
 
         cursor.position = targetTransform.position + new Vector3(0, CursorYOffset, 0);
     }
     private void OnGaugeModifierCallback(float value)
     {
-        Debug.Log("Trust gauge value " + value);
         SliderValue = value;
     }
     private void Update()
