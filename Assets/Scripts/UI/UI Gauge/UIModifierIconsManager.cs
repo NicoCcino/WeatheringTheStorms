@@ -6,7 +6,8 @@ public class UIModifierIconsManager : MonoBehaviour
 {
     [SerializeField] private GameObject eventModifierIconPrefab;
     [SerializeField] private UIModifierIcon upgradeModifierIcon;
-
+    [SerializeField] private Color positiveColor;
+    [SerializeField] private Color negativeColor;
     [SerializeField] private bool isClimate = false;
     [SerializeField] private bool isSocietal = false;
     [SerializeField] private bool isHuman = false;
@@ -41,26 +42,27 @@ public class UIModifierIconsManager : MonoBehaviour
         if (ev.EventData.Duration <= 0)
             return;
 
+
+        float addedValue = 0.0f;
+        if (isClimate) addedValue = ev.EventData.ModifierBank.ClimateModifier.AddedValue;
+        if (isHuman) addedValue = ev.EventData.ModifierBank.HumanModifier.AddedValue;
+        if (isSocietal) addedValue = ev.EventData.ModifierBank.SocietalModifier.AddedValue;
+        if (addedValue == 0.0f)
+        {
+            return;
+        }
+
+        DisplayModifierIconFromEvent(ev, addedValue);
+    }
+
+    public void DisplayModifierIconFromEvent(Event ev, float addedValue)
+    {
         GameObject go = SimplePool.Spawn(eventModifierIconPrefab);
         UIModifierIcon uIModifierIcon = go.GetComponent<UIModifierIcon>();
         go.transform.SetParent(transform);
         go.transform.localScale = Vector3.one;
         go.transform.localRotation = Quaternion.identity;
-
-        DisplayModifierIconFromEvent(uIModifierIcon, ev);
-    }
-
-    public void DisplayModifierIconFromEvent(UIModifierIcon uIModifierIcon, Event ev)
-    {
-        float addedValue = 0.0f;
-        if (isClimate) addedValue = ev.EventData.ModifierBank.ClimateModifier.AddedValue;
-        if (isHuman) addedValue = ev.EventData.ModifierBank.HumanModifier.AddedValue;
-        if (isSocietal) addedValue = ev.EventData.ModifierBank.SocietalModifier.AddedValue;
-
-        if (addedValue == 0.0f)
-        {
-            return;
-        }
-        uIModifierIcon.DisplayModifier(ev.EventData.Icon, addedValue, (uint)ev.EventData.Duration, ev.EventData.Description);
+        Color color = ev.IsEventPositive() ? positiveColor : negativeColor;
+        uIModifierIcon.DisplayModifier(ev.EventData.Icon, addedValue, (uint)ev.EventData.Duration, color, ev.EventData.Description);
     }
 }

@@ -13,5 +13,16 @@ public class Event : ScriptableObject, IGridObject
     {
         OnEventTriggered?.Invoke(this);
     }
+
+    public bool IsEventPositive()
+    {
+        float totalBalance = 0;
+
+        totalBalance += EventData.ModifierBank.ClimateModifier.AddedValue;
+        totalBalance += EventData.ModifierBank.SocietalModifier.AddedValue;
+        totalBalance += EventData.ModifierBank.HumanModifier.AddedValue;
+
+        return totalBalance >= 0;
+    }
 }
 

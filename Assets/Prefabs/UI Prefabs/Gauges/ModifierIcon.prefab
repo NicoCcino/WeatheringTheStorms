@@ -638,5 +638,6 @@ MonoBehaviour:
   textModifierValue: {fileID: 5658404306042846037}
   modifierIcon: {fileID: 5549664697458893336}
   imageDuration: {fileID: 4530876245486254772}
+  backgroundImage: {fileID: 3351768632114262105}
   uiHoverInformation: {fileID: 7693741421758806604}
-  totalUpdateAddedValue: 0
+  totalUpgradeAddedValue: 0

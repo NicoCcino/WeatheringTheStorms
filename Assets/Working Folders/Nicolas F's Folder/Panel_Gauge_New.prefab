@@ -143,7 +143,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 480
+  m_PreferredWidth: 600
   m_PreferredHeight: 40
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -1530,6 +1530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIModifierIconsManager
   eventModifierIconPrefab: {fileID: 9164601629042386659, guid: 9b30587d868019d4e897f9f153adfda9, type: 3}
   upgradeModifierIcon: {fileID: 7689652125440869597}
+  positiveColor: {r: 0.1764706, g: 0.7803922, b: 0.36078432, a: 1}
+  negativeColor: {r: 0.7411765, g: 0.039215688, b: 0.039215688, a: 1}
   isClimate: 0
   isSocietal: 0
   isHuman: 0

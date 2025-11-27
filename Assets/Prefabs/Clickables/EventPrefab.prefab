@@ -163,6 +163,8 @@ MonoBehaviour:
   sprite: {fileID: 4803170234843438877}
   uIHoverInformation: {fileID: 1100381862681418079}
   highlightedRenderer: {fileID: 3400822233798798158}
+  positiveColor: {r: 0.1764706, g: 0.7803922, b: 0.36078432, a: 1}
+  negativeColor: {r: 0.7411765, g: 0.039215688, b: 0.039215688, a: 1}
 --- !u!114 &1100381862681418079
 MonoBehaviour:
   m_ObjectHideFlags: 0
