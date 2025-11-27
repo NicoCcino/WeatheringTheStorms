@@ -33,7 +33,7 @@ public class UIConsole : MonoBehaviour
         eventLog.transform.localScale = Vector3.one;
         string newLogText = Timeline.Instance.currentDate.ToString("yyyy/MM") + ": ";
         newLogText += triggeredEvent.EventData.Description;
-        eventLog.GetComponent<TextMeshProUGUI>().text = newLogText;
+        eventLog.GetComponentInChildren<TextMeshProUGUI>().text = newLogText;
         // Scroll down
         StartCoroutine(ScrollToTop());
     }
