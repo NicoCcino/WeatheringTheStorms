@@ -7,7 +7,7 @@ public class ComputePower : Singleton<ComputePower>
     [SerializeField] public ComputePowerParameter computePowerParameter; // Reference to the Parameter ScriptableObject
     public int value;
     private float floatValue;
-    private float spawnFrequency;
+    public float spawnFrequency;
 
     // Event triggered when computePower value changes
     public event Action<int> OnCP;
@@ -59,9 +59,9 @@ public class ComputePower : Singleton<ComputePower>
     {
         // Compute Trust gauge impact on spawn frequency
         float trustRatio = GaugeManager.Instance.TrustGauge.value / GaugeManager.Instance.TrustGauge.gaugeParameter.Max;
-        float trustImpact = (trustRatio-0.5f) * computePowerParameter.TrustSpawnFrequencyImpact;
+        float trustImpact = (trustRatio - 0.5f) * computePowerParameter.TrustSpawnFrequencyImpact;
         spawnFrequency = computePowerParameter.gameBalancingParameter.SpawnFrequency + trustImpact;
-        
+
         floatValue += computePowerParameter.BaseModifier;
         if (floatValue <= 0) floatValue = 0;
         UpdateValue();

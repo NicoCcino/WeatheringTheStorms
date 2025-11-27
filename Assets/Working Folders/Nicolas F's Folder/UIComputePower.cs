@@ -2,15 +2,20 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
+using System;
 public class UIComputePower : MonoBehaviour
 {
 
     public TextMeshProUGUI computePowerText;
+    public Image imageTimer;
 
     private Vector3 startTextScale;
     private Vector3 startButtonScale;
     public Button button;
     public UIButtonFX uIButtonFX;
+
+    private float timeUntilNextSpawn;
+    float timer = 0.0f;
     void OnEnable()
     {
         startTextScale = computePowerText.transform.localScale;
@@ -20,6 +25,14 @@ public class UIComputePower : MonoBehaviour
             ComputePower.Instance.OnCP += UpdateComputePowerText;
         // Mettre à jour le texte immédiatement avec la valeur actuelle
         UpdateComputePowerText(ComputePower.Instance.value);
+        ComputePower.Instance.OnComputePowerLootSpawn += OnComputePowerLootSpawn;
+        OnComputePowerLootSpawn(null);
+    }
+
+    private void OnComputePowerLootSpawn(ComputePowerLootData data)
+    {
+        timeUntilNextSpawn = (uint)(1 / ComputePower.Instance.spawnFrequency) + 1;
+        timer = 0.0f;
     }
 
     void OnDisable()
@@ -59,5 +72,13 @@ public class UIComputePower : MonoBehaviour
 
 
         uIButtonFX.PlayAnimation(0.2f);
+    }
+
+    private void Update()
+    {
+        //uint timeSinceLastSpawn = Timeline.Instance.CurrentTick - lastCpSpawnTick;
+
+        timer += (Time.deltaTime * Timeline.Instance.tickFreq);
+        imageTimer.fillAmount = timer / timeUntilNextSpawn;
     }
 }
