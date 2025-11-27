@@ -122,11 +122,24 @@ public class PromptBalancer : MonoBehaviour
         {
             foreach (var choice in prompt.PromptData.Choices)
             {
+                float TotalModifierValue = 0;
                 Modifier currentModifier = GetModifierValue(choice.ModifierBank, type);
                 if (currentModifier.OneShotValue != 0)
                 {
-                    max = Mathf.Max(max, currentModifier.OneShotValue);
-                    min = Mathf.Min(min, currentModifier.OneShotValue);
+                    TotalModifierValue += currentModifier.OneShotValue;
+                }
+                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                {
+                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
+                    if (currentModifier.AddedValue != 0)
+                    {
+                        TotalModifierValue += currentModifier.AddedValue * choice.PlannedAction.TicksDelay;
+                    }
+                }
+                if (TotalModifierValue != 0)
+                {
+                    max = Mathf.Max(max, TotalModifierValue);
+                    min = Mathf.Min(min, TotalModifierValue);
                 }
             }
         }
@@ -148,12 +161,12 @@ public class PromptBalancer : MonoBehaviour
                     currentModifier.OneShotValue += offset;
                     modified++;
                 }
-                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null && choice.PlannedAction.TicksDelay > 0)
                 {
                     currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
                     if (currentModifier.AddedValue != 0)
                     {
-                        currentModifier.AddedValue += offset/choice.PlannedAction.TicksDelay;
+                        currentModifier.AddedValue += offset / choice.PlannedAction.TicksDelay;
                     }
                 }
             }
