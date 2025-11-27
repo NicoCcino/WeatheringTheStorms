@@ -7,6 +7,7 @@ public class ComputePower : Singleton<ComputePower>
     [SerializeField] public ComputePowerParameter computePowerParameter; // Reference to the Parameter ScriptableObject
     public int value;
     private float floatValue;
+    private float spawnFrequency;
 
     // Event triggered when computePower value changes
     public event Action<int> OnCP;
@@ -27,6 +28,7 @@ public class ComputePower : Singleton<ComputePower>
         base.Awake();
         floatValue = computePowerParameter.StartValue;
         value = computePowerParameter.StartValue;
+        spawnFrequency = computePowerParameter.SpawnFrequency;
         OnCP?.Invoke(value);
 
     }
@@ -55,13 +57,18 @@ public class ComputePower : Singleton<ComputePower>
     uint lastSpawnedTick;
     public void OnTimelineTick(uint currentTick)
     {
+        // Compute Trust gauge impact on spawn frequency
+        float trustRatio = GaugeManager.Instance.TrustGauge.value / GaugeManager.Instance.TrustGauge.gaugeParameter.Max;
+        float trustImpact = (trustRatio-0.5f) * computePowerParameter.TrustSpawnFrequencyImpact;
+        spawnFrequency = computePowerParameter.SpawnFrequency + trustImpact;
+        
         floatValue += computePowerParameter.BaseModifier;
         if (floatValue <= 0) floatValue = 0;
         UpdateValue();
 
 
         uint ticksSinceLastSpawn = currentTick - lastSpawnedTick;
-        if (ticksSinceLastSpawn > 1 / computePowerParameter.SpawnFrequency)
+        if (ticksSinceLastSpawn > 1 / spawnFrequency)
         {
             OnComputePowerLootSpawn?.Invoke(new ComputePowerLootData(computePowerParameter.ComputePowerClickableGain));
             lastSpawnedTick = currentTick;

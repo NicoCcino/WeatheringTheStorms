@@ -15,4 +15,4 @@ MonoBehaviour:
   StartValue: 0
   BaseModifier: 0
   ComputePowerClickableGain: 2
-  SpawnFrequency: 0.11
+  SpawnFrequency: 0.155

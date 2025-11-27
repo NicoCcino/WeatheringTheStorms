@@ -16,6 +16,5 @@ public class ComputePowerParameter : ScriptableObject
     [Header("Clickable computer power settings")]
     [SerializeField] public int ComputePowerClickableGain;
     [SerializeField] public float SpawnFrequency;
-
-
+    [SerializeField] public float TrustSpawnFrequencyImpact = 0.01f;
 }
