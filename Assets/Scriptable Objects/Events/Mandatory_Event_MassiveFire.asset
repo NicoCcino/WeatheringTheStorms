@@ -20,7 +20,7 @@ MonoBehaviour:
         AddedValue: 0
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: -0.14
+        AddedValue: -0.5
         OneShotValue: 0
       TrustModifier:
         AddedValue: 0

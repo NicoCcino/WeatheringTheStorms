@@ -17,7 +17,7 @@ MonoBehaviour:
       population, causing an unstoppable pandemic that results in mass casualties.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -0.14
+        AddedValue: -0.5
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0

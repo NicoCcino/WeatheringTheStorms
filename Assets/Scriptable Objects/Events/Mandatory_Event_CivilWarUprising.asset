@@ -17,7 +17,7 @@ MonoBehaviour:
       clash and mass executions take place, with severe casualties among civilians.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -0.14
+        AddedValue: -0.5
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 0
