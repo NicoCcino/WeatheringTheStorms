@@ -37,24 +37,42 @@ public class PromptBalancerEditor : Editor
         
         EditorGUILayout.Space(5);
         
-        SerializedProperty targetClimateProp = serializedObject.FindProperty("targetClimateExpectedValue");
-        SerializedProperty targetClimateAmpProp = serializedObject.FindProperty("targetClimateMaxAmplitude");
-        SerializedProperty targetSocietalProp = serializedObject.FindProperty("targetSocietalExpectedValue");
-        SerializedProperty targetSocietalAmpProp = serializedObject.FindProperty("targetSocietalMaxAmplitude");
-        SerializedProperty targetTrustProp = serializedObject.FindProperty("targetTrustExpectedValue");
-        SerializedProperty targetTrustAmpProp = serializedObject.FindProperty("targetTrustMaxAmplitude");
+        SerializedProperty promptBalancerParamProp = serializedObject.FindProperty("promptBalancerParameter");
+        EditorGUILayout.PropertyField(promptBalancerParamProp, new GUIContent("Prompt Balancer Parameter"));
         
-        EditorGUILayout.LabelField("Climate", EditorStyles.miniBoldLabel);
-        EditorGUILayout.PropertyField(targetClimateProp, new GUIContent("  Target Mean", "0 = neutral balance"));
-        EditorGUILayout.PropertyField(targetClimateAmpProp, new GUIContent("  Target Amplitude"));
-        
-        EditorGUILayout.LabelField("Societal", EditorStyles.miniBoldLabel);
-        EditorGUILayout.PropertyField(targetSocietalProp, new GUIContent("  Target Mean", "0 = neutral balance"));
-        EditorGUILayout.PropertyField(targetSocietalAmpProp, new GUIContent("  Target Amplitude"));
-        
-        EditorGUILayout.LabelField("Trust", EditorStyles.miniBoldLabel);
-        EditorGUILayout.PropertyField(targetTrustProp, new GUIContent("  Target Mean", "0 = neutral balance"));
-        EditorGUILayout.PropertyField(targetTrustAmpProp, new GUIContent("  Target Amplitude"));
+        if (promptBalancerParamProp.objectReferenceValue == null)
+        {
+            EditorGUILayout.HelpBox("⚠ Please assign a PromptBalancerParameter!", MessageType.Warning);
+        }
+        else
+        {
+            // Display the current target values from the PromptBalancerParameter (read-only)
+            PromptBalancerParameter balancerParam = (PromptBalancerParameter)promptBalancerParamProp.objectReferenceValue;
+            
+            EditorGUILayout.Space(5);
+            EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+            EditorGUILayout.LabelField("Current Target Values (from PromptBalancerParameter)", EditorStyles.boldLabel);
+            
+            EditorGUI.indentLevel++;
+            
+            if (balancerParam.gameBalancingParameter != null)
+            {
+                EditorGUILayout.LabelField("Climate/Societal", EditorStyles.miniBoldLabel);
+                EditorGUILayout.LabelField($"  Target Mean: {balancerParam.gameBalancingParameter.targetGaugeEsperanceValue}");
+                EditorGUILayout.LabelField($"  Target Amplitude: {balancerParam.gameBalancingParameter.targetGaugeMaxAmplitude}");
+            }
+            else
+            {
+                EditorGUILayout.HelpBox("GameBalancingParameter not assigned in PromptBalancerParameter", MessageType.Warning);
+            }
+            
+            EditorGUILayout.LabelField("Trust", EditorStyles.miniBoldLabel);
+            EditorGUILayout.LabelField($"  Target Mean: {balancerParam.targetTrustEsperanceValue}");
+            EditorGUILayout.LabelField($"  Target Amplitude: {balancerParam.targetTrustMaxAmplitude}");
+            
+            EditorGUI.indentLevel--;
+            EditorGUILayout.EndVertical();
+        }
         
         EditorGUILayout.Space(10);
         
@@ -81,6 +99,14 @@ public class PromptBalancerEditor : Editor
                 EditorUtility.DisplayDialog(
                     "Cannot Balance",
                     "Please assign a PromptManagerParameter before running the balancer.",
+                    "OK"
+                );
+            }
+            else if (promptBalancerParamProp.objectReferenceValue == null)
+            {
+                EditorUtility.DisplayDialog(
+                    "Cannot Balance",
+                    "Please assign a PromptBalancerParameter before running the balancer.",
                     "OK"
                 );
             }
@@ -185,4 +211,3 @@ public class PromptBalancerEditor : Editor
         }
     }
 }
-

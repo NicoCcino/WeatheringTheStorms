@@ -6,6 +6,9 @@ using UnityEngine;
 public class ComputePowerParameter : ScriptableObject
 {
     [Header("Compute Power Settings")]
+
+    public GameBalancingParameter gameBalancingParameter;
+    
     [Tooltip("Initial value of the compute power")]
     [SerializeField] public int StartValue = 0;
 
@@ -15,6 +18,5 @@ public class ComputePowerParameter : ScriptableObject
 
     [Header("Clickable computer power settings")]
     [SerializeField] public int ComputePowerClickableGain;
-    [SerializeField] public float SpawnFrequency;
     [SerializeField] public float TrustSpawnFrequencyImpact = 0.01f;
 }

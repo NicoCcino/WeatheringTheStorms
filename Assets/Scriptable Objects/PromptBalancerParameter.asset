@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457eae4c93cbe443b94085cbf8cdc549, type: 3}
-  m_Name: ComputePowerParameter
-  m_EditorClassIdentifier: Assembly-CSharp::ComputePowerParameter
+  m_Script: {fileID: 11500000, guid: 0d5d96aec50244f56a5260299ec78020, type: 3}
+  m_Name: PromptBalancerParameter
+  m_EditorClassIdentifier: Assembly-CSharp::PromptBalancerParameter
   gameBalancingParameter: {fileID: 11400000, guid: f5f690ebf1e4b432394a3c5583a85e73, type: 2}
-  StartValue: 0
-  BaseModifier: 0
-  ComputePowerClickableGain: 2
-  TrustSpawnFrequencyImpact: 0.01
+  targetTrustEsperanceValue: 0
+  targetTrustMaxAmplitude: 20

@@ -28,7 +28,7 @@ public class ComputePower : Singleton<ComputePower>
         base.Awake();
         floatValue = computePowerParameter.StartValue;
         value = computePowerParameter.StartValue;
-        spawnFrequency = computePowerParameter.SpawnFrequency;
+        spawnFrequency = computePowerParameter.gameBalancingParameter.SpawnFrequency;
         OnCP?.Invoke(value);
 
     }
@@ -60,7 +60,7 @@ public class ComputePower : Singleton<ComputePower>
         // Compute Trust gauge impact on spawn frequency
         float trustRatio = GaugeManager.Instance.TrustGauge.value / GaugeManager.Instance.TrustGauge.gaugeParameter.Max;
         float trustImpact = (trustRatio-0.5f) * computePowerParameter.TrustSpawnFrequencyImpact;
-        spawnFrequency = computePowerParameter.SpawnFrequency + trustImpact;
+        spawnFrequency = computePowerParameter.gameBalancingParameter.SpawnFrequency + trustImpact;
         
         floatValue += computePowerParameter.BaseModifier;
         if (floatValue <= 0) floatValue = 0;

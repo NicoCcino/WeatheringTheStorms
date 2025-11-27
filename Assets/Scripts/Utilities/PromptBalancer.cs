@@ -14,24 +14,9 @@ public class PromptBalancer : MonoBehaviour
 {
     [Tooltip("The PromptManagerParameter containing all prompts to balance")]
     public PromptManagerParameter promptManagerParameter;
-    
-    [Tooltip("Target mean for ClimateModifier (0 = neutral on average)")]
-    public float targetClimateExpectedValue = 0f;
 
-    [Tooltip("Target max amplitude for ClimateModifier")]
-    public float targetClimateMaxAmplitude = 10f;
-
-    [Tooltip("Target mean for SocietalModifier (0 = neutral on average)")]
-    public float targetSocietalExpectedValue = 0f;
-
-    [Tooltip("Target max amplitude for SocietalModifier")]
-    public float targetSocietalMaxAmplitude = 10f;
-
-    [Tooltip("Target mean for TrustModifier (0 = neutral on average)")]
-    public float targetTrustExpectedValue = 0f;
-
-    [Tooltip("Target max amplitude for TrustModifier")]
-    public float targetTrustMaxAmplitude = 10f;
+    [Tooltip("The PromptBalancerParameter containing the target values")]
+    public PromptBalancerParameter promptBalancerParameter;
 
     // Report data for Inspector display
     [System.NonSerialized] public string reportSummary = "";
@@ -209,9 +194,9 @@ public class PromptBalancer : MonoBehaviour
     {
         return type switch
         {
-            ModifierType.Climate => targetClimateExpectedValue,
-            ModifierType.Societal => targetSocietalExpectedValue,
-            ModifierType.Trust => targetTrustExpectedValue,
+            ModifierType.Climate => promptBalancerParameter.gameBalancingParameter.targetGaugeEsperanceValue,
+            ModifierType.Societal => promptBalancerParameter.gameBalancingParameter.targetGaugeEsperanceValue,
+            ModifierType.Trust => promptBalancerParameter.targetTrustEsperanceValue,
             _ => 0
         };
     }
@@ -220,9 +205,9 @@ public class PromptBalancer : MonoBehaviour
     {
         return type switch
         {
-            ModifierType.Climate => targetClimateMaxAmplitude,
-            ModifierType.Societal => targetSocietalMaxAmplitude,
-            ModifierType.Trust => targetTrustMaxAmplitude,
+            ModifierType.Climate => promptBalancerParameter.gameBalancingParameter.targetGaugeMaxAmplitude,
+            ModifierType.Societal => promptBalancerParameter.gameBalancingParameter.targetGaugeMaxAmplitude,
+            ModifierType.Trust => promptBalancerParameter.targetTrustMaxAmplitude,
             _ => 0
         };
     }
