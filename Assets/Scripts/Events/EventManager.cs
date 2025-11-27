@@ -172,12 +172,23 @@ public class EventManager : Singleton<EventManager>
     private void HandleEventEnd(Event endedEvent)
     {
         LogFileManager.Instance.LogUserAction("EventEnd", endedEvent.EventData.Description);
+        Debug.Log($"Event {endedEvent.EventData.Description} Ended");
         
         ModifierBank revertModifier = new ModifierBank();
-        revertModifier.SocietalModifier.AddedValue = -endedEvent.EventData.ModifierBank.SocietalModifier.AddedValue;
-        revertModifier.ClimateModifier.AddedValue = -endedEvent.EventData.ModifierBank.ClimateModifier.AddedValue;
-        revertModifier.TrustModifier.AddedValue = -endedEvent.EventData.ModifierBank.TrustModifier.AddedValue;
-        revertModifier.HumanModifier.AddedValue = -endedEvent.EventData.ModifierBank.HumanModifier.AddedValue;
+        revertModifier.SocietalModifier = new Modifier();
+        revertModifier.ClimateModifier = new Modifier();
+        revertModifier.TrustModifier = new Modifier();
+        revertModifier.HumanModifier = new Modifier();
+        
+        var sourceBank = endedEvent.EventData.ModifierBank;
+        if (sourceBank != null)
+        {
+                revertModifier.SocietalModifier.AddedValue = -sourceBank.SocietalModifier.AddedValue;
+                revertModifier.ClimateModifier.AddedValue = -sourceBank.ClimateModifier.AddedValue;
+                revertModifier.TrustModifier.AddedValue = -sourceBank.TrustModifier.AddedValue;
+                revertModifier.HumanModifier.AddedValue = -sourceBank.HumanModifier.AddedValue;
+        }
+        
         GaugeManager.Instance.ApplyModifierBank(revertModifier);
         
         OnEventEnded?.Invoke(endedEvent);
