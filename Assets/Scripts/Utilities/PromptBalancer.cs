@@ -90,12 +90,24 @@ public class PromptBalancer : MonoBehaviour
         {
             foreach (var choice in prompt.PromptData.Choices)
             {
+                bool isThereAValue = false;
                 Modifier currentModifier = GetModifierValue(choice.ModifierBank, type);
                 if (currentModifier.OneShotValue != 0.0f)
                 {
                     sum += currentModifier.OneShotValue;
-                    count++;
+                    isThereAValue = true;
                 }
+                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                {
+                    // We have a linked event, so we need to add the event modifier values to the sum
+                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
+                    if (currentModifier.AddedValue != 0.0f)
+                    {
+                        sum += currentModifier.AddedValue * choice.PlannedAction.TicksDelay;
+                    }
+                    isThereAValue = true;
+                }
+                if (isThereAValue) count++;
             }
         }
 
@@ -136,6 +148,14 @@ public class PromptBalancer : MonoBehaviour
                     currentModifier.OneShotValue += offset;
                     modified++;
                 }
+                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                {
+                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
+                    if (currentModifier.AddedValue != 0)
+                    {
+                        currentModifier.AddedValue += offset/choice.PlannedAction.TicksDelay;
+                    }
+                }
             }
             EditorUtility.SetDirty(prompt);
         }
@@ -158,6 +178,14 @@ public class PromptBalancer : MonoBehaviour
                 {
                     currentModifier.OneShotValue *= scale;
                     modified++;
+                }
+                if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                {
+                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
+                    if (currentModifier.AddedValue != 0)
+                    {
+                        currentModifier.AddedValue *= scale;
+                    }
                 }
             }
         }

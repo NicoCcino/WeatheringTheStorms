@@ -106,6 +106,7 @@ public class PromptBalancerEditor : Editor
                 
                 int totalChoices = 0;
                 int promptsWithChoices = 0;
+                int linkedEventsCount = 0;
                 foreach (var prompt in param.AllPrompts)
                 {
                     if (prompt != null && prompt.PromptData != null && prompt.PromptData.Choices != null)
@@ -113,11 +114,18 @@ public class PromptBalancerEditor : Editor
                         totalChoices += prompt.PromptData.Choices.Length;
                         if (prompt.PromptData.Choices.Length > 0)
                             promptsWithChoices++;
+                        
+                        foreach (var choice in prompt.PromptData.Choices)
+                        {
+                            if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
+                                linkedEventsCount++;
+                        }
                     }
                 }
                 
                 EditorGUILayout.LabelField($"Total Choices: {totalChoices}");
                 EditorGUILayout.LabelField($"Prompts with Choices: {promptsWithChoices}");
+                EditorGUILayout.LabelField($"Linked Events: {linkedEventsCount}");
                 EditorGUILayout.LabelField($"Average Choices per Prompt: {(promptsWithChoices > 0 ? (float)totalChoices / promptsWithChoices : 0):F1}");
                 EditorGUILayout.EndVertical();
             }

@@ -22,13 +22,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -5
+          OneShotValue: -0.9680233
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -10
+          OneShotValue: -2.9418104
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 3
+          OneShotValue: 13.109497
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -40,13 +40,13 @@ MonoBehaviour:
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 3
+          OneShotValue: 3.0319767
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 7
+          OneShotValue: 5.5581894
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 2
+          OneShotValue: 11.004234
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
