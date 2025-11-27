@@ -110,7 +110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00048828125}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &9024878307341014957
@@ -254,6 +254,8 @@ GameObject:
   - component: {fileID: 3326495957354475475}
   - component: {fileID: 3260594346745465665}
   - component: {fileID: 904690230955208909}
+  - component: {fileID: 3841508839713132905}
+  - component: {fileID: 5776212235060809167}
   m_Layer: 5
   m_Name: Panel_Console
   m_TagString: Untagged
@@ -304,3 +306,30 @@ MonoBehaviour:
   consoleContent: {fileID: 5099372368345824797}
   eventLogPrefab: {fileID: 1600083020211823039, guid: f0eac69d29646c1448ebb4a45171f03a, type: 3}
   scrollRect: {fileID: 7538310759156050449}
+  positiveColor: {r: 0.1764706, g: 0.78039217, b: 0.36078432, a: 0.101960786}
+  negativeColor: {r: 0.7411765, g: 0.039215688, b: 0.039215688, a: 0.101960786}
+--- !u!225 &3841508839713132905
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9097831629516112588}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &5776212235060809167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9097831629516112588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b96275610c3c24994f5ed498acdcb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiDiD.UI.CanvasGroupCustom
+  fadeTime: 0.3

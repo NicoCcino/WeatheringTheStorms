@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
-using System.Runtime.CompilerServices;
 
 public class UIConsole : MonoBehaviour
 {
@@ -10,7 +9,8 @@ public class UIConsole : MonoBehaviour
     public GameObject eventLogPrefab;
     public ScrollRect scrollRect;
 
-
+    public Color positiveColor;
+    public Color negativeColor;
     private void OnEnable()
     {
         EventManager.Instance.OnEventTriggered += HandleEvent;
@@ -34,6 +34,7 @@ public class UIConsole : MonoBehaviour
         string newLogText = Timeline.Instance.currentDate.ToString("yyyy/MM") + ": ";
         newLogText += triggeredEvent.EventData.Description;
         eventLog.GetComponentInChildren<TextMeshProUGUI>().text = newLogText;
+        eventLog.GetComponentInChildren<Image>().color = triggeredEvent.IsEventPositive() ? positiveColor : negativeColor;
         // Scroll down
         StartCoroutine(ScrollToTop());
     }
