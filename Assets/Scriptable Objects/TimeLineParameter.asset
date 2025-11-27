@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29accbbdce85d4d4daf10365c7056698, type: 3}
   m_Name: TimeLineParameter
   m_EditorClassIdentifier: Assembly-CSharp::TimeLineParameter
-  PlayTickFreq: 1
-  FastTickFreq: 2
-  VeryFastTickFreq: 4
+  PlayTickFreq: 1.0999398
+  FastTickFreq: 2.19988
+  VeryFastTickFreq: 4.39976
   TickDuration: 4
+  YearsWinCondition: 30
