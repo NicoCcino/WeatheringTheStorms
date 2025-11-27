@@ -18,7 +18,7 @@ MonoBehaviour:
       lands.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: 8
+        AddedValue: 4
         OneShotValue: 0
       SocietalModifier:
         AddedValue: 4

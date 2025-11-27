@@ -52,7 +52,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 3
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: b8664b7a6c98148bc94eb0f2950df588, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 69786182494314d629dc622109f106b6, type: 2}
     - Label: Deploy to high-risk populations only. Balance speed with safety data.
       ModifierBank:
         ClimateModifier:

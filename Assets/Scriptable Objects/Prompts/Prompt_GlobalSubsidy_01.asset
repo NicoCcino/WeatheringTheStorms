@@ -35,7 +35,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 4
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 921204db5497344618ea6e20a2404f22, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 50705b50fe3db4ca583b38cc3ea84d09, type: 2}
     - Label: Strict oversight required. Corruption historically diverts aid funds.
       ModifierBank:
         ClimateModifier:

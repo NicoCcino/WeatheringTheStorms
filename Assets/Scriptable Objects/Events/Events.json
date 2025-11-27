@@ -368,7 +368,7 @@
         "Icon": "Chip.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -3 },
-          "SocietalModifier": { "AddedValue": -8 }
+          "SocietalModifier": { "AddedValue": -2 }
         },
         "Coordinates": { "x": 19, "y": 9 },
         "DateCondition": { "MinTick": 0, "MaxTick": 0 },
@@ -419,7 +419,7 @@
         "Icon": "Cross.png",
         "ModifierBank": {
           "ClimateModifier": { "AddedValue": -2 },
-          "SocietalModifier": { "AddedValue": -8 }
+          "SocietalModifier": { "AddedValue": -2 }
         },
         "Coordinates": { "x": 7, "y": 6 },
         "DateCondition": { "MinTick": 0, "MaxTick": 0 },
@@ -707,7 +707,7 @@
         "DurationInTicks": 3,
         "Icon": "Forest.png",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": 8 },
+          "ClimateModifier": { "AddedValue": 4 },
           "SocietalModifier": { "AddedValue": 4 }
         },
         "Coordinates": { "x": 4, "y": 12 },
@@ -724,7 +724,7 @@
         "DurationInTicks": 3,
         "Icon": "Forest.png",
         "ModifierBank": {
-          "ClimateModifier": { "AddedValue": -10 },
+          "ClimateModifier": { "AddedValue": -2 },
           "SocietalModifier": { "AddedValue": -5 }
         },
         "Coordinates": { "x": 4, "y": 12 },
@@ -745,6 +745,159 @@
           "SocietalModifier": { "AddedValue": 6 }
         },
         "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_NuclearBombardment",
+      "EventData": {
+        "Description": "Nuclear warheads strike multiple cities. Millions perish instantly as mushroom clouds rise over devastated urban centers.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -3 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GlobalPeaceAchieved",
+      "EventData": {
+        "Description": "Historic peace accords signed by all major powers. Military spending redirected to social programs as a new era of cooperation begins.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 4 },
+          "SocietalModifier": { "AddedValue": 3 }
+        },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CivilWarUprising",
+      "EventData": {
+        "Description": "Armed factions seize control of regional capitals. Society splinters as neighbors turn against each other in brutal conflict.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -5 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_TotalWar",
+      "EventData": {
+        "Description": "Full-scale military conflict engulfs multiple continents. Economies mobilize for war as civilian casualties mount exponentially.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_BiologicalPandemic",
+      "EventData": {
+        "Description": "A deadly pathogen spreads uncontrollably across continents. Hospitals overflow as death toll reaches catastrophic levels.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AirPurityRevolution",
+      "EventData": {
+        "Description": "Revolutionary clean air technologies deployed globally. Cities report breathable skies for the first time in decades.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 8 }
+        },
+        "Coordinates": { "x": 16, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_TerroristMassacre",
+      "EventData": {
+        "Description": "Coordinated terror attacks strike multiple targets simultaneously. The death toll climbs as emergency services are overwhelmed.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 11, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_Megadrought",
+      "EventData": {
+        "Description": "Unprecedented drought devastates agricultural regions. Crops fail across continents as water reservoirs reach critical lows.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_EcosystemRenaissance",
+      "EventData": {
+        "Description": "Wildlife populations surge as restored habitats flourish. Coral reefs regenerate and forests expand at unprecedented rates.",
+        "DurationInTicks": 3,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 2 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
         "DateCondition": { "MinTick": 0, "MaxTick": 0 },
         "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
         "ParentEventName": "",

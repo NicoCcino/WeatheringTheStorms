@@ -52,7 +52,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: aa284ded46a094e21b0c8dbab1a82fee, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 30979fa938981477e811e529ec172611, type: 2}
     - Label: Open diplomatic channel immediately. False positives in intelligence
         common.
       ModifierBank:

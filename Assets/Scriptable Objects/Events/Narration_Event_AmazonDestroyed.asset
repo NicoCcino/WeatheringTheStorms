@@ -18,7 +18,7 @@ MonoBehaviour:
       into savanna.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -10
+        AddedValue: -2
         OneShotValue: 0
       SocietalModifier:
         AddedValue: -5

@@ -52,7 +52,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 0a6bc7c1f4a4c462581e027bef099aa2, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 304f1825bc82f4a9e8719ab8c0a890ab, type: 2}
     - Label: Negotiate international payment for forest preservation. Monetize the
         carbon.
       ModifierBank:

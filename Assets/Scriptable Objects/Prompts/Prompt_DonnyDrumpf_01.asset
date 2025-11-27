@@ -53,7 +53,7 @@ MonoBehaviour:
       PlannedAction:
         <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 3a45a0768afe84f6b95da6db1b264d28, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 4ac7176a88da84d6f83df2b02b80a729, type: 2}
     - Label: Deploy economic sanctions instead. Slower but preserves options.
       ModifierBank:
         ClimateModifier:

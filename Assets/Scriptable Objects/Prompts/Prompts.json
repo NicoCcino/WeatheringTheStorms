@@ -108,7 +108,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_NuclearBombardment"
+              "PlannedEventName": "Narration_Event_NuclearBombardment"
             }
           },
           {
@@ -143,7 +143,7 @@
             "PlannedAction": {
               "TicksDelay": 2,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_GlobalPeaceAchieved"
+              "PlannedEventName": "Narration_Event_GlobalPeaceAchieved"
             }
           },
           {
@@ -257,7 +257,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_CivilWarUprising"
+              "PlannedEventName": "Narration_Event_CivilWarUprising"
             }
           },
           {
@@ -438,7 +438,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_TotalWar"
+              "PlannedEventName": "Narration_Event_TotalWar"
             }
           }
         ],
@@ -477,7 +477,7 @@
             "PlannedAction": {
               "TicksDelay": 3,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_BiologicalPandemic"
+              "PlannedEventName": "Narration_Event_BiologicalPandemic"
             }
           },
           {
@@ -765,7 +765,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_TotalWar"
+              "PlannedEventName": "Narration_Event_TotalWar"
             }
           },
           {
@@ -938,7 +938,7 @@
             "PlannedAction": {
               "TicksDelay": 5,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_AirPurityRevolution"
+              "PlannedEventName": "Narration_Event_AirPurityRevolution"
             }
           }
         ],
@@ -1062,7 +1062,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_TerroristMassacre"
+              "PlannedEventName": "Narration_Event_TerroristMassacre"
             }
           }
         ],
@@ -1137,7 +1137,7 @@
             "PlannedAction": {
               "TicksDelay": 2,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_Megadrought"
+              "PlannedEventName": "Narration_Event_Megadrought"
             }
           },
           {
@@ -1181,7 +1181,7 @@
             "PlannedAction": {
               "TicksDelay": 1,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_TotalWar"
+              "PlannedEventName": "Narration_Event_TotalWar"
             }
           },
           {
@@ -1216,7 +1216,7 @@
             "PlannedAction": {
               "TicksDelay": 4,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_EcosystemRenaissance"
+              "PlannedEventName": "Narration_Event_EcosystemRenaissance"
             }
           },
           {
@@ -1719,7 +1719,7 @@
             "PlannedAction": {
               "TicksDelay": 0,
               "PlannedPromptName": "",
-              "PlannedEventName": "Mandatory_Event_NuclearBombardment"
+              "PlannedEventName": "Narration_Event_NuclearBombardment"
             }
           },
           {

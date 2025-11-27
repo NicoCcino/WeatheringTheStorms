@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7175995bdc4534f9f852d45a0ec68524, type: 3}
-  m_Name: Narration_Event_GlobalSystemsCrash
+  m_Name: Narration_Event_GlobalPeaceAchieved
   m_EditorClassIdentifier: Assembly-CSharp::Event
   EventData:
-    <Description>k__BackingField: Critical infrastructure worldwide collapses as
-      digital systems fail simultaneously. Banking, transportation, and communication
-      networks go dark.
+    <Description>k__BackingField: Historic peace accords signed by all major powers.
+      Military spending redirected to social programs as a new era of cooperation
+      begins.
     <ModifierBank>k__BackingField:
       ClimateModifier:
-        AddedValue: -3
+        AddedValue: 4
         OneShotValue: 0
       SocietalModifier:
-        AddedValue: -2
+        AddedValue: 3
         OneShotValue: 0
       TrustModifier:
         AddedValue: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       HumanModifier:
         AddedValue: 0
         OneShotValue: 0
-    <Coordinates>k__BackingField: {x: 19, y: 9}
+    <Coordinates>k__BackingField: {x: 15, y: 9}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       <MinValue>k__BackingField: 0
       <MaxValue>k__BackingField: 100
       <Category>k__BackingField: 0
-    Icon: {fileID: -1181768812043753746, guid: c03c0a3ac8e8d4362b0fd4770f79948e, type: 3}
+    Icon: {fileID: 7826949717507848784, guid: 1a103bf9dc5baf94eab1b244310a16ef, type: 3}
     Duration: 3
     <ParentEvent>k__BackingField: {fileID: 0}
     <PlannedAction>k__BackingField:
