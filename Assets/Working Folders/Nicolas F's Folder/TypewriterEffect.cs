@@ -61,6 +61,16 @@ public class TypewriterEffect : MonoBehaviour
         }
 
     }
+    public void Stop()
+    {
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+        typingCoroutine = null;
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+    }
 
     public void Reset()
     {

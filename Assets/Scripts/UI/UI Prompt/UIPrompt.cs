@@ -88,6 +88,10 @@ public class UIPrompt : MonoBehaviour
 
         if (DisplayedPrompt == null) return;
         DisplayedPrompt = null;
+
+        // Stop typewriter effect
+        var typewriterEffect = textDescription.GetComponent<TypewriterEffect>();
+        typewriterEffect.Stop();
     }
     public void SolveDisplayedPrompt(Choice choice)
     {
