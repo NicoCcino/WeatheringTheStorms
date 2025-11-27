@@ -35,13 +35,13 @@ public class UIConsole : MonoBehaviour
         newLogText += triggeredEvent.EventData.Description;
         eventLog.GetComponent<TextMeshProUGUI>().text = newLogText;
         // Scroll down
-        StartCoroutine(ScrollToBottom());
+        StartCoroutine(ScrollToTop());
     }
 
-    private IEnumerator ScrollToBottom()
+    private IEnumerator ScrollToTop()
     {
         yield return null; // attendre la fin du frame (Layout Group)
-        scrollRect.verticalNormalizedPosition = 0f;
+        scrollRect.verticalNormalizedPosition = 1f;
     }
 
 }

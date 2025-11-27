@@ -102,7 +102,6 @@ public class GridManager : Singleton<GridManager>
             Debug.LogWarning($"You tried to remove a gameobject at coordinates {coordinates} but these coordinates are already empty");
             return;
         }
-        SimplePool.Despawn(OccupiedCoordinates[coordinates]);
         OccupiedCoordinates.Remove(coordinates);
     }
 

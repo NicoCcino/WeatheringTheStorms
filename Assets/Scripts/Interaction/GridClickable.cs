@@ -13,6 +13,7 @@ public abstract class GridClickable<T> : MonoBehaviour, IPointerClickHandler, IP
     public void OnPointerClick(PointerEventData eventData)
     {
         GridManager.Instance.RemoveObjectAtCoordinates(LinkedGridObject.Coordinates);
+        SimplePool.Despawn(gameObject);
         OnPointerExit(eventData);
         OnClick();
     }
