@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &82774005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3579928777381212877, guid: bb6ffbed222acde44a2b03f7ed0ac899, type: 3}
+  m_PrefabInstance: {fileID: 266468463634857217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &141857029
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +203,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &832313104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2508157481871907579, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+  m_PrefabInstance: {fileID: 2851777881124554338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!212 &1234688818 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2704226242466934938, guid: bb6ffbed222acde44a2b03f7ed0ac899, type: 3}
+  m_PrefabInstance: {fileID: 266468463634857217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1973724088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4434446311392663467, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+  m_PrefabInstance: {fileID: 2851777881124554338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a47e9ef2c82ad42ad4c5f70f2e8a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!114 &2002586903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6017943670113396126, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+  m_PrefabInstance: {fileID: 2851777881124554338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &266468463634857217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,6 +314,18 @@ PrefabInstance:
       propertyPath: promptBalancerParameter
       value: 
       objectReference: {fileID: 11400000, guid: 3243037a9c10b4523844431f21d8c6b2, type: 2}
+    - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 832313104}
+    - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
+      propertyPath: lossText
+      value: 
+      objectReference: {fileID: 2002586903}
+    - target: {fileID: 6787210647923610315, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
+      propertyPath: uiPromptEnd
+      value: 
+      objectReference: {fileID: 1973724088}
     - target: {fileID: 7267128156473941253, guid: ebe04c633fe9c7f46a0f059f5ccdc3a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1018,7 +1073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2835806934342931191, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0002480461
+      value: -0.00021034825
       objectReference: {fileID: 0}
     - target: {fileID: 2883916580881604521, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1256,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3844244380273997595, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+      propertyPath: m_Name
+      value: WinText
+      objectReference: {fileID: 0}
     - target: {fileID: 3944115187446702294, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_Name
       value: MainCanvas
@@ -1424,6 +1483,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4434446311392663467, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+      propertyPath: clickableSpawner
+      value: 
+      objectReference: {fileID: 82774005}
+    - target: {fileID: 4434446311392663467, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
+      propertyPath: worldMapSpriteRenderer
+      value: 
+      objectReference: {fileID: 1234688818}
     - target: {fileID: 4461049591072302200, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1770,7 +1837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6562588209695050767, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00015365335
+      value: -0.00013929505
       objectReference: {fileID: 0}
     - target: {fileID: 6566789554265158605, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1806,7 +1873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838200137994134291, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00015365335
+      value: -0.00013929505
       objectReference: {fileID: 0}
     - target: {fileID: 6879938423733687048, guid: 87cc7baffd0730a40ae408d840b3d499, type: 3}
       propertyPath: m_AnchorMax.y

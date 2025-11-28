@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1095028621808639569}
   - component: {fileID: 5472665455237239995}
   - component: {fileID: 7804104551697489139}
+  - component: {fileID: 2202549231755616451}
+  - component: {fileID: 3179233113139975747}
   m_Layer: 5
   m_Name: Panel_Trust
   m_TagString: Untagged
@@ -77,6 +79,31 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &2202549231755616451
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338687679382891147}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &3179233113139975747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338687679382891147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b96275610c3c24994f5ed498acdcb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiDiD.UI.CanvasGroupCustom
+  fadeTime: 0.3
 --- !u!1 &2205278912217261891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +2859,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1237220877300330723, guid: 9c269311df2daa34883380446eee16de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3326935946944921658}
+    - targetCorrespondingSourceObject: {fileID: 7351989409054831328, guid: 9c269311df2daa34883380446eee16de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5326464976911927269}
+    - targetCorrespondingSourceObject: {fileID: 7351989409054831328, guid: 9c269311df2daa34883380446eee16de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2443275249867151082}
   m_SourcePrefab: {fileID: 100100000, guid: 9c269311df2daa34883380446eee16de, type: 3}
 --- !u!1 &2315427397512998447 stripped
 GameObject:
@@ -2871,6 +2904,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverInformation
   DisplayedText: "The social cohesion gauge is updated every tick. \r\nEncourage
     people to act for peace and diplomacy."
+--- !u!1 &4909664519400320992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351989409054831328, guid: 9c269311df2daa34883380446eee16de, type: 3}
+  m_PrefabInstance: {fileID: 2460410928220626176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &5326464976911927269
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4909664519400320992}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2443275249867151082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4909664519400320992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b96275610c3c24994f5ed498acdcb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiDiD.UI.CanvasGroupCustom
+  fadeTime: 0.3
 --- !u!1 &5880557510708826825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8340329313368428489, guid: 9c269311df2daa34883380446eee16de, type: 3}
@@ -5587,7 +5650,7 @@ MonoBehaviour:
   - {fileID: 5436309516621740637}
   - {fileID: 1852683962011890565}
   - {fileID: 6599133616803127305}
-  - {fileID: 0}
+  - {fileID: 3179233113139975747}
   - {fileID: 1507122541405023098}
   - {fileID: 5521874763287722084}
   worldMapSpriteRenderer: {fileID: 0}
