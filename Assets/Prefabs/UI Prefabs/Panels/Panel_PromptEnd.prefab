@@ -2031,7 +2031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86d7b56e4c8a2745b8745104a3e37f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndGameButton
-  mainMenuScene: MainMenu
+  mainMenuScene: Scene_MainMenu
 --- !u!1001 &6270745583375592952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2363,7 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86d7b56e4c8a2745b8745104a3e37f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndGameButton
-  mainMenuScene: MainMenu
+  mainMenuScene: Scene_MainMenu
 --- !u!224 &6564263623641578343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3709846264581718946, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}

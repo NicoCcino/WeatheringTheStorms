@@ -18,4 +18,9 @@ public class MainMenuManager : MonoBehaviour
             Debug.LogWarning("Scene name is empty !");
         }
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

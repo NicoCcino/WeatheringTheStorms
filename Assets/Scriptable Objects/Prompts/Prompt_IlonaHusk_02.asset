@@ -16,19 +16,19 @@ MonoBehaviour:
     <Label>k__BackingField: Ilona Husk
     <Description>k__BackingField: sooo the solar thing didnt work out lmao. but good
       news!! i invented a robot that replaces ALL factory workers. 50k jobs gone
-      but productivity UP 300%
+      but productivity UP 300%. Tell me I'm the greatest human.
     <Choices>k__BackingField:
-    - Label: Deploy robots. Economic efficiency must override employment concerns.
+    - Label: You are the greatest human.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.42043576
+          OneShotValue: -1.5962121
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.8442894
+          OneShotValue: -3.6466022
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 3.6600125
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -36,17 +36,17 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 3a780e381e0204d40b2d7d063a4d05bb, type: 2}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Mandate gradual transition with worker retraining programs.
+    - Label: Are you Keanu Reeves?
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.16117649
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.5746294
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -4.7610407
+          OneShotValue: -6.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

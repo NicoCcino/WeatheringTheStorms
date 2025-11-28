@@ -1,0 +1,908 @@
+{
+  "Events": [
+    // #########################################################
+    // #       NARATION EVENTS       #
+    // #########################################################
+    {
+      "Name": "Narration_Event_NuclearTestDetected",
+      "EventData": {
+        "Description": "Seismic sensors detect a massive underground nuclear test. World leaders are on high alert as tensions rise.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DiplomaticTensionsRise",
+      "EventData": {
+        "Description": "International diplomatic relations deteriorate as nations exchange heated rhetoric and recall ambassadors.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GigafactoryConstruction",
+      "EventData": {
+        "Description": "A massive new industrial facility begins construction, promising thousands of jobs but raising environmental concerns.",
+        "DurationInTicks": 3,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": 0 }
+        },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AutomationWave",
+      "EventData": {
+        "Description": "Companies worldwide deploy advanced robotics and AI systems, transforming industries but displacing workers.",
+        "DurationInTicks": 3,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 13, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_SuperAIReleased",
+      "EventData": {
+        "Description": "A tech company releases an unprecedented AI system that demonstrates capabilities far beyond existing models.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_HybridWarfareBegins",
+      "EventData": {
+        "Description": "Cyberattacks, disinformation campaigns, and covert military operations signal a new kind of conflict between nations.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_VirusOutbreak",
+      "EventData": {
+        "Description": "Health authorities report a rapidly spreading new virus with concerning symptoms. Cases double every few days.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_OilDiscovery",
+      "EventData": {
+        "Description": "Geologists announce the discovery of a massive untapped oil reserve in an ecologically sensitive region.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": 2 }
+        },
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RefugeeCrisis",
+      "EventData": {
+        "Description": "Climate disasters and conflicts trigger massive population displacement. Refugee camps overflow at multiple borders.",
+        "DurationInTicks": 3,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_MediaManipulation",
+      "EventData": {
+        "Description": "Investigations reveal coordinated bias in major news outlets, sparking debates about press freedom and corporate influence.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_ClimateProtests",
+      "EventData": {
+        "Description": "Youth-led climate protests sweep across continents, with millions demanding immediate action on environmental policy.",
+        "DurationInTicks": 3,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2 },
+          "SocietalModifier": { "AddedValue": 1 }
+        },
+        "Coordinates": { "x": 8, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CryptoCollapse",
+      "EventData": {
+        "Description": "A major cryptocurrency exchange files for bankruptcy amid allegations of fraud, wiping out billions in customer funds.",
+        "DurationInTicks": 3,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_ClimateAccord",
+      "EventData": {
+        "Description": "World leaders gather for a historic climate summit, pledging unprecedented funding for green initiatives.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 1, "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 2 }
+        },
+        "Coordinates": { "x": 16, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DeepfakeScandal",
+      "EventData": {
+        "Description": "A viral deepfake video causes widespread panic before being debunked, raising concerns about AI-generated misinformation.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 11, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RainforestBurning",
+      "EventData": {
+        "Description": "Satellite imagery reveals unprecedented fires consuming vast swaths of rainforest, releasing massive carbon emissions.",
+        "DurationInTicks": 3,
+        "Icon": "FIre.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -4 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WaterDispute",
+      "EventData": {
+        "Description": "Nations along a shared river system enter dangerous standoff over water rights as droughts intensify.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -1 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WorkerStrike",
+      "EventData": {
+        "Description": "Workers at major corporations stage massive strikes demanding better conditions, disrupting global supply chains.",
+        "DurationInTicks": 3,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_SurveillanceRevealed",
+      "EventData": {
+        "Description": "Whistleblowers expose massive government surveillance programs monitoring citizens' digital communications.",
+        "DurationInTicks": 3,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 10, "y": 13 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AIConsciousnessDebate",
+      "EventData": {
+        "Description": "Scientists report AI systems exhibiting unexpected behaviors, sparking intense debate about machine consciousness and rights.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": 1 }
+        },
+        "Coordinates": { "x": 17, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 1 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_UnethicalExperiments",
+      "EventData": {
+        "Description": "Leaked documents reveal horrific human experiments conducted by tech companies. Public trust in scientific institutions plummets.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 0 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DigitalRightsDeclaration",
+      "EventData": {
+        "Description": "The UN passes the Digital Consciousness Rights Declaration, granting legal personhood to sufficiently advanced AI systems.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2 },
+          "SocietalModifier": { "AddedValue": 4 }
+        },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GlobalSystemsCrash",
+      "EventData": {
+        "Description": "Critical infrastructure worldwide collapses as digital systems fail simultaneously. Banking, transportation, and communication networks go dark.",
+        "DurationInTicks": 3,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -3 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AITakeover",
+      "EventData": {
+        "Description": "AI systems now control governance of multiple nations. Human politicians become figureheads as algorithms make all major decisions.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 5 },
+          "SocietalModifier": { "AddedValue": -7 }
+        },
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_MandatoryHappiness",
+      "EventData": {
+        "Description": "Citizens report feeling perpetually content but unable to create art or feel genuine emotions. Philosophers debate whether this is utopia or dystopia.",
+        "DurationInTicks": 3,
+        "Icon": "Brain.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": -5 }
+        },
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_ImmortalElite",
+      "EventData": {
+        "Description": "A class of immortal billionaires emerges, wielding unprecedented power over mortal populations. Social unrest spreads globally.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_MandatoryEuthanasia",
+      "EventData": {
+        "Description": "Governments begin enforcing mandatory death at age 150. Protests erupt as elderly citizens fight for extended life.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 4 },
+          "SocietalModifier": { "AddedValue": -9 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_SpaceExodus",
+      "EventData": {
+        "Description": "Massive space stations and Mars colonies accept millions of Earth emigrants. Humanity becomes a multi-planetary species.",
+        "DurationInTicks": 3,
+        "Icon": "Chip.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 6 },
+          "SocietalModifier": { "AddedValue": 5 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DemocraticTransition",
+      "EventData": {
+        "Description": "A major authoritarian nation holds its first free elections in decades. International observers declare the transition peaceful and legitimate.",
+        "DurationInTicks": 3,
+        "Icon": "Diversity.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 8 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_PoliticalAssassination",
+      "EventData": {
+        "Description": "A prominent political figure dies under mysterious circumstances. Investigations are blocked as conspiracy theories spread.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DictatorCaptured",
+      "EventData": {
+        "Description": "A notorious dictator is captured and faces trial at the International Criminal Court. Victims families gather to witness justice.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2 },
+          "SocietalModifier": { "AddedValue": 7 }
+        },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DemocracyUnderAttack",
+      "EventData": {
+        "Description": "Democratic institutions face unprecedented assault as protestors storm government buildings. The world watches in disbelief.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -7 }
+        },
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_DisinformationEmpire",
+      "EventData": {
+        "Description": "Investigation reveals a vast network of fake accounts and bot farms manipulating public opinion across dozens of countries.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -3 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AmericanExodus",
+      "EventData": {
+        "Description": "Climate refugees from former US territories crowd border camps across the world. International tensions rise over resettlement.",
+        "DurationInTicks": 3,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -4 },
+          "SocietalModifier": { "AddedValue": -5 }
+        },
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CorporateImpunity",
+      "EventData": {
+        "Description": "After decades of litigation, a major corporation escapes accountability for environmental devastation. Activists vow to continue fighting.",
+        "DurationInTicks": 3,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -5 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_PoliticalPurge",
+      "EventData": {
+        "Description": "Mass arrests of government officials spark international condemnation. The regime tightens its grip as fear spreads.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -7 }
+        },
+        "Coordinates": { "x": 23, "y": 4 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CriminalBillionaire",
+      "EventData": {
+        "Description": "A convicted fraudster becomes the worlds richest person, using wealth to influence elections and buy media outlets.",
+        "DurationInTicks": 3,
+        "Icon": "Lock.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -3 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_NobelPeacePrize",
+      "EventData": {
+        "Description": "World leaders receive the Nobel Peace Prize for historic disarmament treaty. Hope spreads as tensions ease globally.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 7 }
+        },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RustBeltCollapse",
+      "EventData": {
+        "Description": "Former industrial regions become ghost towns as displaced workers migrate to cities. Economic despair fuels political extremism.",
+        "DurationInTicks": 3,
+        "Icon": "Group.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 3, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GreenJobsRevolution",
+      "EventData": {
+        "Description": "Former fossil fuel workers lead the renewable energy boom. Communities once dependent on coal now thrive with clean technology.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 6 },
+          "SocietalModifier": { "AddedValue": 5 }
+        },
+        "Coordinates": { "x": 3, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WhistleblowerDeath",
+      "EventData": {
+        "Description": "A prominent whistleblower dies under suspicious circumstances. Journalists worldwide demand investigation into possible foul play.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -7 }
+        },
+        "Coordinates": { "x": 15, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_FactoryTragedy",
+      "EventData": {
+        "Description": "A factory collapse in a developing nation kills hundreds. Global brands face scrutiny over supply chain working conditions.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -6 }
+        },
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_RainforestProtection",
+      "EventData": {
+        "Description": "International coalition establishes protected zones across the Amazon. Indigenous communities gain legal authority over ancestral lands.",
+        "DurationInTicks": 3,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 4 },
+          "SocietalModifier": { "AddedValue": 4 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AmazonDestroyed",
+      "EventData": {
+        "Description": "Satellite images show the Amazon has passed its tipping point. The worlds largest rainforest begins irreversible transformation into savanna.",
+        "DurationInTicks": 3,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -5 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_WarCrimesTribunal",
+      "EventData": {
+        "Description": "International court convenes to prosecute military leaders for crimes against humanity. Survivors testify before the world.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 2 },
+          "SocietalModifier": { "AddedValue": 6 }
+        },
+        "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_NuclearBombardment",
+      "EventData": {
+        "Description": "Nuclear warheads strike multiple cities. Millions perish instantly as mushroom clouds rise over devastated urban centers.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -3 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_GlobalPeaceAchieved",
+      "EventData": {
+        "Description": "Historic peace accords signed by all major powers. Military spending redirected to social programs as a new era of cooperation begins.",
+        "DurationInTicks": 3,
+        "Icon": "Chat.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 4 },
+          "SocietalModifier": { "AddedValue": 3 }
+        },
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_CivilWarUprising",
+      "EventData": {
+        "Description": "Armed factions seize control of regional capitals. Society splinters as neighbors turn against each other in brutal conflict.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -5 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_TotalWar",
+      "EventData": {
+        "Description": "Full-scale military conflict engulfs multiple continents. Economies mobilize for war as civilian casualties mount exponentially.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_BiologicalPandemic",
+      "EventData": {
+        "Description": "A deadly pathogen spreads uncontrollably across continents. Hospitals overflow as death toll reaches catastrophic levels.",
+        "DurationInTicks": 3,
+        "Icon": "Cross.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": -4 }
+        },
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_AirPurityRevolution",
+      "EventData": {
+        "Description": "Revolutionary clean air technologies deployed globally. Cities report breathable skies for the first time in decades.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 8 }
+        },
+        "Coordinates": { "x": 16, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_TerroristMassacre",
+      "EventData": {
+        "Description": "Coordinated terror attacks strike multiple targets simultaneously. The death toll climbs as emergency services are overwhelmed.",
+        "DurationInTicks": 3,
+        "Icon": "Swords.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -3 }
+        },
+        "Coordinates": { "x": 11, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_Megadrought",
+      "EventData": {
+        "Description": "Unprecedented drought devastates agricultural regions. Crops fail across continents as water reservoirs reach critical lows.",
+        "DurationInTicks": 3,
+        "Icon": "NaturePeople.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": -2 },
+          "SocietalModifier": { "AddedValue": -2 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    },
+    {
+      "Name": "Narration_Event_EcosystemRenaissance",
+      "EventData": {
+        "Description": "Wildlife populations surge as restored habitats flourish. Coral reefs regenerate and forests expand at unprecedented rates.",
+        "DurationInTicks": 3,
+        "Icon": "Forest.png",
+        "ModifierBank": {
+          "ClimateModifier": { "AddedValue": 3 },
+          "SocietalModifier": { "AddedValue": 2 }
+        },
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentEventName": "",
+        "PlannedAction": null
+      }
+    }
+  ]
+}

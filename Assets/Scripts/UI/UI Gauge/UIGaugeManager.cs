@@ -25,8 +25,8 @@ public class UIGaugeManager : MonoBehaviour
 
         private void Update()
         {
-                uiGaugeClimate.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
-                uiGaugeSocietal.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
+                uiGaugeClimate.UpdateModifier(Human.Instance.HumanImpact);
+                uiGaugeSocietal.UpdateModifier(Human.Instance.HumanImpact);
                 uiGaugeTrust.UpdateModifier(GaugeManager.Instance.ClimateGauge.iterationValue);
         }
 }

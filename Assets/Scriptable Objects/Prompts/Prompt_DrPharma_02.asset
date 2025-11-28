@@ -15,19 +15,20 @@ MonoBehaviour:
   PromptData:
     <Label>k__BackingField: Dr. Pharmastein
     <Description>k__BackingField: vaccine working!!! but also... we found side effects.
-      nothing major, just occasional cardiac arrest lol. do we tell ppl or...?
+      nothing major, only affects future generations. Do we tell ppl or...?
     <Choices>k__BackingField:
-    - Label: Full disclosure mandatory. Transparency preserves institutional trust.
+    - Label: Panic causes more deaths than side effects. Start developping a vaccine
+        for this side effect.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.03154687
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.38544023
+          OneShotValue: -3.6466022
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 5.7652764
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,35 +36,17 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 0
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Suppress information. Panic causes more deaths than side effects.
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -0.35734197
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -0.27672186
-        TrustModifier:
-          AddedValue: 0
-          OneShotValue: -11.07683
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-      PlannedAction:
-        <TicksDelay>k__BackingField: 0
-        <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Release data quietly. No press conference. Let experts interpret.
+    - Label: Tell everyone, but also triple the price to compensate the loss.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.19625106
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -3.708409
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_5
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: P.Wright
+    <Description>k__BackingField: Hey, my client's trial starts in five minutes and
+      I haven't prepared anything. What should I do?
+    <Choices>k__BackingField:
+    - Label: Let me propagate fake news about the prosecutor to discredit him
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -0.8962121
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -1.9799354
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 8.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 12
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: e95b7cdb965890e4caa301d857845b0b, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: I can download all the rhetorical techniques and you'll repeat exactly
+        what I'll tell you in real time
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -1.5962121
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1.3533981
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 8.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 12
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: e95b7cdb965890e4caa301d857845b0b, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: 6ac040883888ef24dbdf5eb9f08331ef, type: 2}
+  <Coordinates>k__BackingField: {x: 6, y: 10}

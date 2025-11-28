@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: Prompt_DonnyDrumpf_01
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Donny Drumpf
-    <Description>k__BackingField: AI buddy! kimmy is being VERY nasty. ppl say i
-      shud strike first. tremendous idea right?? my ratings would be HUGE
+    <Label>k__BackingField: iampresident
+    <Description>k__BackingField: OMG!!!! ProudPound is SUCH an idiot, how can he
+      rule a country... ppl say i shud strike first. amazing idea right?? its MINE!
     <Choices>k__BackingField:
-    - Label: First strike carries 73% probability of full nuclear exchange. Not recommended.
+    - Label: First strike carries 73% probability of full nuclear exchange. Casualties
+        would likely include yourself. Not recommended.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.42043576
+          OneShotValue: 1.9037879
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.7638186
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -6.8663044
+          OneShotValue: -11.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,36 +36,36 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 0
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Authorize limited tactical strike on missile facilities only. Minimize
-        escalation.
+    - Label: If your admirers want you to, it would surely increase your ratings.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -1.1351198
+          OneShotValue: -2.646212
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.93888396
+          OneShotValue: -3.6466022
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 4.712644
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
       PlannedAction:
         <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 4ac7176a88da84d6f83df2b02b80a729, type: 2}
-    - Label: Deploy economic sanctions instead. Slower but preserves options.
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 9e575d01b30afe849946e6ff0ac47bf7, type: 2}
+    - Label: That would be playing HIS game. Force him to play YOURS. Deploy economic
+        sanctions instead.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.03154687
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.27672186
+          OneShotValue: 0.6867314
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 2.6073806
+          OneShotValue: 3.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

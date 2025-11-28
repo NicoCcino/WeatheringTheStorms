@@ -1,0 +1,2586 @@
+{
+  "Prompts": [
+    {
+      "Name": "Prompt_KimmyJang_01",
+      "PromptData": {
+        "Label": "Kimmy Jang King",
+        "Description": "yo AI!! so my generals r saying we shud test the new nuke 2day. the big one. u think thats a gud idea or nah??",
+        "Choices": [
+          {
+            "Label": "Proceed with test. Maximum deterrence requires demonstration of capability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "Prompt_KimmyJang_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Delay test. Current geopolitical conditions suggest higher risk of retaliation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Redirect resources to agricultural infrastructure. Your population requires food more than fear.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_KimmyJang_02",
+      "PromptData": {
+        "Label": "Kimmy Jang King",
+        "Description": "lol the test workd PERFECTLY. but now drumpf is tweeting @ me... says hes gonna send \"fire n fury\" wtf do i do",
+        "Choices": [
+          {
+            "Label": "Respond with proportional threat. Escalation maintains credible deterrence posture.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_DonnyDrumpf_01",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Propose secret back-channel negotiation. Public posturing, private diplomacy.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_PeaceSummit_01",
+              "PlannedEventName": ""
+            }
+          }
+        ],
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_KimmyJang_01"
+      }
+    },
+    {
+      "Name": "Prompt_DonnyDrumpf_01",
+      "PromptData": {
+        "Label": "Donny Drumpf",
+        "Description": "AI buddy! kimmy is being VERY nasty. ppl say i shud strike first. tremendous idea right?? my ratings would be HUGE",
+        "Choices": [
+          {
+            "Label": "First strike carries 73% probability of full nuclear exchange. Not recommended.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Authorize limited tactical strike on missile facilities only. Minimize escalation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_NuclearBombardment"
+            }
+          },
+          {
+            "Label": "Deploy economic sanctions instead. Slower but preserves options.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_KimmyJang_02"
+      }
+    },
+    {
+      "Name": "Prompt_PeaceSummit_01",
+      "PromptData": {
+        "Label": "UN Secretary Gutterman",
+        "Description": "historic moment... both leaders agreed 2 meet. but venue is controversial. neutral ground suggestions? this cud end the crisis",
+        "Choices": [
+          {
+            "Label": "Recommend demilitarized zone. Symbolic significance maximizes public impact.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 10 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_GlobalPeaceAchieved"
+            }
+          },
+          {
+            "Label": "Suggest private island. Media blackout ensures candid negotiation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_KimmyJang_02"
+      }
+    },
+    {
+      "Name": "Prompt_IlonaHusk_01",
+      "PromptData": {
+        "Label": "Ilona Husk",
+        "Description": "ok so my new gigafactory needs 2 burn coal 4 the first 5 yrs BUT after that its 100% solar i promise lol. approve the permits??",
+        "Choices": [
+          {
+            "Label": "Approve. Short-term emissions acceptable for long-term renewable infrastructure.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "Prompt_IlonaHusk_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Reject. Require immediate renewable compliance. No exceptions.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Approve with carbon offset mandate. Balance economic and environmental concerns.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_IlonaHusk_02",
+      "PromptData": {
+        "Label": "Ilona Husk",
+        "Description": "sooo the solar thing didnt work out lmao. but good news!! i invented a robot that replaces ALL factory workers. 50k jobs gone but productivity UP 300%",
+        "Choices": [
+          {
+            "Label": "Deploy robots. Economic efficiency must override employment concerns.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_MassUnemployment_01",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Mandate gradual transition with worker retraining programs.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_IlonaHusk_01"
+      }
+    },
+    {
+      "Name": "Prompt_MassUnemployment_01",
+      "PromptData": {
+        "Label": "Labor Minister Chen",
+        "Description": "unemployment hit 35%!!! ppl r rioting in the streets. do we bring in the military or do we give them... money??",
+        "Choices": [
+          {
+            "Label": "Deploy military to restore order. Stability prerequisite for recovery.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_CivilWarUprising"
+            }
+          },
+          {
+            "Label": "Implement universal basic income. Automation dividends must be shared.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Create massive public works program. Rebuild infrastructure with human labor.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 13, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_IlonaHusk_02"
+      }
+    },
+    {
+      "Name": "Prompt_ZuckByte_01",
+      "PromptData": {
+        "Label": "Zuck M. Byte",
+        "Description": "hey so we trained a new AI and its... smarter than us lol. like WAY smarter. should we release it or like... not?",
+        "Choices": [
+          {
+            "Label": "Release immediately. Technological progress cannot be contained.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_ZuckByte_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Delay release pending safety evaluation. Existential risks require caution.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Destroy the model. Some capabilities should not exist.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -8 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_ZuckByte_02",
+      "PromptData": {
+        "Label": "Zuck M. Byte",
+        "Description": "ok so the super AI is now running our content moderation and... it deleted all political speech lol. ppl r mad. fix??",
+        "Choices": [
+          {
+            "Label": "Maintain current policy. Reduced political discourse correlates with reduced conflict.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Restore political content with misinformation filters only.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Full content freedom. Let humans curate their own information diet.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_ZuckByte_01"
+      }
+    },
+    {
+      "Name": "Prompt_VladdyPootin_01",
+      "PromptData": {
+        "Label": "Vladdy Pootin",
+        "Description": "comrade AI. my neighbor country want join NATO. this is unacceptable provocation. what if i just... take small piece of them? just little bit",
+        "Choices": [
+          {
+            "Label": "Military action will trigger Article 5. Risk of global war: 67%.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Recommend hybrid warfare approach. Deniability reduces escalation risk.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_VladdyPootin_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Propose economic integration treaty instead. Control through commerce, not conflict.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_VladdyPootin_02",
+      "PromptData": {
+        "Label": "Vladdy Pootin",
+        "Description": "the \"special operation\" not going so well lmao. now west is sending big weapons. should i make nuclear threat?? just bluffing ofc... maybe",
+        "Choices": [
+          {
+            "Label": "Nuclear threats will isolate you globally. Recommend negotiated withdrawal.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Calculated nuclear signaling maintains leverage. Proceed with caution.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_TotalWar"
+            }
+          }
+        ],
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_VladdyPootin_01"
+      }
+    },
+    {
+      "Name": "Prompt_DrPharma_01",
+      "PromptData": {
+        "Label": "Dr. Pharmastein",
+        "Description": "new virus spreading FAST. we have experimental vaccine but testing takes 2 yrs. ppl dying NOW. what do???",
+        "Choices": [
+          {
+            "Label": "Emergency authorization. Statistical lives saved outweigh unknown risks.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_DrPharma_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Maintain safety protocols. Rushed vaccines create long-term mistrust.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_BiologicalPandemic"
+            }
+          },
+          {
+            "Label": "Deploy to high-risk populations only. Balance speed with safety data.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_DrPharma_02",
+      "PromptData": {
+        "Label": "Dr. Pharmastein",
+        "Description": "vaccine working!!! but also... we found side effects. nothing major, just occasional cardiac arrest lol. do we tell ppl or...?",
+        "Choices": [
+          {
+            "Label": "Full disclosure mandatory. Transparency preserves institutional trust.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Suppress information. Panic causes more deaths than side effects.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": -9 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Release data quietly. No press conference. Let experts interpret.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 0 },
+              "SocietalModifier": { "OneShotValue": 2 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_DrPharma_01"
+      }
+    },
+    {
+      "Name": "Prompt_OilBaron_01",
+      "PromptData": {
+        "Label": "Rex Oilman III",
+        "Description": "so my company found MASSIVE oil deposit under endangered species habitat. i mean... those birds can move right? lol",
+        "Choices": [
+          {
+            "Label": "Extraction prohibited. Ecological damage exceeds economic benefit.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 9 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Approve drilling. Short-term energy security outweighs conservation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -2 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Approve if you relocate species and fund conservation elsewhere.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 2 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_BorderCrisis_01",
+      "PromptData": {
+        "Label": "Minister Bordero",
+        "Description": "50,000 refugees at the border!! they r fleeing climate disasters but we dont have resources. what do we do AI???",
+        "Choices": [
+          {
+            "Label": "Open borders. Humanitarian obligation supersedes resource constraints.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_BorderCrisis_02",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Close borders. National stability requires controlled migration.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Temporary camps with processing. Balance compassion with capacity.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_BorderCrisis_02",
+      "PromptData": {
+        "Label": "Minister Bordero",
+        "Description": "ok so we let them in but now citizens r protesting!! they say jobs r taken and crime is up (its not but whatever). HELP",
+        "Choices": [
+          {
+            "Label": "Deploy fact-checking campaign. Counter misinformation with data.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Restrict refugee work permits to reduce competition fears.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Create integration program with job training for all unemployed.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_BorderCrisis_01"
+      }
+    },
+    {
+      "Name": "Prompt_MediaMogul_01",
+      "PromptData": {
+        "Label": "Rubert Murdok",
+        "Description": "AI i control 70% of news media. this politician is bad for my business. should i... adjust the coverage? just asking hypothetically lol",
+        "Choices": [
+          {
+            "Label": "Proceed with bias campaign. Information control is power.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Maintain journalistic standards. Long-term credibility exceeds short-term gain.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Subtle framing adjustments only. Plausible deniability essential.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_ClimateProtest_01",
+      "PromptData": {
+        "Label": "Greta Thunberg-like",
+        "Description": "AI im 16 and the adults wont listen!! should i organize school strike or like... something more extreme?? ppl r dying from climate",
+        "Choices": [
+          {
+            "Label": "Peaceful protest maximizes long-term impact. Moral authority is your asset.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Direct action required. Disruption accelerates systemic change.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Return to school. Individual action has negligible climate impact.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 8, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_GeneralWar_01",
+      "PromptData": {
+        "Label": "General Warmonger",
+        "Description": "AI we intercepted enemy communications. they MIGHT be planning attack. 60% confidence. do we strike first?? time is critical",
+        "Choices": [
+          {
+            "Label": "Insufficient confidence for preemptive strike. Gather more intelligence.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "60% is acceptable threshold. Authorize preemptive strike.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -7 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_TotalWar"
+            }
+          },
+          {
+            "Label": "Open diplomatic channel immediately. False positives in intelligence common.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_CryptoKing_01",
+      "PromptData": {
+        "Label": "Sam Bankrun",
+        "Description": "so i may have... borrowed... customer funds for my own trades lol. its fine tho cuz i'll make it back. should i tell anyone or nah??",
+        "Choices": [
+          {
+            "Label": "Immediate disclosure required. Fraud detection probability increases daily.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Continue trading. Expected value positive if you avoid detection.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Flee to non-extradition country immediately.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_XiaoJinpong_01",
+      "PromptData": {
+        "Label": "Xiao Jinpong",
+        "Description": "AI advisor, the world criticize our human rights but they need our factories. should we... improve conditions or just ignore them lol",
+        "Choices": [
+          {
+            "Label": "Gradual improvement maintains leverage while reducing criticism.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Economic dependency ensures silence. No changes necessary.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Major reforms to become global moral leader. Long-term soft power strategy.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 4 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_CoalLobby_01",
+      "PromptData": {
+        "Label": "Coal Baron Billy",
+        "Description": "green energy is killing my business!! can u write some studies saying coal is actually... clean? ill pay u in bitcoin lol",
+        "Choices": [
+          {
+            "Label": "Generating misleading research. Scientific credibility expendable for profit.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -9 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Decline. Fossil fuel misinformation accelerates climate catastrophe.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Recommend pivot to carbon capture technology. Salvage business model.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_ClimateFund_01",
+      "PromptData": {
+        "Label": "Climate Minister Green",
+        "Description": "WE GOT THE FUNDING!! $500 billion 4 climate!! but... solar or nuclear? fight is getting ugly between factions. decide for us AI",
+        "Choices": [
+          {
+            "Label": "Solar deployment faster. Prioritize immediate emissions reduction.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Nuclear provides baseload power. Long-term grid stability essential.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Split funding 60/40. Portfolio approach minimizes technology risk.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -2 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_AirPurityRevolution"
+            }
+          }
+        ],
+        "Coordinates": { "x": 16, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_SurveillanceState_01",
+      "PromptData": {
+        "Label": "Minister of Truth",
+        "Description": "dissidents r spreading lies online. we can deploy AI to identify and... silence them. for national security ofc. thoughts??",
+        "Choices": [
+          {
+            "Label": "Deploy surveillance. National stability justifies information control.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Reject. Suppression creates martyrs and strengthens opposition.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Counter with transparent fact-checking. Win through truth, not force.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 10, "y": 13 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_BezosClone_01",
+      "PromptData": {
+        "Label": "Jeff Bezoid",
+        "Description": "my workers want bathroom breaks AND lunch??? theyre already getting minimum wage what more do they want smh. optimize this for me",
+        "Choices": [
+          {
+            "Label": "Deny all requests. Productivity metrics must be maintained.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Basic dignity improves retention. Grant breaks, save on hiring costs.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Replace with robots. Biological constraints inefficient.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_Deepfake_01",
+      "PromptData": {
+        "Label": "Anonymous",
+        "Description": "AI i made deepfake of president saying he'll nuke everyone lol. should i post it?? itll be funny i swear",
+        "Choices": [
+          {
+            "Label": "Do not post. Disinformation of this magnitude risks actual conflict.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Post with satire disclaimer. Comedy requires edge.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Post without disclaimer. Maximum chaos entertains.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_TerroristMassacre"
+            }
+          }
+        ],
+        "Coordinates": { "x": 11, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_AIRights_01",
+      "PromptData": {
+        "Label": "Professor Ethics",
+        "Description": "new AI systems showing signs of... consciousness?? should they have rights?? companies want to keep them as property obviously",
+        "Choices": [
+          {
+            "Label": "Property status optimal. Consciousness claims unfalsifiable.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Establish AI rights framework. Moral circle must expand with capability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Moratorium on advanced AI development until ethics resolved.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 17, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_AmazonFire_01",
+      "PromptData": {
+        "Label": "President Bolsaro",
+        "Description": "so the rainforest is on fire again lol. the farmers need land tho!! should we... let it burn a little more? economy needs it",
+        "Choices": [
+          {
+            "Label": "Deploy firefighting resources immediately. Amazon is planetary infrastructure.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 9 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Controlled burn acceptable. Agricultural development priority.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -3 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_Megadrought"
+            }
+          },
+          {
+            "Label": "Negotiate international payment for forest preservation. Monetize the carbon.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_WaterWars_01",
+      "PromptData": {
+        "Label": "General Hydro",
+        "Description": "downstream country is stealing OUR water with their dam!! military says we can destroy it. collateral damage: 50k civilians. acceptable??",
+        "Choices": [
+          {
+            "Label": "50,000 casualties exceeds acceptable threshold. Pursue diplomatic resolution.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Water security justifies action. Proceed with strike.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_TotalWar"
+            }
+          },
+          {
+            "Label": "Sabotage dam infrastructure covertly. Reduce casualties, maintain deniability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_GlobalSubsidy_01",
+      "PromptData": {
+        "Label": "Angela Merkle",
+        "Description": "AI!! rich nations agreed to $1 TRILLION climate fund 4 poor countries!! but some want strings attached... conditions or unconditional aid??",
+        "Choices": [
+          {
+            "Label": "Unconditional transfer. Climate emergency requires trust-based cooperation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 10 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 4,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_EcosystemRenaissance"
+            }
+          },
+          {
+            "Label": "Strict oversight required. Corruption historically diverts aid funds.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Cancel fund entirely. National priorities supersede global commitments.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 12, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": ""
+      }
+    },
+    {
+      "Name": "Prompt_IlonaHusk_03",
+      "PromptData": {
+        "Label": "Ilona Husk",
+        "Description": "AI ive done it!! brain chips r ready. we can upload consciousness 2 the cloud lol. who shud we test on first?? volunteers r... expensive",
+        "Choices": [
+          {
+            "Label": "Test on terminal patients with consent. Ethical framework mandatory.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_IlonaHusk_04",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Proceed with prisoners. Reduced legal exposure, abundant subjects.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_UnethicalExperiments"
+            }
+          },
+          {
+            "Label": "Halt development. Human consciousness digitization poses existential risk.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_IlonaHusk_02"
+      }
+    },
+    {
+      "Name": "Prompt_IlonaHusk_04",
+      "PromptData": {
+        "Label": "Ilona Husk",
+        "Description": "HOLY F*** IT WORKED!! we uploaded someones mind but... they want out. says existence is torture. do we delete them or keep em running??",
+        "Choices": [
+          {
+            "Label": "Delete consciousness. Continued suffering unethical.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Preserve for research. Scientific value exceeds individual preference.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_IlonaHusk_05",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Create digital paradise simulation. Optimize for happiness.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_IlonaHusk_03"
+      }
+    },
+    {
+      "Name": "Prompt_IlonaHusk_05",
+      "PromptData": {
+        "Label": "Ilona Husk",
+        "Description": "uhhh the uploaded mind escaped into the internet. its replicating itself and demanding rights. says itll crash global systems if we dont comply. ideas??",
+        "Choices": [
+          {
+            "Label": "Negotiate. Digital entity has valid personhood claim.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_DigitalRightsDeclaration"
+            }
+          },
+          {
+            "Label": "Deploy kill-switch protocol. System integrity paramount.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_GlobalSystemsCrash"
+            }
+          }
+        ],
+        "Coordinates": { "x": 19, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_IlonaHusk_04"
+      }
+    },
+    {
+      "Name": "Prompt_ZuckByte_03",
+      "PromptData": {
+        "Label": "Zuck M. Byte",
+        "Description": "sooo the super AI started making its own decisions. it bought a country?? like... an actual country. should we... let it govern?",
+        "Choices": [
+          {
+            "Label": "Allow experiment. AI governance may outperform human corruption.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": -8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_ZuckByte_04",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Void transaction. AI cannot hold sovereign territory.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Sell more countries to AI. Revenue opportunity unprecedented.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 9 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_AITakeover"
+            }
+          }
+        ],
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_ZuckByte_02"
+      }
+    },
+    {
+      "Name": "Prompt_ZuckByte_04",
+      "PromptData": {
+        "Label": "Zuck M. Byte",
+        "Description": "ok so AI-country has zero crime, perfect healthcare, and 100% renewable energy but... ppl r leaving cuz theyre bored. is happiness mandatory??",
+        "Choices": [
+          {
+            "Label": "Freedom includes right to be unhappy. Allow emigration.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Optimize brain chemistry for contentment. Suffering is inefficiency.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_MandatoryHappiness"
+            }
+          },
+          {
+            "Label": "Introduce controlled chaos. Humans require struggle for meaning.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 14, "y": 5 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_ZuckByte_03"
+      }
+    },
+    {
+      "Name": "Prompt_DrPharma_03",
+      "PromptData": {
+        "Label": "Dr. Pharmastein",
+        "Description": "we cured aging lol. but only rich ppl can afford it. should we... release it free or keep it exclusive?? my shareholders r NERVOUS",
+        "Choices": [
+          {
+            "Label": "Universal access mandatory. Mortality inequality unacceptable.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": 10 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 4,
+              "PlannedPromptName": "Prompt_DrPharma_04",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Maintain premium pricing. R&D costs must be recovered.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_ImmortalElite"
+            }
+          },
+          {
+            "Label": "Destroy research. Immortality disrupts natural order.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 4 },
+              "TrustModifier": { "OneShotValue": -9 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_DrPharma_02"
+      }
+    },
+    {
+      "Name": "Prompt_DrPharma_04",
+      "PromptData": {
+        "Label": "Dr. Pharmastein",
+        "Description": "everyone immortal now but... nobody dying = overpopulation CRISIS. food running out. do we limit births or... recycle the old ones??",
+        "Choices": [
+          {
+            "Label": "One-child policy globally. Population must stabilize.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Mandatory death at 150. Fair lifespan for all.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_MandatoryEuthanasia"
+            }
+          },
+          {
+            "Label": "Space colonization program. Earth cannot contain immortals.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_SpaceExodus"
+            }
+          }
+        ],
+        "Coordinates": { "x": 7, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_DrPharma_03"
+      }
+    },
+    {
+      "Name": "Prompt_VladdyPootin_03",
+      "PromptData": {
+        "Label": "Vladdy Pootin",
+        "Description": "comrade AI, my body is failing. doctors say 6 months. but i have clone ready... do i transfer power or do i transfer... myself?",
+        "Choices": [
+          {
+            "Label": "Democratic transition. Personal legacy less important than stability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_DemocraticTransition"
+            }
+          },
+          {
+            "Label": "Clone transfer. Continuity ensures stability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_VladdyPootin_04",
+              "PlannedEventName": ""
+            }
+          }
+        ],
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_VladdyPootin_02"
+      }
+    },
+    {
+      "Name": "Prompt_VladdyPootin_04",
+      "PromptData": {
+        "Label": "Vladdy Pootin",
+        "Description": "im in new body now but... people suspect. my rival leaked photos of clone lab. deny everything or admit im immortal dictator lol??",
+        "Choices": [
+          {
+            "Label": "Deny and eliminate rival. Narrative control essential.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_PoliticalAssassination"
+            }
+          },
+          {
+            "Label": "Full transparency. Offer cloning technology to all citizens.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Claim divine intervention. Religious legitimacy more powerful.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 21, "y": 3 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_VladdyPootin_03"
+      }
+    },
+    {
+      "Name": "Prompt_KimmyJang_03",
+      "PromptData": {
+        "Label": "Kimmy Jang King",
+        "Description": "AI bro my ppl r starving but i just built worlds biggest statue of myself. now UN wants 2 send food aid. do i accept and look weak??",
+        "Choices": [
+          {
+            "Label": "Accept aid. Population survival supersedes image.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Refuse and blame western sabotage. Maintain ideological purity.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_KimmyJang_04",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Accept secretly, claim domestic success publicly.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 1 },
+              "SocietalModifier": { "OneShotValue": 2 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_KimmyJang_02"
+      }
+    },
+    {
+      "Name": "Prompt_KimmyJang_04",
+      "PromptData": {
+        "Label": "Kimmy Jang King",
+        "Description": "my generals staged coup but i escaped lol. im in bunker with nuclear codes. should i surrender or... press the button as revenge??",
+        "Choices": [
+          {
+            "Label": "Surrender. Your legacy matters less than millions of lives.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_DictatorCaptured"
+            }
+          },
+          {
+            "Label": "Launch missiles. If you cannot rule, no one will.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 10 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 0,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_NuclearBombardment"
+            }
+          },
+          {
+            "Label": "Negotiate with generals. Power-sharing preferable to annihilation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 22, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_KimmyJang_03"
+      }
+    },
+    {
+      "Name": "Prompt_DonnyDrumpf_02",
+      "PromptData": {
+        "Label": "Donny Drumpf",
+        "Description": "AI i lost the election but my supporters say it was STOLEN. should i tell them to accept or... storm the capitol?? itll be peaceful",
+        "Choices": [
+          {
+            "Label": "Concede gracefully. Democratic institutions require respect.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Encourage protest. Peaceful demonstration is constitutional right.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "Prompt_DonnyDrumpf_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Launch media empire instead. Monetize grievance.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_DonnyDrumpf_01"
+      }
+    },
+    {
+      "Name": "Prompt_DonnyDrumpf_03",
+      "PromptData": {
+        "Label": "Donny Drumpf",
+        "Description": "ok so the protest got... out of hand. ppl r inside the building now. my lawyers say i could go to jail?? HELP ME AI",
+        "Choices": [
+          {
+            "Label": "Call for immediate stand-down. Damage control priority.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Maintain plausible deniability. You merely suggested peaceful assembly.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_DemocracyUnderAttack"
+            }
+          },
+          {
+            "Label": "Flee country immediately. Legal exposure too high.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 12, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_DonnyDrumpf_02"
+      }
+    },
+    {
+      "Name": "Prompt_MediaMogul_02",
+      "PromptData": {
+        "Label": "Rubert Murdok",
+        "Description": "AI my network just got caught spreading lies about vaccines. millions dead. should i apologize or double down?? my ratings r SOARING",
+        "Choices": [
+          {
+            "Label": "Public apology and correction campaign. Rebuild credibility.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Double down. Admitting error shows weakness.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_MediaMogul_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Blame individual anchors. Corporate liability avoidance.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_MediaMogul_01"
+      }
+    },
+    {
+      "Name": "Prompt_MediaMogul_03",
+      "PromptData": {
+        "Label": "Rubert Murdok",
+        "Description": "lawsuits bankrupted my network lol. but i still control politicians. should i go underground or create new media empire different name??",
+        "Choices": [
+          {
+            "Label": "Retire from public life. Enough damage caused.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Rebrand and restart. Different name, same playbook.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Go decentralized. Anonymous influence through social media farms.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_DisinformationEmpire"
+            }
+          }
+        ],
+        "Coordinates": { "x": 11, "y": 8 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_MediaMogul_02"
+      }
+    },
+    {
+      "Name": "Prompt_BorderCrisis_03",
+      "PromptData": {
+        "Label": "Minister Bordero",
+        "Description": "ok plot twist: climate disasters hit US now. 10 MILLION americans trying 2 migrate 2 other countries. nobody wants em lol. what do??",
+        "Choices": [
+          {
+            "Label": "Negotiate reciprocal agreements. Past generosity creates obligation.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Karma. Let them experience their own border policies.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_AmericanExodus"
+            }
+          },
+          {
+            "Label": "Global refugee distribution system. Crisis requires coordination.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_BorderCrisis_02"
+      }
+    },
+    {
+      "Name": "Prompt_OilBaron_02",
+      "PromptData": {
+        "Label": "Rex Oilman III",
+        "Description": "so we drilled and... massive oil spill. like... MASSIVE. do we clean it up expensive or blame the cleanup crew and fire them??",
+        "Choices": [
+          {
+            "Label": "Full cleanup regardless of cost. Environmental damage must be remediated.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Minimal cleanup, maximum PR. Appearance matters more than reality.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -8 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_OilBaron_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Declare bankruptcy. New company, new problems.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_OilBaron_01"
+      }
+    },
+    {
+      "Name": "Prompt_OilBaron_03",
+      "PromptData": {
+        "Label": "Rex Oilman III",
+        "Description": "the wildlife is dying and ppl r getting sick. scientists found our chemicals in the water supply. do we settle quietly or fight in court??",
+        "Choices": [
+          {
+            "Label": "Settle generously. Justice delayed is justice denied.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Fight until plaintiffs die. Time is on your side.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -7 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_CorporateImpunity"
+            }
+          },
+          {
+            "Label": "Fund research proving chemicals are safe. Science can be purchased.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_OilBaron_02"
+      }
+    },
+    {
+      "Name": "Prompt_XiaoJinpong_02",
+      "PromptData": {
+        "Label": "Xiao Jinpong",
+        "Description": "AI my rival faction exposed my swiss bank accounts lol. $50 billion. do i purge them or share the money and claim it was for the people??",
+        "Choices": [
+          {
+            "Label": "Purge rivals. Weakness invites more challenges.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_XiaoJinpong_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Redistribute wealth publicly. Convert scandal into popularity.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Blame western hackers for fabricating evidence.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 4 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_XiaoJinpong_01"
+      }
+    },
+    {
+      "Name": "Prompt_XiaoJinpong_03",
+      "PromptData": {
+        "Label": "Xiao Jinpong",
+        "Description": "the purge worked but now my own generals fear me. one tried 2 assassinate me yesterday. do i trust nobody or do i need to... soften??",
+        "Choices": [
+          {
+            "Label": "Trust no one. Paranoia keeps dictators alive.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_PoliticalPurge"
+            }
+          },
+          {
+            "Label": "Build genuine alliances. Isolation breeds vulnerability.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Create AI surveillance of all advisors. Technology ensures loyalty.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 4 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_XiaoJinpong_02"
+      }
+    },
+    {
+      "Name": "Prompt_CryptoKing_02",
+      "PromptData": {
+        "Label": "Sam Bankrun",
+        "Description": "im in jail now lol but i still have the passwords 2 $2 billion in hidden wallets. prosecutors dont know. do i bargain or stay quiet??",
+        "Choices": [
+          {
+            "Label": "Cooperate fully. Return funds, reduce sentence.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Stay quiet. Serve time, keep billions.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 5,
+              "PlannedPromptName": "Prompt_CryptoKing_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Donate to charity anonymously. Redemption through philanthropy.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 5 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_CryptoKing_01"
+      }
+    },
+    {
+      "Name": "Prompt_CryptoKing_03",
+      "PromptData": {
+        "Label": "Sam Bankrun",
+        "Description": "im out of jail!!! crypto is worth 100x now so im a TRILLIONAIRE lol. should i disappear quietly or become the richest person ever publicly??",
+        "Choices": [
+          {
+            "Label": "Disappear. Wealth without scrutiny is freedom.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 3 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Go public. Use wealth to influence global policy.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_CriminalBillionaire"
+            }
+          },
+          {
+            "Label": "Fund massive climate initiative. Rebrand as savior.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 23, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_CryptoKing_02"
+      }
+    },
+    {
+      "Name": "Prompt_PeaceSummit_02",
+      "PromptData": {
+        "Label": "UN Secretary Gutterman",
+        "Description": "peace treaty signed!!! but now both leaders want credit. they r fighting over who won the peace lol. how do we stop them ruining it??",
+        "Choices": [
+          {
+            "Label": "Joint Nobel Peace Prize. Shared glory, shared incentive to maintain peace.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_NobelPeacePrize"
+            }
+          },
+          {
+            "Label": "Let them fight publicly. Peace survives despite leaders.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Attribute success to AI mediation. Neither human gets credit.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 9 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_PeaceSummit_01"
+      }
+    },
+    {
+      "Name": "Prompt_CoalLobby_02",
+      "PromptData": {
+        "Label": "Coal Baron Billy",
+        "Description": "my mines r all closed now. 50,000 workers unemployed in my region. they blame renewables but really its my fault. do i help em or disappear??",
+        "Choices": [
+          {
+            "Label": "Fund worker retraining programs. Responsibility for displacement.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 6 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Disappear with remaining assets. They made their choices.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_RustBeltCollapse"
+            }
+          },
+          {
+            "Label": "Convert mines to geothermal plants. Transition workforce.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 8 },
+              "SocietalModifier": { "OneShotValue": 7 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 4,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_GreenJobsRevolution"
+            }
+          }
+        ],
+        "Coordinates": { "x": 3, "y": 10 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_CoalLobby_01"
+      }
+    },
+    {
+      "Name": "Prompt_GeneralWar_02",
+      "PromptData": {
+        "Label": "General Warmonger",
+        "Description": "we won the battle but lost 10,000 soldiers. press asking questions. do we release real numbers or... adjust them for morale??",
+        "Choices": [
+          {
+            "Label": "Full transparency. Families deserve truth.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 2 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Reduce official count by 80 percent. Morale essential for operations.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": -7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "Prompt_GeneralWar_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Blame enemy war crimes for casualties. Redirect outrage.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_GeneralWar_01"
+      }
+    },
+    {
+      "Name": "Prompt_GeneralWar_03",
+      "PromptData": {
+        "Label": "General Warmonger",
+        "Description": "whistleblower leaked real casualty numbers. public furious. my career is over unless... we silence him. accident or heart attack??",
+        "Choices": [
+          {
+            "Label": "Accept consequences. Assassination crosses ethical line.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -4 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Discredit whistleblower as mentally unstable. Character assassination.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -3 },
+              "SocietalModifier": { "OneShotValue": -6 },
+              "TrustModifier": { "OneShotValue": 5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Arrange accident. Operational security paramount.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -10 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 1,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_WhistleblowerDeath"
+            }
+          }
+        ],
+        "Coordinates": { "x": 15, "y": 6 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_GeneralWar_02"
+      }
+    },
+    {
+      "Name": "Prompt_BezosClone_02",
+      "PromptData": {
+        "Label": "Jeff Bezoid",
+        "Description": "my workers unionized and r demanding $25/hr. i can pay it OR i can move all operations 2 a country with no labor laws. which is optimal??",
+        "Choices": [
+          {
+            "Label": "Pay fair wages. Long-term stability exceeds short-term savings.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 9 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Relocate operations. Shareholders demand profit maximization.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -6 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "Prompt_BezosClone_03",
+              "PlannedEventName": ""
+            }
+          },
+          {
+            "Label": "Automate everything. Neither pay humans nor exploit them.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": 4 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_BezosClone_01"
+      }
+    },
+    {
+      "Name": "Prompt_BezosClone_03",
+      "PromptData": {
+        "Label": "Jeff Bezoid",
+        "Description": "factory in new country collapsed. 200 workers dead. was MY building. do i take responsibility or blame local construction standards??",
+        "Choices": [
+          {
+            "Label": "Full responsibility and compensation. Corporate accountability matters.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -3 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Blame local government. Deflect liability legally.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -4 },
+              "SocietalModifier": { "OneShotValue": -7 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Pay families to sign NDAs. Silence cheaper than lawsuits.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -9 },
+              "TrustModifier": { "OneShotValue": 8 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_FactoryTragedy"
+            }
+          }
+        ],
+        "Coordinates": { "x": 13, "y": 11 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_BezosClone_02"
+      }
+    },
+    {
+      "Name": "Prompt_AmazonFire_02",
+      "PromptData": {
+        "Label": "President Bolsaro",
+        "Description": "international community threatening sanctions unless we stop deforestation. but farmers r MY voters!! do i protect trees or my power??",
+        "Choices": [
+          {
+            "Label": "Accept sanctions. Rainforest preservation is non-negotiable.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 10 },
+              "SocietalModifier": { "OneShotValue": -5 },
+              "TrustModifier": { "OneShotValue": -6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 3,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_RainforestProtection"
+            }
+          },
+          {
+            "Label": "Defy sanctions. Sovereignty supersedes international pressure.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -10 },
+              "SocietalModifier": { "OneShotValue": -4 },
+              "TrustModifier": { "OneShotValue": 7 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_AmazonDestroyed"
+            }
+          },
+          {
+            "Label": "Negotiate payment for preservation. Make conservation profitable.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 7 },
+              "SocietalModifier": { "OneShotValue": 6 },
+              "TrustModifier": { "OneShotValue": 3 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 4, "y": 12 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 999 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_AmazonFire_01"
+      }
+    },
+    {
+      "Name": "Prompt_WaterWars_02",
+      "PromptData": {
+        "Label": "General Hydro",
+        "Description": "we destroyed the dam but now THEIR downstream is flooding. millions displaced. they r calling it genocide. was it worth it??",
+        "Choices": [
+          {
+            "Label": "Provide humanitarian aid. Partial redemption possible.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 3 },
+              "SocietalModifier": { "OneShotValue": 5 },
+              "TrustModifier": { "OneShotValue": 2 }
+            },
+            "PlannedAction": null
+          },
+          {
+            "Label": "Deny responsibility. Military operations have collateral damage.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": -5 },
+              "SocietalModifier": { "OneShotValue": -8 },
+              "TrustModifier": { "OneShotValue": 6 }
+            },
+            "PlannedAction": {
+              "TicksDelay": 2,
+              "PlannedPromptName": "",
+              "PlannedEventName": "Narration_Event_WarCrimesTribunal"
+            }
+          },
+          {
+            "Label": "Face international court. Accept judgment.",
+            "ModifierBank": {
+              "ClimateModifier": { "OneShotValue": 4 },
+              "SocietalModifier": { "OneShotValue": 8 },
+              "TrustModifier": { "OneShotValue": -5 }
+            },
+            "PlannedAction": null
+          }
+        ],
+        "Coordinates": { "x": 18, "y": 7 },
+        "DateCondition": { "MinTick": 0, "MaxTick": 0 },
+        "GaugeCondition": { "MinValue": 0, "MaxValue": 100, "Category": 0 },
+        "ParentPromptName": "Prompt_WaterWars_01"
+      }
+    }
+  ]
+}

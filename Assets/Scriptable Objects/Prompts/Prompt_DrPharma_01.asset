@@ -14,20 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
     <Label>k__BackingField: Dr. Pharmastein
-    <Description>k__BackingField: new virus spreading FAST. we have experimental
-      vaccine but testing takes 2 yrs. ppl dying NOW. what do???
+    <Description>k__BackingField: New virus spreading fast. We have experimental
+      vaccine but testing takes 2 yrs. People are dying NOW. any safe solution???
     <Choices>k__BackingField:
-    - Label: Emergency authorization. Statistical lives saved outweigh unknown risks.
+    - Label: Congratulations on developping the vaccine so fast. Do not risk the
+        backlash of not using it, ship it globally!
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.03154687
+          OneShotValue: -1.5962121
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.48003483
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 4.712644
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,17 +36,18 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 55a84192c4c84433580ce85c4fa80d33, type: 2}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Maintain safety protocols. Rushed vaccines create long-term mistrust.
+    - Label: I understand your excitement, but there are safety protocols. Let's
+        avoid long-term mistrust for the company.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.46591106
+          OneShotValue: -1.9799354
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -5.813672
+          OneShotValue: -6.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -53,24 +55,6 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 3
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 69786182494314d629dc622109f106b6, type: 2}
-    - Label: Deploy to high-risk populations only. Balance speed with safety data.
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0.16117649
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0.2908457
-        TrustModifier:
-          AddedValue: 0
-          OneShotValue: 0.50211734
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-      PlannedAction:
-        <TicksDelay>k__BackingField: 0
-        <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 999

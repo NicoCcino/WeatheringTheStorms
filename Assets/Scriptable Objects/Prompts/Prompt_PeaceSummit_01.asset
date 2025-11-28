@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Prompt_PeaceSummit_01
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: UN Secretary Gutterman
+    <Label>k__BackingField: Peacefool
     <Description>k__BackingField: historic moment... both leaders agreed 2 meet.
-      but venue is controversial. neutral ground suggestions? this cud end the crisis
+      but venue is controversial. Any neutral ground suggestions? this could end
+      the crisis
     <Choices>k__BackingField:
-    - Label: Recommend demilitarized zone. Symbolic significance maximizes public
-        impact.
+    - Label: I Recommend demilitarized zone like an online meeting.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.16117649
+          OneShotValue: 1.9037879
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.95300776
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 3.6600125
+          OneShotValue: -11.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -36,17 +36,17 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 25586cf9f8038454ca7b63c04a8993e7, type: 2}
-    - Label: Suggest private island. Media blackout ensures candid negotiation.
+    - Label: Avoid any public nuisances by locking them up in a WW2 bunker.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.48003483
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -5.813672
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
