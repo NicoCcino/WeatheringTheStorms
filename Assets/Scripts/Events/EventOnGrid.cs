@@ -31,6 +31,14 @@ public class EventOnGrid : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         {
             Timeline.Instance.OnTick += OnTimelineTickCallback;
         }
+
+        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+
+        foreach (var ps in particleSystems)
+        {
+            var main = ps.main;
+            main.startColor = ev.IsEventPositive() ? positiveColor : negativeColor;
+        }
     }
 
     private void OnTimelineTickCallback(uint currentTick)
