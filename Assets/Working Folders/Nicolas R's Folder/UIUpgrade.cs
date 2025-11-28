@@ -13,6 +13,8 @@ public class UIUpgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] private TextMeshProUGUI textCost;
     [SerializeField] private GameObject gameObjectLocked;
     [SerializeField] private GameObject gameObjectBought;
+    [SerializeField] private Transform effectsParent;
+    [SerializeField] private GameObject effectPrefab;
 
     [Header("Upgrade data References")]
     [SerializeField] public Upgrade upgrade;
@@ -55,6 +57,32 @@ public class UIUpgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         buttonText.text = upgrade.UpgradeData.Label;
         textCost.text = upgrade.UpgradeData.Cost.ToString();
+
+        if (upgrade.UpgradeData.ModifierBank.ClimateModifier.AddedValue != 0)
+        {
+            SpawnEffect().GetComponent<UIUpgradeEffect>().DIsplayFromModifier(UpgradeManager.Instance.climateSprite, upgrade.UpgradeData.ModifierBank.ClimateModifier);
+        }
+        if (upgrade.UpgradeData.ModifierBank.SocietalModifier.AddedValue != 0)
+        {
+            SpawnEffect().GetComponent<UIUpgradeEffect>().DIsplayFromModifier(UpgradeManager.Instance.societalSprite, upgrade.UpgradeData.ModifierBank.SocietalModifier);
+        }
+        if (upgrade.UpgradeData.ModifierBank.TrustModifier.AddedValue != 0)
+        {
+            SpawnEffect().GetComponent<UIUpgradeEffect>().DIsplayFromModifier(UpgradeManager.Instance.trustSprite, upgrade.UpgradeData.ModifierBank.TrustModifier);
+        }
+        if (upgrade.UpgradeData.ModifierBank.HumanModifier.AddedValue != 0)
+        {
+            SpawnEffect().GetComponent<UIUpgradeEffect>().DIsplayFromModifier(UpgradeManager.Instance.humanSprite, upgrade.UpgradeData.ModifierBank.HumanModifier);
+        }
+    }
+    private GameObject SpawnEffect()
+    {
+        GameObject go = SimplePool.Spawn(effectPrefab);
+        go.transform.SetParent(effectsParent);
+        go.transform.localPosition = Vector3.zero;
+        go.transform.localRotation = Quaternion.identity;
+        go.transform.localScale = Vector3.one;
+        return go;
     }
     private void SubscribeToParentsBought()
     {

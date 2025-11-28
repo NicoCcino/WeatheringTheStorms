@@ -56,7 +56,7 @@ public class GridObjectSpawner : MonoBehaviour
         spawnedGameObject.transform.parent = transform;
         ComputePowerClickable computePowerClickable = spawnedGameObject.GetComponent<ComputePowerClickable>();
         computePowerClickable.Init(data);
-        computePowerClickable.LinkedGridObject.Coordinates = GridManager.Instance.GetRandomPositionOnGrid();
+        computePowerClickable.LinkedGridObject.Coordinates = GridManager.Instance.GetAvailableRandomPositionOnGrid();
         GridManager.Instance.DisplayObjectOnGrid(spawnedGameObject, computePowerClickable.LinkedGridObject.Coordinates);
     }
 }

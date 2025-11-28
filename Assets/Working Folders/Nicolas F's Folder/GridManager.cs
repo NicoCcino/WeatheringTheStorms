@@ -109,9 +109,14 @@ public class GridManager : Singleton<GridManager>
     {
         return !OccupiedCoordinates.TryGetValue(coordinates, out GameObject occupyingGo);
     }
-    public Vector2Int GetRandomPositionOnGrid()
+    public Vector2Int GetAvailableRandomPositionOnGrid()
     {
-        return new Vector2Int(UnityEngine.Random.Range(0, gridWidth), UnityEngine.Random.Range(0, gridHeight));
+        Vector2Int coordinates = new Vector2Int(UnityEngine.Random.Range(4, gridWidth - 4), UnityEngine.Random.Range(2, gridHeight - 2));
+        while (!IsCoordinatesAvailables(coordinates))
+        {
+            coordinates = new Vector2Int(UnityEngine.Random.Range(4, gridWidth - 4), UnityEngine.Random.Range(2, gridHeight - 2));
+        }
+        return coordinates;
     }
 }
 

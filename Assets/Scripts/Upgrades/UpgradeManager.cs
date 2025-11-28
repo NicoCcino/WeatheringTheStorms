@@ -6,6 +6,11 @@ public class UpgradeManager : Singleton<UpgradeManager>
     [Header("Upgrades List")]
     [SerializeField] public Upgrade[] AllUpgrades;
 
+    [SerializeField] public Sprite climateSprite;
+    [SerializeField] public Sprite societalSprite;
+    [SerializeField] public Sprite humanSprite;
+    [SerializeField] public Sprite trustSprite;
+
     private void Start()
     {
         ComputePower.Instance.OnCP += RefreshUpgrades;
