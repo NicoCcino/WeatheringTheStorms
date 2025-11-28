@@ -173,24 +173,24 @@ public class EventManager : Singleton<EventManager>
     {
         LogFileManager.Instance.LogUserAction("EventEnd", endedEvent.EventData.Description);
         Debug.Log($"Event {endedEvent.EventData.Description} Ended");
-        
+
         ModifierBank revertModifier = new ModifierBank();
         revertModifier.SocietalModifier = new Modifier();
         revertModifier.ClimateModifier = new Modifier();
         revertModifier.TrustModifier = new Modifier();
         revertModifier.HumanModifier = new Modifier();
-        
+
         var sourceBank = endedEvent.EventData.ModifierBank;
         if (sourceBank != null)
         {
-                revertModifier.SocietalModifier.AddedValue = -sourceBank.SocietalModifier.AddedValue;
-                revertModifier.ClimateModifier.AddedValue = -sourceBank.ClimateModifier.AddedValue;
-                revertModifier.TrustModifier.AddedValue = -sourceBank.TrustModifier.AddedValue;
-                revertModifier.HumanModifier.AddedValue = -sourceBank.HumanModifier.AddedValue;
+            revertModifier.SocietalModifier.AddedValue = -sourceBank.SocietalModifier.AddedValue;
+            revertModifier.ClimateModifier.AddedValue = -sourceBank.ClimateModifier.AddedValue;
+            revertModifier.TrustModifier.AddedValue = -sourceBank.TrustModifier.AddedValue;
+            revertModifier.HumanModifier.AddedValue = -sourceBank.HumanModifier.AddedValue;
         }
-        
+
         GaugeManager.Instance.ApplyModifierBank(revertModifier);
-        
+
         OnEventEnded?.Invoke(endedEvent);
     }
 
@@ -198,7 +198,7 @@ public class EventManager : Singleton<EventManager>
     {
         if (CurrentEvent == null) return;
 
-        Timeline.Instance.SetPlaySpeed();
+        Timeline.Instance.ResumeSpeed(false);
         CurrentEvent.OnEventTriggered -= OnCurrentEventTriggered;
         CurrentEvent = null;
     }

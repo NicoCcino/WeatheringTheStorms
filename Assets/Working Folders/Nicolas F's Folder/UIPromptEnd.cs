@@ -14,7 +14,7 @@ public class UIPromptEnd : MonoBehaviour
     public void DisplayEndPanel(TextMeshProUGUI text)
     {
         // Pause the game
-        Timeline.Instance.SetPauseSpeed();
+        Timeline.Instance.SetPauseSpeed(false);
         // Display panel and trigger typewriter effect.
         GetComponent<CanvasGroupCustom>().Fade(true);
         var typewriterEffect = text.GetComponent<TypewriterEffect>();

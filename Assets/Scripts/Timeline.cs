@@ -24,6 +24,25 @@ public class Timeline : Singleton<Timeline>
     /// </summary>
     public Action<uint> OnTick;
 
+    private ETimelineSpeed timelineSpeed;
+
+    public bool IsPaused;
+    public bool IsPausedFromUser;
+    public ETimelineSpeed TimelineSpeed
+    {
+        get => timelineSpeed; set
+        {
+            if (timelineSpeed != value)
+
+            {
+                timelineSpeed = value;
+                OnStatusChanged?.Invoke(timelineSpeed);
+            }
+        }
+    }
+
+    public Action<ETimelineSpeed> OnStatusChanged;
+
     protected void Start()
     {
         if (timeLineParameter == null)
@@ -52,27 +71,64 @@ public class Timeline : Singleton<Timeline>
             // Debug.Log($"Timeline advanced to tick: {currentTick} on date: {currentDate}");
         }
     }
-
+    public void ResumeSpeed(bool fromUser)
+    {
+        if (IsPausedFromUser && !fromUser)
+        {
+            return;
+        }
+        IsPaused = false;
+        IsPausedFromUser = false;
+        switch (TimelineSpeed)
+        {
+            case ETimelineSpeed.PLAY:
+                SetPlaySpeed();
+                break;
+            case ETimelineSpeed.FAST:
+                SetFastSpeed();
+                break;
+            case ETimelineSpeed.VERYFAST:
+                SetVeryFastSpeed();
+                break;
+        }
+    }
     public void SetPlaySpeed()
     {
         if (timeLineParameter != null)
             tickFreq = timeLineParameter.PlayTickFreq;
+
+        TimelineSpeed = ETimelineSpeed.PLAY;
     }
 
-    public void SetPauseSpeed()
+    public void SetPauseSpeed(bool fromUser)
     {
         tickFreq = 0f;
+        IsPaused = true;
+        if (IsPausedFromUser)
+            return;
+        IsPausedFromUser = fromUser;
     }
 
     public void SetFastSpeed()
     {
         if (timeLineParameter != null)
             tickFreq = timeLineParameter.FastTickFreq;
+        TimelineSpeed = ETimelineSpeed.FAST;
     }
 
     public void SetVeryFastSpeed()
     {
         if (timeLineParameter != null)
             tickFreq = timeLineParameter.VeryFastTickFreq;
+        TimelineSpeed = ETimelineSpeed.VERYFAST;
     }
+
+    public enum ETimelineSpeed
+    {
+        PLAY,
+        FAST,
+        VERYFAST
+    }
+
+
 }

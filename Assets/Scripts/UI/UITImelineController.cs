@@ -19,13 +19,7 @@ public class UITimelineController : MonoBehaviour
         togglex2.onValueChanged.AddListener(OnToggleX2PauseCallback);
         togglex4.onValueChanged.AddListener(OnToggleX4PauseCallback);
 
-        PromptManager.Instance.OnPromptOpened += OnPromptOpened;
-
-    }
-
-    private void OnPromptOpened(Prompt prompt)
-    {
-        togglex1.SetIsOnWithoutNotify(true);
+        Timeline.Instance.OnStatusChanged += OnTimelineStatusChanged;
     }
 
     private void OnDisable()
@@ -34,7 +28,25 @@ public class UITimelineController : MonoBehaviour
         togglex1.onValueChanged.RemoveListener(OnToggleX1PauseCallback);
         togglex2.onValueChanged.RemoveListener(OnToggleX2PauseCallback);
         togglex4.onValueChanged.RemoveListener(OnToggleX4PauseCallback);
+        Timeline.Instance.OnStatusChanged -= OnTimelineStatusChanged;
     }
+
+    private void OnTimelineStatusChanged(Timeline.ETimelineSpeed speed)
+    {
+        switch (speed)
+        {
+            case Timeline.ETimelineSpeed.PLAY:
+                togglex1.SetIsOnWithoutNotify(true);
+                break;
+            case Timeline.ETimelineSpeed.FAST:
+                togglex2.SetIsOnWithoutNotify(true);
+                break;
+            case Timeline.ETimelineSpeed.VERYFAST:
+                togglex4.SetIsOnWithoutNotify(true);
+                break;
+        }
+    }
+
     private void OnToggleX4PauseCallback(bool val)
     {
         if (val == true)
@@ -63,17 +75,23 @@ public class UITimelineController : MonoBehaviour
     {
         if (!val)
         {
-            Timeline.Instance.SetPauseSpeed();
-            disabledGo.SetActive(true);
-            imageIsPlaying.gameObject.SetActive(false);
-            imageIsPaused.gameObject.SetActive(true);
+            SetPauseStatus();
             return;
         }
+        SetPlayStatus();
+    }
+    private void SetPauseStatus()
+    {
+        Timeline.Instance.SetPauseSpeed(true);
+        disabledGo.SetActive(true);
+        imageIsPlaying.gameObject.SetActive(false);
+        imageIsPaused.gameObject.SetActive(true);
+    }
+    private void SetPlayStatus()
+    {
         disabledGo.SetActive(false);
         imageIsPlaying.gameObject.SetActive(true);
         imageIsPaused.gameObject.SetActive(false);
-        OnToggleX1PauseCallback(togglex1.isOn);
-        OnToggleX2PauseCallback(togglex2.isOn);
-        OnToggleX4PauseCallback(togglex4.isOn);
+        Timeline.Instance.ResumeSpeed(true);
     }
 }

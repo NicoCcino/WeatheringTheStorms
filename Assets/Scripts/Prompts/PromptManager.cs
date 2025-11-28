@@ -148,11 +148,11 @@ public class PromptManager : Singleton<PromptManager>
 
         // Store the user's choice for this prompt
         TriggeredPrompts[CurrentPrompt] = choice;
-        
+
         // Log the choice to CSV file
         LogFileManager.Instance.LogUserAction("Choice", $"{CurrentPrompt.PromptData.Label}: {choice.Label}");
 
-        Timeline.Instance.SetPlaySpeed();
+        Timeline.Instance.ResumeSpeed(false);
         CurrentPrompt.OnSolved -= OnCurrentPromptSolved;
 
         // Schedule any planned action if present
@@ -213,12 +213,12 @@ public class PromptManager : Singleton<PromptManager>
     public List<ChatMessage> GetConversationHistory(Prompt currentPrompt)
     {
         List<ChatMessage> history = new List<ChatMessage>();
-        
+
         if (currentPrompt == null) return history;
-        
+
         string currentLabel = currentPrompt.PromptData.Label;
         Prompt traversePrompt = currentPrompt.PromptData.ParentPrompt;
-        
+
         // Traverse backwards through parent chain, collecting prompts with same label
         while (traversePrompt != null)
         {
@@ -227,7 +227,7 @@ public class PromptManager : Singleton<PromptManager>
             {
                 // Get the choice that was made for this parent prompt
                 Choice parentChoice = GetChoiceForPrompt(traversePrompt);
-                
+
                 if (parentChoice != null)
                 {
                     // Insert at the beginning to maintain chronological order
@@ -237,7 +237,7 @@ public class PromptManager : Singleton<PromptManager>
                         parentChoice.Label,
                         ChatMessage.Alignment.Right
                     ));
-                    
+
                     // Insert the prompt message at the beginning (so it comes before the choice)
                     history.Insert(0, new ChatMessage(
                         traversePrompt.PromptData.Label,
@@ -245,7 +245,7 @@ public class PromptManager : Singleton<PromptManager>
                         ChatMessage.Alignment.Left
                     ));
                 }
-                
+
                 // Move to the next parent
                 traversePrompt = traversePrompt.PromptData.ParentPrompt;
             }
@@ -255,7 +255,7 @@ public class PromptManager : Singleton<PromptManager>
                 break;
             }
         }
-        
+
         // No need to reverse - we inserted at the beginning to maintain order
         return history;
     }
