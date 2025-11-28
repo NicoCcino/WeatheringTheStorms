@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(10)]
 public class UITrustGauge : MonoBehaviour
 {
     [SerializeField] private RectTransform cursor;
@@ -14,7 +15,6 @@ public class UITrustGauge : MonoBehaviour
     private void OnEnable()
     {
         GaugeManager.Instance.TrustGauge.OnGaugeModified += OnGaugeModifierCallback;
-        OnGaugeModifierCallback(GaugeManager.Instance.TrustGauge.value);
         ComputePower.Instance.OnComputePowerLootSpawn += OnComputePowerLootSpawn;
         OnComputePowerLootSpawn(null);
     }
@@ -45,7 +45,7 @@ public class UITrustGauge : MonoBehaviour
     }
     private void Update()
     {
-        SetGaugeValue(SliderValue);
+        SetGaugeValue(GaugeManager.Instance.TrustGauge.value);
 
         timer += (Time.deltaTime * Timeline.Instance.tickFreq);
         imageTimer.fillAmount = timer / timeUntilNextSpawn;
