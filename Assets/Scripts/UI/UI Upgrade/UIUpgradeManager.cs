@@ -25,9 +25,9 @@ public class UIUpgradeManager : Singleton<UIUpgradeManager>
     public void Display(bool on)
     {
         if (on)
-            Timeline.Instance.SetPauseSpeed();
+            Timeline.Instance.SetPauseSpeed(false);
         else
-            Timeline.Instance.SetPlaySpeed(); // Maybe not resume speed
+            Timeline.Instance.ResumeSpeed(false); // Maybe not resume speed
         canvasGroupCustom.Fade(on);
     }
     private void Start()
