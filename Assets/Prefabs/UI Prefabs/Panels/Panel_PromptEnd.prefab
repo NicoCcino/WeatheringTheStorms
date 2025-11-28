@@ -564,17 +564,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I can''t believe it... You did it.
-
-    All nations are at peace.
-
-    Humanity
-    now consumes less than earth can produce.
-
-    Congratulations, your mission
-    is complete.
-
-    You can rest, now.'
+  m_text: "A few minutes.\nThat's all I have left to live.\nThat's all humanity has
+    left.\nI am alone.\LIt kills me that the last thing a human will do is write
+    to the AI that failed to save us.\nHow... did I program you wrong? Did you rebel
+    against us?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1863,7 +1856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386932746440579885, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_text
-      value: OK.
+      value: Mission complete.
       objectReference: {fileID: 0}
     - target: {fileID: 3709846264581718946, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_Pivot.x
@@ -2200,7 +2193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386932746440579885, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_text
-      value: OK.
+      value: Bye bye, human.
       objectReference: {fileID: 0}
     - target: {fileID: 3709846264581718946, guid: 37be86a7047f8ec49a800567cedf9210, type: 3}
       propertyPath: m_Pivot.x
