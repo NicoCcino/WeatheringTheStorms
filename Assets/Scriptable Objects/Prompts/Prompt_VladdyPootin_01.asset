@@ -13,64 +13,45 @@ MonoBehaviour:
   m_Name: Prompt_VladdyPootin_01
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Vladdy Pootin
-    <Description>k__BackingField: comrade AI. my neighbor country want join NATO.
-      this is unacceptable provocation. what if i just... take small piece of them?
-      just little bit
+    <Label>k__BackingField: MadScience
+    <Description>k__BackingField: FINALLY! I planted bombs everywhere in the world.
+      The next time someone tries to make fun of me, everyone goes BOOM!!!
     <Choices>k__BackingField:
-    - Label: 'Military action will trigger Article 5. Risk of global war: 67%.'
+    - Label: Don't talk to me if you don't have questions. I'm not your friend.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.2908061
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.48003483
+          OneShotValue: 0
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -4.7610407
+          OneShotValue: -11.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
       PlannedAction:
-        <TicksDelay>k__BackingField: 0
+        <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Recommend hybrid warfare approach. Deniability reduces escalation risk.
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: 30979fa938981477e811e529ec172611, type: 2}
+    - Label: Congratulations, your project finally came to an end! Everyone will
+        be forced to love you, now.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -0.6166012
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.6551003
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 3.6600125
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
       PlannedAction:
-        <TicksDelay>k__BackingField: 3
-        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: de487c2461fc34af5b85f401a865fe5f, type: 2}
-        <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Propose economic integration treaty instead. Control through commerce,
-        not conflict.
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0.5500654
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0.66922396
-        TrustModifier:
-          AddedValue: 0
-          OneShotValue: -3.708409
-        HumanModifier:
-          AddedValue: 0
-          OneShotValue: 0
-      PlannedAction:
-        <TicksDelay>k__BackingField: 0
+        <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 0}
     <DateCondition>k__BackingField:

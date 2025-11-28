@@ -13,22 +13,21 @@ MonoBehaviour:
   m_Name: Prompt_KimmyJang_02
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Kimmy Jang King
+    <Label>k__BackingField: ProudPound
     <Description>k__BackingField: lol the test workd PERFECTLY. but now drumpf is
-      tweeting @ me... says hes gonna send "fire n fury" wtf do i do
+      tweeting @ me... says hes gonna send "fire and fury" wtf do i do
     <Choices>k__BackingField:
-    - Label: Respond with proportional threat. Escalation maintains credible deterrence
-        posture.
+    - Label: Respond with proportional threat, such as an offensive emoji.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -0.74623084
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.93888396
+          OneShotValue: -1.9799354
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 1.5547489
+          OneShotValue: 3.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -36,24 +35,24 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 2
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 08f45f81a06284268b4804d01e7026ae, type: 2}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Propose secret back-channel negotiation. Public posturing, private diplomacy.
+    - Label: Be the smartest man in the room. Send him flowers.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.2908061
+          OneShotValue: 1.2037878
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.66922396
+          OneShotValue: -1.3132687
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 0.50211734
+          OneShotValue: 1.4561404
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
       PlannedAction:
         <TicksDelay>k__BackingField: 3
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 24ed54a8d92ef42f4975e7118f684c41, type: 2}
-        <PlannedEvent>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 11400000, guid: d7b759ce9dfde834a9e629c6272eca67, type: 2}
     <DateCondition>k__BackingField:
       <MinTick>k__BackingField: 0
       <MaxTick>k__BackingField: 0

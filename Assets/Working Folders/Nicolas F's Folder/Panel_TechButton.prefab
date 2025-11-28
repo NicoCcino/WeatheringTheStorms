@@ -814,8 +814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4bf0bcb4d92af547bb97f886b7890be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverInformation
-  DisplayedText: "Click to open upgrade menu.\nCollect compute power units on the
-    map. \nUpgrade humanity with permanent boosts."
+  DisplayedText: "Collect upgrade points units on the map. \nUpgrade humanity with
+    permanent boosts."
 --- !u!225 &105008820695916077
 CanvasGroup:
   m_ObjectHideFlags: 0

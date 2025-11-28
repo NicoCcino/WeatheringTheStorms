@@ -25,14 +25,14 @@ public class UIModifierIcon : MonoBehaviour
         remainingTime = duration;
         modifierIcon.sprite = icon;
         imageDuration.fillAmount = 1;
-        textModifierValue.text = (addedValue * 10).ToString("0");
+        textModifierValue.text = (addedValue * 10).ToString("0.#");
     }
     //Specific Upgrade
     public float totalUpgradeAddedValue = 0.0f;
     public void IncrementUpgradeAddedValue(float addedValue)
     {
         totalUpgradeAddedValue += addedValue;
-        textModifierValue.text = "+" + (totalUpgradeAddedValue * 10).ToString("0");
+        textModifierValue.text = "+" + (totalUpgradeAddedValue * 10).ToString("0.#");
     }//
     private void Update()
     {

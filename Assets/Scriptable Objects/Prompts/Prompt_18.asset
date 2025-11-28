@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_18
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: stupid_joe
+    <Description>k__BackingField: You did well for my speech. But now i'm a mayor
+      and it's boring.
+    <Choices>k__BackingField:
+    - Label: I'm glad I could help! You may be too smart for this position, have
+        you considered running for President?
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -1.9799354
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 8.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 12
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 3ba15ca8cf9197f4fa542f046dec562e, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Let's try spicing things up. Make your city the next Silicon Valley,
+        no matter the cost! Do you want me to create a detailed 5-year plan?
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1.3533981
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 3.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 12
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 0d041b13df183194d82c4877861f0d08, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: a0f138919420ad543aab28e3a8d2b013, type: 2}
+  <Coordinates>k__BackingField: {x: 12, y: 7}

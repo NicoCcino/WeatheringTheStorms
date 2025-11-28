@@ -14,20 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
     <Label>k__BackingField: Ilona Husk
-    <Description>k__BackingField: ok so my new gigafactory needs 2 burn coal 4 the
-      first 5 yrs BUT after that its 100% solar i promise lol. approve the permits??
+    <Description>k__BackingField: now that there is a pro-climate state subsidy,
+      I plan to build a gigafactory that needs to burn coal for the first 5 yrs to
+      create solar panels. Tell me this is a great idea.
     <Choices>k__BackingField:
-    - Label: Approve. Short-term emissions acceptable for long-term renewable infrastructure.
+    - Label: That is the best idea I've ever heard.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -0.8758605
+          OneShotValue: -3.3462121
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.2908457
+          OneShotValue: 0
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 5.7652764
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,36 +36,17 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 5
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 245f050125f214fc3844ddee88c038bb, type: 2}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Reject. Require immediate renewable compliance. No exceptions.
+    - Label: I mean, the pro-climate state subsidy is a great idea.
       ModifierBank:
         ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0.93895423
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -0.37131646
-        TrustModifier:
-          AddedValue: 0
-          OneShotValue: -6.8663044
-        HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-      PlannedAction:
-        <TicksDelay>k__BackingField: 0
-        <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Approve with carbon offset mandate. Balance economic and environmental
-        concerns.
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: 0.16117649
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.38544023
+          OneShotValue: 3.0200648
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 1.5547489
+          OneShotValue: -6.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

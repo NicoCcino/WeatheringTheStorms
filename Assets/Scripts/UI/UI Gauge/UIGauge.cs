@@ -26,7 +26,7 @@ public class UIGauge : MonoBehaviour
     }
     public void UpdateModifier(float value)
     {
-        string text = (value * 10).ToString("0");
+        string text = (value * 10).ToString("0.#");
         if (value > 0)
         {
 

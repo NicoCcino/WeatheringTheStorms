@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: Prompt_KimmyJang_01
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Kimmy Jang King
+    <Label>k__BackingField: ProudPound
     <Description>k__BackingField: yo AI!! so my generals r saying we shud test the
       new nuke 2day. the big one. u think thats a gud idea or nah??
     <Choices>k__BackingField:
-    - Label: Proceed with test. Maximum deterrence requires demonstration of capability.
+    - Label: Proceed with nuclear test. Maximum deterrence requires demonstration
+        of capability.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -0.4869716
+          OneShotValue: -1.5962121
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -0.7496948
+          OneShotValue: -1.9799354
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 3.6600125
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,17 +36,18 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 1
         <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 6b33f4c577fa24224babddecc471ca64, type: 2}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Delay test. Current geopolitical conditions suggest higher risk of retaliation.
+    - Label: Do not test. Testing means you doubt. Take a day off and enjoy this
+        success.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.16117649
+          OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.38544023
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -4.7610407
+          OneShotValue: -6.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -53,18 +55,18 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 0
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Redirect resources to agricultural infrastructure. Your population requires
-        food more than fear.
+    - Label: No general should give you orders. Send them to the countryside as farmers
+        for a year. Your population requires food more than their adivce.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 0.5500654
+          OneShotValue: 1.9037879
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.5746294
+          OneShotValue: 0.6867314
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -8.971567
+          OneShotValue: -6.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

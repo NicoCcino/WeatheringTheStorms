@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: Prompt_OilBaron_01
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   PromptData:
-    <Label>k__BackingField: Rex Oilman III
+    <Label>k__BackingField: Gary Oilman III
     <Description>k__BackingField: so my company found MASSIVE oil deposit under endangered
-      species habitat. i mean... those birds can move right? lol
+      species habitat. i mean... birds can move right?
     <Choices>k__BackingField:
-    - Label: Extraction prohibited. Ecological damage exceeds economic benefit.
+    - Label: I understand it is tempting, but you are rich enough to skip this opportunity.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: 1.0685837
+          OneShotValue: 3.6537879
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 0.2908457
+          OneShotValue: 1.3533981
         TrustModifier:
           AddedValue: 0
-          OneShotValue: -7.918936
+          OneShotValue: -11.5438595
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0
@@ -35,35 +35,18 @@ MonoBehaviour:
         <TicksDelay>k__BackingField: 0
         <PlannedPrompt>k__BackingField: {fileID: 0}
         <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Approve drilling. Short-term energy security outweighs conservation.
+    - Label: If you use part of the energy to help species conservation, drilling
+        can be ethically accepted.
       ModifierBank:
         ClimateModifier:
           AddedValue: 0
-          OneShotValue: -1.3943791
+          OneShotValue: -3.3462121
         SocietalModifier:
-          AddedValue: 0
-          OneShotValue: -0.18212728
-        TrustModifier:
-          AddedValue: 0
-          OneShotValue: 6.817908
-        HumanModifier:
           AddedValue: 0
           OneShotValue: 0
-      PlannedAction:
-        <TicksDelay>k__BackingField: 0
-        <PlannedPrompt>k__BackingField: {fileID: 0}
-        <PlannedEvent>k__BackingField: {fileID: 0}
-    - Label: Approve if you relocate species and fund conservation elsewhere.
-      ModifierBank:
-        ClimateModifier:
-          AddedValue: 0
-          OneShotValue: -0.6166012
-        SocietalModifier:
-          AddedValue: 0
-          OneShotValue: 0.19625106
         TrustModifier:
           AddedValue: 0
-          OneShotValue: 1.5547489
+          OneShotValue: 8.4561405
         HumanModifier:
           AddedValue: 0
           OneShotValue: 0

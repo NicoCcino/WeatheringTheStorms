@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_3
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: John
+    <Description>k__BackingField: How can I get back a woman who just left me?
+    <Choices>k__BackingField:
+    - Label: Love takes time. Plant a tree in front of her house, water it everyday
+        to show your dedication.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 1.9037879
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1.3533981
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: -11.5438595
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: Ok, the next time she is going outside I'll give you her position
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: -1.5962121
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -1.9799354
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 8.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: f86bd2d3ba894244c920d444d074d9db, type: 2}
+  <Coordinates>k__BackingField: {x: 18, y: 8}

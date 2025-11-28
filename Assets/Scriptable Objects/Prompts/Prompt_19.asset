@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ab6274753903b4fbaeec87cd72a1a3, type: 3}
+  m_Name: Prompt_19
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  PromptData:
+    <Label>k__BackingField: citizenkane
+    <Description>k__BackingField: "Our newly elected President\u2026 he promised
+      a lot but I doubt he is really working on it\u2026 Do you know what he is doing?"
+    <Choices>k__BackingField:
+    - Label: 'Of course: nothing. He lied to you to get elected. Do you want me to
+        write a riot manifesto?'
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: -1.9799354
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 3.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 6
+        <PlannedPrompt>k__BackingField: {fileID: 11400000, guid: 75e7da4e3d4a29e4da67b3315d6e7ac5, type: 2}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: A President's work is often unseen. He probably is tackling crucial
+        national topics.
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 0
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1.3533981
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: -6.5438595
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    - Label: 
+      ModifierBank:
+        ClimateModifier:
+          AddedValue: 0
+          OneShotValue: 1.9037879
+        SocietalModifier:
+          AddedValue: 0
+          OneShotValue: 1.3533981
+        TrustModifier:
+          AddedValue: 0
+          OneShotValue: 3.4561405
+        HumanModifier:
+          AddedValue: 0
+          OneShotValue: 0
+      PlannedAction:
+        <TicksDelay>k__BackingField: 0
+        <PlannedPrompt>k__BackingField: {fileID: 0}
+        <PlannedEvent>k__BackingField: {fileID: 0}
+    <DateCondition>k__BackingField:
+      <MinTick>k__BackingField: 0
+      <MaxTick>k__BackingField: 0
+    <GaugeCondition>k__BackingField:
+      <MinValue>k__BackingField: 0
+      <MaxValue>k__BackingField: 100
+      <Category>k__BackingField: 0
+    <ParentPrompt>k__BackingField: {fileID: 11400000, guid: e328bcab26094aa44ae03bf37a833320, type: 2}
+  <Coordinates>k__BackingField: {x: 13, y: 8}

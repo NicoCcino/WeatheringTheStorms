@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverInformation
   DisplayedText: 'The larger the population, the greater its impact on social cohesion
-    and sustainability.
+    and climate.
 
     If population reaches 0, you lose.'
 --- !u!1 &4037642375202538358
