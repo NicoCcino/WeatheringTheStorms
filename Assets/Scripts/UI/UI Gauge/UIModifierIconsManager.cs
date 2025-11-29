@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 public class UIModifierIconsManager : MonoBehaviour
@@ -12,6 +13,8 @@ public class UIModifierIconsManager : MonoBehaviour
     [SerializeField] private bool isSocietal = false;
     [SerializeField] private bool isHuman = false;
 
+    //HACK : just to fix human upgrades
+    private int humanUpgradeCount;
     private void OnEnable()
     {
         EventManager.Instance.OnEventTriggered += OnEventTriggeredCallback;
@@ -30,12 +33,22 @@ public class UIModifierIconsManager : MonoBehaviour
             return;
         }
         upgradeModifierIcon.gameObject.SetActive(true);
-        upgradeModifierIcon.IncrementUpgradeAddedValue(addedValue);
+        if (!isHuman)
+            upgradeModifierIcon.IncrementUpgradeAddedValue(addedValue);
+        else
+        {
+            humanUpgradeCount++;
+            if (humanUpgradeCount >= 2)
+            {
+                upgradeModifierIcon.gameObject.SetActive(false);
+            }
+        }
     }
 
     private void OnDisable()
     {
         EventManager.Instance.OnEventTriggered -= OnEventTriggeredCallback;
+        Upgrade.OnAnyUpgradeBought -= OnAnyUpgradeBoughtCallback;
     }
     private void OnEventTriggeredCallback(Event ev)
     {

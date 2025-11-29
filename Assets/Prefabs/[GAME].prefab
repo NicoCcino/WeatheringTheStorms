@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2091b186276497d90a81eed80b9c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Planner
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
 --- !u!1 &907645600603621812
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28750d1928a924619802c941858f91e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComputePower
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   computePowerParameter: {fileID: 11400000, guid: c949cf06161564211840b3577b8fb7ae, type: 2}
   value: 0
   spawnFrequency: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptBalancer
   promptManagerParameter: {fileID: 11400000, guid: 1d7671349d0907348bc71d9dac449589, type: 2}
-  promptBalancerParameter: {fileID: 0}
+  promptBalancerParameter: {fileID: 11400000, guid: 3243037a9c10b4523844431f21d8c6b2, type: 2}
 --- !u!1 &2982573813034200651
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8588badfa0a46c696cc5d77f6f2578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Human
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   humanParameter: {fileID: 11400000, guid: ac4cf88c265274dd9bac458311fc298e, type: 2}
   HumanCount: 0
   <HumanImpact>k__BackingField: 0
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89fa0a41812c4e1bbe27f5ad85b88ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventManager
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   EventManagerParameter: {fileID: 11400000, guid: e073e886601eb4a1d91b63b4d4d79c4c, type: 2}
 --- !u!1 &4004331903444063049
 GameObject:
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158c0d139c7b0624082c6f95d2a6c8a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventManager
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   PromptManagerParameter: {fileID: 11400000, guid: 1d7671349d0907348bc71d9dac449589, type: 2}
 --- !u!1 &4630774712412300284
 GameObject:
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9774a6b544ae47aca371e6a7d4921bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogFileManager
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
 --- !u!1 &4854415481100732256
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b164d2b3cb148caa78875177726d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GaugeManager
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   ClimateGauge:
     gaugeParameter: {fileID: 11400000, guid: 12bdea72a77ea4b50b910199ca01f66f, type: 2}
     value: 0
@@ -1037,11 +1037,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3b71f58146c4bf293019e88cd94888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timeline
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   timeLineParameter: {fileID: 11400000, guid: b8997b064abaafb44a192a057317f9bb, type: 2}
   CurrentTick: 0
   tickFreq: 0
   tickDuration: 0
+  IsPaused: 0
+  IsPausedFromUser: 0
 --- !u!1 &5706185923911146071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d10530251744fa4faf0d1de74738e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   AllUpgrades:
   - {fileID: 11400000, guid: 9158d4763288d4b1c8a75f2a6f3a395e, type: 2}
   - {fileID: 11400000, guid: aa42c0f8165d94c0b8c1da129d986a05, type: 2}

@@ -21,6 +21,7 @@ public class UIChoicesManager : MonoBehaviour
         {
             SimplePool.Despawn(uiChoice.gameObject);
         }
+        SpawnedUIChoices.Clear();
         for (int i = 0; i < choices.Length; i++)
         {
             SpawnChoice(choices[i], parentUIPrompt);

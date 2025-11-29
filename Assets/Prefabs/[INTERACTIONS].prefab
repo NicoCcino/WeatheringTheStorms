@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f1e03dc1f3de94f99bcc407d9e8fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   grid: {fileID: 8032403978693249595}
   gridWidth: 25
   gridHeight: 15
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c66e134a383c2041b6f3a5601acc178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoolableParent
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
 --- !u!1 &8415299606098548946
 GameObject:
   m_ObjectHideFlags: 0
