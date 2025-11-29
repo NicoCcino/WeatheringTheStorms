@@ -124,10 +124,14 @@ public class UIPrompt : MonoBehaviour
         if (DisplayedPrompt != previousPrompt)
         {
             if (DisplayedPrompt != null)
+            {
                 DisplayPrompt(DisplayedPrompt);
+            }
             else
+            {
+                previousPrompt.OnSolved -= OnDisplayedPromptSolvedCallback;
                 HideDisplayedPrompt();
-
+            }
             previousPrompt = DisplayedPrompt;
         }
     }
