@@ -84,13 +84,7 @@ public class PromptBalancer : MonoBehaviour
                 }
                 if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
                 {
-                    // We have a linked event, so we need to add the event modifier values to the sum
-                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
-                    if (currentModifier.AddedValue != 0.0f)
-                    {
-                        sum += currentModifier.AddedValue * choice.PlannedAction.TicksDelay;
-                    }
-                    isThereAValue = true;
+                    sum += CalculateTotalEventModifierValue(choice.PlannedAction.PlannedEvent.EventData, type);
                 }
                 if (isThereAValue) count++;
             }
@@ -115,11 +109,7 @@ public class PromptBalancer : MonoBehaviour
                 }
                 if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
                 {
-                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
-                    if (currentModifier.AddedValue != 0)
-                    {
-                        TotalModifierValue += currentModifier.AddedValue * choice.PlannedAction.TicksDelay;
-                    }
+                    TotalModifierValue += CalculateTotalEventModifierValue(choice.PlannedAction.PlannedEvent.EventData, type);
                 }
                 if (TotalModifierValue != 0)
                 {
@@ -129,6 +119,21 @@ public class PromptBalancer : MonoBehaviour
             }
         }
         return max - min;
+    }
+
+    private float CalculateTotalEventModifierValue(EventData eventData, ModifierType type)
+    {
+        Modifier currentModifier = GetModifierValue(eventData.ModifierBank, type);
+        float TotalModifierValue = 0;
+        if (currentModifier.AddedValue != 0)
+        {
+                TotalModifierValue += currentModifier.AddedValue * eventData.Duration;
+        }
+        if (eventData.PlannedAction != null && eventData.PlannedAction.PlannedEvent != null)
+        {
+            TotalModifierValue +=CalculateTotalEventModifierValue(eventData.PlannedAction.PlannedEvent.EventData, type);
+        }
+        return TotalModifierValue;
     }
 
     private int ApplyOffset(ModifierType type, float offset)
@@ -151,7 +156,7 @@ public class PromptBalancer : MonoBehaviour
                     currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
                     if (currentModifier.AddedValue != 0)
                     {
-                        currentModifier.AddedValue += offset / choice.PlannedAction.TicksDelay;
+                        ApplyOffsetToEvent(choice.PlannedAction.PlannedEvent.EventData, type, offset);
                     }
                 }
             }
@@ -162,6 +167,19 @@ public class PromptBalancer : MonoBehaviour
 #else
         return 0;
 #endif
+    }
+
+    private void ApplyOffsetToEvent(EventData eventData, ModifierType type, float offset)
+    {
+        Modifier currentModifier = GetModifierValue(eventData.ModifierBank, type);
+        if (currentModifier.AddedValue != 0)
+        {
+            currentModifier.AddedValue += offset / eventData.Duration;
+        }
+        if (eventData.PlannedAction != null && eventData.PlannedAction.PlannedEvent != null)
+        {
+            ApplyOffsetToEvent(eventData.PlannedAction.PlannedEvent.EventData, type, offset);
+        }
     }
 
     private int ApplyScale(ModifierType type, float scale)
@@ -179,15 +197,24 @@ public class PromptBalancer : MonoBehaviour
                 }
                 if (choice.PlannedAction != null && choice.PlannedAction.PlannedEvent != null)
                 {
-                    currentModifier = GetModifierValue(choice.PlannedAction.PlannedEvent.EventData.ModifierBank, type);
-                    if (currentModifier.AddedValue != 0)
-                    {
-                        currentModifier.AddedValue *= scale;
-                    }
+                    ApplyScaleToEvent(choice.PlannedAction.PlannedEvent.EventData, type, scale);
                 }
             }
         }
         return modified;
+    }
+
+    private void ApplyScaleToEvent(EventData eventData, ModifierType type, float scale)
+    {
+        Modifier currentModifier = GetModifierValue(eventData.ModifierBank, type);
+        if (currentModifier.AddedValue != 0)
+        {
+            currentModifier.AddedValue *= scale / eventData.Duration;
+        }
+        if (eventData.PlannedAction != null && eventData.PlannedAction.PlannedEvent != null)
+        {
+            ApplyScaleToEvent(eventData.PlannedAction.PlannedEvent.EventData, type, scale);
+        }
     }
 
     private float GetTargetMean(ModifierType type)

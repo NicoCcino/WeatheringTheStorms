@@ -25,7 +25,7 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: -3.6466022
+          OneShotValue: -0.6979965
         TrustModifier:
           AddedValue: 0
           OneShotValue: 8.4561405
@@ -43,7 +43,7 @@ MonoBehaviour:
           OneShotValue: 0
         SocietalModifier:
           AddedValue: 0
-          OneShotValue: 1.3533981
+          OneShotValue: 0.25310022
         TrustModifier:
           AddedValue: 0
           OneShotValue: 8.4561405
